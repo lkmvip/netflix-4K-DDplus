@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Netflix 5.1DDplus For EdgeChromium",
   "description": "在EdgeChromium上使用最高4K画质串流并且享受DDPlus音质",
-  "version": "1.0",
+  "version": "1.1",
   "author": "org by truedread ，modify by https://t.me/Luv_sic  ",
   "browser_action": {
     "default_icon": "img/icon128.png"
@@ -30,9 +30,9 @@
     "open_in_tab": false
   },
   "web_accessible_resources": [
-    "msl_client.js",
+    //"msl_client.js",
     "netflix_max_bitrate.js",
-    "cadmium-playercore-6.0023.363.031.js"
+    "cadmium-playercore-6.0023.702.031.js"
   ],
   "permissions": [
     "storage",
