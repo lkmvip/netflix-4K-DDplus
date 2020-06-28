@@ -9,13 +9,11 @@ thanks to https://github.com/truedread/netflix-1080p
 3, all languages (audio and sub,if any)  
     
     
+Recommended software: Windos10Ver2004,MsEdge>V81(Never use the portable version,Because there is no complete DRM, NO DRM=NO 4K and NO HDR)  
+If you must use the portable version, please use V79, but no HDR.  
+    
+    
 -------------------------------------------------------------------------------------------------------
-
-  
      
-
-
 ![image](img/n1.png)
-![image](img/n2.png)
-
-
+![image](img/n3.png)

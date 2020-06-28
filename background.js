@@ -1,7 +1,7 @@
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
         return {
-            redirectUrl: chrome.extension.getURL("cadmium-playercore-6.0023.807.031.js")
+            redirectUrl: chrome.extension.getURL("cadmium-playercore-6.0023.976.031.js")
         };
     }, {
         urls: [
