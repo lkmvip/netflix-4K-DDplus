@@ -1,8 +1,10 @@
 function save_options() {
-    var use6Channels = document.getElementById('5.1').checked;
+	var useallSub = document.getElementById('allSub').checked;
+	var useddplus = document.getElementById('ddplus').checked;
     var setMaxBitrate = document.getElementById('setMaxBitrate').checked;
     chrome.storage.sync.set({
-        use6Channels: use6Channels,
+        useallSub: useallSub,
+		useddplus: useddplus,
         setMaxBitrate: setMaxBitrate
     }, function() {
         var status = document.getElementById('status');
@@ -15,10 +17,12 @@ function save_options() {
 
 function restore_options() {
     chrome.storage.sync.get({
-        use6Channels: false,
+        useallSub: false,
+		useddplus: false,
         setMaxBitrate: false
     }, function(items) {
-        document.getElementById('5.1').checked = items.use6Channels;
+        document.getElementById('allSub').checked = items.useallSub;
+		document.getElementById('ddplus').checked = items.useddplus;
         document.getElementById('setMaxBitrate').checked = items.setMaxBitrate;
     });
 }
