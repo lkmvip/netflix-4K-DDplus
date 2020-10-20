@@ -15,7 +15,7 @@ Features (Options)
 4, Open all sub and track    
 5, Use AVC, NOT Avchigh video code    
 6, Automatically select best bitrate available  
-7, Use "Dolby Vision for" HDR (May need NVIDIA 20 series and above graphics cards, and HDR TV)
+7, Use "Dolby Vision" Profiles for HDR (May need NVIDIA 20 series and above graphics cards, and HDR TV)
 
 
 Recommended software:   
