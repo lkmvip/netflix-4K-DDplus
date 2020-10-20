@@ -1,7 +1,7 @@
 thanks to https://github.com/truedread/netflix-1080p
 
 
-Microsoft Store:
+Microsoft Store:  
 https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaoggcn
 
 **My modified version can only work on Windows 10 64-bit, MicrosoftEdge(Chromium core)**
