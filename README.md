@@ -8,14 +8,13 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
 
 *This extension of MicrosoftEdge (Chromium core) implements the following function*  
 
-Features (Options)  
+Features (it's Options)  
 1, MAX 4K  https://help.netflix.com/zh-tw/node/13444   
 2, DDplus audio   
 3, all languages (audio and sub,if any)  
-4, Open all sub and track    
-5, Use AVC, NOT Avchigh video code    
-6, Automatically select best bitrate available  
-~~7, Use "Dolby Vision" Profiles for HDR (May need NVIDIA 20 series and above graphics cards, and HDR TV)~~
+4, Use AVC, NOT AvcHigh video code    
+5, Automatically select best bitrate available  
+~~6, Use "Dolby Vision" Profiles for HDR (May need NVIDIA 20 series and above graphics cards, and Dolby Vision TV)~~
   
   
   
