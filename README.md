@@ -7,13 +7,13 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
 **My modified version can only work on Windows 10 64-bit, MicrosoftEdge(Chromium core)**
 
 
-**Features (it's Options)**  
+**Features (See Options)**  
 1, MAX 4K  https://help.netflix.com/zh-tw/node/13444   
 2, DDplus, Atmos(if any) Audio   
 3, all languages (audio and sub,if any)  
 4, Use AVC, NOT AvcHigh video code    
 5, Automatically select best bitrate available  
-~~6, Use "Dolby Vision" Profiles for HDR (May need NVIDIA 20 series and above graphics cards, and Dolby Vision TV)~~
+6, Use "Dolby Vision" Profiles for HDR (May need NVIDIA 20 series and above graphics cards, and Dolby Vision TV)
   
   
   
