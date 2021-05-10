@@ -34,7 +34,7 @@ for (var i = 0; i < script_urls.length; i++) {
 }
 */
 for (var i = 0; i < urls.length; i++) {
-    var mainScriptUrl = chrome.extension.getURL(urls[i]);
+    var mainScriptUrl = chrome.runtime.getURL(urls[i]);
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', mainScriptUrl, true);

@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 15px 0px 0px 15px;
+  width: 400px;
+  height: 175px;
+  font-size: 14px;
+  overflow: hidden;
+  color: #FFF;
+  background-color: #141414;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-spacing: 0;
+}

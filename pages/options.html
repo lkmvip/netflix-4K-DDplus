@@ -2,22 +2,37 @@
 <html>
 
 <head>
-    <title>Netflix 1080p Options</title>
+    <title>Netflix Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="options.css"/>
 </head>
 
 <body>
-    <label>
-        <input type="checkbox" id="allSub">Open all sub and track</input>
-        <br>
-        <input type="checkbox" id="ddplus">Use ddplus and Atmos(if any) track</input>
-        <br>
-        <input type="checkbox" id="AVC">Use AVC, NOT Avchigh video code</input>
-        <br>
-        <input type="checkbox" id="DV">Use "Dolby Vision" Profiles for HDR</input>
-        <br>
-        <input type="checkbox" id="setMaxBitrate">Automatically select best bitrate available</input>
-    </label>
+	<div>
+		<input type="checkbox" id="allSub" name="allSub">
+		<label for="allSub">Show all audio-tracks and subs</label>
+	</div>
+	
+	<div>
+		<input type="checkbox" id="ddplus" name="ddplus">
+		<label for="ddplus">Use DD+ and Atmos audio track (Win10 Only)</label>
+	</div>
+	
+	<div>
+		<input type="checkbox" id="AVC" name="AVC">
+		<label for="AVC">Use AVC insted of AVC-High video code (Win10 Only)</label>
+	</div>
+	
+	<div>
+		<input type="checkbox" id="DV" name="DV">
+		<label for="DV">Use "Dolby Vision" Profiles for HDR (Win10 Only)</label>
+	</div>
 
+	<div>
+		<input type="checkbox" id="setMaxBitrate" name="setMaxBitrate">
+		<label for="setMaxBitrate">Automatically select best bitrate available</label>
+	</div>
+	<br>
     <div id="status"></div>
     <button id="save">Save</button>
 
