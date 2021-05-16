@@ -3,12 +3,18 @@ function save_options() {
 	var useddplus = document.getElementById('ddplus').checked;
 	var useAVC = document.getElementById('AVC').checked;
 	var useDV = document.getElementById('DV').checked;
+	var useFHD = document.getElementById('FHD').checked;
+	var useHA = document.getElementById('HA').checked;
+	var useAVCH = document.getElementById('AVCH').checked;
     var setMaxBitrate = document.getElementById('setMaxBitrate').checked;
     chrome.storage.sync.set({
         useallSub: useallSub,
 		useddplus: useddplus,
 		useAVC: useAVC,
 		useDV: useDV,
+		useFHD: useFHD,
+		useHA: useHA,
+		useAVCH: useAVCH,
         setMaxBitrate: setMaxBitrate
     }, function() {
         var status = document.getElementById('status');
@@ -25,12 +31,18 @@ function restore_options() {
 		useddplus: false,
 		useAVC: false,
 		useDV: false,
+		useFHD: false,
+		useHA: false,
+		useAVCH: false,
         setMaxBitrate: false
     }, function(items) {
         document.getElementById('allSub').checked = items.useallSub;
 		document.getElementById('ddplus').checked = items.useddplus;
 		document.getElementById('AVC').checked = items.useAVC;
 		document.getElementById('DV').checked = items.useDV;
+		document.getElementById('FHD').checked = items.useFHD;
+		document.getElementById('HA').checked = items.useHA;
+		document.getElementById('AVCH').checked = items.useAVCH;
         document.getElementById('setMaxBitrate').checked = items.setMaxBitrate;
     });
 }

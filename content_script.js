@@ -11,11 +11,14 @@ urls = [
 ]
 
 // very messy workaround for accessing chrome storage outside of background / content scripts
-chrome.storage.sync.get(['useallSub', 'useddplus', 'useAVC', 'useDV', 'setMaxBitrate'], function(items) {
+chrome.storage.sync.get(['useallSub', 'useddplus', 'useAVC', 'useDV', 'useFHD', 'useHA', 'useAVCH', 'setMaxBitrate'], function(items) {
     var useallSub = items.useallSub;
 	var useddplus = items.useddplus;
 	var useAVC = items.useAVC;
 	var useDV = items.useDV;
+	var useFHD = items.useFHD;
+	var useHA = items.useHA;
+	var useAVCH = items.useAVCH;
     var setMaxBitrate = items.setMaxBitrate;
     var mainScript = document.createElement('script');
     mainScript.type = 'application/javascript';
@@ -23,6 +26,9 @@ chrome.storage.sync.get(['useallSub', 'useddplus', 'useAVC', 'useDV', 'setMaxBit
 	                + 'var useddplus = ' + useddplus + ';' + '\n' 
 					+ 'var useAVC = ' + useAVC + ';' + '\n' 
 					+ 'var useDV = ' + useDV + ';' + '\n' 
+					+ 'var useFHD = ' + useFHD + ';' + '\n' 
+					+ 'var useHA = ' + useHA + ';' + '\n' 
+					+ 'var useAVCH = ' + useAVCH + ';' + '\n' 
 	                + 'var setMaxBitrate = ' + setMaxBitrate + ';';
     document.documentElement.appendChild(mainScript);
 });

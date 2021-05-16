@@ -8,24 +8,47 @@
 </head>
 
 <body>
-	<div>
+	<form>
+		<fieldset>
+			<legend>Win10 Edge Only</legend>
+			<div>
+				<input type="checkbox" id="ddplus" name="ddplus">
+				<label for="ddplus">Use DD+ and Atmos audio track</label>
+			</div>
+	
+			<div>
+				<input type="checkbox" id="AVC" name="AVC">
+				<label for="AVC">Use AVC insted of AVC-High video code</label>
+			</div>
+	
+			<div>
+				<input type="checkbox" id="DV" name="DV">
+				<label for="DV">Use "Dolby Vision" Profiles for HDR</label>
+			</div>
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>Other OS And Browser</legend>
+			<div>
+				<input type="checkbox" id="FHD" name="FHD">
+				<label for="FHD">1080P</label>
+			</div>
+	
+			<div>
+				<input type="checkbox" id="HA" name="HA">
+				<label for="HA">HE-AAC Audio(5.1)</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="AVCH" name="AVCH">
+				<label for="AVCH">Use AVC-High insted of VP9 video code</label>
+			</div>
+		</fieldset>
+	</form>	
+	<div>		
 		<input type="checkbox" id="allSub" name="allSub">
 		<label for="allSub">Show all audio-tracks and subs</label>
-	</div>
-	
-	<div>
-		<input type="checkbox" id="ddplus" name="ddplus">
-		<label for="ddplus">Use DD+ and Atmos audio track (Win10 Only)</label>
-	</div>
-	
-	<div>
-		<input type="checkbox" id="AVC" name="AVC">
-		<label for="AVC">Use AVC insted of AVC-High video code (Win10 Only)</label>
-	</div>
-	
-	<div>
-		<input type="checkbox" id="DV" name="DV">
-		<label for="DV">Use "Dolby Vision" Profiles for HDR (Win10 Only)</label>
 	</div>
 
 	<div>
