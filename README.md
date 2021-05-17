@@ -5,7 +5,7 @@ Microsoft Store:
 https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaoggcn
 
 **This extension provides the following functions**  
-1, all languages (audio and sub,if any) 
+1, all languages (audio and sub,if any)   
 2, Automatically select best bitrate available    
     
     
