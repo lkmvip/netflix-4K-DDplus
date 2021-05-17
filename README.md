@@ -12,11 +12,11 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
     
 -------------------------------------------------------------------------------------------------------  
   
-<font color=Goldenrod>**In different hardware/software, your experience is different**</font>  
+**In different hardware/software, your experience is different**  
+    
   
   
-  
-**- In win10 and edge browser(Non-portable)**  
+**In win10 and edge browser(Non-portable)**  
 1, Max 4K.  [<font color=Purple><u>**About 4K**</u></font> ](https://help.netflix.com/zh-tw/node/13444)      
 2, DDplus, Atmos(if any) Audio   
 3, Use AVC, NOT AvcHigh video code   
@@ -24,7 +24,7 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
     
     
   
-<font color=red>**Other OS And Browser(Includes portable edge)**</font>  
+**Other OS And Browser(Includes portable edge)**  
 1, Max 1080P   
 2, HE-AAC Audio (lower than DDplus)   
 3, Avchigh code can be use   
