@@ -16,7 +16,7 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
   
   
   
--**In win10 and edge browser(Non-portable)**  
+**- In win10 and edge browser(Non-portable)**  
 1, Max 4K.  [<font color=Purple><u>**About 4K**</u></font> ](https://help.netflix.com/zh-tw/node/13444)      
 2, DDplus, Atmos(if any) Audio   
 3, Use AVC, NOT AvcHigh video code   
