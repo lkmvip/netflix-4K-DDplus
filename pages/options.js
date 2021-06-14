@@ -17,12 +17,20 @@ function save_options() {
 		useAVCH: useAVCH,
         setMaxBitrate: setMaxBitrate
     }, function() {
-        var status = document.getElementById('status');
-        status.textContent = 'Options saved.';
-        setTimeout(function() {
+        //var status = document.getElementById('status');
+        //status.textContent = 'Options saved.';
+        /*setTimeout(function() {
             status.textContent = '';
-        }, 750);
+        }, 750);*/
+		var r = confirm("Options saved. \r\nRefresh the player page now?");
+		if (r == true) {
+			chrome.tabs.getSelected(null, function(tab) {
+				var code = 'window.location.reload();';
+			chrome.tabs.executeScript(tab.id, {code: code});
+			});
+		}
     });
+    
 }
 
 function restore_options() {

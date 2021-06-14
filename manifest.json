@@ -3,7 +3,7 @@
 	"name": "Netflix_Extension",
 	"description": "Watch Netflix more comfortably on your computer.",
 	"version": "1.1",
-	"author": "org by truedread ，modify by https://t.me/Luv_sic	",
+	"author": "org by truedread ，modify by https://github.com/lkmvip/netflix-4K-DDplus",
 	"browser_action": {
 		"default_title": "Netflix Options",
 		"default_popup": "pages/options.html",
