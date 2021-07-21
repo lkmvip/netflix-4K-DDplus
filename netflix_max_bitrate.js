@@ -5,16 +5,18 @@ let getElementByXPath = function (xpath) {
 };
 
 let fn = function () {
+  const VIDEO_SELECT = getElementByXPath("//div[text()='Video Bitrate']");
+  const AUDIO_SELECT = getElementByXPath("//div[text()='Audio Bitrate']");
+  const BUTTON = getElementByXPath("//button[text()='Override']");
+	 if (!BUTTON) {
   window.dispatchEvent(new KeyboardEvent('keydown', {
     keyCode: 83,
     ctrlKey: true,
     altKey: true,
     shiftKey: true,
   }));
+}
 
-  const VIDEO_SELECT = getElementByXPath("//div[text()='Video Bitrate']");
-  const AUDIO_SELECT = getElementByXPath("//div[text()='Audio Bitrate']");
-  const BUTTON = getElementByXPath("//button[text()='Override']");
 
   if (!(VIDEO_SELECT && AUDIO_SELECT && BUTTON)){
     return false;
@@ -38,14 +40,13 @@ let fn = function () {
 };
 
 let run = function () {
-  fn() || setTimeout(run, 100);
+  fn() || setTimeout(run, 2000);
 };
 
 const WATCH_REGEXP = /netflix.com\/watch\/.*/;
 
 let oldLocation;
-
-if(setMaxBitrate) {
+if(setMaxBitrate ) {
   console.log("netflix_max_bitrate.js enabled");
   setInterval(function () {
     let newLocation = window.location.toString();
