@@ -8,14 +8,17 @@ let fn = function () {
 	const VIDEO_SELECT = getElementByXPath("//div[text()='Video Bitrate']");
 	const AUDIO_SELECT = getElementByXPath("//div[text()='Audio Bitrate']");
 	const BUTTON = getElementByXPath("//button[text()='Override']");
-	
-	if (!(VIDEO_SELECT && AUDIO_SELECT && BUTTON)){
+
+	if (!BUTTON){
 		window.dispatchEvent(new KeyboardEvent('keydown', {
 			keyCode: 83,
 			ctrlKey: true,
 			altKey: true,
 			shiftKey: true,
 		}));
+	}
+
+	if (!(VIDEO_SELECT && AUDIO_SELECT && BUTTON)){
 		return false;
 	}
 
@@ -30,14 +33,12 @@ let fn = function () {
 
 		options[options.length - 1].setAttribute('selected', 'selected');
 	});
-	//console.log("Closed!");
 	BUTTON.click();
 
 	return true;
 };
 
 let crash = function (count) {
-    //console.log("menu searching");
     const BUTTON = getElementByXPath("//button[text()='Override']");
 	if (count > 0) {
 		BUTTON ? fn() : setTimeout(() => crash(count - 1), 200)
