@@ -9,6 +9,13 @@ let fn = function () {
 	const AUDIO_SELECT = getElementByXPath("//div[text()='Audio Bitrate']");
 	const BUTTON = getElementByXPath("//button[text()='Override']");
 
+	const VIDEO_PLAYING = document.evaluate('//*[@id]/video',document).iterateNext();
+	
+	if(!VIDEO_PLAYING) {
+		console.log("Not Playing!");
+		return false;
+	}
+
 	if (!BUTTON){
 		window.dispatchEvent(new KeyboardEvent('keydown', {
 			keyCode: 83,
@@ -33,12 +40,14 @@ let fn = function () {
 
 		options[options.length - 1].setAttribute('selected', 'selected');
 	});
+	console.log("Closed!");
 	BUTTON.click();
 
 	return true;
 };
 
 let crash = function (count) {
+    console.log("menu searching");
     const BUTTON = getElementByXPath("//button[text()='Override']");
 	if (count > 0) {
 		BUTTON ? fn() : setTimeout(() => crash(count - 1), 200)
@@ -46,12 +55,15 @@ let crash = function (count) {
 };
 
 let run = function () {
-	fn() ? crash(10) : setTimeout(run, 100)
+	//fn() ? crash(10) : setTimeout(run, 100)
+	fn() || setTimeout(run, 100)
 };
 
 const WATCH_REGEXP = /netflix.com\/watch\/.*/;
 
 let oldLocation;
+
+
 if(setMaxBitrate ) {
 	console.log("netflix_max_bitrate.js enabled");
 	setInterval(function () {
