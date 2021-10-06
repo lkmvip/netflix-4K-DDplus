@@ -45,6 +45,15 @@ let run = function () {
 	fn() || setTimeout(run, 100)
 };
 
+let test = function(){
+	//The test version is not guaranteed to be valid
+	//Instructions
+	//Play any movie, when it starts to play, refresh the page, when it starts to play again, the audio and subtitle pages can be scrolled with the mouse
+	//It may be improved in the future, or it may be given up, depending on Netflix
+	var ov = document.styleSheets[2];
+	ov.insertRule(".ltr-m6m86k {overflow-y: auto;}", ov.rules.length);
+}
+
 const WATCH_REGEXP = /netflix.com\/watch\/.*/;
 
 let oldLocation;
@@ -52,6 +61,7 @@ let oldLocation;
 
 if(setMaxBitrate ) {
 	console.log("netflix_max_bitrate.js enabled");
+	setInterval(test, 500); //activate overflow
 	setInterval(function () {
 		let newLocation = window.location.toString();
 
