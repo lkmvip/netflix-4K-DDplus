@@ -22,6 +22,7 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
 2, DDplus, Atmos(if any) Audio   
 3, Use AVC, NOT AvcHigh video code   
 4, Use "Dolby Vision" Profiles for HDR (May need NVIDIA 20 series and above graphics cards, and Dolby Vision TV)   
+5, Use HEVC code, Downgrade from 4K to 1080P   
     
     
   

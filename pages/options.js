@@ -6,6 +6,7 @@ function save_options() {
 	var useFHD = document.getElementById('FHD').checked;
 	var useHA = document.getElementById('HA').checked;
 	var useAVCH = document.getElementById('AVCH').checked;
+	var usehevc = document.getElementById('hevc').checked;
     var setMaxBitrate = document.getElementById('setMaxBitrate').checked;
     chrome.storage.sync.set({
         useallSub: useallSub,
@@ -15,6 +16,7 @@ function save_options() {
 		useFHD: useFHD,
 		useHA: useHA,
 		useAVCH: useAVCH,
+		usehevc: usehevc,
         setMaxBitrate: setMaxBitrate
     }, function() {
         //var status = document.getElementById('status');
@@ -42,6 +44,7 @@ function restore_options() {
 		useFHD: false,
 		useHA: false,
 		useAVCH: false,
+		usehevc: false,
         setMaxBitrate: false
     }, function(items) {
         document.getElementById('allSub').checked = items.useallSub;
@@ -51,6 +54,7 @@ function restore_options() {
 		document.getElementById('FHD').checked = items.useFHD;
 		document.getElementById('HA').checked = items.useHA;
 		document.getElementById('AVCH').checked = items.useAVCH;
+		document.getElementById('hevc').checked = items.usehevc;
         document.getElementById('setMaxBitrate').checked = items.setMaxBitrate;
     });
 }
