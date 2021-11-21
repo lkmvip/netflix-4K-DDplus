@@ -25,11 +25,13 @@ function save_options() {
             status.textContent = '';
         }, 750);*/
 		var r = confirm("Options saved. \r\nRefresh the player page now?");
+
 		if (r == true) {
 			chrome.tabs.getSelected(null, function(tab) {
 				var code = 'window.location.reload();';
-			chrome.tabs.executeScript(tab.id, {code: code});
+				chrome.tabs.executeScript(tab.id, {code: code});
 			});
+			window.open("about:blank","_self").close()
 		}
     });
     
