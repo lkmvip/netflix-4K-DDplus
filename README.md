@@ -29,7 +29,7 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
 **Other OS And Browser(Includes portable edge)**  
 1, Max 1080P   
 2, HE-AAC Audio (lower than DDplus)   
-3, Avchigh code can be use   
+3, AVC/Avchigh code can be use   
   
   
     
