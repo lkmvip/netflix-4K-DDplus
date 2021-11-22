@@ -6,6 +6,8 @@ function save_options() {
 	var useFHD = document.getElementById('FHD').checked;
 	var useHA = document.getElementById('HA').checked;
 	var useAVCH = document.getElementById('AVCH').checked;
+	var usedef = document.getElementById('def').checked;
+	var useCAVC = document.getElementById('CAVC').checked;
 	var usehevc = document.getElementById('hevc').checked;
     var setMaxBitrate = document.getElementById('setMaxBitrate').checked;
     chrome.storage.sync.set({
@@ -16,6 +18,8 @@ function save_options() {
 		useFHD: useFHD,
 		useHA: useHA,
 		useAVCH: useAVCH,
+		usedef: usedef,
+		useCAVC: useCAVC,
 		usehevc: usehevc,
         setMaxBitrate: setMaxBitrate
     }, function() {
@@ -46,6 +50,8 @@ function restore_options() {
 		useFHD: false,
 		useHA: false,
 		useAVCH: false,
+		usedef: true,
+		useCAVC: false,
 		usehevc: false,
         setMaxBitrate: false
     }, function(items) {
@@ -56,6 +62,8 @@ function restore_options() {
 		document.getElementById('FHD').checked = items.useFHD;
 		document.getElementById('HA').checked = items.useHA;
 		document.getElementById('AVCH').checked = items.useAVCH;
+		document.getElementById('def').checked = items.usedef;
+		document.getElementById('CAVC').checked = items.useCAVC;
 		document.getElementById('hevc').checked = items.usehevc;
         document.getElementById('setMaxBitrate').checked = items.setMaxBitrate;
     });

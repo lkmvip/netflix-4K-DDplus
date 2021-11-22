@@ -44,11 +44,23 @@
 				<input type="checkbox" id="HA" name="HA">
 				<label for="HA">HE-AAC Audio(5.1)</label>
 			</div>
-
-			<div>
-				<input type="checkbox" id="AVCH" name="AVCH">
-				<label for="AVCH">Use AVC-High insted of VP9 video code</label>
-			</div>
+			<fieldset>
+				<legend>Video configuration</legend>
+				<div>
+					<input type="radio" id="def" name="contact" value="def">
+					<label for="def">Play with default (vp9)</label>
+				</div>
+				
+				<div>
+					<input type="radio" id="CAVC" name="contact" value="CAVC">
+					<label for="CAVC">Play with AVC</label>
+				</div>
+				
+				<div>
+					<input type="radio" id="AVCH" name="contact" value="AVCH">
+					<label for="AVCH">Play with AVC-High</label>
+				</div>
+			</fieldset>
 		</fieldset>
 	</form>	
 	<div>		
