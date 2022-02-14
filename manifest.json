@@ -1,51 +1,54 @@
 {
-	"manifest_version": 2,
-	"name": "Netflix_Extension",
-	"description": "Watch Netflix more comfortably on your computer.",
-	"version": "1.1",
-	"author": "org by truedread ，modify by https://github.com/lkmvip/netflix-4K-DDplus",
-	"browser_action": {
-		"default_title": "Netflix Options",
-		"default_popup": "pages/options.html",
-		"default_icon": {
-			"128": "img/icon128.png"
-		}
-	},
-	"icons": {
-		"48": "img/icon48.png",
-		"128": "img/icon128.png"
-	},
-	"content_scripts": [{
-		"matches": [
-			"*://assets.nflxext.com/*/ffe/player/html/*",
-			"*://www.assets.nflxext.com/*/ffe/player/html/*",
-			"*://netflix.com/*",
-			"*://www.netflix.com/*"
-		],
-		"all_frames": true,
-		"js": ["content_script.js"],
-		"css": ["Netflix.css"],
-		"run_at": "document_start"
-	}],
-	"background": {
-		"scripts": ["background.js"]
-	},
-	//"options_ui": {
-	//	"page": "pages/options.html",
-	//	"open_in_tab": false
-	//},
-	"web_accessible_resources": [
-		//"msl_client.js",
-		"netflix_max_bitrate.js",
-		"cadmium-playercore-6.0033.414.911.js"
-	],
-	"permissions": [
-		"storage",
-		"webRequest",
-		"webRequestBlocking",
-		"*://assets.nflxext.com/*/ffe/player/html/*",
-		"*://www.assets.nflxext.com/*/ffe/player/html/*",
-		"*://netflix.com/*",
-		"*://www.netflix.com/*"
-	]
+  "manifest_version": 3,
+  "name": "netflix-4K-DDplus",
+  "description": "Watch Netflix more comfortably on your computer.",
+  "version": "1.1",
+  "author": "org by truedread ，modify by https://github.com/lkmvip/netflix-4K-DDplus",
+  "action": {
+    "default_title": "Netflix Options",
+    "default_popup": "pages/options.html",
+    "default_icon": {
+      "128": "img/icon128.png"
+    }
+  },
+  "icons": {
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.assets.nflxext.com/*/ffe/player/html/*",
+        "*://assets.nflxext.com/*/ffe/player/html/*",
+        "*://www.netflix.com/*",
+        "*://netflix.com/*"
+      ],
+      "js": ["content_script.js"],
+      "css": ["netflix.css"],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "cadmium-playercore-6.0033.414.911.js",
+        "netflix_max_bitrate.js"
+      ],
+      "matches": ["*://www.netflix.com/*", "*://netflix.com/*"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "*://www.assets.nflxext.com/*/ffe/player/html/*",
+    "*://assets.nflxext.com/*/ffe/player/html/*",
+    "*://www.netflix.com/*",
+    "*://netflix.com/*"
+  ]
 }

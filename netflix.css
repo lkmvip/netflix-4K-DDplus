@@ -1,0 +1,44 @@
+.watch-video--selector-audio-subtitle {
+  overflow-y: auto
+}
+.video-info {
+  font-family: 'Segoe UI Variable Text', 'YouTube Sans', sans-serif;
+  font-size: max(12px, calc(100vh / 90));
+  background: none;
+  position: fixed;
+  resize: none;
+  inset: 10px;
+  width: 35%;
+  color: #ccc;
+  outline: 0;
+  border: 0;
+}
+.player-streams {
+  font-family: monospace;
+  position: fixed;
+  text-align: center;
+  font-size: 11px;
+  padding: 5px;
+  z-index: 9;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .4);
+  background: #222;
+  color: #ccc;
+  transition: opacity .3s;
+  opacity: 0;
+}
+.player-streams select:disabled option {
+  color: #aaa
+}
+.player-streams select {
+  background: #444;
+  height:180px;
+  width:120px;
+}
+.player-streams button {
+  background: #444;
+  border: 1px solid #777;
+  margin: 2px 5px;
+}
