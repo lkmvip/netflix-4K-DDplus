@@ -13738,9 +13738,8 @@ a000.D4L = (function (H4L) {
     }
 
     function Ta (r, b) {
-      var a
       Ea(r.Ff)
-      a = r.Ff.vE
+      var a = r.Ff.vE
       if (a) {
         return la(r, ('return' in a) ? a['return'] : function (c) {
           return {
@@ -24028,15 +24027,13 @@ a000.D4L = (function (H4L) {
       }
       b.yu = a
     }, function (r, b, a) {
-      var c
-      c = a(178)
+      var c = a(178)
       r.exports = function (f) {
         return function d (m) {
           return 0 === arguments.length || c(m) ? d : f.apply(this, arguments)
         }
       }
     }, function (r, b) {
-      
       b.p1 = void 0
       b.vp = {
         gK: 'PRIMARY', fba: 'ASSISTIVE', Sza: 'COMMENTARY', NONE: 'NONE'
@@ -24051,8 +24048,6 @@ a000.D4L = (function (H4L) {
         none: b.vp.NONE
       }
     }, function (r, b) {
-      
-      b.Ik = void 0
       r = b.Ik || (b.Ik = {})
       r.Co = 'created'
       r.ex = 'started'
@@ -24062,7 +24057,6 @@ a000.D4L = (function (H4L) {
       r.Ztb = 'cancelled_on_start'
       r.nja = 'cancelled_not_encrypted'
     }, function (r, b) {
-      
       b.tv = void 0
       r = b.tv || (b.tv = {})
       r[r.G3b = 8] = 'Backspace'
@@ -24115,33 +24109,10 @@ a000.D4L = (function (H4L) {
       r[r.M5b = 91] = 'LeftWindowKey'
       r[r.w7b = 92] = 'RightWindowKey'
       r[r.X7b = 93] = 'SelectKey'
-      r[r.F6b = 96] = 'Numpad0'
-      r[r.G6b = 97] = 'Numpad1'
-      r[r.H6b = 98] = 'Numpad2'
-      r[r.I6b = 99] = 'Numpad3'
-      r[r.J6b = 100] = 'Numpad4'
-      r[r.K6b = 101] = 'Numpad5'
-      r[r.L6b = 102] = 'Numpad6'
-      r[r.M6b = 103] = 'Numpad7'
-      r[r.N6b = 104] = 'Numpad8'
-      r[r.O6b = 105] = 'Numpad9'
-      r[r.b6b = 106] = 'Multiply'
       r[r.i3b = 107] = 'Add'
       r[r.c8b = 109] = 'Subtract'
       r[r.t4b = 110] = 'DecimalPoint'
       r[r.w4b = 111] = 'Divide'
-      r[r.V4b = 112] = 'F1'
-      r[r.Z4b = 113] = 'F2'
-      r[r.$4b = 114] = 'F3'
-      r[r.a5b = 115] = 'F4'
-      r[r.b5b = 116] = 'F5'
-      r[r.c5b = 117] = 'F6'
-      r[r.d5b = 118] = 'F7'
-      r[r.e5b = 119] = 'F8'
-      r[r.f5b = 120] = 'F9'
-      r[r.W4b = 121] = 'F10'
-      r[r.X4b = 122] = 'F11'
-      r[r.Y4b = 123] = 'F12'
       r[r.E6b = 144] = 'NumLock'
       r[r.V7b = 145] = 'ScrollLock'
       r[r.Y7b = 186] = 'SemiColon'
@@ -24157,13 +24128,10 @@ a000.D4L = (function (H4L) {
       r[r.r7b = 222] = 'Quote'
     }, function (r, b) {
       function a () {}
-
-      
       b.ln = b.Icb = void 0
       b.Icb = a
       b.ln = new a()
     }, function (r, b, a) {
-      var g
 
       function c (h) {
         return 'function' === typeof h ? h.name : 'symbol' === typeof h ? h.toString() : h
@@ -24204,12 +24172,10 @@ a000.D4L = (function (H4L) {
         return k ? k[1] : 'Anonymous function: ' + h
       }
 
-      
-      g = a(55)
+      var g= a(55)
       b.gN = c
       b.q1a = function (h, k, n) {
-        var q
-        q = ''
+        var q = ''
         h = n(h, k)
         0 !== h.length && (q = '\nRegistered bindings:', h.forEach(function (p) {
           var v
@@ -24278,7 +24244,6 @@ a000.D4L = (function (H4L) {
         }
       }
     }, function (r, b) {
-      
       b.GBa = b.bo = void 0
       r = b.bo || (b.bo = {})
       r[r.RD = 0] = 'playready'
@@ -114275,9 +114240,7 @@ a000.D4L = (function (H4L) {
         this.GSa = []
         this.eKb = this.config.uTb || p.append
         this.addEventListener = this.Ub.addListener
-      }
-
-      
+      }      
       b.rJa = void 0
       r = a(1)
       f = a(0)
@@ -119011,13 +118974,13 @@ a000.D4L = (function (H4L) {
         this.lO = function () {
           E.MZ.Ol(E.update)
         }
-        this.onkeydown = function (F) {
-          (F.keyCode == 81 || F.keyCode == 192) && E.toggle()
+        this.onkeydown = function (e) {
+          (e.keyCode == 81 || e.keyCode == 192) && E.toggle()
         }
         this.G5a = [x.mediaTime, x.qc[f.Tb.Ta.Wb], x.qc[f.Tb.Ta.Mb], x.jf, x.oe, x.jh, x.We, x.ci, x.state, x.zr, x.yb, x.volume, x.muted]
         this.parent = document.querySelector('.watch-video')
         this.element = this.ce.createElement('textarea', '', '', {readonly: 1, 'class': 'video-info'})
-        m.ve.addListener(m.YC, this.onkeydown)
+        m.ve.addListener(m.YC, this.onkeydown, true)
         x.addEventListener(n.ca.kg, function () {
           m.ve.removeListener(m.YC, E.onkeydown)
           E.Qr()
@@ -122042,7 +122005,6 @@ a000.D4L = (function (H4L) {
         this.SSb = x
         this.RSb = y
       }
-
       
       b.WIa = void 0
       r = a(1)
