@@ -70,12 +70,15 @@ button, input, textarea {
   font-family: 'Segoe UI Variable Text', 'YouTube Sans', sans-serif;
   font-size: max(12px, 1.1vh);
   background: none;
+  overflow: hidden;
   position: fixed;
   resize: none;
-  inset: 10px;
-  width: 35%;
-  color: #ccc;
   border: 0;
+  height: 25vh;
+  width: 33%;
+  color: #ccc;
+  left: 10px;
+  top: 10px;
   text-shadow:
     rgb(34 34 34 / 75%) 0 0 2px,
     rgb(34 34 34 / 75%) 0 0 2px,

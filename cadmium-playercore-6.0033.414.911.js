@@ -119117,7 +119117,7 @@ a000.D4L = (function (H4L) {
           'Playing/Buffering vmaf': L + '/' + P,
           'Buffering bitrate (a/v)': T + ' / ' + U,
           'Buffer size in Seconds (a/v)': d.cj(this.j.DT()) + ' / ' + d.cj(this.j.QZ()),
-          Throughput: this.j.Ra + ' kbps'
+          Throughput: this.j.Ra ' kbps'
         })
         M && C.push({
           PlaybackTime: sec2Time(d.cj(this.j.mediaTime.value)) + ' / ' + sec2Time(d.cj(this.j.Uy.da(p.ja))),
