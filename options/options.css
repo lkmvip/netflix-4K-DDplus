@@ -1,0 +1,32 @@
+body {
+  background: #333;
+  overflow: hidden;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0;
+  width: 430px;
+  color: #FFF;
+}
+label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.buttom {
+  margin-top: 8px;
+}
+i {
+  transition: opacity .3s;
+  opacity: 0;
+  color: #38c11f
+}
+a {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+table {
+  border-spacing: 0;
+  height: 100%;
+  width: 100%;
+}

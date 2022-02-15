@@ -1,17 +1,87 @@
+::-webkit-scrollbar {
+  width: 9px
+}
+::-webkit-scrollbar-track {
+  background: #222
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #999
+}
+::-webkit-scrollbar-thumb:active {
+  background: #555
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #777
+}
+button, input, textarea {
+  vertical-align: middle;
+  box-sizing: border-box;
+  outline: 0;
+}
 .watch-video--selector-audio-subtitle {
   overflow-y: auto
 }
+.player-log {
+  position: fixed;
+  background: rgba(0, 0, 0, .4);
+  color: #000;
+  z-index: 10;
+  height: 30%;
+  inset: 10px;
+}
+.player-log.maximum {
+  height: unset;
+}
+.player-log textarea {
+  font-family: Cascadia Mono, Monospaced, monospace;
+  font-size: max(11px, 0.95vh);
+  background: none;
+  overflow-x: hidden;
+  transition: height .3s, bottom .3s;
+  position: absolute;
+  padding: 5px;
+  resize: none;
+  height: 100%;
+  width: 100%;
+  color: #ccc;
+}
+.player-log menu {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  opacity: 0.8;
+  float: right;
+}
+.player-log menu button {
+  background: none;
+  border: 0 solid rgb(0, 0, 0);
+  height: 26px;
+  width: 26px;
+  padding: 4px;
+  margin: 0 2px;
+}
+
 .video-info {
   font-family: 'Segoe UI Variable Text', 'YouTube Sans', sans-serif;
-  font-size: max(12px, calc(100vh / 90));
+  font-size: max(12px, 1.1vh);
   background: none;
   position: fixed;
   resize: none;
   inset: 10px;
   width: 35%;
   color: #ccc;
-  outline: 0;
   border: 0;
+  text-shadow:
+    rgb(34 34 34 / 75%) 0 0 2px,
+    rgb(34 34 34 / 75%) 0 0 2px,
+    rgb(34 34 34 / 75%) 0 0 2px,
+    rgb(34 34 34 / 75%) 0 0 2px,
+    rgb(34 34 34 / 75%) 0 0 2px;
 }
 .player-streams {
   font-family: monospace;
@@ -20,22 +90,22 @@
   font-size: 11px;
   padding: 5px;
   z-index: 9;
+  transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .4);
   background: #222;
-  color: #ccc;
   transition: opacity .3s;
   opacity: 0;
+  color: #ccc;
 }
 .player-streams select:disabled option {
   color: #aaa
 }
 .player-streams select {
   background: #444;
-  height:180px;
-  width:120px;
+  height: 180px;
+  width: 120px;
 }
 .player-streams button {
   background: #444;

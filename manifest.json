@@ -1,12 +1,12 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "netflix-4K-DDplus",
   "description": "Watch Netflix more comfortably on your computer.",
   "version": "1.1",
   "author": "org by truedread ，modify by https://github.com/lkmvip/netflix-4K-DDplus",
-  "action": {
+  "browser_action": {
     "default_title": "Netflix Options",
-    "default_popup": "pages/options.html",
+    "default_popup": "options/options.html",
     "default_icon": {
       "128": "img/icon128.png"
     }
@@ -25,27 +25,20 @@
       ],
       "js": ["content_script.js"],
       "css": ["netflix.css"],
-      "all_frames": true
+      "run_at": "document_start"
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
   "web_accessible_resources": [
-    {
-      "resources": [
-        "cadmium-playercore-6.0033.414.911.js",
-        "netflix_max_bitrate.js"
-      ],
-      "matches": ["*://www.netflix.com/*", "*://netflix.com/*"]
-    }
+    "cadmium-playercore-6.0033.414.911.js",
+    "netflix_max_bitrate.js"
   ],
   "permissions": [
     "storage",
     "webRequest",
-    "webRequestBlocking"
-  ],
-  "host_permissions": [
+    "webRequestBlocking",
     "*://www.assets.nflxext.com/*/ffe/player/html/*",
     "*://assets.nflxext.com/*/ffe/player/html/*",
     "*://www.netflix.com/*",
