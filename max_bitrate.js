@@ -43,7 +43,7 @@ if (setMaxBitrate) {
   setInterval(function () {
     let newUrl = location.href
     if (newUrl !== oldUrl && WATCH_REGEXP.test(newUrl)) {
-      console.log('netflix max_bitrate enabled')
+      console.log('Netflix max_bitrate enabled')
       oldUrl = newUrl
       run()
     }
