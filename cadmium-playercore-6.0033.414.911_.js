@@ -3,7 +3,7 @@ function sec2Time (result) {
   h = h < 10 ? ('0' + h) : h
   var m = Math.floor(result / 60 % 60)
   m = m < 10 ? ('0' + m) : m
-  var s = Math.floor((result % 60))
+  var s = Math.floor(result % 60)
   s = s < 10 ? ('0' + s) : s
   return result = h + ':' + m + ':' + s + ''
 }
@@ -68202,13 +68202,10 @@ a000.D4L = (function (H4L) {
         l.prototype.parse = function () {
           var m
           this.Ac()
-          m = 1 === this.version ? [{
-            creationTime: 'int64'
-          }, {
-            modificationTime: 'int64'
-          }, {
-            trackId: 'int32'
-          }, {
+          m = 1 === this.version ? [
+            {creationTime: 'int64'}, 
+            {modificationTime: 'int64'}, 
+            {trackId: 'int32'}, {
             offset: 32, type: 'offset'
           }, {
             duration: 'int64'
