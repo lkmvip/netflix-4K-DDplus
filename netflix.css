@@ -19,10 +19,9 @@ button, input, textarea {
 }
 .player-log textarea {
   font-family: Cascadia Mono, Monospaced, monospace;
-  font-size: max(11px, 0.95vh);
+  font-size: max(11px, 0.90vh);
   background: none;
   overflow-x: hidden;
-  transition: height .3s, bottom .3s;
   position: absolute;
   padding: 5px;
   resize: none;
@@ -42,33 +41,28 @@ button, input, textarea {
   float: right;
 }
 .player-log menu button {
-  background: none;
+  background: 0;
   border: 0 solid rgb(0, 0, 0);
-  height: 26px;
-  width: 26px;
   padding: 4px;
   margin: 0 2px;
+  height: 26px;
+  width: 26px;
 }
-
 .video-info {
+  text-shadow:
+     #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px,
+     #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px;
   font-family: 'Segoe UI Variable Text', 'YouTube Sans', sans-serif;
   font-size: max(12px, 1.1vh);
-  background: none;
+  background: 0;
+  position: absolute;
   overflow: hidden;
-  position: fixed;
+  margin: 10px;
   resize: none;
   border: 0;
   height: 25vh;
   width: 33%;
   color: #ccc;
-  left: 10px;
-  top: 10px;
-  text-shadow:
-    rgb(34 34 34 / 75%) 0 0 2px,
-    rgb(34 34 34 / 75%) 0 0 2px,
-    rgb(34 34 34 / 75%) 0 0 2px,
-    rgb(34 34 34 / 75%) 0 0 2px,
-    rgb(34 34 34 / 75%) 0 0 2px;
 }
 .player-streams {
   font-family: monospace;

@@ -21,7 +21,7 @@ chrome.storage.sync.get(keys, items => {
   insertScript(text)
 })
 
-var scriptUrl = chrome.runtime.getURL('netflix_max_bitrate.js')
+var scriptUrl = chrome.runtime.getURL('max_bitrate.js')
 var xhr = new XMLHttpRequest()
 xhr.open('GET', scriptUrl, true)
 xhr.onload = function (e) {
