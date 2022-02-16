@@ -55647,8 +55647,6 @@ a000.D4L = (function (H4L) {
           throw p
         }
       }
-
-      
       l = a(55)
       m = a(76)
       d = a(309)
@@ -119070,7 +119068,7 @@ a000.D4L = (function (H4L) {
         R = this.j.oe.value
         H = null === R || void 0 === R ? void 0 : R.stream
         Q = null !== (x = null === M || void 0 === M ? void 0 : M.bitrate) && void 0 !== x ? x : '?'
-        N = H.bitrate + ' (' + H.width + 'x' + H.height + '@' + $a.toFixed(3) + ')'
+        N = H ? H.bitrate + ' (' + H.width + 'x' + H.height + '@' + $a.toFixed(3) + ')' : '?'
         L = null !== (y = null === H || void 0 === H ? void 0 : H.sb) && void 0 !== y ? y : '?'
         P = null !== (A = null === (z = this.j.We.value) || void 0 === z ? void 0 : z.sb) && void 0 !== A ? A : '?'
         T = null !== (D = null === (B = this.j.jh.value) || void 0 === B ? void 0 : B.bitrate) && void 0 !== D ? D : '?'
