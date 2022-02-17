@@ -1,23 +1,30 @@
-var keys = [
-  'useallSub', 'useddplus', 'useAVC', 'useDV', 'useFHD', 'useHA',
-  'useAVCH', 'usedef', 'useCAVC', 'usehevc', 'setMaxBitrate'
-]
-
-function insertScript (scriptText) {
-  var scriptEl = document.createElement('script')
-  scriptEl.text = scriptText
-  document.head.appendChild(scriptEl)
+function insertScript(scriptText) {
+  var el = document.createElement('script')
+  el.text = scriptText
+  document.head.appendChild(el)
 }
+
+var keys = [
+  'useDDplus',
+  'useAVC',
+  'useDV',
+  'useHEVC',
+  'useFHD',
+  'useHA',
+  'useDef',
+  'useCAVC',
+  'useAVCH',
+  'useAllSub',
+  'setMaxBitrate'
+]
 
 // very messy workaround for accessing chrome storage outside of background / content scripts
 chrome.storage.sync.get(keys, items => {
-  var text = 'Object.assign(window, ' + JSON.stringify(items) + ')'
-  /*
+  var text = ''
   keys.forEach(key => {
     text += text ? ',' : 'var '
-    text += key + '=' + items[key]
+    text += key + '=' + (items[key] || false)
   })
-  */
   insertScript(text)
 })
 

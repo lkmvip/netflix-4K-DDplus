@@ -39,7 +39,7 @@ let run = function () {
 
 const WATCH_REGEXP = /netflix.com\/watch\/.*/
 let oldUrl = location.href
-if (setMaxBitrate) {
+if (window.setMaxBitrate) {
   setInterval(function () {
     let newUrl = location.href
     if (newUrl !== oldUrl && WATCH_REGEXP.test(newUrl)) {

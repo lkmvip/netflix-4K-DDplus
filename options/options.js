@@ -18,7 +18,6 @@ function saveOption () {
 function readOptions () {
   var options = findOptions()
   chrome.storage.sync.get(options, items => {
-    console.log(items, options)
     for (key in items) {
       document.getElementById(key).checked = items[key]
     }

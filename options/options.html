@@ -9,27 +9,27 @@
 <form>
   <fieldset>
     <legend>Win10+Edge Only</legend>
-    <label><input type="checkbox" id="useddplus" name="ddplus"> Use DD+ and Atmos audio track</label>
-    <label><input type="checkbox" id="useAVC" name="AVC"> Use AVC-High insted of AVC video code</label>
-    <label><input type="checkbox" id="useDV" name="DV"> Use "Dolby Vision" Profiles for HDR</label>
-    <label><input type="checkbox" id="usehevc" name="hevc"> Focus 1080P (Use HEVC code, Downgrade from 4K to 1080P)</label>
+    <label><input type="checkbox" id="useDDplus"> Use DD+ and Atmos audio track</label>
+    <label><input type="checkbox" id="useAVC"> Use AVC-High insted of AVC video code</label>
+    <label><input type="checkbox" id="useDV"> Use "Dolby Vision" Profiles for HDR</label>
+    <label><input type="checkbox" id="useHEVC"> Focus 1080P (Use HEVC code, Downgrade from 4K to 1080P)</label>
   </fieldset>
 </form>
 <form>
   <fieldset>
     <legend>Other OS And Browser</legend>
-    <label><input type="checkbox" id="useFHD" name="FHD"> 1080P</label>
-    <label><input type="checkbox" id="useHA" name="HA"> HE-AAC Audio(5.1)</label>
+    <label><input type="checkbox" id="useFHD"> 1080P</label>
+    <label><input type="checkbox" id="useHA"> HE-AAC Audio(5.1)</label>
     <fieldset>
       <legend>Video configuration</legend>
-      <label><input type="radio" id="usedef" name="contact" value="def"> Play with default (vp9)</label>
-      <label><input type="radio" id="useCAVC" name="contact" value="CAVC"> Play with AVC</label>
-      <label><input type="radio" id="useAVCH" name="contact" value="AVCH"> Play with AVC-High</label>
+      <label><input type="radio" id="useDef"  name="config" value="Def" checked> Play with default (vp9)</label>
+      <label><input type="radio" id="useCAVC" name="config" value="CAVC"> Play with AVC</label>
+      <label><input type="radio" id="useAVCH" name="config" value="AVCH"> Play with AVC-High</label>
     </fieldset>
   </fieldset>
 </form>
-<label><input type="checkbox" id="useallSub" name="allSub"> Show all audio-tracks and subs</label>
-<label><input type="checkbox" id="setMaxBitrate" name="setMaxBitrate"> Automatically select best bitrate available</label>
+<label><input type="checkbox" id="useAllSub"> Show all audio-tracks and subs</label>
+<label><input type="checkbox" id="setMaxBitrate"> Automatically select best bitrate available</label>
 <div class="buttom">
   <button>Save</button>
   <i>Options saved. <a>Refresh Netflix</a> to take effect.</i>
