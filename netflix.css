@@ -60,6 +60,7 @@ button, input, textarea {
   margin: 10px;
   resize: none;
   border: 0;
+  min-height: 265px;
   height: 25vh;
   width: 33%;
   color: #ccc;

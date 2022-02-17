@@ -1,11 +1,16 @@
 body {
-  background: #333;
+  background: rgba(0, 0, 0, .75);
   overflow: hidden;
   font-size: 14px;
   padding: 10px;
   margin: 0;
-  width: 430px;
-  color: #FFF;
+  width: 435px;
+  color: #ddd;
+}
+fieldset {
+  border-radius: 5px;
+  border-color: #888;
+  margin-bottom: 5px;
 }
 label {
   display: flex;
