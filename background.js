@@ -1,10 +1,10 @@
 chrome.webRequest.onBeforeRequest.addListener(
   function () {
-    return {redirectUrl: chrome.runtime.getURL('cadmium-player-6.0033.414.911.js')}
+    return {redirectUrl: chrome.runtime.getURL('cadmium-playercore-6.0033.414.911')}
   }, {
     urls: [
-      '*://www.assets.nflxext.com/*/ffe/player/html/cadmium-player-*.js',
-      '*://assets.nflxext.com/*/ffe/player/html/cadmium-player-*.js'
+      '*://www.assets.nflxext.com/*/ffe/player/html/*.js',
+      '*://assets.nflxext.com/*/ffe/player/html/*.js'
     ]
   }, ['blocking']
 )
