@@ -81,7 +81,7 @@ button, input, textarea {
   color: #ccc;
 }
 .player-streams select:disabled option {
-  color: #aaa
+  color: #222
 }
 .player-streams select {
   background: #444;

@@ -4,26 +4,26 @@ function insertScript(scriptText) {
   document.head.appendChild(el)
 }
 
-var keys = [
-  'useDDplus',
-  'useAVC',
-  'useDV',
-  'useHEVC',
-  'useFHD',
-  'useHA',
-  'useDef',
-  'useCAVC',
-  'useAVCH',
-  'useAllSub',
-  'setMaxBitrate'
-]
+var conf = {
+  useDDplus: 1,
+  useAVC: 0,
+  useDV: 1,
+  useHEVC: 0,
+  useFHD: 1,
+  useHA: 1,
+  useDef: 1,
+  useCAVC: 0,
+  useAVCH: 0,
+  useAllSub: 0,
+  setMaxBitrate: 0,
+}
 
 // very messy workaround for accessing chrome storage outside of background / content scripts
-chrome.storage.sync.get(keys, items => {
+chrome.storage.sync.get(conf, items => {
   var text = ''
-  keys.forEach(key => {
+  Object.keys(conf).forEach(key => {
     text += text ? ',' : 'var '
-    text += key + '=' + (items[key] || false)
+    text += key + '=' + (items[key] || 0)
   })
   insertScript(text)
 })
