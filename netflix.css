@@ -52,16 +52,16 @@ button, input, textarea {
   text-shadow:
      #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px,
      #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px;
-  font-family: 'Segoe UI Variable Text', 'YouTube Sans', sans-serif;
-  font-size: max(12px, 1.1vh);
+  font-family: 'Segoe UI Variable Text', 'YouTube Sans', Tahoma,  sans-serif;
+  font-size: max(13px, 1.3vh);
   background: 0;
   position: absolute;
   overflow: hidden;
   margin: 10px;
   resize: none;
   border: 0;
-  min-height: 265px;
-  height: 25vh;
+  min-height: 300px;
+  height: 30vh;
   width: 33%;
   color: #ccc;
 }
