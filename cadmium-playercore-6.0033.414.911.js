@@ -51855,7 +51855,7 @@ a000.D4L = (function (H4L) {
           })
         }
         c.prototype.lob = function (e) {
-          e.altKey && e.keyCode == h.tv.S && this.v6.Spa && this.toggle(e.shiftKey)
+          e.keyCode == h.tv.S && this.v6.Spa && this.toggle(e.shiftKey)
         }
         b.GIa = c
       }, function (r, b, a) {
