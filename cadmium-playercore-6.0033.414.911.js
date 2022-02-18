@@ -51719,8 +51719,7 @@ a000.D4L = (function (H4L) {
         c.prototype.Kab = function () {
           var p, v, t, w
           function n (u, x, y) {
-            var z, A, B
-            A = []
+            var z, B, A = []
             x.filter(function (D) {
               return D.kh === u
             }).forEach(function (D) {
@@ -51976,8 +51975,7 @@ a000.D4L = (function (H4L) {
           return this.Zr ? {
               height: h.height * (1 - (this.Zr.top || 0) - (this.Zr.bottom || 0)),
               width: h.width * (1 - (this.Zr.left || 0) - (this.Zr.right || 0))
-            }
-            : h
+            } : h
         }
         c.prototype.jOb = function (h) {
           var k
