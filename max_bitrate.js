@@ -1,24 +1,23 @@
 let fn = function () {
-  const video = document.querySelector('video')
-  if (!video) {
-    return false
+  if (!document.querySelector('video')) {
+    return
   }
 
   window.dispatchEvent(new KeyboardEvent('keydown', {
-    shiftKey: true, ctrlKey: true, altKey: true, keyCode: 83
+    shiftKey: true, altKey: true, keyCode: 83
   }))
 
   var selects = document.querySelectorAll('.player-streams select')
   var btns = document.querySelector('.player-streams button')
   if (selects.length + btns.length < 5) {
-    return false
+    return
   }
 
   for (var i = selects.length - 2; i >= 0; i--) {
     let options = selects[i].options
     Array.from(options).forEach(o => o.removeAttribute('selected'))
+    options[options.length - 1].setAttribute('selected', 'selected')
   }
-  options[options.length - 1].setAttribute('selected', 'selected')
   btn[0].click()
   return true
 }

@@ -82,11 +82,13 @@ button, input, textarea {
 }
 .player-streams select {
   background: #444;
+  border: 1px solid #555;
   height: 180px;
   width: 120px;
 }
 .player-streams button {
   background: #444;
-  border: 1px solid #777;
+  border-radius: 3px;
+  border: 1px solid #555;
   margin: 2px 5px;
 }
