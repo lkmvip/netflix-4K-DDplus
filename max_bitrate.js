@@ -1,35 +1,25 @@
-let getElementByXPath = function (xpath) {
-  return document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue
-}
-
 let fn = function () {
-  const VIDEO_PLAYING = document.evaluate('//*[@id]/video', document).iterateNext()
-  if (!VIDEO_PLAYING) {
+  const video = document.querySelector('video')
+  if (!video) {
     return false
   }
-
-  const VIDEO_SELECT = getElementByXPath('//div[text()=\'Video Bitrate\']')
-  const AUDIO_SELECT = getElementByXPath('//div[text()=\'Audio Bitrate\']')
-  const BUTTON = getElementByXPath('//button[text()=\'Override\']')
 
   window.dispatchEvent(new KeyboardEvent('keydown', {
     shiftKey: true, ctrlKey: true, altKey: true, keyCode: 83
   }))
 
-  if (!(VIDEO_SELECT && AUDIO_SELECT && BUTTON)) {
+  var selects = document.querySelectorAll('.player-streams select')
+  var btns = document.querySelector('.player-streams button')
+  if (selects.length + btns.length < 5) {
     return false
   }
 
-  [VIDEO_SELECT, AUDIO_SELECT].forEach(function (el) {
-    let options = el.parentElement.querySelectorAll('select > option')
-
-    for (var i = 0; i < options.length - 1; i++) {
-      options[i].removeAttribute('selected')
-    }
-
-    options[options.length - 1].setAttribute('selected', 'selected')
-  })
-  BUTTON.click()
+  for (var i = selects.length - 2; i >= 0; i--) {
+    let options = selects[i].options
+    Array.from(options).forEach(o => o.removeAttribute('selected'))
+  }
+  options[options.length - 1].setAttribute('selected', 'selected')
+  btn[0].click()
   return true
 }
 
