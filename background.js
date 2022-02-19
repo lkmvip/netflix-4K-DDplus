@@ -1,6 +1,6 @@
 chrome.webRequest.onBeforeRequest.addListener(
   function () {
-    return {redirectUrl: chrome.runtime.getURL('cadmium-playercore-6.0033.414.911.js')}
+    return {redirectUrl: chrome.runtime.getURL('cadmium-playercore.js')}
   }, {
     urls: [
       '*://assets.nflxext.com/*/ffe/player/html/*.js'

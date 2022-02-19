@@ -51801,17 +51801,17 @@ a000.D4L = (function (H4L) {
             v = v.slice()
             v.sort(function (t, w) {return t.uc - w.uc})
             x.dha(x.alb, q.streams.map(function (t) {
-              return {value: t.bitrate, caption: t.bitrate, selected: t == n.j.jh.value}
+              return {value: t.bitrate, caption: t.bitrate, selected: t == x.j.jh.value}
             }))
           }
           if (p) {
             x.dha(x.tha, p.streams.map(function (t) {
-              return {value: t.bitrate, caption: t.bitrate, selected: t.bitrate == n.j.We.value.bitrate}
+              return {value: t.bitrate, caption: t.bitrate, selected: t.bitrate == x.j.We.value.bitrate}
             }))
           }
           if (v) {
             x.dha(x.ufa, v.map(function (t) {
-              return {value: t.id, caption: '[' + t.id + '] ' + t.name, selected: t == n.j.qc[f.Tb.Ta.Mb].value}
+              return {value: t.id, caption: '[' + t.id + '] ' + t.name, selected: t == x.j.qc[f.Tb.Ta.Mb].value}
             }))
           }
         }

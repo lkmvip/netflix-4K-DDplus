@@ -74,6 +74,7 @@ button, input, textarea {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
+  border-radius: 5px;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .4);
   background: #222;
   transition: opacity .3s;
@@ -82,6 +83,7 @@ button, input, textarea {
 }
 .player-streams select {
   background: #444;
+  border-radius: 5px;
   border: 1px solid #555;
   height: 180px;
   width: 120px;
