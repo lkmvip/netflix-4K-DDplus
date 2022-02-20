@@ -25296,18 +25296,18 @@ a000.D4L = (function (H4L) {
         r[r.U4b = 70] = 'F'
         r[r.n5b = 71] = 'G'
         r[r.q5b = 72] = 'H'
-        r[r.$fb = 73] = 'I'
+        r[r.I = 73] = 'I'
         r[r.J5b = 74] = 'J'
         r[r.Oca = 75] = 'K'
-        r[r.ehb = 76] = 'L'
+        r[r.L = 76] = 'L'
         r[r.P5b = 77] = 'M'
-        r[r.Qhb = 78] = 'N'
+        r[r.N = 78] = 'N'
         r[r.P6b = 79] = 'O'
         r[r.T6b = 80] = 'P'
         r[r.Q = 81] = 'Q'
         r[r.s7b = 82] = 'R'
         r[r.S = 83] = 'S'
-        r[r.jkb = 84] = 'T'
+        r[r.T = 84] = 'T'
         r[r.l8b = 85] = 'U'
         r[r.p8b = 86] = 'V'
         r[r.r8b = 87] = 'W'
@@ -51837,6 +51837,7 @@ a000.D4L = (function (H4L) {
           })
         }
         c.prototype.lob = function (e) {
+          if (e.target.isContentEditable || e.target.tagName == 'INPUT') { return }
           e.keyCode == h.tv.S && this.v6.Spa && this.toggle(e.shiftKey)
         }
         b.GIa = c
@@ -108184,7 +108185,8 @@ a000.D4L = (function (H4L) {
             }
           })
         })
-      }, function (r, b, a) {
+      }, 
+        function (r, b, a) {
         var f, l, m, d, g, h, k
 
         function c (n, q, p, v) {
@@ -108249,7 +108251,8 @@ a000.D4L = (function (H4L) {
         a.jcb = 'adaptorAll'
         a = f = r.__decorate([l.R(), r.__param(0, l.l(d.ZJ)), r.__param(1, l.l(h.Ix)), r.__param(2, l.l(g.XEa)), r.__param(3, l.l(m.Zc))], a)
         b.Iya = a
-      }, function (r, b, a) {
+      }, 
+        function (r, b, a) {
         var f, l, m, d, g, h, k, n, q, p, v
 
         function c (t, w, u, x, y, z, A) {
@@ -108284,30 +108287,8 @@ a000.D4L = (function (H4L) {
           this.En = !0
         }
         c.prototype.Hc = function (t) {
-          var w = this
-          this.CYb(t) || (!1, 0 < t.size.Al(this.config.MNb) ? this.ta.error('Logblob is too large, dropping from the queue', {
-            logblobType: t.type, logblobSize: t.size.toString()
-          }) : (this.listeners.forEach(function (u) {
-            return u.wOb(t)
-          }), !1, this.PW.Lha(t), this.Oc.Ol(function () {
-            w.pDb()
-          })))
         }
-        c.prototype.flush = function (t) {
-          var w = this
-          t = void 0 === t ? !1 : t
-          return this.s7 ? (this.ta.trace('LogBatcher is in error state, ignoring flush'), Promise.reject()) : new Promise(function (u, x) {
-            w.ta.trace('Flushing', h.FQ)
-            w.Bs()
-            w.Oc.Ol(function () {
-              w.Iva(t).then(function () {
-                u()
-              }).catch(function (y) {
-                x(y)
-              })
-            })
-          })
-        }
+        c.prototype.flush = function (t) {}
         c.prototype.addListener = function (t) {
           this.listeners.push(t)
         }
@@ -108316,58 +108297,9 @@ a000.D4L = (function (H4L) {
           0 <= t && this.listeners.splice(t, 1)
         }
         c.prototype.Iva = function (t) {
-          var w, u
-          w = this
-          t = void 0 === t ? !1 : t
-          if (!this.En) {
-            return (this.ta.trace('LogBatcher is not initialized'), Promise.resolve())
-          }
-          if (this.s7) {
-            return (this.ta.trace('LogBatcher is in error state, ignoring sendLogMessages'), Promise.resolve())
-          }
-          u = this.PW.CEb()
-          if (0 === u.length && !t) {
-            return (this.ta.trace('No logblobs to send'), Promise.resolve())
-          }
-          this.Bs()
-          this.listeners.forEach(function () {})
-          t = Promise.resolve()
-          for (var x = {}, y = Z(u), z = y.next(); !z.done; (x = {
-            $aa: x.$aa
-          }, z = y.next())) {
-            x.$aa = z.value
-            t = t.then((function (A) {
-              return function () {
-                return w.eXb(A.$aa)
-              }
-            })(x))
-          }
-          return t.then(function () {
-            return w.NG()
-          }).catch(function (A) {
-            u.filter(function (B) {
-              return !B.Pz
-            }).forEach(function (B) {
-              return B.Pt()
-            })
-            w.NG()
-            throw Error('Send failure. ' + A)
-          })
+          return new Promise()
         }
         c.prototype.eXb = function (t) {
-          var w = this
-          this.ta.trace('Sending batch: ' + t.size, h.FQ)
-          return Promise.resolve(this.PW.qVb(t)).then(function () {
-            return w.UMb.send(t.HH)
-          }).then(function () {
-            return t.EP()
-          }).catch(function (u) {
-            w.ta.warn('Failed to send batch of logblobs.', u, h.FQ)
-            t.Pt()
-            w.sYb(u) && w.PW.nqb(t)
-            w.DYb(u) && (w.s7 = !0)
-            throw u
-          })
         }
         c.prototype.sYb = function (t) {
           return t.Kd === q.t0.pHa ? !1 : this.config.Iha
@@ -108376,10 +108308,6 @@ a000.D4L = (function (H4L) {
           return t.Cc === q.L.MCa || t.Cc === q.L.cR || t.Cc === q.L.gR ? !0 : !1
         }
         c.prototype.pDb = function () {
-          var t = this
-          0 < this.PW.size.Al(this.config.w2a) ? this.Iva().catch(function (w) {
-            return t.ta.warn('Failed to send log messages on size threshold. ' + w)
-          }) : this.NG()
         }
         c.prototype.Bs = function () {
           this.G7 && (!1, this.G7.cancel(), this.G7 = void 0)
@@ -108388,22 +108316,10 @@ a000.D4L = (function (H4L) {
           this.G7 || (!1, this.G7 = this.Oc.zk(this.config.fXb, this.nO.bind(this)))
         }
         c.prototype.nO = function () {
-          var t = this
-          this.s7 = !1
-          this.Bs()
-          this.Iva().catch(function (w) {
-            return t.ta.warn('Failed to send log messages on timer. ' + w)
-          })
         }
         c.prototype.stringify = function (t) {
-          var w = ''
-          try {
-            w = this.json.stringify(t.data, void 0, '  ')
-          } catch (u) {}
-          return w
         }
         c.prototype.CYb = function (t) {
-          return 0 <= this.config.m9a.indexOf(t.type) ? !0 : t.type === v.cd.debug ? 0 <= this.config.l9a.indexOf(t.data.debugCategory) : !1
         }
         a = c
         a = r.__decorate([f.R(), r.__param(0, f.l(k.Vca)), r.__param(1, f.l(m.LE)), r.__param(2, f.l(g.Qj)), r.__param(3, f.l(d.kFa)), r.__param(4, f.l(h.qb)), r.__param(5, f.l(n.qGa)), r.__param(6, f.l(p.U_))], a)
@@ -108449,13 +108365,9 @@ a000.D4L = (function (H4L) {
           }
         }
         f.prototype.CEb = function () {
-          var q = this.yt.filter(function (p) {
-            return p.Xtb
-          })
+          var q = this.yt.filter(function (p) {return p.Xtb})
           this.yt.push(this.jna())
-          q.forEach(function (p) {
-            return p.ANb()
-          })
+          q.forEach(function (p) {return p.ANb()})
           return q
         }
         f.prototype.nqb = function (q) {
@@ -109113,12 +109025,6 @@ a000.D4L = (function (H4L) {
             }
           }
           this.Cq = function () {
-            w.uA || (w.uA = !0, w.kb.gE(!1), w.hpa(), w.config().b7 && (w.Mz = nb.setTimeout(function () {
-              w.Vf.flush(!1).catch(function () {
-                return w.log.warn('failed to flush log batcher on initialLogFlushTimeout')
-              })
-              w.Mz = void 0
-            }, w.config().b7)))
           }
           this.kg = function () {
             w.Mz && (nb.clearTimeout(w.Mz), w.Mz = void 0)
@@ -110768,8 +110674,9 @@ a000.D4L = (function (H4L) {
           if (this.En) {
             return Promise.resolve()
           }
-          nb.addEventListener('keydown', function (q) {
-            q.ctrlKey && q.altKey && q.shiftKey && q.keyCode == h.tv.$fb && n.toggle()
+          nb.addEventListener('keydown', function (e) {
+            if (e.target.isContentEditable || e.target.tagName == 'INPUT') { return }
+            e.altKey && e.keyCode == h.tv.I && n.toggle()
           })
           return this.Wn.create().then(function (q) {
             n.storage = q
@@ -111247,8 +111154,9 @@ a000.D4L = (function (H4L) {
         c.prototype.xb = function () {
           var B = this
           this.gD || (this.gD = new Promise(function (D) {
-            nb.addEventListener('keydown', function (E) {
-              E.keyCode == z.tv.ehb && B.toggle() // : E.keyCode == z.tv.E && A.E_.ika(B.FG().Vk)
+            nb.addEventListener('keydown', function (e) {
+              if (e.target.isContentEditable || e.target.tagName == 'INPUT') { return }
+              e.keyCode == z.tv.L && B.toggle() // : e.keyCode == z.tv.E && A.E_.ika(B.FG().Vk)
             })
             B.Un.e$(u.Zca.zeb, B.cNb)
             D()
@@ -111531,8 +111439,9 @@ a000.D4L = (function (H4L) {
           if (this.En) {
             return Promise.resolve()
           }
-          nb.addEventListener('keydown', function (p) {
-            p.ctrlKey && p.altKey && p.shiftKey && p.keyCode == k.tv.Qhb && q.toggle()
+          nb.addEventListener('keydown', function (e) {
+            if (e.target.isContentEditable || e.target.tagName == 'INPUT') { return }
+            e.altKey && e.keyCode == k.tv.N && q.toggle()
           })
           this.data = {}
           this.Hka.addListener(g.aca.gjb, function (p) {
@@ -115638,24 +115547,18 @@ a000.D4L = (function (H4L) {
 
           function v (w) {
             var u
-            if (w.ctrlKey && w.altKey && w.shiftKey && w.keyCode == n.tv.jkb) {
-              u = d.createElement('INPUT', void 0, void 0, {
-                type: 'file'
-              })
+            if (w.ctrlKey && w.altKey && w.shiftKey && w.keyCode == n.tv.T) {
+              u = d.createElement('INPUT', '', '', {type: 'file'})
               u.addEventListener('change', function () {
                 var x, y, z
                 x = u.files[0]
                 if (x) {
                   y = x.name
-                  t.info('Loading file', {
-                    FileName: y
-                  })
+                  t.info('Loading file', {FileName: y})
                   z = new FileReader()
                   z.readAsText(x)
                   z.addEventListener('load', function () {
-                    return p.Qq.Gha('nourl', y, {
-                      content: z.result
-                    })
+                    return p.Qq.Gha('nourl', y, {content: z.result})
                   })
                 }
               })
@@ -116825,6 +116728,7 @@ a000.D4L = (function (H4L) {
             E.MZ.Ol(E.update)
           }
           this.onkeydown = function (e) {
+            if (e.target.isContentEditable || e.target.tagName == 'INPUT') { return }
             (e.keyCode == 81 || e.keyCode == 192) && E.toggle()
           }
           this.G5a = [x.mediaTime, x.qc[f.Tb.Ta.Wb], x.qc[f.Tb.Ta.Mb], x.jf, x.oe, x.jh, x.We, x.ci, x.state, x.zr, x.yb, x.volume, x.muted]
