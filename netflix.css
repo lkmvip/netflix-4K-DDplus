@@ -1,3 +1,6 @@
+html, body {
+  user-select: auto !important
+}
 button, input, textarea {
   vertical-align: middle;
   box-sizing: border-box;
@@ -81,14 +84,19 @@ button, input, textarea {
   opacity: 0;
   color: #ccc;
 }
+.player-streams select::-webkit-scrollbar { /* Chrome, Safari and Opera */
+  display: none
+}
 .player-streams select {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   background: #444;
   border-radius: 5px;
   border: 1px solid #555;
   height: 180px;
   width: 120px;
 }
-.player-streams button {
+.player-streams button { 
   background: #444;
   border-radius: 3px;
   border: 1px solid #555;

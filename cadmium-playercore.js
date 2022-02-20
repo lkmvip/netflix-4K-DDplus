@@ -51658,7 +51658,6 @@ a000.D4L = (function (H4L) {
         }
       }, function (r, b, a) {
         var f, l, m, d, g, h, k
-
         function c (n) {
           var q = this, p, v, t
           this.j = n
@@ -51670,6 +51669,7 @@ a000.D4L = (function (H4L) {
           this.TS = {}
           this.v6 = d.ka.get(g.Tm)
           this.Mfa.appendChild(this.rfa)
+          this.wrap = document.querySelector('.watch-video')
           p = m.createElement('BUTTON', '', 'Override')
           p.addEventListener('click', this.Vkb.bind(this))
           this.rfa.appendChild(p)
@@ -51691,7 +51691,6 @@ a000.D4L = (function (H4L) {
           n.oc.addListener(t)
           n.xg.addListener(t)
         }
-
         _esm(b)
         b.GIa = void 0
         f = a(47)
@@ -51704,14 +51703,14 @@ a000.D4L = (function (H4L) {
         c.prototype.show = function (shiftKey) {
           if (!this.seen) {
             var el = this.Mfa
-            document.body.appendChild(this.Mfa)
+            this.wrap.appendChild(this.Mfa)
             !shiftKey && (el.style.opacity = 1)
             this.seen = 1
             this.HOa()
           }
         }
         c.prototype.Qr = function () {
-          this.seen && (document.body.removeChild(this.Mfa), this.seen = !1)
+          this.seen && (this.wrap.removeChild(this.Mfa), this.seen = !1)
         }
         c.prototype.toggle = function (shiftKey) {
           this.seen ? this.Qr() : this.show(shiftKey)
@@ -105494,12 +105493,8 @@ a000.D4L = (function (H4L) {
         b.JRb = 'DEPRESED'
         b.a5a = 'UNIFORM'
         b.Usa = 'DROP_SHADOW'
-        b.Y4a = {
-          x: 40, y: 19
-        }
-        b.Z4a = {
-          x: 52, y: 19
-        }
+        b.Y4a = {x: 40, y: 19}
+        b.Z4a = {x: 52, y: 19}
       }, function (r, b, a) {
         var c, f, l, m
         _esm(b)
@@ -105529,9 +105524,7 @@ a000.D4L = (function (H4L) {
             n.WS = k.preferences
             n.sS = k.oj
             n.Nv = n.KF || 0
-            h = {
-              url: n.vl, request: n.NF, Ed: n.KF, xml: k.xml, preferences: n.WS, oj: n.sS, ta: n.Ja, qf: q, bufferSize: k.bufferSize, tu: k.tu, aua: k.aua || 0, sRa: k.sRa
-            }
+            h = {url: n.vl, request: n.NF, Ed: n.KF, xml: k.xml, preferences: n.WS, oj: n.sS, ta: n.Ja, qf: q, bufferSize: k.bufferSize, tu: k.tu, aua: k.aua || 0, sRa: k.sRa}
             if ('nflx-cmisc' === n.XS) {
               (h.offset = k.Hra, h.size = k.a3a, h.y$ = k.y$, h.cVa = k.cVa, n.kd = new l(h))
             } else if (-1 < ['simplesdh', 'dfxp-ls-sdh'].indexOf(n.XS) && 'function' === typeof f) {
@@ -105610,12 +105603,10 @@ a000.D4L = (function (H4L) {
           }
           g.prototype.NA = function (h) {
             var n
-
             function k () {
               n.Ja.info('bufferingComplete from setStreamStartPosition')
               n.emit('bufferingComplete')
             }
-
             n = this
             'function' === typeof this.kd.NA ? this.kd.NA(h, k) : k()
           }

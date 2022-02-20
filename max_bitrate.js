@@ -27,13 +27,14 @@ let run = function () {
 }
 
 const WATCH_REGEXP = /netflix.com\/watch\/.*/
-let oldUrl = location.href
+let lastUrl = location.href
 if (window.setMaxBitrate) {
   setInterval(function () {
-    let newUrl = location.href
-    if (newUrl !== oldUrl && WATCH_REGEXP.test(newUrl)) {
+    let currentUrl = location.href
+    currentUrl.mat
+    if (currentUrl !== lastUrl && WATCH_REGEXP.test(currentUrl)) {
       console.log('Netflix max_bitrate enabled')
-      oldUrl = newUrl
+      lastUrl = currentUrl
       run()
     }
   }, 500)

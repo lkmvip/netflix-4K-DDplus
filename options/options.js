@@ -8,13 +8,6 @@ function findOptions () {
   return obj
 }
 
-function saveOption () {
-  var options = findOptions()
-  chrome.storage.sync.set(options, () => {
-    document.querySelector('i').style.opacity = 1
-  })
-}
-
 function readOptions () {
   var options = findOptions()
   chrome.storage.sync.get(options, items => {
@@ -24,10 +17,16 @@ function readOptions () {
   })
 }
 
+function saveOption () {
+  var options = findOptions()
+  chrome.storage.sync.set(options, () => {
+    document.querySelector('i').style.opacity = 1
+  })
+}
+
 function closePopup () {
-  chrome.tabs.getSelected(null, tab => {
-    var code = 'window.location.reload()'
-    chrome.tabs.executeScript(tab.id, {code})
+  chrome.tabs.getSelected(null, () => {
+    chrome.tabs.reload()
   })
   window.close()
 }
