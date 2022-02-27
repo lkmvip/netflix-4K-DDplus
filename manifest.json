@@ -18,7 +18,6 @@
   "content_scripts": [
     {
       "matches": [
-        "*://assets.nflxext.com/*/ffe/player/html/*",
         "*://www.netflix.com/*",
         "*://netflix.com/*"
       ],
