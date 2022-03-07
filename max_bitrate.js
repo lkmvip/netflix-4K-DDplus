@@ -43,7 +43,7 @@ if (window.setMaxBitrate) {
 
 const seeks = {a: -5, d: 5, z: -10, c: 10}
 document.addEventListener('keydown', function(e) {
-  if (e.target.isContentEditable || e.target.tagName == 'INPUT' || e.ctrlKey) return
+  if (e.target.isContentEditable || e.target.tagName == 'INPUT' || e.ctrlKey || e.altKey) return
   let key = e.key.toLowerCase()
   let val = seeks[key]
   if (val) {
