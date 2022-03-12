@@ -37,7 +37,7 @@
 	"web_accessible_resources": [
 		//"msl_client.js",
 		"netflix_max_bitrate.js",
-		"cadmium-playercore-6.0033.414.911.js"
+		"cadmium-playercore-6.0034.030.911.js"
 	],
 	"permissions": [
 		"storage",
