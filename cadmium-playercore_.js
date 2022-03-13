@@ -7,11 +7,9 @@ function sec2time (n) {
   s = s < 10 ? ('0' + s) : s
   return h + ':' + m + ':' + s + ''
 }
-
 function _esm(b) {
   Object.defineProperties(b, {__esModule: {value: !0}})
 }
-
 function a000 () {}
 a000.Z4L = function () {
   return typeof a000.D4L.g4L === 'function' ? a000.D4L.g4L.apply(a000.D4L, arguments) : a000.D4L.g4L
@@ -25311,7 +25309,7 @@ a000.D4L = (function (H4L) {
         r[r.l8b = 85] = 'U'
         r[r.p8b = 86] = 'V'
         r[r.r8b = 87] = 'W'
-        r[r.dfa = 88] = 'X'
+        r[r.X = 88] = 'X'
         r[r.v8b = 89] = 'Y'
         r[r.w8b = 90] = 'Z'
         r[r.M5b = 91] = 'LeftWindowKey'
@@ -51838,7 +51836,7 @@ a000.D4L = (function (H4L) {
         }
         c.prototype.lob = function (e) {
           if (e.target.isContentEditable || e.target.tagName == 'INPUT') { return }
-          e.keyCode == h.tv.S && this.v6.Spa && this.toggle(e.shiftKey)
+          e.keyCode == h.tv.X && this.v6.Spa && this.toggle(e.shiftKey)
         }
         b.GIa = c
       }, function (r, b, a) {
