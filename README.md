@@ -8,14 +8,12 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
 1, all languages (audio and sub,if any)   
 2, Automatically select best bitrate available    
     
-    
-    
--------------------------------------------------------------------------------------------------------  
+        
+--------------------------------------------------------------------------------------
 
-  
+
 **In different hardware/software, your experience is different**  
     
-  
   
 **In win10-64bit>1909 and edge browser(Non-portable)**  
 1, Max 4K.  [<font color=Purple><u>**About 4K**</u></font> ](https://help.netflix.com/zh-tw/node/13444)      
@@ -38,7 +36,7 @@ https://www.netflix.com/search?q=ATMOS
 enjoy
     
     
--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
      
 ![image](img/n1.png)
 ![image](img/n2.png)

@@ -1,5 +1,5 @@
-html, body {
-  user-select: auto !important
+body {
+  user-select: auto
 }
 button, input, textarea {
   vertical-align: middle;
