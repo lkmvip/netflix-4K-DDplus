@@ -7,9 +7,11 @@ function sec2time (n) {
   s = s < 10 ? ('0' + s) : s
   return h + ':' + m + ':' + s + ''
 }
+
 function _esm(b) {
   Object.defineProperties(b, {__esModule: {value: !0}})
 }
+
 function a000 () {}
 a000.Z4L = function () {
   return typeof a000.D4L.g4L === 'function' ? a000.D4L.g4L.apply(a000.D4L, arguments) : a000.D4L.g4L
@@ -18371,7 +18373,10 @@ a000.D4L = (function (H4L) {
             t0b: C(I, 'trickPlayDownloadRetryCount', 1),
             cra: C(R, 'marginPredictor', 'simple', /^(simple|scale|iqr|percentile)$/),
             Zra: C(R, 'networkMeasurementGranularity', 'video_location', /^(location|video_location)$/),
-            xDa: C(Q, 'HistoricalTDigestConfig', {maxc: 25, rc: 'ewma', c: .5, hl: 7200}),
+            xDa: C(Q, 'HistoricalTDigestConfig', {
+              maxc: 25, rc: 'ewma',
+              c: .5, hl: 7200
+            }),
             v2a: C(K, 'maxIQRSamples', Infinity),
             g3a: C(K, 'minIQRSamples', 5),
             ubb: C(H, 'useResourceTimingAPI', !1),
@@ -18456,7 +18461,9 @@ a000.D4L = (function (H4L) {
               Lbc: C(R, 'proxyPath', ''),
               YA: C(R, 'uiVersion'),
               Aaa: C(R, 'uiPlatform'),
-              p9b: function () {return '0'},
+              p9b: function () {
+                return '0'
+              },
               Kta: C(T, 'preferredLanguages', l.PAa, /^[a-zA-Z-]{2,5}$/, 1),
               EDb: C(R, G('forceDebugLogLevel'), void 0, /^(ERROR|WARN|INFO|TRACE)$/),
               ZZb: C(H, 'supportPreviewContentPin', !0),
@@ -18471,7 +18478,12 @@ a000.D4L = (function (H4L) {
             Js: C(H, 'useRangeHeader', !1),
             SU: C(H, 'enableMilestoneEventList', !0),
             JL: C(R, 'authenticationType', O.nw ? S.UQa : S.JL),
-            TQa: C(U, 'authenticationKeyNames', q.Zb({e: 'DKE', h: 'DKH', w: 'DKW', s: 'DKS'})),
+            TQa: C(U, 'authenticationKeyNames', q.Zb({
+              e: 'DKE',
+              h: 'DKH',
+              w: 'DKW',
+              s: 'DKS'
+            })),
             k_b: C(R, 'systemKeyWrapFormat'),
             GJb: C(H, 'includeNetflixIdUserAuthData', !0),
             BYb: C(H, 'shouldSendUserAuthData', !0),
@@ -18508,26 +18520,40 @@ a000.D4L = (function (H4L) {
             haa: C(I, 'throughputPercentForAudio', 15),
             Eia: C(I, 'bandwidthMargin', 10),
             Fia: C(H, 'bandwidthMarginContinuous', !1),
-            Gia: C(P, 'bandwidthMarginCurve', [
-              {m: 65, b: 8E3},
-              {m: 65, b: 3E4},
-              {m: 50, b: 6E4},
-              {m: 45, b: 9E4},
-              {m: 40, b: 12E4},
-              {m: 20, b: 18E4},
-              {m: 5, b: 24E4}
+            Gia: C(P, 'bandwidthMarginCurve', [{
+              m: 65, b: 8E3
+            }, {
+              m: 65, b: 3E4
+            }, {
+              m: 50, b: 6E4
+            }, {
+              m: 45, b: 9E4
+            }, {
+              m: 40, b: 12E4
+            }, {
+              m: 20, b: 18E4
+            }, {
+              m: 5, b: 24E4
+            }
             ]),
             $ja: C(I, 'conservBandwidthMargin', 20),
             $wa: C(H, 'switchConfigBasedOnInSessionTput', !1),
             hU: C(I, 'conservBandwidthMarginTputThreshold', 0),
-            aka: C(P, 'conservBandwidthMarginCurve', [
-              {m: 80, b: 8E3},
-              {m: 80, b: 3E4},
-              {m: 70, b: 6E4},
-              {m: 60, b: 9E4},
-              {m: 50, b: 12E4},
-              {m: 30, b: 18E4},
-              {m: 10, b: 24E4}
+            aka: C(P, 'conservBandwidthMarginCurve', [{
+              m: 80, b: 8E3
+            }, {
+              m: 80, b: 3E4
+            }, {
+              m: 70, b: 6E4
+            }, {
+              m: 60, b: 9E4
+            }, {
+              m: 50, b: 12E4
+            }, {
+              m: 30, b: 18E4
+            }, {
+              m: 10, b: 24E4
+            }
             ]),
             w$a: C(H, 'switchAlgoBasedOnHistIQR', !1),
             kE: C(R, 'switchConfigBasedOnThroughputHistory', 'none', /^(none|iqr|avg)$/),
@@ -18629,7 +18655,9 @@ a000.D4L = (function (H4L) {
             jVa: C(H, 'enableLookaheadHints', !1),
             J1a: C(I, 'lookaheadFragments', 2),
             jz: C(H, 'enableOCSideChannel', !0),
-            M0: C(Q, 'OCSCBufferQuantizationConfig', {lv: 5, mx: 240}),
+            M0: C(Q, 'OCSCBufferQuantizationConfig', {
+              lv: 5, mx: 240
+            }),
             Pab: C(H, 'updateDrmRequestOnNetworkFailure', !1),
             dUa: C(H, 'deferAseScheduling', !1),
             r2a: C(I, 'maxDiffAudioVideoEndPtsMs', 16E3),
@@ -18685,16 +18713,45 @@ a000.D4L = (function (H4L) {
             vzb: C(R, 'defaultFilter', 'throughput-ewma'),
             PWb: C(R, 'secondaryFilter', 'none'),
             wzb: C(Q, 'defaultFilterDefinitions', {
-              'throughput-ewma': {type: 'discontiguous-ewma', mw: 5E3, wt: 5E3},
-              'throughput-sw': {type: 'slidingwindow', mw: 5E3},
-              'throughput-iqr': {type: 'iqr', mx: Infinity, mn: 5, bw: 15E3, iv: 1E3},
-              'throughput-iqr-history': {type: 'iqr-history'},
-              'throughput-location-history': {type: 'discrete-ewma', hl: 14400, 'in': 3600},
-              'respconn-location-history': {type: 'discrete-ewma', hl: 100, 'in': 25},
-              'throughput-tdigest': {type: 'tdigest', maxc: 25, c: .5, b: 1E3, w: 15E3, mn: 6},
-              'throughput-tdigest-history': {type: 'tdigest-history', maxc: 25, rc: 'ewma', c: .5, hl: 7200},
-              'respconn-ewma': {type: 'discrete-ewma', hl: 10, 'in': 10},
-              avtp: {type: 'avtp'},
+              'throughput-ewma': {
+                type: 'discontiguous-ewma',
+                mw: 5E3, wt: 5E3
+              },
+              'throughput-sw': {
+                type: 'slidingwindow',
+                mw: 5E3
+              },
+              'throughput-iqr': {
+                type: 'iqr',
+                mx: Infinity, mn: 5, bw: 15E3, iv: 1E3
+              },
+              'throughput-iqr-history': {
+                type: 'iqr-history'
+              },
+              'throughput-location-history': {
+                type: 'discrete-ewma',
+                hl: 14400, 'in': 3600
+              },
+              'respconn-location-history': {
+                type: 'discrete-ewma',
+                hl: 100, 'in': 25
+              },
+              'throughput-tdigest': {
+                type: 'tdigest',
+                maxc: 25, c: .5, b: 1E3, w: 15E3, mn: 6
+              },
+              'throughput-tdigest-history': {
+                type: 'tdigest-history',
+                maxc: 25, rc: 'ewma',
+                c: .5, hl: 7200
+              },
+              'respconn-ewma': {
+                type: 'discrete-ewma',
+                hl: 10, 'in': 10
+              },
+              avtp: {
+                type: 'avtp'
+              },
               entropy: {
                 type: 'entropy',
                 mw: 2E3, sw: 6E4, 'in': 'none',
@@ -18790,7 +18847,10 @@ a000.D4L = (function (H4L) {
             LBb: C(H, 'enableSeamless', !1),
             Loa: C(I, 'hindsightDenominator', 0),
             Koa: C(I, 'hindsightDebugDenominator', 0),
-            K6: C(Q, 'hindsightParam', {numB: Infinity, bSizeMs: 1E3, fillS: 'last', fillHl: 1E3}),
+            K6: C(Q, 'hindsightParam', {
+              numB: Infinity, bSizeMs: 1E3, fillS: 'last',
+              fillHl: 1E3
+            }),
             UU: C(H, 'enableSessionHistoryReport', !1),
             ula: C(I, 'earlyStageEstimatePeriod', 1E4),
             i1a: C(I, 'lateStageEstimatePeriod', 3E4),
@@ -18848,7 +18908,9 @@ a000.D4L = (function (H4L) {
             Haa: C(H, 'useHLSPlayer', S.Haa),
             Xxa: C(H, G('useExitZones'), !0),
             VVb: C(H, 'requestSegmentVmaf', !1),
-            tA: C(Q, 'perFragmentVMAFConfig', {enabled: !1})
+            tA: C(Q, 'perFragmentVMAFConfig', {
+              enabled: !1
+            })
           }
           ma = !0
           b.Xja = function (ta) {
@@ -18881,16 +18943,22 @@ a000.D4L = (function (H4L) {
         b.LSa = function (D) {
           return D ? (D = q.Zb({}, b.config), q.Zb(D, {
             $H: b.config.A4a
-          }, {pA: !0})) : b.config
+          }, {
+            pA: !0
+          })) : b.config
         }
         b.Bvb = function (D) {
           var E = q.Zb({}, b.config)
           D = c(D)
-          return q.Zb(E, D, {pA: !0})
+          return q.Zb(E, D, {
+            pA: !0
+          })
         }
         b.Yja = function (D) {
           D = c(D)
-          return q.Zb({}, a(186)(D), {pA: !0})
+          return q.Zb({}, a(186)(D), {
+            pA: !0
+          })
         }
         b.KSa = function (D, E, F) {
           F = !!F && (0 <= F.indexOf('h264hpl') || 0 <= F.indexOf('vp9'))
@@ -25243,7 +25311,7 @@ a000.D4L = (function (H4L) {
         r[r.l8b = 85] = 'U'
         r[r.p8b = 86] = 'V'
         r[r.r8b = 87] = 'W'
-        r[r.X = 88] = 'X'
+        r[r.dfa = 88] = 'X'
         r[r.v8b = 89] = 'Y'
         r[r.w8b = 90] = 'Z'
         r[r.M5b = 91] = 'LeftWindowKey'
@@ -51770,7 +51838,7 @@ a000.D4L = (function (H4L) {
         }
         c.prototype.lob = function (e) {
           if (e.target.isContentEditable || e.target.tagName == 'INPUT') { return }
-          e.keyCode == h.tv.X && this.v6.Spa && this.toggle(e.shiftKey)
+          e.keyCode == h.tv.S && this.v6.Spa && this.toggle(e.shiftKey)
         }
         b.GIa = c
       }, function (r, b, a) {
@@ -116660,8 +116728,8 @@ a000.D4L = (function (H4L) {
             E.MZ.Ol(E.update)
           }
           this.onkeydown = function (e) {
-            if (e.target.isContentEditable || e.target.tagName == 'INPUT') {return}
-            e.keyCode == 192 && E.toggle()
+            if (e.target.isContentEditable || e.target.tagName == 'INPUT') { return }
+            (e.keyCode == 81 || e.keyCode == 192) && E.toggle()
           }
           this.G5a = [x.mediaTime, x.qc[f.Tb.Ta.Wb], x.qc[f.Tb.Ta.Mb], x.jf, x.oe, x.jh, x.We, x.ci, x.state, x.zr, x.yb, x.volume, x.muted]
           this.parent = document.querySelector('.watch-video')
@@ -118778,7 +118846,8 @@ a000.D4L = (function (H4L) {
                 L.push('playready-h264hpl31-dash')
                 L.push('playready-h264hpl40-dash')
               }
-              if (useDV && /hevc-hdr/.test(L)) {
+              var pattern = /hevc-hdr/
+              if (useDV && pattern.test(L)) {
                 L.push('hevc-dv5-main10-L30-dash-cenc-prk')
                 L.push('hevc-dv5-main10-L31-dash-cenc-prk')
                 L.push('hevc-dv5-main10-L40-dash-cenc-prk')
@@ -118911,7 +118980,8 @@ a000.D4L = (function (H4L) {
               videoProfiles: t, audioLanguages: q.dsb, textLanguages: q.x_b, videoLanguages: q.Fbb ? [q.Fbb] : void 0, requestReference: q.Xua
             }, {
               kw: null === v || void 0 === v ? void 0 : v.ac, zl: 'studioManifest'
-            }]
+            }
+            ]
           })
         }
         a = c
@@ -118962,7 +119032,9 @@ a000.D4L = (function (H4L) {
         d = a(4)
         g = a(192)
         a = a(94)
-        h = {license: !0}
+        h = {
+          license: !0
+        }
         c.prototype.send = function (n, q) {
           var p, v
           p = this
@@ -119028,7 +119100,9 @@ a000.D4L = (function (H4L) {
         d = a(192)
         a = a(87)
         c.prototype.send = function (h, k) {
-          var n = this, q = {
+          var n, q
+          n = this
+          q = {
             url: h.url.href, EC: 'nq-' + h.zl, Fta: JSON.stringify(k),
             d4: h.timeout.da(l.ja),
             headers: h.headers, withCredentials: !0
@@ -119038,8 +119112,13 @@ a000.D4L = (function (H4L) {
               t.$ ? p(t) : v(t)
             })
           }).then(function (p) {
-            p = {status: 'success', body: p.content}
-            n.receiver.FO({command: h.zl, inputs: k, outputs: p})
+            p = {
+              status: 'success',
+              body: p.content
+            }
+            n.receiver.FO({
+              command: h.zl, inputs: k, outputs: p
+            })
             return p
           }).catch(function (p) {
             var v
