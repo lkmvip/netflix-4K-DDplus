@@ -99098,17 +99098,12 @@ a000.D4L = (function (H4L) {
           l.prototype.parse = function () {
             var m, d, g, h, k
             this.Ac()
-            m = this.Wi([{
-              kJ: 'int32'
-            }, {
-              zU: 'int32'
-            }, {
-              $y: 'int32'
-            }, {
-              bz: 'int32'
-            }, {
-              az: 'int32'
-            }
+            m = this.Wi([
+              {kJ: 'int32'}, 
+              {zU: 'int32'},
+              {$y: 'int32'},
+              {bz: 'int32'},
+              {az: 'int32'}
             ])
             d = m.kJ
             g = m.zU
