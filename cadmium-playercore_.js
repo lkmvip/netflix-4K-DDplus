@@ -115944,7 +115944,7 @@ a000.D4L = (function (H4L) {
           }
           this.G5a = [x.mediaTime, x.qc[f.Tb.Ta.Wb], x.qc[f.Tb.Ta.Mb], x.jf, x.oe, x.jh, x.We, x.ci, x.state, x.zr, x.yb, x.volume, x.muted]
           this.parent = document.querySelector('.watch-video')
-          this.element = this.ce.createElement('textarea', '', '', {readonly: 1, 'class': 'video-info'})
+          this.element = this.ce.createElement('textarea', '', '', {readonly: 1, 'class': 'player-info'})
           m.ve.addListener(m.YC, this.onkeydown)
           x.addEventListener(n.ca.kg, function () {
             m.ve.removeListener(m.YC, E.onkeydown)

@@ -30,7 +30,7 @@
     "scripts": ["background.js"]
   },
   "web_accessible_resources": [
-    "cadmium-playercore.js",
+    "cadmium-playercore-6.0034.323.911.js",
     "max_bitrate.js"
   ],
   "permissions": [
