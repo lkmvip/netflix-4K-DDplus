@@ -3197,10 +3197,7 @@ a000.n9I = function() {
     };
   })();
   (function() {
-    var Ha = fe = {
-      V1: 1,
-      V2: 2
-    };
+    var Ha = fe = {V1: 1, V2: 2};
     Ac = Bb.Class.create({
       init: function(Oa, Sa, Ba) {
         var oa;
@@ -3316,10 +3313,7 @@ a000.n9I = function() {
     verify: function(Ha, Oa, Sa) {}
   });
   (function() {
-    var Ha = Cc = {
-      RSA_OAEP: xd.name,
-      A128KW: yc.name
-    };
+    var Ha = Cc = {RSA_OAEP: xd.name, A128KW: yc.name};
     wc = "A128GCM";
     Bc = Bb.Class.create({
       init: function(Oa, Sa, Ba, oa, ia) {
