@@ -123224,8 +123224,8 @@ a000.n9I = function() {
               I = I.filter(item => !/^playready-h264hp/.test(item))
             }
             if (useAVCH_) {
-              L = L.filter(item => !/^vp9-profile/.test(item))
-              L = L.filter(item => !/^playready-h264mp/.test(item))
+              I = I.filter(item => !/^vp9-profile/.test(item))
+              I = I.filter(item => !/^playready-h264mp/.test(item))
             }            
           }
           useAllSub && (E.showAllSubDubTracks = 1)
