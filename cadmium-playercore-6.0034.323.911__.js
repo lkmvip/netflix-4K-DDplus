@@ -118047,17 +118047,17 @@ a000.D4L = (function (H4L) {
             L = (L || []).concat(P || []).concat(A.config().dv).concat(['BIF240', 'BIF320']).filter(Boolean)
             U = U ? U.DEVICE_SECURITY_LEVEL : void 0
             P = 'postplay' === C.ye ? !0 : !!G.isUIAutoPlay
-
+            console.log(L)
             if (M == 30) {
               if (useAVC) {
-                I.push(
+                L.push(
                     'playready-h264hpl30-dash',
                     'playready-h264hpl31-dash',
                     'playready-h264hpl40-dash'
                 )
               }
-              if (useDV && /hevc-hdr/.test(I)) {
-                I.push(
+              if (useDV && /hevc-hdr/.test(L)) {
+                L.push(
                     'hevc-dv5-main10-L30-dash-cenc-prk',
                     'hevc-dv5-main10-L31-dash-cenc-prk',
                     'hevc-dv5-main10-L40-dash-cenc-prk',
@@ -118067,47 +118067,69 @@ a000.D4L = (function (H4L) {
                 )
               }
               if (useDDplus) {
-                I.push(
+                L.push(
                     'ddplus-2.0-dash',
                     'ddplus-5.1-dash',
                     'ddplus-5.1hq-dash',
                     'ddplus-atmos-dash'
                 )
-                I = I.filter(item => !/heaac/.test(item))
+                L = L.filter(item => !/heaac/.test(item))
               }
               if (useHEVC) {
-                I = I.filter(item => !/main10-L5/.test(item))
+                L = L.filter(item => !/main10-L5/.test(item))
               }
             } else {
               if (useFHD) {
-                I.push(
+                L.push(
                     'playready-h264mpl40-dash',
                     'playready-h264hpl40-dash',
                     'vp9-profile0-L40-dash-cenc'
                 )
               }
               if (useHA) {
-                I.push('heaac-5.1-dash')
+                L.push('heaac-5.1-dash')
               }
               if (useCAVC) {
-                I = I.filter(item => !/vp9-profile/.test(item))
-                I = I.filter(item => !/playready-h264hp/.test(item))
+                L = L.filter(item => !/vp9-profile/.test(item))
+                L = L.filter(item => !/playready-h264hp/.test(item))
               }
               if (useAVCH) {
-                I = I.filter(item => !/vp9-profile/.test(item))
-                I = I.filter(item => !/playready-h264mp/.test(item))
+                L = L.filter(item => !/vp9-profile/.test(item))
+                L = L.filter(item => !/playready-h264mp/.test(item))
               }
             }
             if (useAllSub) {
               G.showAllSubDubTracks = 1
             }
+            console.log(L)
 
             T = {
               type: 'standard',
               manifestVersion: A.Yg.pVa ? 'v2' : 'v1',
-              viewableId: K, profiles: L, flavor: y.Tt, drmType: N, drmVersion: M, usePsshBox: !0, isBranching: !!y.bb.Fl, useHttpsStreams: !0, supportsUnequalizedDownloadables: A.config().e_b, imageSubtitleHeight: d.Nea.NYa(),
-              uiVersion: A.Yg.YA, uiPlatform: A.Yg.Aaa, clientVersion: A.platform.version, supportsPreReleasePin: A.config().Ir.ZZb, supportsWatermark: A.config().Ir.$Zb, packageId: A.FGb(C),
-              deviceSecurityLevel: U, videoOutputInfo: T, titleSpecificData: J, preferAssistiveAudio: !!G.assistiveAudioPreferred, preferredTextLocale: G.preferredTextLocale, preferredAudioLocale: G.preferredAudioLocale, isUIAutoPlay: P, challenge: da, isNonMember: A.Yg.Gpa, pin: C.v5a, desiredVmaf: A.config().pbb ? A.config().lUa : A.config().mUa, desiredSegmentVmaf: A.config().pbb ? A.config().lUa : A.config().mUa, requestSegmentVmaf: A.config().VVb, supportsPartialHydration: A.Yg.KG, contentPlaygraph: A.Yg.USa
+              viewableId: K,
+              profiles: L,
+              flavor: y.Tt,
+              drmType: N,
+              drmVersion: M,
+              usePsshBox: !0,
+              isBranching: !!y.bb.Fl,
+              useHttpsStreams: !0,
+              supportsUnequalizedDownloadables: A.config().e_b,
+              imageSubtitleHeight: d.Nea.NYa(),
+              uiVersion: A.Yg.YA,
+              uiPlatform: A.Yg.Aaa,
+              clientVersion: A.platform.version,
+              supportsPreReleasePin: A.config().Ir.ZZb,
+              supportsWatermark: A.config().Ir.$Zb,
+              packageId: A.FGb(C),
+              deviceSecurityLevel: U,
+              videoOutputInfo: T,
+              titleSpecificData: J, preferAssistiveAudio: !!G.assistiveAudioPreferred,
+              preferredTextLocale: G.preferredTextLocale, preferredAudioLocale: G.preferredAudioLocale,
+              isUIAutoPlay: P, challenge: da, isNonMember: A.Yg.Gpa,
+              pin: C.v5a, desiredVmaf: A.config().pbb ? A.config().lUa : A.config().mUa,
+              desiredSegmentVmaf: A.config().pbb ? A.config().lUa : A.config().mUa, requestSegmentVmaf: A.config().VVb,
+              supportsPartialHydration: A.Yg.KG, contentPlaygraph: A.Yg.USa
             }
             C.NVa && (T.extraParams = C.NVa)
             C.kUa && (T.desiredDownloadables = C.kUa)
