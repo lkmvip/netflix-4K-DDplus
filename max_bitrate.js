@@ -9,7 +9,7 @@ let fn = function () {
 
   var selects = document.querySelectorAll('.player-streams select')
   var btns = document.querySelector('.player-streams button')
-  if (selects.length + btns.length < 5) {
+  if (!selects || !btns || selects.length + btns.length < 5) {
     return
   }
 

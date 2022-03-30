@@ -28134,7 +28134,7 @@ a000.n9I = function() {
         }];
       };
       b.oo = c;
-      c.lQ = "video/mp4;codecs={0};";
+      c.lQ = "video/mp4; codecs={0};";
     }, function(r, b) {
       function a() {}
       _esm(b)
@@ -34938,7 +34938,7 @@ a000.n9I = function() {
         return h;
       };
       b.ZB = c;
-      c.lQ = 'video/mp4;codecs="{0},mp4a";';
+      c.lQ = 'video/mp4; codecs="{0},mp4a";';
     }, function(r, b) {
       _esm(b)
       b.ida = b.TB = void 0;
@@ -48542,7 +48542,7 @@ a000.n9I = function() {
         var h;
         g = this.BY[g];
         h = "";
-        return g ? (Array.isArray(g) && (h = 1 < g.length ? " " + g[1] : "", g = g[0]), g = d("{0}/mp4;codecs={1};{2}", this.Csa[this.mediaType], g, h), g = this.mz(g), Promise.resolve(g)) : Promise.resolve(!1);
+        return g ? (Array.isArray(g) && (h = 1 < g.length ? " " + g[1] : "", g = g[0]), g = d("{0}/mp4; codecs={1};{2}", this.Csa[this.mediaType], g, h), g = this.mz(g), Promise.resolve(g)) : Promise.resolve(!1);
       };
       c.prototype.SBb = function(g) {
         var h = {};
@@ -48596,7 +48596,7 @@ a000.n9I = function() {
         return this.config().EG;
       };
       b.C0 = c;
-      c.lQ = "audio/mp4;codecs={0};";
+      c.lQ = "audio/mp4; codecs={0};";
     }, function(r, b) {
       _esm(b)
       b.RGa = "MediaCapabilitiesDetectorSymbol";
@@ -60914,11 +60914,11 @@ a000.n9I = function() {
         return [{
           initDataTypes: [n.Wx],
           videoCapabilities: [{
-            contentType: "video/mp4;codecs=avc1.42E01E",
+            contentType: "video/mp4; codecs=avc1.42E01E",
             robustness: ""
           }],
           audioCapabilities: [{
-            contentType: "audio/mp4;codecs=mp4a.40.2",
+            contentType: "audio/mp4; codecs=mp4a.40.2",
             robustness: ""
           }],
           distinctiveIdentifier: "not-allowed",
@@ -105793,8 +105793,8 @@ a000.n9I = function() {
         this.Dn = q;
         this.mb = p;
         this.Kab = u;
-        this.Erb = "video/mp4;codecs={0}";
-        this.Lmb = "audio/mp4;codecs={0}";
+        this.Erb = "video/mp4; codecs={0}";
+        this.Lmb = "audio/mp4; codecs={0}";
         q = this.Dn.pN(l.te.mt);
         this.Drb = d.Gd.KUa(q);
       }
@@ -106655,7 +106655,7 @@ a000.n9I = function() {
         };
         if (this.mediaCapabilities.f4a) {
           q = {
-            contentType: 'video/mp4;codecs="' + (null !== (k = this.BY[g.Ig]) && void 0 !== k ? k : "avc1.640028") + '"',
+            contentType: 'video/mp4; codecs="' + (null !== (k = this.BY[g.Ig]) && void 0 !== k ? k : "avc1.640028") + '"',
             width: g.width,
             height: g.height,
             bitrate: 1E3 * g.bitrate,
@@ -106822,16 +106822,12 @@ a000.n9I = function() {
       c.prototype.szb = function() {
         var p, u;
         p = {};
-        u = {
-          contentType: "audio/mp4;codecs=mp4a.40.2"
-        };
+        u = {contentType: "audio/mp4; codecs=mp4a.40.2"};
         p[m.ze.hF] = u;
         p[m.ze.YDa] = u;
         p[m.ze.iF] = u;
         p[m.ze.SF] = u;
-        u = {
-          contentType: "audio/mp4;codecs=ec-3"
-        };
+        u = {contentType: "audio/mp4; codecs=ec-3"};
         p[m.ze.$Q] = u;
         p[m.ze.Mca] = u;
         p[m.ze.aR] = u;
@@ -106840,36 +106836,14 @@ a000.n9I = function() {
       c.prototype.yAb = function() {
         var p, u, t, w, v, x, y, z, A, B, E, D, F;
         p = {};
-        u = {
-          contentType: 'video/mp4; codecs="hev1.2.4.L120.B0"'
-        };
-        t = {
-          contentType: 'video/mp4; codecs="dvh1.05.04"'
-        };
-        w = {
-          width: 1920,
-          height: 1080
-        };
-        v = {
-          width: 3840,
-          height: 2160
-        };
-        x = Object.assign(Object.assign({}, w), {
-          bitrate: 12E6,
-          framerate: 30
-        });
-        y = Object.assign(Object.assign({}, w), {
-          bitrate: 2E7,
-          framerate: 60
-        });
-        w = Object.assign(Object.assign({}, v), {
-          bitrate: 25E6,
-          framerate: 30
-        });
-        v = Object.assign(Object.assign({}, v), {
-          bitrate: 4E7,
-          framerate: 60
-        });
+        u = {contentType: 'video/mp4; codecs="hev1.2.4.L120.B0"'};
+        t = {contentType: 'video/mp4; codecs="dvh1.05.04"'};
+        w = {width: 1920, height: 1080};
+        v = {width: 3840, height: 2160};
+        x = Object.assign(Object.assign({}, w), {bitrate: 12E6, framerate: 30});
+        y = Object.assign(Object.assign({}, w), {bitrate: 2E7, framerate: 60});
+        w = Object.assign(Object.assign({}, v), {bitrate: 25E6, framerate: 30});
+        v = Object.assign(Object.assign({}, v), {bitrate: 4E7, framerate: 60});
         z = {
           hdrMetadataType: "smpteSt2086",
           colorGamut: "rec2020",
@@ -106880,9 +106854,7 @@ a000.n9I = function() {
           colorGamut: "rec2020",
           transferFunction: "pq"
         };
-        B = Object.assign(Object.assign({}, {
-          contentType: 'video/mp4; codecs="avc1.640028"'
-        }), x);
+        B = Object.assign(Object.assign({}, {contentType: 'video/mp4; codecs="avc1.640028"'}), x);
         p[m.O.WDa] = B;
         p[m.O.nR] = B;
         p[m.O.oR] = B;
@@ -126586,7 +126558,7 @@ a000.n9I = function() {
               if (void 0 === h) {
                 try {
                   q = nb.MSMediaKeys;
-                  h = q && q.isTypeSupportedWithFeatures ? "probably" === q.isTypeSupportedWithFeatures("com.microsoft.playready.software", 'video/mp4;codecs="avc1,mp4a";features="display-res-x=3840,display-res-y=2160,display-bpc=8"') : !1;
+                  h = q && q.isTypeSupportedWithFeatures ? "probably" === q.isTypeSupportedWithFeatures("com.microsoft.playready.software", 'video/mp4; codecs="avc1,mp4a";features="display-res-x=3840,display-res-y=2160,display-bpc=8"') : !1;
                 } catch (p) {
                   g.error("hasUltraHdDisplay exception");
                   h = !0;
