@@ -2,8 +2,8 @@
 <html lang="zh">
 <head>
   <title>Netflix Options</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" type="text/css" href="options.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="options.css">
 </head>
 <body>
 <form>
@@ -12,19 +12,19 @@
     <label><input type="checkbox" id="useDDplus" checked> Use DD+ and Atmos audio track</label>
     <label><input type="checkbox" id="useAVCH"> Use AVC-High insted of AVC video code</label>
     <label><input type="checkbox" id="useDV" checked> Use "Dolby Vision" Profiles for HDR</label>
-    <label><input type="checkbox" id="useHEVC"> Force 1080P (Use HEVC code, Downgrade from 4K to 1080P)</label>
+    <label><input type="checkbox" id="useHEVC"> Force 1080P (Use HEVC code, Downgrade from 4k to 1080p)</label>
   </fieldset>
 </form>
 <form>
   <fieldset>
     <legend>Other OS And Browser</legend>
-    <label><input type="checkbox" id="useFHD" checked> 1080P</label>
-    <label><input type="checkbox" id="useHEACC" checked> HE-AAC Audio(5.1)</label>
+    <label><input type="checkbox" id="useHEACC" checked> HE-AAC Audio (5.1)</label>
     <fieldset>
-      <legend>Video configuration</legend>
-      <label><input type="radio" id="useDef" name="config" value="Def" checked> Play with default (vp9)</label>
-      <label><input type="radio" id="useAVC" name="config" value="AVC"> Play with AVC</label>
-      <label><input type="radio" id="useAVCH_" name="config" value="AVCH_"> Play with AVC-High</label>
+      <legend>Video Codec (Up to 1080p)</legend>
+      <label><input type="radio" id="useAV1" name="codec" value="AV1" checked> Play with AV1 (default)</label>
+      <label><input type="radio" id="useVP9" name="codec" value="VP9" checked> Play with VP9</label>
+      <label><input type="radio" id="useAVC" name="codec" value="AVC"> Play with AVC</label>
+      <label><input type="radio" id="useAVCH_" name="codec" value="AVCH_"> Play with AVC-High</label>
     </fieldset>
   </fieldset>
 </form>

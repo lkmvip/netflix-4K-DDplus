@@ -121056,20 +121056,28 @@ a000.n9I = function() {
             }
           } else {
             useHEACC && I.push('heaac-5.1-dash')
-            useFHD && I.push(
-              'playready-h264mpl40-dash',
-              'playready-h264hpl40-dash',
+            useAV1 && I.push(
+              'av1-main-L30-dash-cbcs-prk',
+              'av1-main-L31-dash-cbcs-prk',
+              'av1-main-L40-dash-cbcs-prk',
+              'av1-main-L41-dash-cbcs-prk',
+              'av1-main-L50-dash-cbcs-prk',
+              'av1-main-L51-dash-cbcs-prk',
+            )
+            useVP9 && I.push(
+              'vp9-profile0-L31-dash-cenc',
               'vp9-profile0-L40-dash-cenc'
             )
-            if (useAVC) {
-              I = I.filter(item => !/^vp9-profile/.test(item))
-              I = I.filter(item => !/^playready-h264hp/.test(item))
-            }
-            if (useAVCH_) {
-              I = I.filter(item => !/^vp9-profile/.test(item))
-              I = I.filter(item => !/^playready-h264mp/.test(item))
-            }            
+            useAVC && I.push(
+              'playready-h264mpl31-dash',
+              'playready-h264mpl40-dash'
+            )
+            useAVCH_ && I.push(
+              'playready-h264hpl31-dash',
+              'playready-h264hpl40-dash'
+            )
           }
+          console.log(I)
           useAllSub && (E.showAllSubDubTracks = 1)
           L = {
             type: "standard",
