@@ -48162,15 +48162,10 @@ a000.n9I = function() {
         H && K && 0 < (K.length || 0) && (C.qe = JSON.stringify(K));
       };
       c.prototype.bqa = function(C) {
-        var H, K, O;
-        try {
-          H = this.re.createElement("canvas");
-          K = H.getContext("webgl") || H.getContext("experimental-webgl");
-          if (K) {
-            O = K.getExtension("WEBGL_debug_renderer_info");
-            O && (C.WebGLRenderer = K.getParameter(O.UNMASKED_RENDERER_WEBGL), C.WebGLVendor = K.getParameter(O.UNMASKED_VENDOR_WEBGL));
-          }
-        } catch (I) {}
+        var cv = this.pe.createElement('canvas'),
+            gl = cv.getContext('webgl') || cv.getContext('experimental-webgl')
+        C.WebGLRenderer = gl.getParameter(gl.RENDERER)
+        C.WebGLVendor = gl.getParameter(gl.VENDOR)
       };
       c.prototype.zLb = function(C) {
         C.switchAwaySummary = {
