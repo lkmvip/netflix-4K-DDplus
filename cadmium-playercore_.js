@@ -118028,9 +118028,7 @@ a000.D4L = (function (H4L) {
           G = Object.assign({}, C.w3, C.Jm)
           J = {}
           K = y.W
-          J[K] = {
-            unletterboxed: !!G.preferUnletterboxed
-          }
+          J[K] = {unletterboxed: !!G.preferUnletterboxed}
           I = this.config()
           M = I.S1b ? 30 : 25
           R = I.hp ? this.pk.oFb() : Promise.resolve(this.p8.Vt())
@@ -118052,46 +118050,52 @@ a000.D4L = (function (H4L) {
 
             if (M == 30) {
               if (useAVC) {
-                L.push('playready-h264hpl22-dash')
-                L.push('playready-h264hpl30-dash')
-                L.push('playready-h264hpl31-dash')
-                L.push('playready-h264hpl40-dash')
+                I.push(
+                    'playready-h264hpl30-dash',
+                    'playready-h264hpl31-dash',
+                    'playready-h264hpl40-dash'
+                )
               }
-              var pattern = /hevc-hdr/
-              if (useDV && pattern.test(L)) {
-                L.push('hevc-dv5-main10-L30-dash-cenc-prk')
-                L.push('hevc-dv5-main10-L31-dash-cenc-prk')
-                L.push('hevc-dv5-main10-L40-dash-cenc-prk')
-                L.push('hevc-dv5-main10-L41-dash-cenc-prk')
-                L.push('hevc-dv5-main10-L50-dash-cenc-prk')
-                L.push('hevc-dv5-main10-L51-dash-cenc-prk')
+              if (useDV && /hevc-hdr/.test(I)) {
+                I.push(
+                    'hevc-dv5-main10-L30-dash-cenc-prk',
+                    'hevc-dv5-main10-L31-dash-cenc-prk',
+                    'hevc-dv5-main10-L40-dash-cenc-prk',
+                    'hevc-dv5-main10-L41-dash-cenc-prk',
+                    'hevc-dv5-main10-L50-dash-cenc-prk',
+                    'hevc-dv5-main10-L51-dash-cenc-prk'
+                )
               }
               if (useDDplus) {
-                L.push('ddplus-2.0-dash')
-                L.push('ddplus-5.1-dash')
-                L.push('ddplus-5.1hq-dash')
-                L.push('ddplus-atmos-dash')
-                L = L.filter(item => {if (!new RegExp(/heaac/g).test(JSON.stringify(item))) return item})
+                I.push(
+                    'ddplus-2.0-dash',
+                    'ddplus-5.1-dash',
+                    'ddplus-5.1hq-dash',
+                    'ddplus-atmos-dash'
+                )
+                I = I.filter(item => !/heaac/.test(item))
               }
               if (useHEVC) {
-                L = L.filter(item => {if (!new RegExp(/main10-L5/g).test(JSON.stringify(item))) return item})
+                I = I.filter(item => !/main10-L5/.test(item))
               }
             } else {
               if (useFHD) {
-                L.push('playready-h264mpl40-dash')
-                L.push('playready-h264hpl40-dash')
-                L.push('vp9-profile0-L40-dash-cenc')
+                I.push(
+                    'playready-h264mpl40-dash',
+                    'playready-h264hpl40-dash',
+                    'vp9-profile0-L40-dash-cenc'
+                )
               }
               if (useHA) {
-                L.push('heaac-5.1-dash')
-              }
-              if (useAVCH) {
-                L = L.filter(item => {if (!new RegExp(/vp9-profile/g).test(JSON.stringify(item))) return item})
-                L = L.filter(item => {if (!new RegExp(/playready-h264mp/g).test(JSON.stringify(item))) return item})
+                I.push('heaac-5.1-dash')
               }
               if (useCAVC) {
-                L = L.filter(item => {if (!new RegExp(/vp9-profile/g).test(JSON.stringify(item))) return item})
-                L = L.filter(item => {if (!new RegExp(/playready-h264hp/g).test(JSON.stringify(item))) return item})
+                I = I.filter(item => !/vp9-profile/.test(item))
+                I = I.filter(item => !/playready-h264hp/.test(item))
+              }
+              if (useAVCH) {
+                I = I.filter(item => !/vp9-profile/.test(item))
+                I = I.filter(item => !/playready-h264mp/.test(item))
               }
             }
             if (useAllSub) {
