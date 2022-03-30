@@ -28,7 +28,7 @@ let run = function () {
 
 const WATCH_REGEXP = /netflix.com\/watch\/.*/
 let lastUrl = location.href
-if (window.setMaxBitrate) {
+if (window.autoMaxBitrate) {
   setInterval(function () {
     let currentUrl = location.href
     currentUrl.mat

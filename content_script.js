@@ -6,16 +6,16 @@ function insertScript(scriptText) {
 
 var conf = {
   useDDplus: 1,
-  useAVC: 0,
+  useAVCH: 0,
   useDV: 1,
   useHEVC: 0,
   useFHD: 1,
-  useHA: 1,
+  useHEACC: 1,
   useDef: 1,
-  useCAVC: 0,
-  useAVCH: 0,
+  useAVC: 0,
+  useAVCH_: 0,
   useAllSub: 0,
-  setMaxBitrate: 0,
+  autoMaxBitrate: 0,
 }
 
 // very messy workaround for accessing chrome storage outside of background / content scripts

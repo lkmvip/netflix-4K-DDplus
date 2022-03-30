@@ -7,11 +7,9 @@ function sec2time (n) {
   s = s < 10 ? ('0' + s) : s
   return h + ':' + m + ':' + s + ''
 }
-
 function _esm(b) {
   Object.defineProperties(b, {__esModule: {value: !0}})
 }
-
 function a000 () {}
 a000.Z4L = function () {
   return typeof a000.D4L.g4L === 'function' ? a000.D4L.g4L.apply(a000.D4L, arguments) : a000.D4L.g4L
@@ -116046,9 +116044,11 @@ a000.D4L = (function (H4L) {
             'Buffer size in Seconds (a/v)': d.cj(this.j.DT()) + ' / ' + d.cj(this.j.QZ()),
             Throughput: this.j.Ra + ' kbps'
           })
+          console.log(this.j, p)
           M && C.push({
             PlaybackTime: sec2time(d.cj(this.j.mediaTime.value)) + ' / ' + sec2time(d.cj(this.j.Uy.da(p.ja))),
-            'Size (A+V)': (M.size / 1024 / 1024 / 1024).toFixed(2) + ' GB + ' + (H.size / 1024 / 1024 / 1024).toFixed(2) + ' GB = ' + ((M.size / 1024 / 1024 / 1024) + (H.size / 1024 / 1024 / 1024)).toFixed(2) + ' GB'
+            'Size (A+V)': (M.size / 1024 / 1024 / 1024).toFixed(2) + ' GB + ' + (H.size / 1024 / 1024 / 1024).toFixed(2) + 
+            ' GB = ' + ((M.size / 1024 / 1024 / 1024) + (H.size / 1024 / 1024 / 1024)).toFixed(2) + ' GB'
           })
           return C
         }
@@ -118047,8 +118047,19 @@ a000.D4L = (function (H4L) {
             L = (L || []).concat(P || []).concat(A.config().dv).concat(['BIF240', 'BIF320']).filter(Boolean)
             U = U ? U.DEVICE_SECURITY_LEVEL : void 0
             P = 'postplay' === C.ye ? !0 : !!G.isUIAutoPlay
-            console.log(L)
+            L = L.filter(item => !/vp9-/.test(item))
+            L = L.filter(item => !/playready-h264/.test(item))
+            L = L.filter(item => !/av1-/.test(item))
             if (M == 30) {
+              if (useDDplus) {
+                L.push(
+                    'ddplus-2.0-dash',
+                    'ddplus-5.1-dash',
+                    'ddplus-5.1hq-dash',
+                    'ddplus-atmos-dash'
+                )
+                L = L.filter(item => !/heaac/.test(item))
+              }
               if (useAVC) {
                 L.push(
                     'playready-h264hpl30-dash',
@@ -118065,15 +118076,6 @@ a000.D4L = (function (H4L) {
                     'hevc-dv5-main10-L50-dash-cenc-prk',
                     'hevc-dv5-main10-L51-dash-cenc-prk'
                 )
-              }
-              if (useDDplus) {
-                L.push(
-                    'ddplus-2.0-dash',
-                    'ddplus-5.1-dash',
-                    'ddplus-5.1hq-dash',
-                    'ddplus-atmos-dash'
-                )
-                L = L.filter(item => !/heaac/.test(item))
               }
               if (useHEVC) {
                 L = L.filter(item => !/main10-L5/.test(item))
