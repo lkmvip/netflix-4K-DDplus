@@ -17937,9 +17937,7 @@ a000.n9I = function() {
           zEb: C(J, "fatalOnTimedTextLoadError", !0),
           iya: C(ka, "timedTextStyleDefaults", {}),
           bba: C(ka, "timedTextStyleOverrides", {}),
-          hya: C(ka, "timedTextFontFamilyMapping", ra.hya || ({
-            "default": "font-family:Arial,Helvetica;font-weight:bolder"
-          })),
+          hya: C(ka, "timedTextFontFamilyMapping", ra.hya || ({"default": "font-family:Arial,Helvetica"})),
           fQ: C(I, "timedTextSimpleFallbackThreshold", ra.fQ.da(y.Bv)),
           PN: C(ca, H("imscLanguageList"), ra.PN, []),
           zla: C(L, H("customDfxpUrl")),
@@ -53169,15 +53167,10 @@ a000.n9I = function() {
         };
       };
       c.prototype.Prb = function(h, k, n, q) {
-        return {
-          height: n - Math.max(q, k.bottom || 0) - Math.max(q, k.top || 0),
-          width: h.width
-        };
+        return {height: n - Math.max(q, k.bottom || 0) - Math.max(q, k.top || 0), width: h.width};
       };
       b.pMa = c;
-      c.Nca = {
-        "class": "player-timedtext-text-container"
-      };
+      c.Nca = {"class": "player-timedtext-text-container"};
     }, function(r, b, a) {
       var c;
       _esm(b)
@@ -57959,13 +57952,13 @@ a000.n9I = function() {
       l = a(203);
       m = a(45);
       d = {
-        MONOSPACED_SERIF: "font-family:Courier New,Arial,Helvetica;font-weight:bolder",
-        MONOSPACED_SANS_SERIF: "font-family:Consolas,Lucida Console,Menlo,Monaco,Arial,Helvetica;font-weight:bolder",
-        PROPORTIONAL_SERIF: "font-family:Georgia,Times New Roman,Arial,Helvetica;font-weight:bolder",
-        PROPORTIONAL_SANS_SERIF: "font-family:Arial,Helvetica;font-weight:bolder",
-        CASUAL: "font-family:Gabriola,Segoe Print,Comic Sans MS,Chalkboard,Arial,Helvetica;font-weight:bolder",
-        CURSIVE: "font-family:Lucida Handwriting,Brush Script MT,Segoe Script,Arial,Helvetica;font-weight:bolder",
-        SMALL_CAPITALS: "font-family:Copperplate Gothic,Copperplate Gothic Bold,Copperplate,Arial,Helvetica;font-variant:small-caps;font-weight:bolder"
+        MONOSPACED_SERIF: "font-family:Courier New,Arial,Helvetica",
+        MONOSPACED_SANS_SERIF: "font-family:Consolas,Lucida Console,Menlo,Monaco,Arial,Helvetica",
+        PROPORTIONAL_SERIF: "font-family:Georgia,Times New Roman,Arial,Helvetica",
+        PROPORTIONAL_SANS_SERIF: "font-family:Arial,Helvetica",
+        CASUAL: "font-family:Gabriola,Segoe Print,Comic Sans MS,Chalkboard,Arial,Helvetica",
+        CURSIVE: "font-family:Lucida Handwriting,Brush Script MT,Segoe Script,Arial,Helvetica",
+        SMALL_CAPITALS: "font-family:Copperplate Gothic,Copperplate Gothic Bold,Copperplate,Arial,Helvetica;font-variant:small-caps"
       };
       b.Nea = function() {
         this.WRa = this.gM = l.Sx.f1;
