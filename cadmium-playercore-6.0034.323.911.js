@@ -119741,14 +119741,8 @@ a000.n9I = function() {
       g = a(74);
       a = a(40);
       h = {
-        start: {
-          video: l.La.XQ,
-          audio: l.La.TQ
-        },
-        end: {
-          video: l.La.WQ,
-          audio: l.La.SQ
-        }
+        start: {video: l.La.XQ, audio: l.La.TQ},
+        end: {video: l.La.WQ, audio: l.La.SQ}
       };
       c.prototype.TZa = function(n) {
         var p, u, t, w, v, x, y, z;
@@ -120758,7 +120752,6 @@ a000.n9I = function() {
               'playready-h264hpl40-dash'
             )
           }
-          console.log(I)
           useAllSub && (E.showAllSubDubTracks = 1)
           L = {
             type: "standard",
