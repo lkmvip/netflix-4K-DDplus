@@ -18,7 +18,7 @@ button, input, textarea {
   inset: 10px;
 }
 .player-log.maximum {
-  height: unset;
+  height: unset
 }
 .player-log textarea {
   font-size: max(11px, 0.90vh);
@@ -55,31 +55,33 @@ button, input, textarea {
      #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px,
      #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px;
   font-family: 'Segoe UI Variable Text', Tahoma, sans-serif;
-  font-size: max(13px, 1.3vh);
+  font-size: max(14px, 1.4vh);
   background: 0;
   position: absolute;
   overflow: hidden;
-  margin: 10px;
+  margin: 1vh;
   resize: none;
   border: 0;
-  min-height: 26vh;
+  min-height: 28vh;
   width: 35%;
   color: #ccc;
 }
 .player-streams {
-  font-family: monospace;
   position: fixed;
   text-align: center;
-  font-size: 11px;
-  padding: 5px;
+  font-size: 1.1vh;
+  padding: .5vh;
   z-index: 9;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .4);
+  border-radius: .5vh;
+  box-shadow: .1vh .1vh .5vh .1vh rgba(0, 0, 0, .4);
   background: #222;
   color: #ccc;
+}
+.player-streams div {
+  margin: .5vh;
 }
 .player-streams select::-webkit-scrollbar {
   display: none
@@ -88,14 +90,15 @@ button, input, textarea {
   -ms-overflow-style: none;
   scrollbar-width: none;
   background: #444;
-  border-radius: 5px;
+  border-radius: .5vh;
   border: 1px solid #555;
-  height: 180px;
-  width: 120px;
+  height: 18vh;
+  width: 12vh;
 }
 .player-streams button { 
   background: #444;
   border-radius: 3px;
   border: 1px solid #555;
-  margin: 2px 5px;
+  padding: .2vh .6vh;
+  margin: 0 1vh;
 }

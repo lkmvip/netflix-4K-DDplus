@@ -1,11 +1,9 @@
 function sec2time (n) {
-    var h = Math.floor(n / 3600)
-    h = h < 10 ? ('0' + h) : h
-    var m = Math.floor(n / 60 % 60)
-    m = m < 10 ? ('0' + m) : m
-    var s = Math.floor(n % 60)
-    s = s < 10 ? ('0' + s) : s
-    return h + ':' + m + ':' + s + ''
+  return [n / 3600, n / 60 % 60, n % 60]
+    .map(Math.floor)
+    .map(String)
+    .map(s => s.padStart(2, 0))
+    .join(":")
 }
 function _esm(b) {
     Object.defineProperties(b, {__esModule: {value: !0}})
@@ -50023,38 +50021,30 @@ a000.n9I = function() {
       var f, l, m, d, g, h, k;
 
       function c(n) {
-        var q, p, u, t;
-        q = this;
+        var p, u, t, q = this;
         this.j = n;
         this.OU = void 0;
-        this.Ega = m.createElement("DIV", "", "", {"class": "player-streams"});
-        this.tga = m.createElement("DIV");
+        this.out = document.querySelector('.watch-video')
+        this.Ega = m.createElement("DIV", 0, 0, {"class": "player-streams"});
         this.iga = m.createElement("DIV");
         this.Imb = this.vga("Audio Bitrate");
         this.nia = this.vga("Video Bitrate");
         this.lga = this.vga("CDN");
         this.tT = {};
         this.qW = d.oa.get(g.en);
-        this.Ega.appendChild(this.tga);
-        this.tga.appendChild(this.iga);
-        p = m.createElement("BUTTON", void 0, "Override");
+        this.Ega.appendChild(this.iga);
+        p = m.createElement("BUTTON", 0, "Override");
         p.addEventListener("click", this.Cmb.bind(this), !1);
         this.iga.appendChild(p);
-        p = m.createElement("BUTTON", void 0, "Reset");
+        p = m.createElement("BUTTON", 0, "Reset");
         p.addEventListener("click", this.Nqb.bind(this), !1);
         this.iga.appendChild(p);
         u = this.Wpb.bind(this);
         l.we.addListener(l.CD, u);
-        n.addEventListener(k.ea.dI, function() {
-          q.tT = {};
-        });
-        n.addEventListener(k.ea.qg, function() {
-          l.we.removeListener(l.CD, u);
-        });
+        n.addEventListener(k.ea.dI, function() {q.tT = {}});
+        n.addEventListener(k.ea.qg, function() {l.we.removeListener(l.CD, u)});
         t = this.Aqb.bind(this);
-        n.uc.forEach(function(w) {
-          w.addListener(t);
-        });
+        n.uc.forEach(function(w) {w.addListener(t)});
         n.tc.addListener(t);
         n.zg.addListener(t);
       }
@@ -50068,10 +50058,10 @@ a000.n9I = function() {
       h = a(134);
       k = a(15);
       c.prototype.show = function() {
-        this.QT || (this.KPa(), document.body.appendChild(this.Ega), this.QT = !0);
+        this.QT || (this.KPa(), this.out.appendChild(this.Ega), this.QT = !0)
       };
       c.prototype.ls = function() {
-        this.QT && (document.body.removeChild(this.Ega), this.QT = !1);
+        this.QT && (this.out.removeChild(this.Ega), this.QT = !1)
       };
       c.prototype.toggle = function() {
         this.QT ? this.ls() : this.show();
@@ -50080,10 +50070,9 @@ a000.n9I = function() {
         var p, u, t, w;
 
         function n(v, x, y) {
-          var z, A, B;
-          A = [];
+          var z, B, A = [];
           x.filter(function(E) {
-            return E.Ig === v;
+            return E.Ig === v
           }).forEach(function(E) {
             0 <= y.indexOf(E) ? (void 0 === B ? B = E.bitrate : z = E.bitrate, void 0 === z && (z = E.bitrate)) : void 0 !== B && void 0 !== z && (A.push({
               min: B,
@@ -50091,10 +50080,7 @@ a000.n9I = function() {
             }), B = z = void 0);
           });
           if (void 0 !== B && void 0 !== z) {
-            A.push({
-              min: B,
-              max: z
-            });
+            A.push({min: B, max: z});
             B = z = void 0;
           }
           return A;
@@ -50162,8 +50148,7 @@ a000.n9I = function() {
         });
       };
       c.prototype.KPa = function() {
-        var n, q, p, u;
-        n = this;
+        var q, p, u, n = this;
         q = this.j.tc.value;
         p = this.j.zg.value;
         u = this.j.pj;
@@ -50180,24 +50165,24 @@ a000.n9I = function() {
         })), this.lga.removeAttribute("disabled"));
       };
       c.prototype.Aqb = function() {
-        this.QT && this.KPa();
+        this.QT && this.KPa()
       };
       c.prototype.vga = function(n) {
         var q, p;
-        q = m.createElement("DIV", "display:inline-block;margin:5px");
-        n = m.createElement("DIV", 'margin:2px', n);
-        p = m.createElement('select', '', '', {multiple: 1});
+        q = m.createElement("DIV", "display:inline-block");
+        n = m.createElement("DIV", 0, n);
+        p = m.createElement("SELECT", 0, 0, {multiple: 1});
         q.appendChild(n);
         q.appendChild(p);
-        this.tga.appendChild(q);
-        return p;
+        this.Ega.appendChild(q);
+        return p
       };
       c.prototype.Yha = function(n, q) {
         n.innerHTML = "";
         q.forEach(function(p) {
           var u = {title: p.caption};
           p.selected && (u.selected = "selected");
-          u = m.createElement("option", void 0, p.caption, u);
+          u = m.createElement("OPTION", void 0, p.caption, u);
           u.value = p.value;
           n.appendChild(u);
         });
@@ -50212,7 +50197,7 @@ a000.n9I = function() {
       function c(h, k) {
         this.tna = h;
         this.hH = {position: "absolute", inset: 0, display: "block"};
-        this.element = f.createElement("DIV", '', '', {"class": "player-timedtext"});
+        this.element = f.createElement("DIV", 0, 0, {"class": "player-timedtext"});
         this.element.onselectstart = function() {return !1};
         this.i$a(k);
         this.FXa = this.pHb(this.tna);
@@ -50239,17 +50224,13 @@ a000.n9I = function() {
         this.kP();
       };
       c.prototype.kP = function() {
-        var h, k, n, q, p, u, t, w, v, x, y, A, B, E;
-        h = this;
+        var k, n, q, p, u, t, w, v, x, y, A, B, E, h = this;
         k = this.Nn();
         n = k.parentElement;
         q = n && n.clientWidth || 0;
         p = n && n.clientHeight || 0;
         u = n = 0;
-        t = {
-          width: q,
-          height: p
-        };
+        t = {width: q, height: p};
         if (0 < q && 0 < p && this.entry) {
           this.hja && (t = f.jN(q, p, this.hja), n = Math.round((q - t.width) / 2), u = Math.round((p - t.height) / 2));
           v = this.zvb(t);
@@ -51527,9 +51508,7 @@ a000.n9I = function() {
             url: G,
             Fua: D,
             withCredentials: !0,
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded"
-            },
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
             iD: "track"
           }, f.wl));
         }
@@ -51635,9 +51614,8 @@ a000.n9I = function() {
       }
 
       function l(v, x, y) {
-        var z;
         if ("string" === typeof v) return l.call(this, c(v), x, y);
-        z = 0;
+        var z = 0;
         Object.keys(v).forEach(function(A) {
           var B, E, D;
           B = p[A];
