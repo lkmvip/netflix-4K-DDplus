@@ -54,7 +54,7 @@ button, input, textarea {
   text-shadow:
      #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px,
      #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px;
-  font-family: 'Segoe UI Variable Text', Tahoma,  sans-serif;
+  font-family: 'Segoe UI Variable Text', Tahoma, sans-serif;
   font-size: max(13px, 1.3vh);
   background: 0;
   position: absolute;
