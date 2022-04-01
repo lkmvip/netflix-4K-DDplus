@@ -54,7 +54,7 @@ button, input, textarea {
   text-shadow:
      #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px,
      #222222bf 0 0 2px, #222222bf 0 0 2px, #222222bf 0 0 2px;
-  font-family: 'Segoe UI Variable Text', 'YouTube Sans', Tahoma,  sans-serif;
+  font-family: 'Segoe UI Variable Text', Tahoma,  sans-serif;
   font-size: max(13px, 1.3vh);
   background: 0;
   position: absolute;
@@ -62,9 +62,7 @@ button, input, textarea {
   margin: 10px;
   resize: none;
   border: 0;
-  min-height: 260px;
-  height: 26vh;
-  height:99vh;
+  min-height: 26vh;
   width: 35%;
   color: #ccc;
 }
@@ -83,12 +81,12 @@ button, input, textarea {
   background: #222;
   color: #ccc;
 }
-.player-streams select::-webkit-scrollbar { /* Chrome, Safari and Opera */
+.player-streams select::-webkit-scrollbar {
   display: none
 }
 .player-streams select {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   background: #444;
   border-radius: 5px;
   border: 1px solid #555;

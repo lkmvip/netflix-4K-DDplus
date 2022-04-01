@@ -21072,7 +21072,6 @@ a000.n9I = function() {
       r.__exportStar(a(817), b);
       r.__exportStar(a(178), b);
     }, function(r, b) {
-      _esm(b)
       b.Ag = {
         Kra: "logblob",
         na: "manifest",
@@ -21093,7 +21092,7 @@ a000.n9I = function() {
         Ujb: "osversion",
         Ffb: "clienttype",
         Zlb: "uiversion"
-      };
+      }
     }, function(r, b) {
       _esm(b)
       b.Fv = "EmeConfigSymbol";
@@ -26164,10 +26163,7 @@ a000.n9I = function() {
         for (; R8 !== 8;) {
           switch (R8) {
             case 2:
-              var g9I = "1SIYb";
-              g9I += "ZrNJ";
-              g9I += "C";
-              g9I += "p9";
+              var g9I = "1SIYbZrNJCp9";
               b.prototype.start = function(a) {
                 var b00 = 2;
                 for (; b00 !== 1;) {
@@ -26994,14 +26990,7 @@ a000.n9I = function() {
       b.hFa = "IndexedDBFactorySymbol";
       b.Bda = "IndexedDBStorageFactorySymbol";
     }, function(r, b) {
-      _esm(b)
-      b.Wca = void 0;
-      (b.Wca || (b.Wca = {})).Pkb = "PboDebugEvent";
-      b.eCa = {
-        rjb: "Manifest",
-        Event: "Event",
-        H7b: "Logblob"
-      };
+      
     }, function(r, b) {
       _esm(b)
       b.OR = "LicenseProviderSymbol";
@@ -30962,7 +30951,6 @@ a000.n9I = function() {
                       break;
                     case 1:
                       return new n.Oza(u, w, v, x, y, t, z, A);
-                      break;
                     case 4:
                       B = Math.ceil(v.ga / v.pO);
                       y = v.offset;
@@ -30975,12 +30963,8 @@ a000.n9I = function() {
                       break;
                     case 13:
                       return x;
-                      break;
                     case 14:
-                      var m9I = "s";
-                      m9I += "ub";
-                      m9I += "req";
-                      m9I += "uest";
+                      var m9I = "subrequest";
                       (B = {
                         offset: y,
                         ga: Math.min(E, A),
@@ -30990,7 +30974,6 @@ a000.n9I = function() {
                       break;
                     case 12:
                       return new p(u, w, v, x, y, t, z, A);
-                      break;
                   }
                 }
               };
@@ -30999,12 +30982,8 @@ a000.n9I = function() {
                 for (; j00 !== 1;) {
                   switch (j00) {
                     case 2:
-                      var G9I = "I";
-                      G9I += "D";
-                      G9I += ":";
-                      G9I += " ";
+                      var G9I = "ID: ";
                       return G9I + this.ti() + ":" + g.cn.prototype.toString.call(this);
-                      break;
                   }
                 }
               };
@@ -31022,7 +31001,6 @@ a000.n9I = function() {
                 }
               };
               return p;
-              break;
           }
         }
 
@@ -31039,18 +31017,9 @@ a000.n9I = function() {
                 g00 = 7;
                 break;
               case 2:
-                var M9I = "e";
-                M9I += "d";
-                M9I += "i";
-                M9I += "t";
-                var s9I = "c";
-                s9I += "a";
-                s9I += "c";
-                s9I += "h";
-                s9I += "e";
-                var I9I = "1SIY";
-                I9I += "b";
-                I9I += "ZrNJCp9";
+                var M9I = "edit";
+                var s9I = "cache";
+                var I9I = "1SIYbZrNJCp9";
                 B = this;
                 I9I;
                 B = [s9I, M9I].filter(function(E, D) {
@@ -31059,7 +31028,6 @@ a000.n9I = function() {
                     switch (h00) {
                       case 2:
                         return [x, w.ya][D];
-                        break;
                     }
                   }
                 });
@@ -31067,7 +31035,6 @@ a000.n9I = function() {
                 break;
               case 7:
                 return B;
-                break;
             }
           }
         }
@@ -31545,7 +31512,6 @@ a000.n9I = function() {
                       m = null !== m && void 0 !== m ? m : this.nO;
                       this.config.wra && m ? (l = c.$ia(l, m), l = Math.max(l, d)) : l = d;
                       return l;
-                      break;
                   }
                 }
               };
@@ -31580,7 +31546,6 @@ a000.n9I = function() {
                 }
               };
               return f;
-              break;
           }
         }
 
@@ -31599,10 +31564,7 @@ a000.n9I = function() {
                 m00 = 0;
                 break;
               case 4:
-                var h9I = "1S";
-                h9I += "I";
-                h9I += "Yb";
-                h9I += "ZrNJCp9";
+                var h9I = "1SIYbZrNJCp9";
                 h9I;
                 m00 = 3;
                 break;
@@ -39335,7 +39297,6 @@ a000.n9I = function() {
           switch (q00) {
             case 4:
               return f;
-              break;
             case 2:
               f.prototype.Dmb = function(l, m) {
                 var s00, d;
@@ -39355,47 +39316,20 @@ a000.n9I = function() {
                       s00 = 9;
                       break;
                     case 4:
-                      var k9I = "applying mani";
-                      k9I += "fe";
-                      k9I += "st based streamingClientConfig";
+                      var k9I = "applying manifest based streamingClientConfig";
                       return (l = d.streamingClientConfig, this.I.trace(k9I + JSON.stringify(l)), this.pPa(m, l));
-                      break;
                     case 9:
                       s00 = !l ? 8 : 7;
                       break;
                     case 7:
-                      var S3I = "using sab ";
-                      S3I += "cell >=";
-                      S3I += " 100, pipelineEnab";
-                      S3I += "led: ";
-                      var a3I = "using sab ";
-                      a3I += "cell >=";
-                      a3I += " 200, pipelineEnabled:";
-                      a3I += " ";
-                      var V3I = ", allo";
-                      V3I += "wSw";
-                      V3I += "itch";
-                      V3I += "back";
-                      var f3I = ",";
-                      f3I += " probeD";
-                      f3I += "eta";
-                      f3I += "ilDenominator: ";
-                      var p3I = "using";
-                      p3I += " sab cell >=";
-                      p3I += " 300,";
-                      p3I += " probeServerWhenE";
-                      p3I += "rror: ";
-                      var R3I = ", a";
-                      R3I += "llo";
-                      R3I += "wSwitchb";
-                      R3I += "a";
-                      R3I += "ck";
-                      var q9I = ", probeDetailD";
-                      q9I += "enominat";
-                      q9I += "or: ";
-                      var w9I = "using sab cell >= 400, ";
-                      w9I += "probeServerW";
-                      w9I += "henError: ";
+                      var S3I = "using sab cell >= 100, pipelineEnabled: ";
+                      var a3I = "using sab cell >= 200, pipelineEnabled: ";
+                      var V3I = ", allowSwitchback";
+                      var f3I = ", probeDetailDenominator: ";
+                      var p3I = "using sab cell >= 300, probeServerWhenError: ";
+                      var R3I = ", allowSwitchback";
+                      var q9I = ", probeDetailDenominator: ";
+                      var w9I = "using sab cell >= 400, probeServerWhenError: ";
                       (l = l.sessionABTestCell) && (l = l.split(".")) && 1 < l.length && (l = parseInt(l[1].replace(/cell/i, ""), 10), 400 <= l ? (m.set ? (m.set({
                         probeServerWhenError: !0
                       }), m.set({
@@ -39420,10 +39354,8 @@ a000.n9I = function() {
                         maxPendingBufferLen: m.R3a
                       })) : (m.Qq = !0, m.oO = 1, m.cx = m.L8, m.T8 = m.R3a), this.I.trace(S3I + m.Qq)));
                       return m;
-                      break;
                     case 8:
                       return m;
-                      break;
                   }
                 }
               };
@@ -39437,16 +39369,13 @@ a000.n9I = function() {
                         new RegExp(d).test(l) && (m = this.pPa(m, m.cla[d]));
                       }
                       return m;
-                      break;
                     case 1:
                       return m;
-                      break;
                     case 2:
                       t00 = !m.cla || l === this.Aob ? 1 : 5;
                       break;
                     case 6:
                       return m;
-                      break;
                   }
                 }
               };
@@ -39458,17 +39387,12 @@ a000.n9I = function() {
                     case 2:
                       for (g in m) {
                         if (m.hasOwnProperty(g)) {
-                          var C3I = "Inv";
-                          C3I += "a";
-                          C3I += "l";
-                          C3I += "i";
-                          C3I += "d key";
+                          var C3I = "Invalid key";
                           h = m[g];
                           l.set ? 0 === l.set((d = {}, d[g] = h, d)) && this.I.trace(C3I + g) : l[g] = h;
                         }
                       }
                       return l;
-                      break;
                   }
                 }
               };
@@ -39482,9 +39406,7 @@ a000.n9I = function() {
           for (; r00 !== 5;) {
             switch (r00) {
               case 2:
-                var e3I = "1S";
-                e3I += "IYbZrNJ";
-                e3I += "Cp9";
+                var e3I = "1SIYbZrNJCp9";
                 this.I = l;
                 e3I;
                 r00 = 5;
@@ -40731,11 +40653,7 @@ a000.n9I = function() {
         for (; v00 !== 4;) {
           switch (v00) {
             case 2:
-              var t3I = "1";
-              t3I += "SI";
-              t3I += "Yb";
-              t3I += "Zr";
-              t3I += "NJCp9";
+              var t3I = "1SIYbZrNJCp9";
               b.Y8 = f = function(d, g, h, k, n) {
                 var x00, p, q, w, v, x, u, t;
                 x00 = 2;
@@ -40749,11 +40667,7 @@ a000.n9I = function() {
                       x00 = d.BX && 0 < d.BX ? 1 : 18;
                       break;
                     case 9:
-                      var H3I = "ma";
-                      H3I += "ybeUpgrad";
-                      H3I += "eLowVmafFragmen";
-                      H3I += "ts: ";
-                      H3I += "invalid streams";
+                      var H3I = "maybeUpgradeLowVmafFragments: invalid streams";
                       c.error(H3I);
                       x00 = 18;
                       break;
@@ -40818,11 +40732,7 @@ a000.n9I = function() {
                       y00 = d.BX && !(0 >= d.BX) ? 5 : 8;
                       break;
                     case 9:
-                      var d3I = "min_f";
-                      d3I += "r";
-                      d3I += "a";
-                      d3I += "gment_vma";
-                      d3I += "f";
+                      var d3I = "min_fragment_vmaf";
                       void 0 !== w && (n = m(g, t, w), -1 !== n && (n !== d && (k.x4a = d, k.Pg = g[n], k.reason = d3I), (null === (u = null === (p = k.Pg) || void 0 === p ? void 0 : p.Y) || void 0 === u ? 0 : u.get) && k.Pg.Y.get(h)));
                       y00 = 8;
                       break;
@@ -40870,7 +40780,6 @@ a000.n9I = function() {
               case 9:
                 d = g[h];
                 return void 0 !== d ? d : -1;
-                break;
             }
           }
         }
@@ -40907,7 +40816,6 @@ a000.n9I = function() {
               case 1:
                 v.Pg = y[0];
                 return v;
-                break;
             }
           }
         }
@@ -40989,17 +40897,9 @@ a000.n9I = function() {
                 break;
               case 8:
                 return !1;
-                break;
               case 2:
-                var i3I = "Second st";
-                i3I += "ream un";
-                i3I += "defi";
-                i3I += "ned";
-                var X3I = "First st";
-                X3I += "rea";
-                X3I += "m";
-                X3I += " u";
-                X3I += "ndefined";
+                var i3I = "Second stream undefined";
+                var X3I = "First stream undefined";
                 n(y, X3I);
                 n(z, i3I);
                 (P = y.Ua, S = D - B, V = y.Y && y.Y.length, ca = z.Y && z.Y.length);
@@ -41012,10 +40912,7 @@ a000.n9I = function() {
         for (; z00 !== 5;) {
           switch (z00) {
             case 2:
-              var j3I = "1";
-              j3I += "SIYbZr";
-              j3I += "NJCp";
-              j3I += "9";
+              var j3I = "1SIYbZrNJCp9";
               b.Bx = p = function(v, x, y, z, A, B, E) {
                 var C37 = a000;
                 var F00, Y, ua, J, M, N, P, S, G, C, ya, sa, V, H, K, O, I, Q, L, ca, ka;
@@ -41026,7 +40923,6 @@ a000.n9I = function() {
                     switch (G00) {
                       case 2:
                         return T.Y ? T.Y.fla(R, ea) : 0;
-                        break;
                     }
                   }
                 }
@@ -41040,7 +40936,6 @@ a000.n9I = function() {
                           switch (I00) {
                             case 2:
                               return F(T, y[z + R], H, ya, sa, !1, x.playbackRate);
-                              break;
                           }
                         }
                       });
@@ -41062,22 +40957,10 @@ a000.n9I = function() {
                       F00 = 20;
                       break;
                     case 2:
-                      var Q3I = "nu";
-                      Q3I += "m";
-                      Q3I += "b";
-                      Q3I += "e";
-                      Q3I += "r";
-                      var b3I = "nu";
-                      b3I += "mb";
-                      b3I += "er";
-                      var D3I = "inva";
-                      D3I += "lid playe";
-                      D3I += "r ";
-                      D3I += "fragm";
-                      D3I += "entIndex";
-                      var x3I = "Must have at least one selec";
-                      x3I += "ted st";
-                      x3I += "ream";
+                      var Q3I = "number";
+                      var b3I = "number";
+                      var D3I = "invalid player fragmentIndex";
+                      var x3I = "Must have at least one selected stream";
                       n(!c.ka(z), x3I);
                       void 0 === x.Sd && (x.Sd = 0);
                       n(c.Ea(x.Sd), D3I);
@@ -41087,7 +40970,6 @@ a000.n9I = function() {
                       break;
                     case 18:
                       return t.call(this, x, v, y, A);
-                      break;
                     case 34:
                       F00 = A.Y && A.Y.length ? 33 : 22;
                       break;
@@ -41103,10 +40985,8 @@ a000.n9I = function() {
                       C.Pg = A || H;
                       k.X8(v, y, L, C);
                       return C;
-                      break;
                     case 14:
                       return (A = w(y, z, A.Ua || 0, v.dXa, x.playbackRate), null !== (G = A.Y) && void 0 !== G && G.length || (A.Paa = !0), C.Pg = A, C);
-                      break;
                     case 31:
                       A = J;
                       F00 = 22;
@@ -41137,7 +41017,6 @@ a000.n9I = function() {
                           switch (J00) {
                             case 2:
                               return F(T, y[Math.max(z - R - 2, 0)], H, Y, ua, !0, x.playbackRate);
-                              break;
                           }
                         }
                       })) && A.Pf < J.Pf || !A ? 31 : 22;
@@ -41158,13 +41037,11 @@ a000.n9I = function() {
                     switch (H00) {
                       case 5:
                         return !1;
-                        break;
                       case 3:
                         H00 = !Ma || !Za ? 9 : 13;
                         break;
                       case 10:
                         return R && R.result;
-                        break;
                       case 13:
                         ea = !v.Zka || T === ea || T.Pc === ea.Pc && B ? 0 : (ea = T.zb) && ea.Dj && ea.Dj.Ha ? ea.Dj.Ha + v.Wka * (ea.Dj.gj ? Math.sqrt(ea.Dj.gj) : 0) : 0;
                         (R = u(v, y, T, R, ca, O + ea - K, N, Q - K, I - K, L, ca.length, M, ka, ra, la, P, x.ima, x.playbackRate, !!x.b3a)) && R.result && (C.kcc = R.lX);
@@ -41180,7 +41057,6 @@ a000.n9I = function() {
                         break;
                       case 7:
                         return !0;
-                        break;
                       case 9:
                         H00 = Za && !v.NZ ? 8 : 6;
                         break;
@@ -41194,7 +41070,6 @@ a000.n9I = function() {
                         break;
                       case 14:
                         return !0;
-                        break;
                       case 6:
                         H00 = ab >= T.bitrate * Ua * cb ? 14 : 13;
                         break;
@@ -41225,13 +41100,11 @@ a000.n9I = function() {
                     switch (E00) {
                       case 2:
                         return E.bitrate > B;
-                        break;
                     }
                   }
                 });
                 y = 0 < y ? y - 1 : 0 === y ? 0 : v.length - 1;
                 return v[Math.max(x, y)];
-                break;
             }
           }
         }
@@ -51063,12 +50936,7 @@ a000.n9I = function() {
           default:
             n = (w + n - v - k) / 2;
         }
-        return {
-          top: q,
-          left: n,
-          width: k,
-          height: h
-        };
+        return { top: q, left: n, width: k, height: h }
       };
       c.prototype.Prb = function(h, k, n, q) {
         return {height: n - Math.max(q, k.bottom || 0) - Math.max(q, k.top || 0), width: h.width};
@@ -55136,7 +55004,6 @@ a000.n9I = function() {
         var v, x, y, z, B, E, D, F, G, C, H, K;
         v = p.AYa(t);
         x = v.HTa;
-        if (void 0 === x) throw Error(g.cjb + " " + u + ".");
         v = v.P3b;
         y = Object.keys(v);
         z = 0 === t.length && 0 < y.length ? y.length : t.length;
@@ -58177,9 +58044,7 @@ a000.n9I = function() {
       c.prototype.dXb = function() {
         var x = this;
         this.Oc.Gk(this.config.nua, function() {
-          x.log.trace("Removing cached sessions", {
-            "count:": x.oM.y5.length
-          });
+          x.log.trace("Removing cached sessions", {"count:": x.oM.y5.length})
           x.oM.y5.filter(function(y) {
             return !y.active;
           }).reduce(function(y, z) {
@@ -63671,13 +63536,9 @@ a000.n9I = function() {
           for (; L00 !== 4;) {
             switch (L00) {
               case 2:
-                var N3I = "1SI";
-                N3I += "Yb";
-                N3I += "ZrNJ";
-                N3I += "Cp9";
+                var N3I = "1SIYbZrNJCp9";
                 this.$pa = l;
                 this.Oz = {};
-                N3I;
                 L00 = 4;
                 break;
             }
@@ -63701,7 +63562,6 @@ a000.n9I = function() {
                 }
               };
               return f;
-              break;
             case 2:
               f.prototype.reset = function() {
                 var M00 = 2;
@@ -63772,10 +63632,8 @@ a000.n9I = function() {
                   switch (Q00) {
                     case 4:
                       return this.OE.get();
-                      break;
                     case 2:
                       return this.OE.get();
-                      break;
                   }
                 }
               };
@@ -63798,10 +63656,7 @@ a000.n9I = function() {
           for (; T00 !== 5;) {
             switch (T00) {
               case 2:
-                var u3I = "1S";
-                u3I += "IYb";
-                u3I += "ZrNJCp";
-                u3I += "9";
+                var u3I = "1SIYbZrNJCp9";
                 this.e3 = {};
                 u3I;
                 T00 = 5;
@@ -63880,12 +63735,10 @@ a000.n9I = function() {
                       break;
                     case 9:
                       return d;
-                      break;
                   }
                 }
               };
               return f;
-              break;
           }
         }
       })();
@@ -63963,10 +63816,8 @@ a000.n9I = function() {
               break;
             case 14:
               return f;
-              break;
             case 4:
               return f;
-              break;
           }
         }
 
@@ -63975,10 +63826,7 @@ a000.n9I = function() {
           for (; Z00 !== 7;) {
             switch (Z00) {
               case 1:
-                var K3I = "1";
-                K3I += "SIYb";
-                K3I += "Zr";
-                K3I += "NJCp9";
+                var K3I = "1SIYbZrNJCp9";
                 this.hh = [0, 0];
                 this.fY = [0, 0];
                 K3I;
@@ -64018,13 +63866,8 @@ a000.n9I = function() {
                 e10 = 4;
                 break;
               case 4:
-                var o3I = "1";
-                o3I += "SIY";
-                o3I += "bZ";
-                o3I += "r";
-                o3I += "NJCp9";
+                var o3I = "1SIYbZrNJCp9";
                 this.GO = this.IO = 0;
-                o3I;
                 this.PPb = l ? l : 3;
                 e10 = 8;
                 break;
@@ -64035,7 +63878,6 @@ a000.n9I = function() {
           switch (d10) {
             case 3:
               return f;
-              break;
             case 2:
               f.prototype.reset = function() {
                 var f10 = 2;
@@ -64129,24 +63971,15 @@ a000.n9I = function() {
           for (; k10 !== 13;) {
             switch (k10) {
               case 9:
-                var r3I = "1SIYbZr";
-                r3I += "N";
-                r3I += "JCp";
-                r3I += "9";
+                var r3I = "1SIYbZrNJCp9";
                 A.cha = !1;
                 A.gqb = !1;
                 A.oG = [];
                 r3I;
                 return A;
-                break;
               case 2:
-                var U3I = "D";
-                U3I += "EBU";
-                U3I += "G:";
-                var P3I = "nf-as";
-                P3I += "e versio";
-                P3I += "n";
-                P3I += ":";
+                var U3I = "DEBUG:";
+                var P3I = "nf-ase version:";
                 A = v.call(this) || this;
                 A.config = y;
                 A.PE = z;
@@ -64169,10 +64002,8 @@ a000.n9I = function() {
                       switch (l10) {
                         case 4:
                           return this.q2.Rb;
-                          break;
                         case 2:
                           return this.q2.Rb;
-                          break;
                       }
                     }
                   },
@@ -64186,7 +64017,6 @@ a000.n9I = function() {
                       switch (m10) {
                         case 2:
                           return this.q2.Sn;
-                          break;
                       }
                     }
                   },
@@ -64200,10 +64030,8 @@ a000.n9I = function() {
                       switch (n10) {
                         case 4:
                           return this.Wha;
-                          break;
                         case 2:
                           return this.Wha;
-                          break;
                       }
                     }
                   },
@@ -64222,10 +64050,8 @@ a000.n9I = function() {
                       switch (o10) {
                         case 4:
                           return this.n3;
-                          break;
                         case 2:
                           return this.n3;
-                          break;
                       }
                     }
                   },
@@ -64239,10 +64065,8 @@ a000.n9I = function() {
                       switch (q10) {
                         case 4:
                           return ~f.ka(this.$Pa);
-                          break;
                         case 2:
                           return !f.ka(this.$Pa);
-                          break;
                       }
                     }
                   },
@@ -64256,7 +64080,6 @@ a000.n9I = function() {
                       switch (r10) {
                         case 2:
                           return this.XPa;
-                          break;
                       }
                     }
                   },
@@ -64270,10 +64093,8 @@ a000.n9I = function() {
                       switch (s10) {
                         case 4:
                           return this.Gy;
-                          break;
                         case 2:
                           return this.Gy;
-                          break;
                       }
                     }
                   },
@@ -64313,10 +64134,7 @@ a000.n9I = function() {
                 for (; F10 !== 6;) {
                   switch (F10) {
                     case 2:
-                      var c3I = "Attempted to destru";
-                      c3I += "ct Manag";
-                      c3I += "er before all Sessio";
-                      c3I += "ns removed";
+                      var c3I = "Attempted to destruct Manager before all Sessions removed";
                       n.assert(0 === this.oG.length, c3I);
                       this.cha = !1;
                       delete this.q2;
@@ -64337,7 +64155,6 @@ a000.n9I = function() {
                 }
               };
               return x;
-              break;
             case 6:
               Object.defineProperties(x.prototype, {
                 Rh: {
@@ -64347,7 +64164,6 @@ a000.n9I = function() {
                       switch (t10) {
                         case 2:
                           return this.q2.Rh;
-                          break;
                       }
                     }
                   },
@@ -64361,10 +64177,8 @@ a000.n9I = function() {
                       switch (u10) {
                         case 2:
                           return this.gqb;
-                          break;
                         case 4:
                           return this.gqb;
-                          break;
                       }
                     }
                   },
@@ -64405,24 +64219,11 @@ a000.n9I = function() {
                       v10 = G.Scb || G.Wya ? 13 : 12;
                       break;
                     case 13:
-                      var W3I = "med";
-                      W3I += "ia";
-                      W3I += "cache";
-                      var l3I = "c";
-                      l3I += "acheE";
-                      l3I += "vict";
-                      var A3I = "fl";
-                      A3I += "u";
-                      A3I += "shedBy";
-                      A3I += "te";
-                      A3I += "s";
-                      var Y3I = "d";
-                      Y3I += "i";
-                      Y3I += "scar";
-                      Y3I += "dedBytes";
-                      var O3I = "prebuff";
-                      O3I += "st";
-                      O3I += "ats";
+                      var W3I = "mediacache";
+                      var l3I = "cacheEvict";
+                      var A3I = "flushedBytes";
+                      var Y3I = "discardedBytes";
+                      var O3I = "prebuffstats";
                       (z = new p.mEa(this, G, A, D), y = function(C) {
                         var w10 = 2;
                         for (; w10 !== 1;) {
@@ -64438,11 +64239,7 @@ a000.n9I = function() {
                         for (; x10 !== 1;) {
                           switch (x10) {
                             case 2:
-                              var y3I = "m";
-                              y3I += "e";
-                              y3I += "diaca";
-                              y3I += "ch";
-                              y3I += "e";
+                              var y3I = "mediacache";
                               F.emit(y3I, C);
                               x10 = 1;
                               break;
@@ -64483,14 +64280,11 @@ a000.n9I = function() {
                       break;
                     case 1:
                       return (G = G || this.config, this.Rb.reset(), this.Sn.d0b(), this.Wha.reset(), void 0 === D && (D = this.s6(y, z)), f.ka(this.n3) && (this.n3 = d.default.Xo()[l.default.Wa.Ob] <= G.KQb ? 0 : G.eZ), y = new q.uLa(this, y, H, z, A, B, E, D, F, G, C), this.oG.push(y), y);
-                      break;
                     case 9:
                       z10 = this.cha ? 2 : 7;
                       break;
                     case 5:
-                      var L3I = "open: ";
-                      L3I += "streamingManager not initt";
-                      L3I += "ed";
+                      var L3I = "open: streamingManager not initted";
                       w(L3I);
                       z10 = 4;
                       break;
@@ -64507,7 +64301,6 @@ a000.n9I = function() {
                   switch (A10) {
                     case 2:
                       return this.Gy && (y = this.Gy.kX(y, z)) ? y : !1;
-                      break;
                   }
                 }
               };
@@ -64517,10 +64310,7 @@ a000.n9I = function() {
                 for (; B10 !== 4;) {
                   switch (B10) {
                     case 2:
-                      var B3I = "can't find sess";
-                      B3I += "ion in ";
-                      B3I += "arra";
-                      B3I += "y, movieId:";
+                      var B3I = "can't find session in array, movieId:";
                       this.Rb.HP(null);
                       z = this.oG.indexOf(y);
                       f.ka(z) ? w(B3I, y.Ge.P.K) : (this.oG.splice(z, 1), 0 === this.oG.length && this.Sn.k0b(), this.Sn.save(), this.Rh.save());
@@ -64535,10 +64325,8 @@ a000.n9I = function() {
                   switch (C10) {
                     case 4:
                       return g.AZa(y, z, A);
-                      break;
                     case 2:
                       return g.AZa(y, z, A);
-                      break;
                   }
                 }
               };
@@ -64908,9 +64696,7 @@ a000.n9I = function() {
                       E20 = 13;
                       break;
                     case 13:
-                      var F3I = "Error on M";
-                      F3I += "ediaSource destro";
-                      F3I += "y: ";
+                      var F3I = "Error on MediaSource destroy: ";
                       this.Ki.clear();
                       M = this.mg;
                       this.mg = void 0;
@@ -64960,10 +64746,8 @@ a000.n9I = function() {
                   switch (J20) {
                     case 2:
                       return this.Zi.sn();
-                      break;
                     case 4:
                       return this.Zi.sn();
-                      break;
                   }
                 }
               };
@@ -65037,11 +64821,7 @@ a000.n9I = function() {
                       h40 = 1;
                       break;
                     case 5:
-                      var v3I = "pts";
-                      v3I += "ch";
-                      v3I += "an";
-                      v3I += "g";
-                      v3I += "ed";
+                      var v3I = "ptschanged";
                       (S = this.Cb.Of[M], V = this.Cb.sB[M]);
                       f.ka(S.Jo) && (S.Jo = N, 1 === M && this.Rr && (M = this.Cb.Of[0], f.ka(M.Jo) && (P = P.jb(0), P.nJ(N)), this.emit(v3I, N)));
                       f.ka(V.yU) && (V.yU = N);
@@ -65081,9 +64861,7 @@ a000.n9I = function() {
                       k40 = this.Fh ? 1 : 4;
                       break;
                     case 1:
-                      var Z3I = "allCom";
-                      Z3I += "p";
-                      Z3I += "leted";
+                      var Z3I = "allCompleted";
                       M = this.J;
                       this.Fh.DD() || (this.Fh = void 0, M.Qr || this.xy.bz || this.OT(Z3I));
                       k40 = 4;
@@ -65160,10 +64938,7 @@ a000.n9I = function() {
                               m40 = 23;
                               break;
                             case 21:
-                              var E3I = "Unable to find reque";
-                              E3I += "st present";
-                              E3I += "ing at playerPt";
-                              E3I += "s:";
+                              var E3I = "Unable to find request presenting at playerPts:";
                               Y.Ub(E3I, ca);
                               m40 = 23;
                               break;
@@ -65198,10 +64973,8 @@ a000.n9I = function() {
                   switch (n40) {
                     case 4:
                       return this.rg.r2(M);
-                      break;
                     case 2:
                       return this.rg.r2(M);
-                      break;
                   }
                 }
               };
@@ -65211,10 +64984,8 @@ a000.n9I = function() {
                   switch (o40) {
                     case 2:
                       return this.rg.ek();
-                      break;
                     case 4:
                       return this.rg.ek();
-                      break;
                   }
                 }
               };
@@ -65244,10 +65015,7 @@ a000.n9I = function() {
                       p40 = 13;
                       break;
                     case 14:
-                      var n3I = "abortRequest ";
-                      n3I += "with no requestMana";
-                      n3I += "gaer";
-                      n3I += ":";
+                      var n3I = "abortRequest with no requestManagaer:";
                       this.Ub(n3I, M);
                       p40 = 13;
                       break;
@@ -65260,11 +65028,7 @@ a000.n9I = function() {
                 for (; q40 !== 5;) {
                   switch (q40) {
                     case 2:
-                      var J3I = "n";
-                      J3I += "o";
-                      J3I += " newAu";
-                      J3I += "dioT";
-                      J3I += "rack set";
+                      var J3I = "no newAudioTrack set";
                       (N = M.mediaType, P = this.Cb.Of[N]);
                       f.ka(P.G9) ? M.Ub(J3I) : (this.Tg[N].pause(), P.yQ = !0, M = this.Ge.zq(0), P = this.Ge.P.getTrackById(P.G9.trackId), this.Gb.lpb(M, P));
                       q40 = 5;
@@ -65286,10 +65050,7 @@ a000.n9I = function() {
                       r40 = 20;
                       break;
                     case 8:
-                      var z3I = "a";
-                      z3I += "u";
-                      z3I += "dio";
-                      z3I += "Switch";
+                      var z3I = "audioSwitch";
                       (this.Fh.wXb(function(Y) {
                         var s40 = 2;
                         for (; s40 !== 5;) {
@@ -65302,10 +65063,8 @@ a000.n9I = function() {
                               break;
                             case 1:
                               return (N.xG(Y, !1), !0);
-                              break;
                             case 9:
                               return (N.xG(Y, -0), ~2);
-                              break;
                           }
                         }
                       }), this.Fh.DD() || (this.Fh = void 0, S.Qr || this.xy.bz || this.OT(z3I)));
@@ -65365,10 +65124,8 @@ a000.n9I = function() {
                   switch (f30) {
                     case 2:
                       return this.X.fp(this.Ge.P);
-                      break;
                     case 4:
                       return this.X.fp(this.Ge.P);
-                      break;
                   }
                 }
               };
@@ -65379,13 +65136,11 @@ a000.n9I = function() {
                   switch (g30) {
                     case 1:
                       return !1;
-                      break;
                     case 2:
                       g30 = M >= this.Jd.length ? 1 : 5;
                       break;
                     case 7:
                       return !1;
-                      break;
                     case 8:
                       g30 = !(M === this.CL + 1 && P.mf.replace || N && S) || !this.X.fp(P) ? 7 : 6;
                       break;
@@ -65401,7 +65156,6 @@ a000.n9I = function() {
                       N = P.wh[1];
                       N = !this.Zm || N && N.stream.ke;
                       return (!this.Rr || M && M.stream.ke) && N ? !0 : !1;
-                      break;
                   }
                 }
               };
@@ -65431,7 +65185,6 @@ a000.n9I = function() {
                       break;
                     case 1:
                       return !1;
-                      break;
                     case 4:
                       i30 = N.vEb || !N.P.mf.replace ? 3 : 9;
                       break;
@@ -65440,12 +65193,10 @@ a000.n9I = function() {
                       break;
                     case 3:
                       return !1;
-                      break;
                     case 9:
                       this.nrb(M);
                       this.rg.ek();
                       return !0;
-                      break;
                   }
                 }
               };
@@ -65477,16 +65228,9 @@ a000.n9I = function() {
                       j30 = 13;
                       break;
                     case 2:
-                      var m3I = ",";
-                      m3I += " ";
-                      var g3I = ", s";
-                      g3I += "treami";
-                      g3I += "ngPts: ";
-                      var T3I = "swit";
-                      T3I += "chMani";
-                      T3I += "fest mani";
-                      T3I += "festIn";
-                      T3I += "dex: ";
+                      var m3I = ", ";
+                      var g3I = ", streamingPts: ";
+                      var T3I = "switchManifest manifestIndex: ";
                       (N = this.Jd[M], P = this.J, S = this.Pa.Yc, V = S.jb(0));
                       V = V ? V.Ic : void 0;
                       ca = S.jb(1);
@@ -65512,9 +65256,7 @@ a000.n9I = function() {
                       l30 = N ? 5 : 7;
                       break;
                     case 5:
-                      var G3I = "onAudioTrackSwitchStarted but current playing req";
-                      G3I += "ues";
-                      G3I += "t not found";
+                      var G3I = "onAudioTrackSwitchStarted but current playing request not found";
                       (P = this.X.Se(), S = this.Cb.Of[N.mediaType]);
                       (M = this.Pa.hu(P, M, 0)) ? N = M.Ta: (this.Ub(G3I), N = N.Ta);
                       this.oqb(N);
@@ -65527,9 +65269,7 @@ a000.n9I = function() {
                       l30 = 1;
                       break;
                     case 7:
-                      var I3I = "onAudioTrackSwitchStarte";
-                      I3I += "d ign";
-                      I3I += "ored, no audio pipeline";
+                      var I3I = "onAudioTrackSwitchStarted ignored, no audio pipeline";
                       this.Ub(I3I);
                       l30 = 6;
                       break;
@@ -65550,40 +65290,21 @@ a000.n9I = function() {
                       break;
                     case 26:
                       return !1;
-                      break;
                     case 8:
-                      var s3I = "swit";
-                      s3I += "chTracks rejected, buffer";
-                      s3I += "i";
-                      s3I += "ng";
+                      var s3I = "switchTracks rejected, buffering";
                       return (this.Ub(s3I), !1);
-                      break;
                     case 20:
-                      var M3I = "swi";
-                      M3I += "tchTracks r";
-                      M3I += "ej";
-                      M3I += "ected, bu";
-                      M3I += "fferLevelMs";
+                      var M3I = "switchTracks rejected, bufferLevelMs";
                       return (this.Ub(M3I, V, "<", N.m9), !1);
-                      break;
                     case 9:
                       m30 = this.X.tg() ? 8 : 7;
                       break;
                     case 5:
-                      var h3I = "switchT";
-                      h3I += "racks rejec";
-                      h3I += "ted,";
-                      h3I += " ";
-                      h3I += "audio disabled";
+                      var h3I = "switchTracks rejected, audio disabled";
                       return (this.Ub(h3I), !1);
-                      break;
                     case 3:
-                      var k3I = "switchTracks rejecte";
-                      k3I += "d";
-                      k3I += ", prev";
-                      k3I += "ious switch still in progress: ";
+                      var k3I = "switchTracks rejected, previous switch still in progress: ";
                       return (this.Ub(k3I + JSON.stringify(this.Cb.ez)), !1);
-                      break;
                     case 17:
                       m30 = !V ? 16 : 15;
                       break;
@@ -65592,7 +65313,6 @@ a000.n9I = function() {
                       break;
                     case 21:
                       return !0;
-                      break;
                     case 15:
                       ca = this.Ge.zq(0).trackId;
                       m30 = 27;
@@ -65601,23 +65321,15 @@ a000.n9I = function() {
                       m30 = this.Cb.ez ? 3 : 9;
                       break;
                     case 14:
-                      var w3I = "switchTracks rejected, previous switch s";
-                      w3I += "till waiting ";
-                      w3I += "to start";
+                      var w3I = "switchTracks rejected, previous switch still waiting to start";
                       return (this.Ub(w3I), !1);
-                      break;
                     case 2:
                       N = this.J;
                       m30 = 1;
                       break;
                     case 16:
-                      var q3I = "switch";
-                      q3I += "T";
-                      q3I += "ra";
-                      q3I += "ck";
-                      q3I += "s can't find trackId:";
+                      var q3I = "switchTracks can't find trackId:";
                       return (this.Ub(q3I, M), !1);
-                      break;
                     case 19:
                       M = M.zn;
                       V = this.Ge.P.getTrackById(M);
@@ -65638,15 +65350,8 @@ a000.n9I = function() {
                       m30 = 6;
                       break;
                     case 25:
-                      var p5I = " ";
-                      p5I += "t";
-                      p5I += "o:";
-                      p5I += " ";
-                      var R5I = "swi";
-                      R5I += "tchTrac";
-                      R5I += "ks ";
-                      R5I += "cur";
-                      R5I += "rent: ";
+                      var p5I = " to: ";
+                      var R5I = "switchTracks current: ";
                       N.ri && this.Gb.Jm(R5I + ca + p5I + V.trackId);
                       P.G9 = {
                         trackId: M
@@ -65678,7 +65383,6 @@ a000.n9I = function() {
                   switch (o30) {
                     case 2:
                       return this.Pa.hu(M, this.Pa.yi, N, P);
-                      break;
                   }
                 }
               };
@@ -65688,10 +65392,8 @@ a000.n9I = function() {
                   switch (p30) {
                     case 2:
                       return this.co.Qi(M);
-                      break;
                     case 4:
                       return this.co.Qi(M);
-                      break;
                   }
                 }
               };
@@ -65723,14 +65425,8 @@ a000.n9I = function() {
                           }
                         }
                       } catch (V) {
-                        var V5I = "]";
-                        V5I += " ";
-                        V5I += "[";
-                        var f5I = "exce";
-                        f5I += "pti";
-                        f5I += "o";
-                        f5I += "n: ";
-                        f5I += "[";
+                        var V5I = "] [";
+                        var f5I = "exception: [";
                         this.I.error(f5I + V.message + V5I + V.pec + "]");
                       }
                       q30 = 6;
@@ -65753,7 +65449,6 @@ a000.n9I = function() {
                       a000.T9I(3);
                       v.assert(a000.J9I(0, N));
                       return this.Jd[N].Avb(M);
-                      break;
                   }
                 }
               };
@@ -65778,7 +65473,6 @@ a000.n9I = function() {
                       f.Ea(S) || (S = this.Jd[M].ax);
                       a000.z9I(1);
                       return a000.n9I(N, S);
-                      break;
                     case 4:
                       S = P.Ee;
                       t30 = 3;
@@ -65802,7 +65496,6 @@ a000.n9I = function() {
                       f.Ea(S) || (S = this.Jd[M].ax);
                       a000.z9I(0);
                       return a000.n9I(N, S);
-                      break;
                     case 2:
                       void 0 === M && (M = this.xY);
                       P = this.Pa.SEb(N, M);
@@ -65851,7 +65544,6 @@ a000.n9I = function() {
                           switch (x30) {
                             case 2:
                               return M.Tg[P] ? M.Tg[P].xaa() : "";
-                              break;
                           }
                         }
                       });
@@ -65895,9 +65587,7 @@ a000.n9I = function() {
                           }
                         }
                       } catch (P) {
-                        var a5I = "Hindsight: Error evaluating ";
-                        a5I += "QoE at endOfStr";
-                        a5I += "eam: ";
+                        var a5I = "Hindsight: Error evaluating QoE at endOfStream: ";
                         a000.T9I(0);
                         this.Gb.Un(a000.J9I(a5I, P));
                       }
@@ -65922,24 +65612,13 @@ a000.n9I = function() {
                 }
               };
               J.prototype.hrb = function() {
-                var B30, M, N, P;
-                B30 = 2;
+                var M, N, P, B30 = 2;
                 for (; B30 !== 4;) {
                   switch (B30) {
                     case 2:
-                      var e5I = "startup, playerS";
-                      e5I += "tate no lo";
-                      e5I += "n";
-                      e5I += "ger S";
-                      e5I += "TARTING:";
-                      var C5I = "fail";
-                      C5I += "e";
-                      C5I += "d to start au";
-                      C5I += "dio pipeline";
-                      var S5I = "faile";
-                      S5I += "d to ";
-                      S5I += "start video pipelin";
-                      S5I += "e";
+                      var e5I = "startup, playerState no longer STARTING:";
+                      var C5I = "failed to start audio pipeline";
+                      var S5I = "failed to start video pipeline";
                       this.X.We(g.sa.Eh);
                       (M = this.Pa.Yc, N = M.Td(0), P = M.Td(1));
                       this.Zm && !this.YPa(P) ? this.Ub(S5I) : this.Rr && !this.YPa(N) ? this.Ub(C5I) : (this.tPa = !0, this.Jd[0].P.s7 = !0, N = this.Cb.Of[1], P = this.Cb.Of[0], (N && 0 < N.Xu || P && 0 < P.Xu) && this.Gb.rpb(String(M.P.K), P ? P.Xu : 0, N ? N.Xu : 0, P ? P.tY : 0, N ? N.tY : 0), this.X.O1a() ? (this.p3(0), this.Rr && (M = this.Ge.E6(0), N = this.Ge.zq(0).trackId, this.Gb.upb(M, N))) : this.Ub(e5I, this.X.getState()));
@@ -65958,29 +65637,20 @@ a000.n9I = function() {
                       C30 = 3;
                       break;
                     case 5:
-                      var d5I = "NFErr_MC";
-                      d5I += "_Stre";
-                      d5I += "amingInitFailure";
-                      var H5I = "st";
-                      H5I += "artP";
-                      H5I += "ipe";
-                      H5I += "line";
-                      H5I += " failed";
+                      var d5I = "NFErr_MC_StreamingInitFailure";
+                      var H5I = "startPipeline failed";
                       return (this.sn() || this.Up(H5I, M.ib.P.Pb, d5I), !1);
-                      break;
                     case 1:
                       C30 = f.ka(P) ? 5 : 4;
                       break;
                     case 9:
                       return !0;
-                      break;
                     case 2:
                       (N = M.mediaType, P = this.Cb.bJb(M));
                       C30 = 1;
                       break;
                     case 6:
                       return !0;
-                      break;
                     case 8:
                       P = this.Ge.P;
                       M.P.tUa(M, {
@@ -66033,7 +65703,6 @@ a000.n9I = function() {
                 }
               });
               return J;
-              break;
             case 2:
               Object.defineProperties(J.prototype, {
                 addEventListener: {
@@ -66043,7 +65712,6 @@ a000.n9I = function() {
                       switch (M10) {
                         case 2:
                           return this.addListener.bind(this);
-                          break;
                       }
                     }
                   },
@@ -66057,10 +65725,8 @@ a000.n9I = function() {
                       switch (N10) {
                         case 4:
                           return this.removeListener.bind(this);
-                          break;
                         case 2:
                           return this.removeListener.bind(this);
-                          break;
                       }
                     }
                   },
@@ -66074,7 +65740,6 @@ a000.n9I = function() {
                       switch (O10) {
                         case 2:
                           return this.mg.Rc;
-                          break;
                       }
                     }
                   },
@@ -66088,7 +65753,6 @@ a000.n9I = function() {
                       switch (P10) {
                         case 2:
                           return this.mg ? this.mg.EZ : void 0;
-                          break;
                       }
                     }
                   },
@@ -66102,7 +65766,6 @@ a000.n9I = function() {
                       switch (Q10) {
                         case 2:
                           return this.oc(0);
-                          break;
                       }
                     }
                   },
@@ -66116,10 +65779,8 @@ a000.n9I = function() {
                       switch (R10) {
                         case 2:
                           return this.oc(1);
-                          break;
                         case 4:
                           return this.oc(0);
-                          break;
                       }
                     }
                   },
@@ -66133,7 +65794,6 @@ a000.n9I = function() {
                       switch (S10) {
                         case 2:
                           return this.bga;
-                          break;
                       }
                     }
                   },
@@ -66147,10 +65807,8 @@ a000.n9I = function() {
                       switch (T10) {
                         case 2:
                           return this.Ki;
-                          break;
                         case 4:
                           return this.Ki;
-                          break;
                       }
                     }
                   },
@@ -66164,10 +65822,8 @@ a000.n9I = function() {
                       switch (U10) {
                         case 4:
                           return 7 >= this.T2 ? this.T2 : 8;
-                          break;
                         case 2:
                           return 0 <= this.T2 ? this.T2 : 0;
-                          break;
                       }
                     }
                   },
@@ -66181,10 +65837,8 @@ a000.n9I = function() {
                       switch (V10) {
                         case 2:
                           return this.Jd[this.CL];
-                          break;
                         case 4:
                           return this.Jd[this.CL];
-                          break;
                       }
                     }
                   },
@@ -66212,7 +65866,6 @@ a000.n9I = function() {
                   switch (O20) {
                     case 2:
                       return this.co.Ms(M, N);
-                      break;
                   }
                 }
               };
@@ -66222,10 +65875,8 @@ a000.n9I = function() {
                   switch (P20) {
                     case 4:
                       return this.co.seek(M, N);
-                      break;
                     case 2:
                       return this.co.seek(M, N);
-                      break;
                   }
                 }
               };
@@ -66244,23 +65895,10 @@ a000.n9I = function() {
                       Q20 = 18;
                       break;
                     case 2:
-                      var x5I = "b";
-                      x5I += "ranch";
-                      x5I += "Of";
-                      x5I += "f";
-                      x5I += "set:";
-                      var i5I = "entry.manif";
-                      i5I += "estOf";
-                      i5I += "fset:";
-                      var X5I = "co";
-                      X5I += "nten";
-                      X5I += "tP";
-                      X5I += "t";
-                      X5I += "s:";
-                      var t5I = "underflow: going t";
-                      t5I += "o BUFFERING at player p";
-                      t5I += "t";
-                      t5I += "s:";
+                      var x5I = "branchOffset:";
+                      var i5I = "entry.manifestOffset:";
+                      var X5I = "contentPts:";
+                      var t5I = "underflow: going to BUFFERING at player pts:";
                       (N = this, P = this.J, S = this.Ut(this.xY, M));
                       this.Ub(t5I, M, X5I, S, i5I, this.Ge.ax, x5I, this.Pa.Ee);
                       V = P.GA;
@@ -66286,40 +65924,15 @@ a000.n9I = function() {
                               S20 = P.ri ? 4 : 9;
                               break;
                             case 3:
-                              var r5I = ",";
-                              r5I += " toAppe";
-                              r5I += "nd: ";
-                              var o5I = ",";
-                              o5I += " fr";
-                              o5I += "agments:";
-                              o5I += " ";
-                              var K5I = ", co";
-                              K5I += "mpl";
-                              K5I += "eteStrea";
-                              K5I += "mingPts: ";
-                              var u5I = ",";
-                              u5I += " str";
-                              u5I += "eamin";
-                              u5I += "gPts";
-                              u5I += ": ";
-                              var N5I = ", partia";
-                              N5I += "l";
-                              N5I += "s: ";
-                              var j5I = ", complet";
-                              j5I += "ed";
-                              j5I += "Bytes:";
-                              j5I += " ";
-                              var Q5I = ", co";
-                              Q5I += "mpl";
-                              Q5I += "etedMs: ";
-                              var b5I = ", me";
-                              b5I += "dia";
-                              b5I += "Type:";
-                              b5I += " ";
-                              var D5I = "un";
-                              D5I += "d";
-                              D5I += "erflo";
-                              D5I += "w: ";
+                              var r5I = ", toAppend: ";
+                              var o5I = ", fragments: ";
+                              var K5I = ", completeStreamingPts: ";
+                              var u5I = ", streamingPts: ";
+                              var N5I = ", partials: ";
+                              var j5I = ", completedBytes: ";
+                              var Q5I = ", completedMs: ";
+                              var b5I = ", mediaType: ";
+                              var D5I = "underflow: ";
                               Y = D5I + M + b5I + ka + Q5I + sa.vM + j5I + ua + N5I + sa.Ta.kE + u5I + sa.Ic + K5I + sa.kq + o5I + JSON.stringify(sa.Ta.Y) + r5I + (Y && Y.xaa());
                               S20 = 9;
                               break;
@@ -66346,11 +65959,7 @@ a000.n9I = function() {
                       Q20 = 7;
                       break;
                     case 7:
-                      var P5I = "u";
-                      P5I += "nd";
-                      P5I += "e";
-                      P5I += "rflo";
-                      P5I += "w";
+                      var P5I = "underflow";
                       this.Ge.P.Ak();
                       this.emit(P5I);
                       this.p3(2);
@@ -66368,11 +65977,7 @@ a000.n9I = function() {
                           }
                         }
                       } catch (ka) {
-                        var U5I = "Hindsi";
-                        U5I += "ght: Error when evaluating Q";
-                        U5I += "oE at";
-                        U5I += " Buffe";
-                        U5I += "ring: ";
+                        var U5I = "Hindsight: Error when evaluating QoE at Buffering: ";
                         a000.z9I(0);
                         this.Gb.Un(a000.J9I(U5I, ka));
                       }
@@ -66391,10 +65996,8 @@ a000.n9I = function() {
                   switch (U20) {
                     case 2:
                       return this.co.ho(M);
-                      break;
                     case 4:
                       return this.co.ho(M);
-                      break;
                   }
                 }
               };
@@ -66404,7 +66007,6 @@ a000.n9I = function() {
                   switch (V20) {
                     case 2:
                       return this.co.Vr(M, N, P);
-                      break;
                   }
                 }
               };
@@ -66448,18 +66050,9 @@ a000.n9I = function() {
                       X20 = 24;
                       break;
                     case 19:
-                      var Y5I = "b";
-                      Y5I += "oole";
-                      Y5I += "an";
-                      var O5I = "vide";
-                      O5I += "o_tra";
-                      O5I += "c";
-                      O5I += "k";
-                      O5I += "s";
-                      var c5I = "aud";
-                      c5I += "i";
-                      c5I += "o_tra";
-                      c5I += "cks";
+                      var Y5I = "boolean";
+                      var O5I = "video_tracks";
+                      var c5I = "audio_tracks";
                       (sa = [c5I, O5I], Y = this.xZa());
                       N.replace && sa.forEach(function(ua, T) {
                         var Y20, R, ea;
@@ -66530,10 +66123,7 @@ a000.n9I = function() {
                       X20 = !N.Rbc && (this.Rr && V.vr || this.Zm && ca.vr) ? 8 : 7;
                       break;
                     case 7:
-                      var A5I = "addManifest in fastplay but not drm manif";
-                      A5I += "est, leaving space for ";
-                      A5I += "i";
-                      A5I += "t";
+                      var A5I = "addManifest in fastplay but not drm manifest, leaving space for it";
                       N.sY && (this.c3 = !0);
                       V = this.Jd.length;
                       N.replace && 1 !== V ? V = 1 : this.Ge.P.mf.He && !N.replace && 1 === V && (this.Ub(A5I), V = this.Jd[0].clone(), this.Jd.push(V), V = this.Jd.length);
@@ -66542,24 +66132,12 @@ a000.n9I = function() {
                       X20 = 11;
                       break;
                     case 24:
-                      var F5I = ",";
-                      F5I += " ";
-                      var B5I = ") lastStream";
-                      B5I += "Appended: ";
-                      B5I += "(";
-                      var L5I = ",";
-                      L5I += " ";
-                      var y5I = " s";
-                      y5I += "t";
-                      y5I += "reamCount: (";
-                      var W5I = " pl";
-                      W5I += "ayerSt";
-                      W5I += "a";
-                      W5I += "te: ";
-                      var l5I = "addManife";
-                      l5I += "st, curre";
-                      l5I += "ntP";
-                      l5I += "ts: ";
+                      var F5I = ", ";
+                      var B5I = ") lastStreamAppended: (";
+                      var L5I = ", ";
+                      var y5I = " streamCount: (";
+                      var W5I = " playerState: ";
+                      var l5I = "addManifest, currentPts: ";
                       N = this.Cb.gx[0].bI;
                       V = this.Cb.gx[1].bI;
                       S.ri && this.Gb.Jm(l5I + this.X.Se() + W5I + this.X.getState() + y5I + M.zq(0).ae.length + L5I + M.zq(1).ae.length + B5I + N + F5I + V + ")");
@@ -66593,9 +66171,7 @@ a000.n9I = function() {
                       X20 = 19;
                       break;
                     case 5:
-                      var v5I = "addManif";
-                      v5I += "est: pipelines";
-                      v5I += " already shutdown";
+                      var v5I = "addManifest: pipelines already shutdown";
                       this.Ub(v5I);
                       X20 = 35;
                       break;
@@ -66603,9 +66179,7 @@ a000.n9I = function() {
                       X20 = this.sn() ? 5 : 4;
                       break;
                     case 8:
-                      var Z5I = "ad";
-                      Z5I += "dManifest ignored";
-                      Z5I += ", pipelines already set EOS:";
+                      var Z5I = "addManifest ignored, pipelines already set EOS:";
                       this.Ub(Z5I, V.vr, ca.vr);
                       X20 = 35;
                       break;
@@ -66618,10 +66192,8 @@ a000.n9I = function() {
                   switch (c30) {
                     case 2:
                       return this.co.VT(M);
-                      break;
                     case 4:
                       return this.co.VT(M);
-                      break;
                   }
                 }
               };
@@ -66638,21 +66210,10 @@ a000.n9I = function() {
                       d30 = !this.sn() ? 5 : 7;
                       break;
                     case 5:
-                      var z5I = " ";
-                      z5I += "re";
-                      z5I += "a";
-                      z5I += "dy";
-                      z5I += "State: ";
-                      var J5I = " for";
-                      J5I += " movieI";
-                      J5I += "d: ";
-                      var n5I = ",";
-                      n5I += " ";
-                      var E5I = "drmReady a";
-                      E5I += "t";
-                      E5I += " s";
-                      E5I += "t";
-                      E5I += "reaming pts: ";
+                      var z5I = " readyState: ";
+                      var J5I = " for movieId: ";
+                      var n5I = ", ";
+                      var E5I = "drmReady at streaming pts: ";
                       f.ka(N) && (N = !0);
                       (V = this.Pa.Yc.Td(0), ca = this.Pa.Yc.Td(1));
                       S.ri && this.Gb.Jm(E5I + (V ? V.Ic : null) + n5I + (ca ? ca.Ic : null) + J5I + M + z5I + N);
@@ -66661,10 +66222,7 @@ a000.n9I = function() {
                       d30 = 8;
                       break;
                     case 8:
-                      var T5I = "d";
-                      T5I += "r";
-                      T5I += "mR";
-                      T5I += "eady";
+                      var T5I = "drmReady";
                       N && (this.Tg.forEach(function(ka) {
                         var e30 = 2;
                         for (; e30 !== 5;) {
@@ -66693,7 +66251,6 @@ a000.n9I = function() {
                       switch (W10) {
                         case 2:
                           return this.qc.pv;
-                          break;
                       }
                     }
                   },
@@ -66707,10 +66264,8 @@ a000.n9I = function() {
                       switch (X10) {
                         case 4:
                           return this.Jqb;
-                          break;
                         case 2:
                           return this.Jqb;
-                          break;
                       }
                     }
                   },
@@ -66724,10 +66279,8 @@ a000.n9I = function() {
                       switch (Y10) {
                         case 2:
                           return this.BL;
-                          break;
                         case 4:
                           return this.BL;
-                          break;
                       }
                     }
                   },
@@ -66741,10 +66294,8 @@ a000.n9I = function() {
                       switch (Z10) {
                         case 4:
                           return this.c3;
-                          break;
                         case 2:
                           return this.c3;
-                          break;
                       }
                     }
                   },
@@ -66758,7 +66309,6 @@ a000.n9I = function() {
                   switch (a20) {
                     case 2:
                       return this.mrb[M];
-                      break;
                   }
                 }
               };
@@ -66768,10 +66318,8 @@ a000.n9I = function() {
                   switch (b20) {
                     case 2:
                       return u.default.time.fa() - this.hga;
-                      break;
                     case 4:
                       return u.default.time.fa() % this.hga;
-                      break;
                   }
                 }
               };
@@ -66799,7 +66347,6 @@ a000.n9I = function() {
                                 }
                               });
                               return M;
-                              break;
                           }
                         }
                       }, [0, 0]);
@@ -66836,7 +66383,6 @@ a000.n9I = function() {
                         }
                       });
                       return M;
-                      break;
                   }
                 }
               };
@@ -66846,10 +66392,8 @@ a000.n9I = function() {
                   switch (i20) {
                     case 4:
                       return this.Jd[M];
-                      break;
                     case 2:
                       return this.Jd[M];
-                      break;
                   }
                 }
               };
@@ -66861,7 +66405,6 @@ a000.n9I = function() {
                     case 2:
                       M = this.Jd[0];
                       return M.P.mf.He ? this.Jd[1] : M;
-                      break;
                   }
                 }
               };
@@ -66874,10 +66417,7 @@ a000.n9I = function() {
                 for (; D30 !== 19;) {
                   switch (D30) {
                     case 7:
-                      var g5I = "startBuffe";
-                      g5I += "r";
-                      g5I += "in";
-                      g5I += "g";
+                      var g5I = "startBuffering";
                       this.emit(g5I);
                       h.Df.forEach(function(ya) {
                         var E30 = 2;
@@ -66954,15 +66494,8 @@ a000.n9I = function() {
                 for (; H30 !== 3;) {
                   switch (H30) {
                     case 2:
-                      var G5I = "AdoptingD";
-                      G5I += "ata";
-                      G5I += " still ";
-                      G5I += "ha";
-                      G5I += "s lock:";
-                      var m5I = "wipeHead";
-                      m5I += "erCa";
-                      m5I += "ch";
-                      m5I += "e:";
+                      var G5I = "AdoptingData still has lock:";
+                      var m5I = "wipeHeaderCache:";
                       a000.T9I(0);
                       M = a000.n9I(m5I, M);
                       this.xy.bz && this.Qk(G5I + M);
@@ -66986,7 +66519,6 @@ a000.n9I = function() {
                             switch (K30) {
                               case 2:
                                 return T;
-                                break;
                             }
                           }
                         }), ea.mFb = !0, 0 === sa && P.Bg.FP(Y.header.bitrate));
@@ -66994,7 +66526,6 @@ a000.n9I = function() {
                         break;
                       case 7:
                         return ua;
-                        break;
                       case 13:
                         ya = P.Ge.P;
                         J30 = 12;
@@ -67027,14 +66558,9 @@ a000.n9I = function() {
                         break;
                       case 11:
                         return ua;
-                        break;
                       case 14:
-                        var I5I = "adoptPipelin";
-                        I5I += "e";
-                        I5I += " no header ";
-                        I5I += "for streamId:";
+                        var I5I = "adoptPipeline no header for streamId:";
                         return (ka.Qk(I5I, T), ua);
-                        break;
                     }
                   }
                 }
@@ -67043,9 +66569,7 @@ a000.n9I = function() {
                 for (; I30 !== 13;) {
                   switch (I30) {
                     case 8:
-                      var s5I = "chec";
-                      s5I += "kFo";
-                      s5I += "rHcdStart";
+                      var s5I = "checkForHcdStart";
                       this.Gb.hm(s5I);
                       this.Jd.forEach(function(ka) {
                         var L30 = 2;
@@ -67067,11 +66591,7 @@ a000.n9I = function() {
                               M30 = f.ka(ka) ? 5 : 4;
                               break;
                             case 4:
-                              var M5I = "ado";
-                              M5I += "ptH";
-                              M5I += "cdSt";
-                              M5I += "ar";
-                              M5I += "t";
+                              var M5I = "adoptHcdStart";
                               (ya = P.Pa.Yc.Td(0), sa = P.Pa.Yc.Td(1));
                               P.Gb.hm(M5I);
                               return P.xy.qza(function() {
@@ -67080,13 +66600,10 @@ a000.n9I = function() {
                                 for (; N30 !== 7;) {
                                   switch (N30) {
                                     case 3:
-                                      var h5I = "ado";
-                                      h5I += "ptHcdEn";
-                                      h5I += "d";
+                                      var h5I = "adoptHcdEnd";
                                       P.xOa = ka;
                                       P.Gb.hm(h5I);
                                       return Promise.all([Y, ua]);
-                                      break;
                                     case 2:
                                       Y = Promise.resolve();
                                       P.Zm && (Y = N(sa, ka));
@@ -67097,10 +66614,8 @@ a000.n9I = function() {
                                           switch (O30) {
                                             case 2:
                                               return T ? N(ya, ka) : Promise.resolve();
-                                              break;
                                             case 4:
                                               return T ? N(ya, ka) : Promise.resolve();
-                                              break;
                                           }
                                         }
                                       }) : N(ya, ka));
@@ -67111,20 +66626,13 @@ a000.n9I = function() {
                               });
                               break;
                             case 2:
-                              var k5I = "checkForH";
-                              k5I += "c";
-                              k5I += "dEnd";
+                              var k5I = "checkForHcdEnd";
                               P.Gb.hm(k5I);
                               M30 = 1;
                               break;
                             case 5:
-                              var w5I = "h";
-                              w5I += "eaderCacheD";
-                              w5I += "a";
-                              w5I += "taNot";
-                              w5I += "Found";
+                              var w5I = "headerCacheDataNotFound";
                               return (V.Qr || P.xy.bz || P.OT(w5I), Promise.resolve());
-                              break;
                           }
                         }
                       }).then(function() {
@@ -67133,10 +66641,7 @@ a000.n9I = function() {
                         for (; P30 !== 5;) {
                           switch (P30) {
                             case 2:
-                              var q5I = "adopt";
-                              q5I += "edComp";
-                              q5I += "letedReq";
-                              q5I += "uests";
+                              var q5I = "adoptedCompletedRequests";
                               V.Qr || (null === (ka = P.Fh) || void 0 === ka ? 0 : ka.DD()) || P.xy.bz || !P.X.fp(P.Ge.P) || P.OT(q5I);
                               P30 = 5;
                               break;
@@ -67151,11 +66656,7 @@ a000.n9I = function() {
                               Q30 = 8;
                               break;
                             case 2:
-                              var R6I = "h";
-                              R6I += "ead";
-                              R6I += "erCache";
-                              R6I += ":";
-                              R6I += "lookupDataPromise caught error:";
+                              var R6I = "headerCache:lookupDataPromise caught error:";
                               P.Ub(R6I, ka);
                               Q30 = 1;
                               break;
@@ -67164,10 +66665,7 @@ a000.n9I = function() {
                       });
                       break;
                     case 2:
-                      var p6I = "Pre";
-                      p6I += "viou";
-                      p6I += "sly adopted request list still retained was u";
-                      p6I += "nexpected";
+                      var p6I = "Previously adopted request list still retained was unexpected";
                       P = this;
                       (null === (S = this.Fh) || void 0 === S ? 0 : S.DD()) && this.Qk(p6I);
                       this.Fh = void 0;
@@ -67179,7 +66677,6 @@ a000.n9I = function() {
                       break;
                     case 9:
                       return (this.qc.Zja(), Promise.resolve());
-                      break;
                   }
                 }
               };
@@ -67201,7 +66698,6 @@ a000.n9I = function() {
                       break;
                     case 5:
                       return Promise.resolve();
-                      break;
                     case 4:
                       (S = M.C8, V = S.H, ca = Math.min(this.Jd[0].Ka || Infinity, S.Lc || Infinity), ka = M.mediaType, ya = this.Cb.Of[ka]);
                       return this.xy.qza(function() {
@@ -67222,7 +66718,6 @@ a000.n9I = function() {
                               break;
                             case 4:
                               return Promise.all(ua);
-                              break;
                             case 5:
                               Y();
                               S30 = 1;
@@ -67236,14 +66731,8 @@ a000.n9I = function() {
                           for (; T30 !== 5;) {
                             switch (T30) {
                               case 2:
-                                var V6I = "adoptData, not ad";
-                                V6I += "opting failed";
-                                V6I += " media";
-                                V6I += "Request:";
-                                var f6I = "adoptD";
-                                f6I += "ata, not adopting aborted ";
-                                f6I += "mediaReques";
-                                f6I += "t:";
+                                var V6I = "adoptData, not adopting failed mediaRequest:";
+                                var f6I = "adoptData, not adopting aborted mediaRequest:";
                                 T = N.shift();
                                 7 === T.readyState ? M.Ub(f6I, T.toString()) : 6 === T.readyState ? (M.Ub(V6I, T.toString()), P.xG(T, !1)) : M.Ic >= T.gd && M.Ic < T.Lc && (M.Ic < ca || !f.Ea(ca)) ? (ua.push(P.ymb(M, T).then(function() {
                                   var U30 = 2;
@@ -67301,9 +66790,7 @@ a000.n9I = function() {
                         for (; X30 !== 1;) {
                           switch (X30) {
                             case 2:
-                              var a6I = "Error a";
-                              a6I += "dopt";
-                              a6I += "ing requests";
+                              var a6I = "Error adopting requests";
                               P.Qk(a6I, V);
                               X30 = 1;
                               break;
@@ -67312,20 +66799,9 @@ a000.n9I = function() {
                       });
                       break;
                     case 2:
-                      var e6I = ", ";
-                      e6I += "pt";
-                      e6I += "s:";
-                      e6I += " ";
-                      var C6I = ",";
-                      C6I += " ";
-                      C6I += "s";
-                      C6I += "tat";
-                      C6I += "e: ";
-                      var S6I = "adoptMe";
-                      S6I += "d";
-                      S6I += "iaR";
-                      S6I += "equest: t";
-                      S6I += "ype: ";
+                      var e6I = ", pts: ";
+                      var C6I = ", state: ";
+                      var S6I = "adoptMediaRequest: type: ";
                       (P = this, S = M.mediaType);
                       this.J.ri && this.Gb.Jm(S6I + S + C6I + N.readyState + e6I + N.gd);
                       this.Xha(S, N.gd);
@@ -67407,7 +66883,6 @@ a000.n9I = function() {
                         }
                       });
                       return Promise.resolve();
-                      break;
                   }
                 }
               };
@@ -67495,10 +66970,8 @@ a000.n9I = function() {
                               break;
                             case 5:
                               return !!S;
-                              break;
                             case 7:
                               return - -S;
-                              break;
                           }
                         }
                       });
@@ -67618,7 +67091,6 @@ a000.n9I = function() {
                       break;
                     case 12:
                       return ca;
-                      break;
                     case 5:
                       (sa = ya.Yc, Y = sa.Td(0), ua = sa.Td(1));
                       ca.vspts = null !== (N = null === ua || void 0 === ua ? void 0 : ua.Ic) && void 0 !== N ? N : 0;
@@ -67676,9 +67148,7 @@ a000.n9I = function() {
                 for (; D40 !== 5;) {
                   switch (D40) {
                     case 2:
-                      var H6I = "requestGarbageCollect";
-                      H6I += "io";
-                      H6I += "n";
+                      var H6I = "requestGarbageCollection";
                       M = {
                         type: H6I,
                         time: u.default.time.fa()
@@ -67694,10 +67164,7 @@ a000.n9I = function() {
                 for (; E40 !== 5;) {
                   switch (E40) {
                     case 2:
-                      var d6I = "NF";
-                      d6I += "E";
-                      d6I += "rr_MC_Stream";
-                      d6I += "ingFailure";
+                      var d6I = "NFErr_MC_StreamingFailure";
                       void 0 === ka && (ka = !1);
                       this.t3 || (f.ka(P) && (P = d6I), this.t3 = !0, this.Gb.Ipb(P, M, S, V, ca, void 0 !== N ? N : this.xY, ka));
                       E40 = 5;
@@ -67710,9 +67177,7 @@ a000.n9I = function() {
                 for (; F40 !== 5;) {
                   switch (F40) {
                     case 2:
-                      var t6I = "N";
-                      t6I += "etwork failures r";
-                      t6I += "eset!";
+                      var t6I = "Network failures reset!";
                       this.Ub(t6I);
                       this.rg.ek();
                       F40 = 5;
@@ -67729,7 +67194,6 @@ a000.n9I = function() {
                   switch (k20) {
                     case 2:
                       return this.Jd.length;
-                      break;
                   }
                 }
               };
@@ -67742,18 +67206,15 @@ a000.n9I = function() {
                       break;
                     case 1:
                       return !0;
-                      break;
                     case 7:
                       l20 = M != N ? 3 : 8;
                       break;
                     case 6:
                       return +4;
-                      break;
                     case 5:
                       M = this.Jd[M];
                       N = this.Jd[N];
                       return M.P.mf.He && N.P.mf.sX || N.P.mf.He && M.P.mf.sX;
-                      break;
                   }
                 }
               };
@@ -67802,7 +67263,6 @@ a000.n9I = function() {
                   switch (o20) {
                     case 2:
                       return this.Pa.oQ(M, N);
-                      break;
                   }
                 }
               };
@@ -67812,11 +67272,7 @@ a000.n9I = function() {
                 for (; p20 !== 33;) {
                   switch (p20) {
                     case 4:
-                      var X6I = "h";
-                      X6I += "ead";
-                      X6I += "e";
-                      X6I += "r";
-                      X6I += "s";
+                      var X6I = "headers";
                       (N = this.J, P = this.Ge.P, S = P.K, V = [], ca = [X6I]);
                       this.Zm && (V.push(1), ca.push(1));
                       this.Rr && (V.push(0), ca.push(0));
@@ -67832,11 +67288,7 @@ a000.n9I = function() {
                         for (; q20 !== 1;) {
                           switch (q20) {
                             case 2:
-                              var i6I = "h";
-                              i6I += "e";
-                              i6I += "ad";
-                              i6I += "e";
-                              i6I += "rs";
+                              var i6I = "headers";
                               i6I === ua ? M.fT = ya[T] : M.Cb.Of[ua].Lf = ya[T];
                               q20 = 1;
                               break;
@@ -67846,15 +67298,8 @@ a000.n9I = function() {
                       p20 = 12;
                       break;
                     case 5:
-                      var D6I = "NFErr_MC_";
-                      D6I += "Streami";
-                      D6I += "ngIn";
-                      D6I += "itFailure";
-                      var x6I = "startPts mus";
-                      x6I += "t be a posit";
-                      x6I += "ive ";
-                      x6I += "number, n";
-                      x6I += "ot ";
+                      var D6I = "NFErr_MC_StreamingInitFailure";
+                      var x6I = "startPts must be a positive number, not ";
                       this.Up(x6I + this.JC, void 0, D6I);
                       p20 = 33;
                       break;
@@ -67862,9 +67307,7 @@ a000.n9I = function() {
                       p20 = 1 === sa.readyState ? 20 : 34;
                       break;
                     case 20:
-                      var b6I = "createMed";
-                      b6I += "iaSourceE";
-                      b6I += "nd";
+                      var b6I = "createMediaSourceEnd";
                       this.Gb.hm(b6I);
                       sa.Rc || (sa.Rc = t.Rc);
                       this.mg = sa;
@@ -67877,34 +67320,17 @@ a000.n9I = function() {
                         for (; r20 !== 13;) {
                           switch (r20) {
                             case 3:
-                              var K6I = "ma";
-                              K6I += "nagerdeb";
-                              K6I += "u";
-                              K6I += "gevent";
-                              var u6I = "l";
-                              u6I += "o";
-                              u6I += "gda";
-                              u6I += "t";
-                              u6I += "a";
-                              var j6I = "e";
-                              j6I += "r";
-                              j6I += "r";
-                              j6I += "o";
-                              j6I += "r";
-                              var Q6I = "reque";
-                              Q6I += "stAppe";
-                              Q6I += "nd";
-                              Q6I += "ed";
+                              var K6I = "managerdebugevent";
+                              var u6I = "logdata";
+                              var j6I = "error";
+                              var Q6I = "requestAppended";
                               ua.addListener(Q6I, M.hob.bind(M));
                               ua.addListener(j6I, function(ea) {
                                 var s20 = 2;
                                 for (; s20 !== 1;) {
                                   switch (s20) {
                                     case 2:
-                                      var N6I = "N";
-                                      N6I += "FErr_";
-                                      N6I += "MC";
-                                      N6I += "_StreamingFailure";
+                                      var N6I = "NFErr_MC_StreamingFailure";
                                       M.Up(ea.errorstr, void 0, N6I);
                                       s20 = 1;
                                       break;
@@ -67937,9 +67363,7 @@ a000.n9I = function() {
                               r20 = 14;
                               break;
                             case 2:
-                              var o6I = "header";
-                              o6I += "Ap";
-                              o6I += "pended";
+                              var o6I = "headerAppended";
                               (T = ua.mediaType, R = M.Cb.Of[T]);
                               ua = new n.zca(R.I, T, sa, ua, N, !1, M.X, void 0, M.uh.bind(M));
                               R = new G.BFa(ua, T, M.Pa, M.J, R.I);
@@ -67960,26 +67384,14 @@ a000.n9I = function() {
                       p20 = 23;
                       break;
                     case 23:
-                      var U6I = "st";
-                      U6I += "ar";
-                      U6I += "t";
-                      U6I += "pla";
-                      U6I += "y";
-                      var P6I = "l";
-                      P6I += "og";
-                      P6I += "d";
-                      P6I += "a";
-                      P6I += "ta";
+                      var U6I = "startplay";
+                      var P6I = "logdata";
                       Y = function() {
                         var v20 = 2;
                         for (; v20 !== 5;) {
                           switch (v20) {
                             case 2:
-                              var r6I = "sh";
-                              r6I += "ut";
-                              r6I += "down detecte";
-                              r6I += "d";
-                              r6I += " before startRequests";
+                              var r6I = "shutdown detected before startRequests";
                               M.Gb.Bpb();
                               M.sn() ? M.Ub(r6I) : M.hrb();
                               v20 = 5;
@@ -68028,36 +67440,20 @@ a000.n9I = function() {
                       p20 = !sa.I3(V) ? 16 : 15;
                       break;
                     case 12:
-                      var c6I = "createMediaSou";
-                      c6I += "r";
-                      c6I += "ceStar";
-                      c6I += "t";
+                      var c6I = "createMediaSourceStart";
                       this.Gb.hm(c6I);
                       sa = new t(this.X.NG);
                       p20 = 10;
                       break;
                     case 34:
-                      var A6I = "NFErr_MC_";
-                      A6I += "StreamingIni";
-                      A6I += "tF";
-                      A6I += "ai";
-                      A6I += "lure";
-                      var Y6I = "e";
-                      Y6I += "xcept";
-                      Y6I += "ion in in";
-                      Y6I += "it";
-                      var O6I = "E";
-                      O6I += "rror";
-                      O6I += ":";
+                      var A6I = "NFErr_MC_StreamingInitFailure";
+                      var Y6I = "exception in init";
+                      var O6I = "Error:";
                       (this.wn(O6I, sa.error), this.Up(Y6I, void 0, A6I));
                       p20 = 33;
                       break;
                     case 16:
-                      var l6I = "E";
-                      l6I += "r";
-                      l6I += "r";
-                      l6I += "o";
-                      l6I += "r:";
+                      var l6I = "Error:";
                       throw (this.wn(l6I, sa.error), sa.error);
                     case 1:
                       p20 = !f.Ea(this.JC) || 0 > this.JC ? 5 : 4;
@@ -68072,14 +67468,10 @@ a000.n9I = function() {
                     for (; y20 !== 1;) {
                       switch (y20) {
                         case 2:
-                          var W6I = "1";
-                          W6I += ".";
-                          W6I += "0";
+                          var W6I = "1.0";
                           return W6I;
-                          break;
                         case 4:
                           return "";
-                          break;
                       }
                     }
                   },
@@ -68189,17 +67581,9 @@ a000.n9I = function() {
                 H10 = 31;
                 break;
               case 4:
-                var B6I = "me";
-                B6I += "d";
-                B6I += "ia|asejs";
-                var L6I = "A";
-                L6I += "S";
-                L6I += "EJS";
-                var y6I = "1";
-                y6I += "SI";
-                y6I += "YbZ";
-                y6I += "r";
-                y6I += "NJCp9";
+                var B6I = "media|asejs";
+                var L6I = "ASEJS";
+                var y6I = "1SIYbZrNJCp9";
                 this.FD = {
                   fw: [Object.create(null), Object.create(null)]
                 };
@@ -68220,11 +67604,7 @@ a000.n9I = function() {
                 H10 = 22;
                 break;
               case 39:
-                var F6I = "m";
-                F6I += "an";
-                F6I += "a";
-                F6I += "gerdebuge";
-                F6I += "vent";
+                var F6I = "managerdebugevent";
                 this.Ki.on(this.qc.Jf, F6I, function(Ua) {
                   var I10 = 2;
                   for (; I10 !== 1;) {
@@ -68250,19 +67630,13 @@ a000.n9I = function() {
                 H10 = Y.wma && this.Bg.c8 ? 62 : 59;
                 break;
               case 37:
-                var v6I = "m";
-                v6I += "ediacach";
-                v6I += "e";
+                var v6I = "mediacache";
                 this.Ki.on(this.qc.Jf, v6I, function(Ua) {
                   var J10 = 2;
                   for (; J10 !== 1;) {
                     switch (J10) {
                       case 2:
-                        var Z6I = "med";
-                        Z6I += "i";
-                        Z6I += "aca";
-                        Z6I += "c";
-                        Z6I += "he";
+                        var Z6I = "mediacache";
                         w.Ya(T, Z6I, Ua);
                         J10 = 1;
                         break;
@@ -68297,11 +67671,7 @@ a000.n9I = function() {
                             }
                           }
                         } catch (ab) {
-                          var E6I = "H";
-                          E6I += "ind";
-                          E6I += "sight: Err";
-                          E6I += "or when adding updatePlay";
-                          E6I += "Segment Listener: ";
+                          var E6I = "Hindsight: Error when adding updatePlaySegment Listener: ";
                           a000.z9I(0);
                           Ma.Gb.Un(a000.J9I(E6I, ab));
                         }
@@ -68351,10 +67721,7 @@ a000.n9I = function() {
                 H10 = 26;
                 break;
               case 12:
-                var n6I = "bran";
-                n6I += "c";
-                n6I += "hi";
-                n6I += "ng";
+                var n6I = "branching";
                 this.eUa = new y.IBa(this.I);
                 (ea = !(!N || !N.choiceMap || n6I !== N.choiceMap.type), ra = ea ? {
                   uV: !1,
@@ -70574,9 +69941,7 @@ a000.n9I = function() {
                 J40 = 8;
                 break;
               case 14:
-                var J6I = "networkFai";
-                J6I += "le";
-                J6I += "d";
+                var J6I = "networkFailed";
                 this.bh.addListener(this.Gm, J6I, this.YJb.bind(this));
                 this.eO = l.default.time.fa();
                 this.Zt = 0;
@@ -70585,9 +69950,7 @@ a000.n9I = function() {
                 J40 = 20;
                 break;
               case 8:
-                var z6I = "1SIYbZr";
-                z6I += "N";
-                z6I += "JCp9";
+                var z6I = "1SIYbZrNJCp9";
                 z6I;
                 this.gTa = new h.ofa();
                 q[n.eEa] = A.XKb ? t : x;
@@ -70609,30 +69972,11 @@ a000.n9I = function() {
                       S40 = this.uA ? 3 : 9;
                       break;
                     case 2:
-                      var I6I = " ";
-                      I6I += "m";
-                      I6I += "s";
-                      I6I += " a";
-                      I6I += "go";
-                      var G6I = "Network";
-                      G6I += " ";
-                      G6I += "has fa";
-                      G6I += "il";
-                      G6I += "ed ";
-                      var m6I = " last s";
-                      m6I += "u";
-                      m6I += "ccess wa";
-                      m6I += "s ";
-                      var g6I = "te";
-                      g6I += "m";
-                      g6I += "p";
-                      g6I += "orari";
-                      g6I += "ly";
-                      var T6I = "p";
-                      T6I += "er";
-                      T6I += "mane";
-                      T6I += "nt";
-                      T6I += "ly";
+                      var I6I = " ms ago";
+                      var G6I = "Network has failed ";
+                      var m6I = " last success was ";
+                      var g6I = "temporarily";
+                      var T6I = "permanently";
                       (A = this, B = l.default.time.fa() - this.eO, E = z, D = this.config);
                       a000.T9I(4);
                       m.warn(a000.n9I(z ? T6I : g6I, m6I, B, G6I, I6I));
@@ -70644,13 +69988,8 @@ a000.n9I = function() {
                       S40 = 9;
                       break;
                     case 9:
-                      var M6I = "tempor";
-                      M6I += "aryN";
-                      M6I += "etworkError";
-                      var s6I = "tem";
-                      s6I += "pora";
-                      s6I += "ryNetworkErro";
-                      s6I += "r";
+                      var M6I = "temporaryNetworkError";
+                      var s6I = "temporaryNetworkError";
                       z || this.events.emit(s6I, {
                         type: M6I,
                         errorCode: F,
@@ -70718,14 +70057,8 @@ a000.n9I = function() {
                       W40 = 1;
                       break;
                     case 3:
-                      var k6I = "up";
-                      k6I += "d";
-                      k6I += "atingLast";
-                      k6I += "Succ";
-                      k6I += "essEvent";
-                      var h6I = "updatingLastSuccessEv";
-                      h6I += "en";
-                      h6I += "t";
+                      var k6I = "updatingLastSuccessEvent";
+                      var h6I = "updatingLastSuccessEvent";
                       this.events.emit(h6I, {
                         type: k6I
                       });
@@ -70788,11 +70121,7 @@ a000.n9I = function() {
                 for (; M40 !== 15;) {
                   switch (M40) {
                     case 16:
-                      var w6I = "Unmapped failur";
-                      w6I += "e";
-                      w6I += " code i";
-                      w6I += "n JSASE error direc";
-                      w6I += "tor : ";
+                      var w6I = "Unmapped failure code in JSASE error director : ";
                       a000.z9I(0);
                       m.error(a000.n9I(w6I, B));
                       M40 = 15;
@@ -70808,18 +70137,9 @@ a000.n9I = function() {
                       M40 = 11;
                       break;
                     case 2:
-                      var p0I = " : critical error";
-                      p0I += " cou";
-                      p0I += "nt = ";
-                      var R0I = " ";
-                      R0I += "o";
-                      R0I += "n";
-                      R0I += " ";
-                      var q6I = "Fai";
-                      q6I += "l";
-                      q6I += "u";
-                      q6I += "r";
-                      q6I += "e ";
+                      var p0I = " : critical error count = ";
+                      var R0I = " on ";
+                      var q6I = "Failure ";
                       (D = this, F = k.I0.name, G = B ? F[B] : void 0);
                       F = {};
                       (C = this.config, H = this.Gm);
@@ -70843,10 +70163,7 @@ a000.n9I = function() {
                         for (; N40 !== 5;) {
                           switch (N40) {
                             case 2:
-                              var f0I = "er";
-                              f0I += "r";
-                              f0I += "o";
-                              f0I += "r";
+                              var f0I = "error";
                               K === x || K === u ? D.Sua.JVb({
                                 url: void 0 !== z.url ? z.url : L[0],
                                 Od: J
@@ -70864,7 +70181,6 @@ a000.n9I = function() {
                                     case 2:
                                       H.Hs(I, Q, M);
                                       return I === d.default.Dh.LF;
-                                      break;
                                   }
                                 }
                               });
@@ -70881,11 +70197,7 @@ a000.n9I = function() {
                               P40 = K !== x || D.FXb(J) ? 1 : 5;
                               break;
                             case 1:
-                              var V0I = "e";
-                              V0I += "r";
-                              V0I += "r";
-                              V0I += "o";
-                              V0I += "r";
+                              var V0I = "error";
                               (L.some(function(M) {
                                 var Q40 = 2;
                                 for (; Q40 !== 5;) {
@@ -70893,7 +70205,6 @@ a000.n9I = function() {
                                     case 2:
                                       H.Hs(I, Q, M);
                                       return I === d.default.Dh.LF;
-                                      break;
                                   }
                                 }
                               }), !D.Iaa || 0 !== A && void 0 !== A || (L = void 0 !== z.url ? z.url : L[0]) && D.Iaa.Fwa(V0I, L));
@@ -70905,22 +70216,13 @@ a000.n9I = function() {
                       M40 = 15;
                       break;
                     case 18:
-                      var a0I = "Inv";
-                      a0I += "alid affected for network fa";
-                      a0I += "ilure";
+                      var a0I = "Invalid affected for network failure";
                       m.error(a0I);
                       M40 = 17;
                       break;
                     case 9:
-                      var C0I = "c";
-                      C0I += "r";
-                      C0I += "itic";
-                      C0I += "alNetworkError";
-                      var S0I = "critica";
-                      S0I += "l";
-                      S0I += "Network";
-                      S0I += "Err";
-                      S0I += "or";
+                      var C0I = "criticalNetworkError";
+                      var S0I = "criticalNetworkError";
                       K = q[B];
                       this.uA = {
                         HD: A,
@@ -70965,7 +70267,6 @@ a000.n9I = function() {
                       break;
                     case 9:
                       return E.gB = !0;
-                      break;
                     case 3:
                       R40 = !(E.hp >= A - B.Yaa || E.gB || (E.hp = A, ++E.count, E.count < B.U8)) ? 9 : 7;
                       break;
@@ -70988,13 +70289,8 @@ a000.n9I = function() {
                 for (; Y40 !== 4;) {
                   switch (Y40) {
                     case 2:
-                      var H0I = "m";
-                      H0I += "s";
-                      var e0I = "Se";
-                      e0I += "tting u";
-                      e0I += "nderflow time";
-                      e0I += "out";
-                      e0I += " in ";
+                      var H0I = "ms";
+                      var e0I = "Setting underflow timeout in ";
                       (z = this, A = this.config, B = A.N8);
                       this.eO = Math.max(l.default.time.fa(), this.eO);
                       !A.Ncb || this.r_ || A.w_ && A.YM && A.vRb || (m.info(e0I + B + H0I), this.r_ = setTimeout(function() {
@@ -71002,14 +70298,8 @@ a000.n9I = function() {
                         for (; Z40 !== 4;) {
                           switch (Z40) {
                             case 2:
-                              var t0I = "ms, since underflow wit";
-                              t0I += "h ";
-                              t0I += "no success";
-                              var d0I = "Forc";
-                              d0I += "in";
-                              d0I += "g permanent network failu";
-                              d0I += "re af";
-                              d0I += "ter ";
+                              var t0I = "ms, since underflow with no success";
+                              var d0I = "Forcing permanent network failure after ";
                               a000.T9I(5);
                               m.info(a000.n9I(d0I, t0I, B));
                               z.r_ = void 0;
@@ -71029,10 +70319,7 @@ a000.n9I = function() {
                 for (; a50 !== 1;) {
                   switch (a50) {
                     case 2:
-                      var X0I = "Cle";
-                      X0I += "ared underflow";
-                      X0I += " timeo";
-                      X0I += "ut";
+                      var X0I = "Cleared underflow timeout";
                       this.r_ && (clearTimeout(this.r_), this.r_ = void 0, m.info(X0I));
                       a50 = 1;
                       break;
@@ -71040,7 +70327,6 @@ a000.n9I = function() {
                 }
               };
               return y;
-              break;
           }
         }
       })();
@@ -71818,7 +71104,6 @@ a000.n9I = function() {
                       break;
                     case 1:
                       return v.stream;
-                      break;
                   }
                 }
               };
@@ -71882,7 +71167,6 @@ a000.n9I = function() {
                           switch (k50) {
                             case 2:
                               return z.level - A.level || z.dc - A.dc;
-                              break;
                           }
                         }
                       });
@@ -71976,7 +71260,6 @@ a000.n9I = function() {
                                   switch (q50) {
                                     case 2:
                                       return 0 === B.urls.length;
-                                      break;
                                   }
                                 }
                               });
@@ -71992,7 +71275,6 @@ a000.n9I = function() {
                                 }
                               }), y.uj[z.id] = void 0, z.parent = void 0, z.children.length = 0, z.streams = {});
                               return !A;
-                              break;
                           }
                         }
                       });
@@ -72007,7 +71289,6 @@ a000.n9I = function() {
                                   switch (t50) {
                                     case 2:
                                       return A.dc - B.dc;
-                                      break;
                                   }
                                 }
                               });
@@ -72039,7 +71320,6 @@ a000.n9I = function() {
                   switch (u50) {
                     case 11:
                       return (this.Hs(k.default.Dh.ny, !1), !1);
-                      break;
                     case 2:
                       (y = this, z = this.config, A = this.Rb.get(), B = 0);
                       u50 = 1;
@@ -72049,46 +71329,24 @@ a000.n9I = function() {
                       break;
                     case 14:
                       return (this.Hs(k.default.Dh.ny, !1), !1);
-                      break;
                     case 12:
                       u50 = !D.length ? 11 : 10;
                       break;
                     case 10:
-                      var P0I = "(emp";
-                      P0I += "ty str";
-                      P0I += "eam l";
-                      P0I += "i";
-                      P0I += "st)";
-                      var r0I = "Did not find a URL for ";
-                      r0I += "AN";
-                      r0I += "Y stream";
-                      r0I += "...";
-                      var o0I = "network";
-                      o0I += "Faile";
-                      o0I += "d";
-                      var K0I = "Network has failed, no";
-                      K0I += "t updating stream se";
-                      K0I += "lecti";
-                      K0I += "on";
+                      var P0I = "(empty stream list)";
+                      var r0I = "Did not find a URL for ANY stream...";
+                      var o0I = "networkFailed";
+                      var K0I = "Network has failed, not updating stream selection";
                       x.forEach(function(F, G) {
                         var v50, C;
                         v50 = 2;
                         for (; v50 !== 5;) {
                           switch (v50) {
                             case 2:
-                              var u0I = " ";
-                              u0I += "K";
-                              u0I += "bp";
-                              u0I += "s";
-                              u0I += ")";
-                              var N0I = " ";
-                              N0I += "(";
-                              var j0I = "]";
-                              j0I += " ";
-                              var Q0I = "Fail";
-                              Q0I += "ing st";
-                              Q0I += "re";
-                              Q0I += "am [";
+                              var u0I = " Kbps)";
+                              var N0I = " (";
+                              var j0I = "] ";
+                              var Q0I = "Failing stream [";
                               C = F.id;
                               D.some(function(H) {
                                 var w50, K, O;
@@ -72104,7 +71362,6 @@ a000.n9I = function() {
                                       break;
                                     case 5:
                                       return !1;
-                                      break;
                                     case 4:
                                       O = K.uj[0];
                                       void 0 === F.I$ && (F.I$ = O.id, F.Rua = K.v_[O.id][0].Pc.id);
@@ -72115,34 +71372,21 @@ a000.n9I = function() {
                                           switch (x50) {
                                             case 4:
                                               return !1;
-                                              break;
                                             case 1:
                                               return (I.Pc.kf === p.TEMPORARY && (F.kf = p.TEMPORARY), z.bv && F.Pc === I.Pc.id && I.Pc.sx && (F.sx = I.Pc.sx), !1);
-                                              break;
                                             case 2:
                                               x50 = l(I.Pc) ? 1 : 5;
                                               break;
                                             case 13:
                                               return !0;
-                                              break;
                                             case 5:
                                               x50 = l(I) ? 4 : 3;
                                               break;
                                             case 3:
-                                              var b0I = "lo";
-                                              b0I += "ca";
-                                              b0I += "tionfailover";
-                                              var D0I = "ser";
-                                              D0I += "ve";
-                                              D0I += "rf";
-                                              D0I += "ailover";
-                                              var x0I = "perfo";
-                                              x0I += "rma";
-                                              x0I += "nce";
-                                              var i0I = "unk";
-                                              i0I += "n";
-                                              i0I += "o";
-                                              i0I += "wn";
+                                              var b0I = "locationfailover";
+                                              var D0I = "serverfailover";
+                                              var x0I = "performance";
+                                              var i0I = "unknown";
                                               Q = i0I;
                                               F.location !== H.id && (z.bv ? F.Wqa = H.id === O.id : Q = H !== D[0] ? "" + k.default.ty.tca : void 0 === F.location ? "" + k.default.ty.Rv : h.ka(F.t2a) || F.t2a === H.id ? h.ka(F.w2a) || F.w2a === I.Pc.id ? x0I : D0I : b0I, F.location = H.id, F.Cra = H.level, F.Os = Q);
                                               F.url = I.url;
@@ -72164,7 +71408,6 @@ a000.n9I = function() {
                         }
                       });
                       return l(this.lp) ? (q.warn(K0I), this.D9 = !0, this.emit(o0I, this.lp.kf === p.xl), !1) : B ? !0 : (q.warn(r0I + (x.length ? "" : P0I)), this.Hs(k.default.Dh.ny, !0), !1);
-                      break;
                     case 1:
                       n.default.Wt && n.default.Wt(v);
                       u50 = 5;
@@ -72182,7 +71425,6 @@ a000.n9I = function() {
                       break;
                     case 4:
                       return !1;
-                      break;
                     case 6:
                       u50 = !this.jJ ? 14 : 13;
                       break;
@@ -72206,11 +71448,8 @@ a000.n9I = function() {
                               z50 = 5;
                               break;
                             case 4:
-                              var c0I = "8";
-                              c0I += "0";
-                              var U0I = "4";
-                              U0I += "4";
-                              U0I += "3";
+                              var c0I = "80";
+                              var U0I = "443";
                               (F = "s" === D[1], G = D[2]);
                               D = D[3];
                               D.length || (D = F ? U0I : c0I);
@@ -72228,7 +71467,6 @@ a000.n9I = function() {
                         }
                       });
                       return y;
-                      break;
                   }
                 }
               };
@@ -72241,7 +71479,6 @@ a000.n9I = function() {
                   switch (e50) {
                     case 2:
                       return l(this.lp);
-                      break;
                   }
                 }
               };
@@ -72251,13 +71488,11 @@ a000.n9I = function() {
                   switch (f50) {
                     case 9:
                       return v.parent.id;
-                      break;
                     case 2:
                       f50 = (v = this.urls[v]) && v.parent ? 1 : 5;
                       break;
                     case 1:
                       return v.parent.id;
-                      break;
                   }
                 }
               };
@@ -72267,10 +71502,8 @@ a000.n9I = function() {
                   switch (g50) {
                     case 9:
                       return v.Pc.location;
-                      break;
                     case 1:
                       return v.Pc.location;
-                      break;
                     case 2:
                       g50 = (v = this.urls[v]) && v.Pc ? 1 : 5;
                       break;
@@ -72286,22 +71519,10 @@ a000.n9I = function() {
                 for (; A50 !== 42;) {
                   switch (A50) {
                     case 7:
-                      var l0I = " ";
-                      l0I += "a";
-                      l0I += "t";
-                      l0I += " ";
-                      var A0I = " fa";
-                      A0I += "ilure r";
-                      A0I += "eported ";
-                      A0I += "for";
-                      A0I += " ";
-                      var Y0I = "T";
-                      Y0I += "E";
-                      Y0I += "MP";
-                      var O0I = "P";
-                      O0I += "E";
-                      O0I += "R";
-                      O0I += "M";
+                      var l0I = " at ";
+                      var A0I = " failure reported for ";
+                      var Y0I = "TEMP";
+                      var O0I = "PERM";
                       v = (x ? O0I : Y0I) + A0I + k.default.Dh.name[v] + l0I;
                       x = [];
                       A50 = 13;
@@ -72325,9 +71546,7 @@ a000.n9I = function() {
                       A50 = C50 === p.am ? 24 : 28;
                       break;
                     case 15:
-                      var W0I = "<url";
-                      W0I += " ";
-                      W0I += "for ";
+                      var W0I = "<url for ";
                       x.unshift(W0I + F.stream.bitrate + ">");
                       A50 = 19;
                       break;
@@ -72338,11 +71557,7 @@ a000.n9I = function() {
                       A50 = C50 === p.TEMPORARY ? 24 : 29;
                       break;
                     case 27:
-                      var y0I = " ";
-                      y0I += ": ";
-                      y0I += "w";
-                      y0I += "a";
-                      y0I += "s ";
+                      var y0I = " : was ";
                       D.call(y, v + (x.length ? "/" + x.join("/") : "") + y0I + m(A));
                       A50 = 26;
                       break;
@@ -72359,10 +71574,7 @@ a000.n9I = function() {
                       A50 = 19;
                       break;
                     case 44:
-                      var L0I = "Inva";
-                      L0I += "lid";
-                      L0I += " failure sta";
-                      L0I += "te";
+                      var L0I = "Invalid failure state";
                       throw Error(L0I);
                     case 19:
                       F = F.parent;
@@ -72382,14 +71594,8 @@ a000.n9I = function() {
                       A50 = F ? 11 : 27;
                       break;
                     case 23:
-                      var F0I = "n";
-                      F0I += "etw";
-                      F0I += "ork";
-                      F0I += "Failed";
-                      var B0I = "Emitting networ";
-                      B0I += "kF";
-                      B0I += "aile";
-                      B0I += "d, permanent =";
+                      var F0I = "networkFailed";
+                      var B0I = "Emitting networkFailed, permanent =";
                       c(A);
                       this.D9 = this.D9 || l(this.lp);
                       E = this.lp.kf;
@@ -72426,9 +71632,7 @@ a000.n9I = function() {
                       A50 = B50 === k.default.Dh.URL ? 15 : 19;
                       break;
                     case 43:
-                      var v0I = "Unable to find failure entity for UR";
-                      v0I += "L";
-                      v0I += " ";
+                      var v0I = "Unable to find failure entity for URL ";
                       a000.T9I(0);
                       q.warn(a000.n9I(v0I, y));
                       A50 = 42;
@@ -72509,10 +71713,8 @@ a000.n9I = function() {
                   switch (d50) {
                     case 4:
                       return this.OA[8].zb;
-                      break;
                     case 2:
                       return this.OA[0].zb;
-                      break;
                   }
                 }
               };
@@ -72547,7 +71749,6 @@ a000.n9I = function() {
               break;
             case 27:
               return w;
-              break;
             case 20:
               w.prototype.Lb = function() {
                 var H50 = 2;
@@ -72580,10 +71781,7 @@ a000.n9I = function() {
                               J50 = 1;
                               break;
                             case 5:
-                              var Z0I = "n";
-                              Z0I += "o";
-                              Z0I += "n";
-                              Z0I += "e-";
+                              var Z0I = "none-";
                               B = y.content_profile;
                               A = {
                                 id: z,
@@ -72646,7 +71844,6 @@ a000.n9I = function() {
                                           switch (L50) {
                                             case 2:
                                               return C.id === G.id;
-                                              break;
                                           }
                                         }
                                       }).length && A.uj.push(G);
@@ -72666,7 +71863,6 @@ a000.n9I = function() {
                                           switch (N50) {
                                             case 2:
                                               return D.Pc.dc - F.Pc.dc;
-                                              break;
                                           }
                                         }
                                       });
@@ -72684,7 +71880,6 @@ a000.n9I = function() {
                                   switch (O50) {
                                     case 2:
                                       return E.level - D.level || E.dc - D.dc;
-                                      break;
                                   }
                                 }
                               });
@@ -72720,7 +71915,6 @@ a000.n9I = function() {
                           switch (Q50) {
                             case 2:
                               return !l(A) && 0 !== A.level;
-                              break;
                           }
                         }
                       }));
@@ -72728,7 +71922,6 @@ a000.n9I = function() {
                       break;
                     case 5:
                       return null;
-                      break;
                     case 9:
                       (y.forEach(function(A) {
                         var R50 = 2;
@@ -72750,12 +71943,10 @@ a000.n9I = function() {
                           switch (S50) {
                             case 2:
                               return A.level - B.level || A.dc - B.dc;
-                              break;
                           }
                         }
                       });
                       return y;
-                      break;
                   }
                 }
               };
@@ -72813,10 +72004,7 @@ a000.n9I = function() {
                 c50 = 17;
                 break;
               case 12:
-                var E0I = "ne";
-                E0I += "two";
-                E0I += "r";
-                E0I += "k";
+                var E0I = "network";
                 B.D9 = !1;
                 B.lp = {
                   id: E0I,
@@ -72837,12 +72025,9 @@ a000.n9I = function() {
                 c50 = 7;
                 break;
               case 17:
-                var n0I = "1SI";
-                n0I += "YbZrNJ";
-                n0I += "Cp9";
+                var n0I = "1SIYbZrNJCp9";
                 n0I;
                 return B;
-                break;
             }
           }
         }
@@ -73728,10 +72913,7 @@ a000.n9I = function() {
           for (; Y50 !== 3;) {
             switch (Y50) {
               case 2:
-                var J0I = "1";
-                J0I += "SIYbZrN";
-                J0I += "J";
-                J0I += "Cp9";
+                var J0I = "1SIYbZrNJCp9";
                 this.En = d;
                 this.I = g;
                 this.ii = h;
@@ -73751,10 +72933,7 @@ a000.n9I = function() {
                 for (; Z50 !== 8;) {
                   switch (Z50) {
                     case 2:
-                      var z0I = "cr";
-                      z0I += "eateD";
-                      z0I += "lTracksSta";
-                      z0I += "rt";
+                      var z0I = "createDlTracksStart";
                       (h = this, k = this.En.J);
                       0 === this.lG && this.En.Gb.hm(z0I);
                       this.lG += d.length;
@@ -73764,13 +72943,11 @@ a000.n9I = function() {
                           switch (a60) {
                             case 2:
                               return h.NNa(n, g.K, g.Vw(), h.En.em, k);
-                              break;
                           }
                         }
                       });
                       f.Ep.instance.Lg();
                       return d;
-                      break;
                   }
                 }
               };
@@ -73847,28 +73024,16 @@ a000.n9I = function() {
                 for (; g60 !== 7;) {
                   switch (g60) {
                     case 2:
-                      var I0I = "e";
-                      I0I += "r";
-                      I0I += "ror";
-                      var m0I = "netw";
-                      m0I += "orkfail";
-                      m0I += "ing";
-                      var T0I = "cr";
-                      T0I += "e";
-                      T0I += "a";
-                      T0I += "te";
-                      T0I += "d";
+                      var I0I = "error";
+                      var m0I = "networkfailing";
+                      var T0I = "created";
                       (q = this, p = f.Ep.instance.Yt(d, g, !0, h, k, n));
                       p.bh.on(p, T0I, function() {
                         var h60 = 2;
                         for (; h60 !== 5;) {
                           switch (h60) {
                             case 2:
-                              var g0I = "cr";
-                              g0I += "e";
-                              g0I += "at";
-                              g0I += "eDlTr";
-                              g0I += "acksEnd";
+                              var g0I = "createDlTracksEnd";
                               --q.lG;
                               0 === q.lG && q.En.Gb.hm(g0I);
                               h60 = 5;
@@ -73885,11 +73050,7 @@ a000.n9I = function() {
                               i60 = p.V5 ? 5 : 8;
                               break;
                             case 2:
-                              var G0I = "rep";
-                              G0I += "ortN";
-                              G0I += "etworkFailin";
-                              G0I += "g";
-                              G0I += ": ";
+                              var G0I = "reportNetworkFailing: ";
                               n.ri && q.ii.Jm(G0I + p);
                               i60 = 1;
                               break;
@@ -73908,20 +73069,9 @@ a000.n9I = function() {
                         for (; j60 !== 5;) {
                           switch (j60) {
                             case 2:
-                              var h0I = "NFErr_MC_St";
-                              h0I += "rea";
-                              h0I += "mingF";
-                              h0I += "ailu";
-                              h0I += "re";
-                              var M0I = "Do";
-                              M0I += "wnloa";
-                              M0I += "dTrack f";
-                              M0I += "atal err";
-                              M0I += "or";
-                              var s0I = "DownloadTrac";
-                              s0I += "k f";
-                              s0I += "atal";
-                              s0I += " error";
+                              var h0I = "NFErr_MC_StreamingFailure";
+                              var M0I = "DownloadTrack fatal error";
+                              var s0I = "DownloadTrack fatal error";
                               n.ri && q.ii.Jm(s0I);
                               q.En.Up(M0I, void 0, h0I, p.th, 0, p.yj);
                               j60 = 5;
@@ -73932,19 +73082,13 @@ a000.n9I = function() {
                       g60 = 3;
                       break;
                     case 3:
-                      var k0I = "t";
-                      k0I += "ransport";
-                      k0I += "report";
+                      var k0I = "transportreport";
                       p.on(k0I, function(u) {
                         var k60 = 2;
                         for (; k60 !== 1;) {
                           switch (k60) {
                             case 2:
-                              var w0I = "t";
-                              w0I += "r";
-                              w0I += "a";
-                              w0I += "nsport";
-                              w0I += "report";
+                              var w0I = "transportreport";
                               q.En.emit(w0I, u);
                               k60 = 1;
                               break;
@@ -73957,7 +73101,6 @@ a000.n9I = function() {
                       });
                       p.Fb();
                       return p;
-                      break;
                   }
                 }
               };
@@ -73985,7 +73128,6 @@ a000.n9I = function() {
                 }
               };
               return m;
-              break;
           }
         }
       })();
@@ -75202,19 +74344,12 @@ a000.n9I = function() {
           for (; n60 !== 1;) {
             switch (n60) {
               case 4:
-                var q0I = "1SI";
-                q0I += "YbZrNJ";
-                q0I += "Cp";
-                q0I += "9";
+                var q0I = "1SIYbZrNJCp9";
                 q0I;
                 n60 = 4;
                 break;
               case 2:
-                var R2I = "1";
-                R2I += "S";
-                R2I += "IY";
-                R2I += "bZrN";
-                R2I += "JCp9";
+                var R2I = "1SIYbZrNJCp9";
                 R2I;
                 n60 = 1;
                 break;
@@ -75238,13 +74373,8 @@ a000.n9I = function() {
                       q60 = 5;
                       break;
                     case 6:
-                      var f2I = " f";
-                      f2I += "rom";
-                      f2I += " [ ";
-                      var p2I = "A";
-                      p2I += "seF";
-                      p2I += "ragmentMediaRequest: Fragment edit fail";
-                      p2I += "ed for ";
+                      var f2I = " from [ ";
+                      var p2I = "AseFragmentMediaRequest: Fragment edit failed for ";
                       (this.I.error(p2I + this.toString() + f2I + this.mN + "-" + this.n6 + "]"), h = !0);
                       q60 = 7;
                       break;
@@ -75283,7 +74413,6 @@ a000.n9I = function() {
                 }
               };
               return g;
-              break;
             case 2:
               g.prototype.CG = function(h, k, n) {
                 var o60, q;
@@ -75345,13 +74474,8 @@ a000.n9I = function() {
                 for (; p60 !== 12;) {
                   switch (p60) {
                     case 9:
-                      var a2I = "m";
-                      a2I += "edia";
-                      a2I += "|asej";
-                      a2I += "s";
-                      var V2I = "M";
-                      V2I += "P";
-                      V2I += "4";
+                      var a2I = "media|asejs";
+                      var V2I = "MP4";
                       p60 = (n = new c.Ar(new m.default.Console(V2I, a2I), this.stream, this.response), n = n.Kva(this.ya.start, this.yO, k.EE)) ? 8 : 6;
                       break;
                     case 4:
@@ -75361,13 +74485,8 @@ a000.n9I = function() {
                       p60 = this.ya && (0 < this.ya.start || k.EE) ? 9 : 14;
                       break;
                     case 6:
-                      var C2I = " ";
-                      C2I += "fro";
-                      C2I += "m [ ";
-                      var S2I = "AseFragmentMediaReq";
-                      S2I += "uest: Fragment";
-                      S2I += " edit faile";
-                      S2I += "d for ";
+                      var C2I = " from [ ";
+                      var S2I = "AseFragmentMediaRequest: Fragment edit failed for ";
                       (this.I.error(S2I + this.toString() + C2I + this.mN + "-" + this.n6 + "]"), n = !0);
                       p60 = 13;
                       break;
@@ -76483,9 +75602,7 @@ a000.n9I = function() {
                 s60 = 5;
                 break;
               case 5:
-                var e2I = "1SIYb";
-                e2I += "Zr";
-                e2I += "NJCp9";
+                var e2I = "1SIYbZrNJCp9";
                 this.J = w;
                 this.Qf = v;
                 e2I;
@@ -76497,7 +75614,6 @@ a000.n9I = function() {
                       case 2:
                         z[A] = ((q[t] || q[p[A]])[A] || q[p[A]][A]).bind(y);
                         return z;
-                        break;
                     }
                   }
                 }, {});
@@ -76512,7 +75628,6 @@ a000.n9I = function() {
           switch (r60) {
             case 7:
               return u;
-              break;
             case 2:
               u.prototype.Ewa = function(t, w, v, x, y, z) {
                 var u60, A, B, E, D, F, G, C, H, Q, I, v60, K, O, L;
@@ -76520,10 +75635,7 @@ a000.n9I = function() {
                 for (; u60 !== 61;) {
                   switch (u60) {
                     case 36:
-                      var H2I = "m";
-                      H2I += "in_fragmen";
-                      H2I += "t_v";
-                      H2I += "maf";
+                      var H2I = "min_fragment_vmaf";
                       void 0 === L.x4a ? this.Qf.yZ(L.Ke) : this.Qf.yZ(L.x4a);
                       x = w[L.Ke];
                       L.reason && (x.Os = L.reason, H2I !== L.reason && (x.Dwa = L.yu, x.mA = L.mA, x.ap = L.ap, x.cp = L.cp));
@@ -76564,7 +75676,6 @@ a000.n9I = function() {
                           switch (w60) {
                             case 2:
                               return J.bitrate > H;
-                              break;
                           }
                         }
                       });
@@ -76583,7 +75694,6 @@ a000.n9I = function() {
                           switch (y60) {
                             case 2:
                               return J.bitrate > Q;
-                              break;
                           }
                         }
                       });
@@ -76617,18 +75727,13 @@ a000.n9I = function() {
                           switch (x60) {
                             case 2:
                               return J.Sa === I;
-                              break;
                           }
                         }
                       });
                       u60 = 20;
                       break;
                     case 52:
-                      var d2I = "p";
-                      d2I += "lay";
-                      d2I += "i";
-                      d2I += "n";
-                      d2I += "g";
+                      var d2I = "playing";
                       this.j6a && (L.Qu = this.j6a.vIb({
                         hq: v.vm - v.Mc,
                         aPb: w[0],
@@ -76653,7 +75758,6 @@ a000.n9I = function() {
                       break;
                     case 48:
                       return L;
-                      break;
                     case 28:
                       C.Y && C.Y.length || (x = !0, L.Hz.push(C.Sa));
                       u60 = 44;
@@ -76682,13 +75786,8 @@ a000.n9I = function() {
                       u60 = 39;
                       break;
                     case 62:
-                      var t2I = "Stream sel";
-                      t2I += "ector called wi";
-                      t2I += "th inva";
-                      t2I += "lid player stat";
-                      t2I += "e ";
+                      var t2I = "Stream selector called with invalid player state ";
                       return (k.error(t2I + d.sa[t.state]), null);
-                      break;
                     case 38:
                       u60 = !L || null === L.Ke ? 37 : 36;
                       break;
@@ -76744,7 +75843,6 @@ a000.n9I = function() {
                       break;
                     case 37:
                       return null;
-                      break;
                     case 31:
                       y = L.Ke + 1;
                       u60 = 30;
@@ -76758,7 +75856,6 @@ a000.n9I = function() {
                   switch (A60) {
                     case 2:
                       return this.Bg.checkBuffering.call(this, t, w, v, x, y, this.J);
-                      break;
                   }
                 }
               };
@@ -76838,7 +75935,6 @@ a000.n9I = function() {
                       switch (F60) {
                         case 2:
                           return this.kha;
-                          break;
                       }
                     }
                   },
@@ -76852,7 +75948,6 @@ a000.n9I = function() {
                       switch (G60) {
                         case 2:
                           return this.oha;
-                          break;
                       }
                     }
                   },
@@ -76967,7 +76062,6 @@ a000.n9I = function() {
           switch (H60) {
             case 4:
               return p;
-              break;
             case 2:
               p.prototype.doa = function(u, t, w) {
                 var J60, v;
@@ -76985,10 +76079,8 @@ a000.n9I = function() {
                       t = Math.ceil(a000.J9I(t, w));
                       u = (this.J.Hka.jcc || 0) * ((null === (v = u.aPb) || void 0 === v ? void 0 : v.IA) || 0);
                       return t < u ? 0 : t;
-                      break;
                     case 5:
                       return 0;
-                      break;
                   }
                 }
               };
@@ -76999,7 +76091,6 @@ a000.n9I = function() {
                   switch (K60) {
                     case 2:
                       return !t.Hka.Vac || u.yf !== k.sa.Eh && u.yf !== k.sa.xd ? !1 : (u = null === (w = u.Pg) || void 0 === w ? void 0 : w.zb) && u.confidence >= k.lea.cy && (null === (v = u.Ua) || void 0 === v ? 0 : v.Ha) ? !0 : !1;
-                      break;
                   }
                 }
               };
@@ -77034,10 +76125,8 @@ a000.n9I = function() {
                       break;
                     case 9:
                       return t;
-                      break;
                     case 5:
                       return t;
-                      break;
                     case 3:
                       L60 = v && u.Sd && 0 === u.Sd % v ? 9 : 8;
                       break;
@@ -77048,7 +76137,6 @@ a000.n9I = function() {
               break;
             case 14:
               return p;
-              break;
           }
         }
 
@@ -77062,19 +76150,13 @@ a000.n9I = function() {
                 I60 = 8;
                 break;
               case 2:
-                var X2I = "1";
-                X2I += "SIYbZrNJC";
-                X2I += "p9";
+                var X2I = "1SIYbZrNJCp9";
                 this.J = u;
                 X2I;
                 I60 = 5;
                 break;
               case 5:
-                var i2I = "d";
-                i2I += "ef";
-                i2I += "a";
-                i2I += "ul";
-                i2I += "t";
+                var i2I = "default";
                 this.algorithm = (q[this.J.ATb] || q[i2I]).bind(this);
                 I60 = 4;
                 break;
@@ -77175,21 +76257,14 @@ a000.n9I = function() {
         for (; M60 !== 5;) {
           switch (M60) {
             case 2:
-              var D2I = "1SI";
-              D2I += "YbZrN";
-              D2I += "J";
-              D2I += "C";
-              D2I += "p9";
+              var D2I = "1SIYbZrNJCp9";
               b.raa = h = function(n, q, p, u, t, w, v) {
                 var P60 = 2;
                 for (; P60 !== 1;) {
                   switch (P60) {
                     case 2:
-                      var x2I = "play";
-                      x2I += "in";
-                      x2I += "g";
+                      var x2I = "playing";
                       return x2I === n.Rja ? m.Bx.call(this, n, q, p, u, t, w, v) : k.call(this, n, q, p, u);
-                      break;
                   }
                 }
               };
@@ -77211,19 +76286,13 @@ a000.n9I = function() {
                 N60 = w.Ua ? 4 : 14;
                 break;
               case 2:
-                var b2I = "Must have at least one selected";
-                b2I += " str";
-                b2I += "eam";
+                var b2I = "Must have at least one selected stream";
                 d(!c.ka(u), b2I);
                 (w = p[u], v = w.bitrate, x = w, y = q.Sd);
                 N60 = 5;
                 break;
               case 8:
-                var Q2I = "fallb";
-                Q2I += "ack_lowest";
-                Q2I += "_";
-                Q2I += "acceptable_strea";
-                Q2I += "m";
+                var Q2I = "fallback_lowest_acceptable_stream";
                 z = Q2I;
                 N60 = 7;
                 break;
@@ -77240,9 +76309,7 @@ a000.n9I = function() {
                 N60 = 14;
                 break;
               case 6:
-                var j2I = "select_feasible_bu";
-                j2I += "fferin";
-                j2I += "g";
+                var j2I = "select_feasible_buffering";
                 z = j2I;
                 N60 = 7;
                 break;
@@ -77252,7 +76319,6 @@ a000.n9I = function() {
                 x !== w && (u.reason = z, u.yu = A);
                 l.X8(n, p, y, u);
                 return u;
-                break;
             }
           }
 
@@ -77262,14 +76328,10 @@ a000.n9I = function() {
             for (; O60 !== 7;) {
               switch (O60) {
                 case 3:
-                  var N2I = "bu";
-                  N2I += "ff";
-                  N2I += "_lt_h";
-                  N2I += "ist";
+                  var N2I = "buff_lt_hist";
                   z = N2I;
                   A = E;
                   return !0;
-                  break;
                 case 5:
                   O60 = !E || (B.bitrate > v ? n.w3b : 1) * B.bitrate * q.playbackRate > E ? 4 : 3;
                   break;
@@ -77280,7 +76342,6 @@ a000.n9I = function() {
                   break;
                 case 4:
                   return !1;
-                  break;
               }
             }
           }
@@ -77301,15 +76362,8 @@ a000.n9I = function() {
               Q60 = 43;
               break;
             case 12:
-              var K2I = " ";
-              K2I += ">=";
-              K2I += " fragments";
-              K2I += "Leng";
-              K2I += "th: ";
-              var u2I = "Stre";
-              u2I += "a";
-              u2I += "ming";
-              u2I += "Index: ";
+              var K2I = " >= fragmentsLength: ";
+              var u2I = "StreamingIndex: ";
               n >= l && c.error(u2I + n + K2I + l);
               m += f;
               0 === k && (m = 0);
@@ -77373,10 +76427,7 @@ a000.n9I = function() {
               Q60 = 31;
               break;
             case 2:
-              var o2I = "1S";
-              o2I += "I";
-              o2I += "YbZrNJCp";
-              o2I += "9";
+              var o2I = "1SIYbZrNJCp9";
               o2I;
               y = f.W;
               l = Math.min(f.length, l);
@@ -77470,17 +76521,13 @@ a000.n9I = function() {
             switch (d70) {
               case 5:
                 return B.WT ? x(B, E, D, F) : z(B, E, D, F);
-                break;
               case 2:
-                var r2I = "v";
-                r2I += "b";
+                var r2I = "vb";
                 G = g.default.storage.get(r2I);
                 d70 = 1;
                 break;
               case 1:
-                var P2I = "nu";
-                P2I += "m";
-                P2I += "ber";
+                var P2I = "number";
                 d70 = P2I !== typeof G ? 5 : 4;
                 break;
               case 4:
@@ -77491,23 +76538,17 @@ a000.n9I = function() {
                     switch (e70) {
                       case 4:
                         return C.bitrate >= G;
-                        break;
                       case 2:
                         return C.bitrate <= G;
-                        break;
                     }
                   }
                 }) || D[0];
                 d70 = 9;
                 break;
               case 9:
-                var U2I = "hist_";
-                U2I += "bit";
-                U2I += "r";
-                U2I += "ate";
+                var U2I = "hist_bitrate";
                 B.reason = U2I;
                 return B;
-                break;
             }
           }
         }
@@ -77537,17 +76578,10 @@ a000.n9I = function() {
                 S60 = (F = l.Ea(E.saa) && 0 <= E.saa && 100 >= E.saa && !l.ka(B) && !l.Jb(B)) ? 6 : 14;
                 break;
               case 14:
-                var O2I = "his";
-                O2I += "t";
-                O2I += "_t";
-                O2I += "hr";
-                O2I += "oughput";
-                var c2I = "his";
-                c2I += "t_tdi";
-                c2I += "gest";
+                var O2I = "hist_throughput";
+                var c2I = "hist_tdigest";
                 F ? (E = B.Aj(E.saa / 100) || D.Pg.Ua, D.yu = E, D.reason = c2I) : D.Pg.Ua && (E = D.Pg.Ua, D.yu = E, D.reason = O2I);
                 return D;
-                break;
             }
           }
         }
@@ -77565,7 +76599,6 @@ a000.n9I = function() {
                     switch (b70) {
                       case 2:
                         return C.bitrate <= B.FA;
-                        break;
                     }
                   }
                 }).reverse(), function(C) {
@@ -77590,10 +76623,7 @@ a000.n9I = function() {
                         c70 = 3;
                         break;
                       case 8:
-                        var Y2I = "hi";
-                        Y2I += "st_buf";
-                        Y2I += "f";
-                        Y2I += "time";
+                        var Y2I = "hist_bufftime";
                         t(C, K, B) <= O ? (F.yu = K, H && (F.ap = H.lm ? H.lm : 0, F.cp = H.lm && H.Kk), F.reason = Y2I, H = !0) : H = !1;
                         c70 = 7;
                         break;
@@ -77602,20 +76632,10 @@ a000.n9I = function() {
                         break;
                       case 7:
                         return H;
-                        break;
                       case 14:
-                        var W2I = "no";
-                        W2I += "_h";
-                        W2I += "istorical_lt";
-                        W2I += "e_minbi";
-                        W2I += "trate";
-                        var l2I = "hist_tput_lt";
-                        l2I += "_";
-                        l2I += "minbit";
-                        l2I += "rate";
-                        var A2I = "lt_his";
-                        A2I += "t_lte_minbitr";
-                        A2I += "ate";
+                        var W2I = "no_historical_lte_minbitrate";
+                        var l2I = "hist_tput_lt_minbitrate";
+                        var A2I = "lt_hist_lte_minbitrate";
                         (K = H.Ua, C.bitrate * E.playbackRate <= K ? (F.yu = K, H && (F.ap = H.lm ? H.lm : 0, F.cp = H.lm ? H.Kk : void 0), F.reason = A2I, H = !0) : K ? (F.yu = K, H && (F.ap = H.lm ? H.lm : 0, F.cp = H.lm ? H.Kk : void 0), F.reason = l2I, H = !1) : (F.reason = W2I, H = !0));
                         c70 = 7;
                         break;
@@ -77631,7 +76651,6 @@ a000.n9I = function() {
                   }
                 }) || D[0];
                 return F;
-                break;
             }
           }
         }
@@ -77655,7 +76674,6 @@ a000.n9I = function() {
                     switch (V60) {
                       case 2:
                         return E <= G.r;
-                        break;
                     }
                   }
                 }));
@@ -77663,13 +76681,10 @@ a000.n9I = function() {
                 break;
               case 4:
                 return D[0].d;
-                break;
               case 9:
                 return D[D.length - 1].d;
-                break;
               case 6:
                 return Math.floor(B.d + (D.d - B.d) * (E - B.r) / (D.r - B.r));
-                break;
               case 8:
                 a000.T9I(1);
                 B = D[a000.n9I(F, 1)];
@@ -77681,7 +76696,6 @@ a000.n9I = function() {
                 break;
               case 14:
                 return B.ys;
-                break;
             }
           }
         }
@@ -77693,7 +76707,6 @@ a000.n9I = function() {
               case 2:
                 B = k(D.xj, B * D.zsa);
                 return h(B, E);
-                break;
             }
           }
         }
@@ -77717,21 +76730,14 @@ a000.n9I = function() {
                 W60 = 4;
                 break;
               case 1:
-                var y2I = "l";
-                y2I += "o";
-                y2I += "g";
+                var y2I = "log";
                 W60 = 0 === E.zP.lastIndexOf(y2I, 0) ? 5 : 3;
                 break;
               case 4:
                 return (D = E.M9a[D]) && 2 === D.length ? 1E3 * (D[0] + D[1] * Math.log(1 + B)) : E.ys;
-                break;
               case 3:
-                var L2I = "s";
-                L2I += "ig";
-                L2I += "m";
-                L2I += "oid";
+                var L2I = "sigmoid";
                 return 0 === E.zP.lastIndexOf(L2I, 0) ? (D = E.zP, (D = E.M9a[D]) && 2 === D.length ? 1E3 * (D[0] + D[1] * p(B)) : E.ys) : E.ys;
-                break;
               case 14:
                 D = E.zP;
                 W60 = 5;
@@ -77759,21 +76765,16 @@ a000.n9I = function() {
                     switch (Y60) {
                       case 2:
                         return I.xb && 110 >= I.xb;
-                        break;
                     }
                   }
                 }), G = null, C = D.length - 1);
                 X60 = 1;
                 break;
               case 11:
-                var B2I = "fallback_no_a";
-                B2I += "cceptab";
-                B2I += "le";
-                B2I += "_stream";
+                var B2I = "fallback_no_acceptable_stream";
                 l.Jb(G) && (G = u(D[0], B));
                 l.Jb(G) && (G = u(D[0], B), G.reason = B2I);
                 return G;
-                break;
               case 1:
                 X60 = 0 <= C && (F ? D[C].xb >= B.Ou : D[C].bitrate >= B.ix) ? 5 : 11;
                 break;
@@ -77803,18 +76804,9 @@ a000.n9I = function() {
           for (; Z60 !== 5;) {
             switch (Z60) {
               case 2:
-                var Z2I = "n";
-                Z2I += "o";
-                Z2I += "_valid_Bitrat";
-                Z2I += "e";
-                var v2I = "no_va";
-                v2I += "li";
-                v2I += "d_";
-                v2I += "VMAF";
-                var F2I = "no_valid_Del";
-                F2I += "ayT";
-                F2I += "a";
-                F2I += "rget";
+                var Z2I = "no_valid_Bitrate";
+                var v2I = "no_valid_VMAF";
+                var F2I = "no_valid_DelayTarget";
                 B = D ? B.xb >= C.Ou && B.xb <= C.X3a : B.bitrate >= C.ix && B.bitrate <= C.FA;
                 return (F = F < G && B) ? {
                   X5: F
@@ -77829,10 +76821,7 @@ a000.n9I = function() {
         for (; R60 !== 5;) {
           switch (R60) {
             case 2:
-              var E2I = "1S";
-              E2I += "IY";
-              E2I += "bZrNJCp";
-              E2I += "9";
+              var E2I = "1SIYbZrNJCp9";
               E2I;
               return {
                 Vqb(B, E, D, F) {
@@ -77840,13 +76829,8 @@ a000.n9I = function() {
                   for (; f70 !== 1;) {
                     switch (f70) {
                       case 2:
-                        var n2I = "h";
-                        n2I += "i";
-                        n2I += "s";
-                        n2I += "t";
-                        n2I += "orical";
+                        var n2I = "historical";
                         return n2I === B.gqa ? A(B, E, D, F) : B.WT ? x(B, E, D, F) : z(B, E, D, F);
-                        break;
                     }
                   }
                 },
@@ -77919,7 +76903,6 @@ a000.n9I = function() {
                         break;
                       case 3:
                         return Q;
-                        break;
                       case 4:
                         A = v.filter(function(P) {
                           var l70, S;
@@ -77929,7 +76912,6 @@ a000.n9I = function() {
                               case 2:
                                 S = P.bitrate;
                                 return S >= J && S <= M && 0 <= I.indexOf(P.Ig) && S * L / 8 < N;
-                                break;
                             }
                           }
                         }).map(function(P) {
@@ -77938,10 +76920,8 @@ a000.n9I = function() {
                             switch (m70) {
                               case 2:
                                 return P.Pf;
-                                break;
                               case 4:
                                 return P.Pf;
-                                break;
                             }
                           }
                         });
@@ -77980,22 +76960,11 @@ a000.n9I = function() {
                 j70 = w.Hq && C > G.yA && (void 0 === K || Number(H) > K || E.Ic - K > G.F8) ? 26 : 22;
                 break;
               case 21:
-                var m2I = " ";
-                m2I += "k";
-                m2I += "b";
-                m2I += "p";
-                m2I += "s";
-                var g2I = " ";
-                g2I += "kbps, ";
-                g2I += "to ";
-                var T2I = "switchi";
-                T2I += "ng ";
-                T2I += "audio from ";
-                var z2I = "d";
-                z2I += "ow";
-                z2I += "n";
-                var J2I = "u";
-                J2I += "p";
+                var m2I = " kbps";
+                var g2I = " kbps, to ";
+                var T2I = "switching audio from ";
+                var z2I = "down";
+                var J2I = "up";
                 F = v[z];
                 z !== x && g && d.log((z > x ? J2I : z2I) + T2I + B.bitrate + g2I + F.bitrate + m2I);
                 j70 = 34;
@@ -78005,39 +76974,17 @@ a000.n9I = function() {
                 j70 = 6;
                 break;
               case 34:
-                var M2I = "kbps, streami";
-                M2I += "ng";
-                M2I += "Pts :";
-                var s2I = ", ";
-                s2I += "audio t";
-                s2I += "h";
-                s2I += "roughpu";
-                s2I += "t:";
-                var I2I = " kbps";
-                I2I += ", profile ";
-                I2I += ":";
-                var G2I = "selectAudioStrea";
-                G2I += "m: se";
-                G2I += "lected ";
-                G2I += "stream";
-                G2I += " :";
+                var M2I = "kbps, streamingPts :";
+                var s2I = ", audio throughput:";
+                var I2I = " kbps, profile :";
+                var G2I = "selectAudioStream: selected stream :";
                 g && d.log(G2I + F.bitrate + I2I + y + s2I + F.Ua + M2I + w.buffer.Ic);
                 return new q(z);
-                break;
               case 22:
-                var q2I = "m";
-                q2I += "s";
-                var w2I = ", b";
-                w2I += "uffer level =";
-                w2I += " ";
-                var k2I = ", ";
-                k2I += "lastUp";
-                k2I += "switchPts = ";
-                var h2I = "  Upswitch not allowed. ";
-                h2I += "lastDown";
-                h2I += "switchPt";
-                h2I += "s =";
-                h2I += " ";
+                var q2I = "ms";
+                var w2I = ", buffer level = ";
+                var k2I = ", lastUpswitchPts = ";
+                var h2I = "  Upswitch not allowed. lastDownswitchPts = ";
                 g && d.log(h2I + K + k2I + H + w2I + C + q2I);
                 j70 = 21;
                 break;
@@ -78048,20 +76995,9 @@ a000.n9I = function() {
                 j70 = n(C) && (0 == D || C.bitrate * w.playbackRate * G.NVa < F) ? 18 : 17;
                 break;
               case 16:
-                var f4I = " ";
-                f4I += "kb";
-                f4I += "p";
-                f4I += "s";
-                var p4I = " ";
-                p4I += "k";
-                p4I += "bps";
-                p4I += " >";
-                p4I += " ";
-                var R4I = "th";
-                R4I += "r";
-                R4I += "oug";
-                R4I += "hpu";
-                R4I += "t for audio ";
+                var f4I = " kbps";
+                var p4I = " kbps > ";
+                var R4I = "throughput for audio ";
                 j70 = D < A.length - 1 && F > G.mcb * E * w.playbackRate && (g && d.log(R4I + F + p4I + G.mcb + "*" + E + f4I), E = w.buffer, C = E.vm - E.Mc, B.Y && B.Y.length) ? 15 : 21;
                 break;
               case 18:
@@ -78070,7 +77006,6 @@ a000.n9I = function() {
                 break;
               case 4:
                 return new q(x);
-                break;
               case 24:
                 j70 = (E = A[D], C = v[E], n(C) && F > G.mcb * C.bitrate * w.playbackRate) ? 23 : 25;
                 break;
@@ -78088,18 +77023,9 @@ a000.n9I = function() {
                 j70 = !(t && t.bQ && 0 <= t.bQ.indexOf(y)) ? 4 : 3;
                 break;
               case 26:
-                var S4I = ",";
-                S4I += " stre";
-                S4I += "am";
-                S4I += "i";
-                S4I += "ngPts = ";
-                var a4I = ", lastUps";
-                a4I += "wi";
-                a4I += "tchP";
-                a4I += "ts = ";
-                var V4I = "  Upsw";
-                V4I += "itch allowed. lastDownswi";
-                V4I += "tchPts = ";
+                var S4I = ", streamingPts = ";
+                var a4I = ", lastUpswitchPts = ";
+                var V4I = "  Upswitch allowed. lastDownswitchPts = ";
                 g && d.log(V4I + K + a4I + H + S4I + E.Ic);
                 j70 = 25;
                 break;
@@ -78107,26 +77033,15 @@ a000.n9I = function() {
                 j70 = 0 <= D ? 10 : 21;
                 break;
               case 2:
-                var C4I = "Must";
-                C4I += " have at leas";
-                C4I += "t ";
-                C4I += "on";
-                C4I += "e selected stream";
+                var C4I = "Must have at least one selected stream";
                 h(!l.ka(x), C4I);
                 y = v[x].Ig;
                 j70 = 5;
                 break;
               case 12:
-                var d4I = " kbps, ";
-                d4I += "try to downs";
-                d4I += "witch";
-                var H4I = " ";
-                H4I += "kbp";
-                H4I += "s ";
-                H4I += "< ";
-                var e4I = "throughput fo";
-                e4I += "r audio";
-                e4I += " ";
+                var d4I = " kbps, try to downswitch";
+                var H4I = " kbps < ";
+                var e4I = "throughput for audio ";
                 (g && d.log(e4I + F + H4I + G.NVa + "*" + E + d4I), --D);
                 j70 = 11;
                 break;
@@ -78138,10 +77053,7 @@ a000.n9I = function() {
         for (; g70 !== 4;) {
           switch (g70) {
             case 2:
-              var x4I = "1S";
-              x4I += "IYbZrNJ";
-              x4I += "C";
-              x4I += "p9";
+              var x4I = "1SIYbZrNJCp9";
               (l = a(10), m = a(34), d = m.console, g = m.debug, h = m.assert, k = a(85), n = m.UH, q = m.Kp, p = a(394), u = a(16).sa);
               r.exports = {
                 STARTING(t, w, v, x) {
@@ -78154,25 +77066,14 @@ a000.n9I = function() {
                         n70 = 1;
                         break;
                       case 4:
-                        var X4I = " kb";
-                        X4I += "ps, ";
-                        X4I += "pro";
-                        X4I += "file";
-                        X4I += " :";
-                        var t4I = "se";
-                        t4I += "lectAudioStreamStarting";
-                        t4I += ": select";
-                        t4I += "ed ";
-                        t4I += "stream :";
+                        var X4I = " kbps, profile :";
+                        var t4I = "selectAudioStreamStarting: selected stream :";
                         t = p[u[u.Eh]](y, w, v, x);
                         v = v[t.Ke];
                         g && d.log(t4I + v.bitrate + X4I + v.Ig);
                         return t;
-                        break;
                       case 5:
-                        var i4I = "selectAudioS";
-                        i4I += "t";
-                        i4I += "reamStarting: overriding config with ";
+                        var i4I = "selectAudioStreamStarting: overriding config with ";
                         (y = {
                           minInitAudioBitrate: t.DX,
                           minHCInitAudioBitrate: t.CX,
@@ -78205,7 +77106,6 @@ a000.n9I = function() {
             switch (h70) {
               case 7:
                 return v;
-                break;
               case 2:
                 v = void 0;
                 w.some(function(x) {
@@ -78217,7 +77117,6 @@ a000.n9I = function() {
                         y = x.profiles;
                         (y = y && 0 <= y.indexOf(t)) && (v = x.override);
                         return y;
-                        break;
                     }
                   }
                 });
@@ -78225,7 +77124,6 @@ a000.n9I = function() {
                 break;
               case 5:
                 return v;
-                break;
             }
           }
         }
@@ -78274,16 +77172,8 @@ a000.n9I = function() {
                 p70 = 3;
                 break;
               case 2:
-                var b4I = "pla";
-                b4I += "ye";
-                b4I += "r";
-                b4I += " missing fragme";
-                b4I += "ntIndex";
-                var D4I = "Must";
-                D4I += " have at leas";
-                D4I += "t one";
-                D4I += " s";
-                D4I += "elected stream";
+                var b4I = "player missing fragmentIndex";
+                var D4I = "Must have at least one selected stream";
                 m(!f.ka(n), D4I);
                 m(f.Ea(h.Sd), b4I);
                 h = d(n);
@@ -78305,11 +77195,9 @@ a000.n9I = function() {
                 break;
               case 7:
                 return (h.Ke = n, h);
-                break;
               case 14:
                 h.Ke = 0;
                 return h;
-                break;
             }
           }
         }
@@ -78330,10 +77218,7 @@ a000.n9I = function() {
               o70 = 7;
               break;
             case 7:
-              var Q4I = "1";
-              Q4I += "SIYbZ";
-              Q4I += "r";
-              Q4I += "NJCp9";
+              var Q4I = "1SIYbZrNJCp9";
               Q4I;
               o70 = 6;
               break;
@@ -78372,10 +77257,7 @@ a000.n9I = function() {
         for (; q70 !== 5;) {
           switch (q70) {
             case 2:
-              var u4I = "1SIYb";
-              u4I += "Z";
-              u4I += "rNJ";
-              u4I += "Cp9";
+              var u4I = "1SIYbZrNJCp9";
               b.Bx = k = function(n, q, p, u, t, w, v) {
                 var r70, D, F, G, C, H, J, O, I, Q, E, L, x, y, z, A, B, K;
                 r70 = 2;
@@ -78437,7 +77319,6 @@ a000.n9I = function() {
                       break;
                     case 60:
                       return z;
-                      break;
                     case 55:
                       r70 = B < y.length ? 77 : 73;
                       break;
@@ -78467,7 +77348,6 @@ a000.n9I = function() {
                       break;
                     case 7:
                       return l.default.PLAYING.call(this, n, q, p, u, t, w, v);
-                      break;
                     case 61:
                       z.SRa = t;
                       r70 = 60;
@@ -78543,14 +77423,8 @@ a000.n9I = function() {
                       r70 = 57;
                       break;
                     case 2:
-                      var N4I = "player";
-                      N4I += " missing frag";
-                      N4I += "mentIndex";
-                      var j4I = "Must hav";
-                      j4I += "e at ";
-                      j4I += "least one ";
-                      j4I += "sel";
-                      j4I += "ected stream";
+                      var N4I = "player missing fragmentIndex";
+                      var j4I = "Must have at least one selected stream";
                       g(!c.ka(u), j4I);
                       g(c.Ea(q.Sd), N4I);
                       r70 = 4;
@@ -78617,7 +77491,6 @@ a000.n9I = function() {
                       break;
                     case 59:
                       return l.default.PLAYING.call(this, n, q, p, u, t, w, v);
-                      break;
                   }
                 }
               };
@@ -78634,11 +77507,7 @@ a000.n9I = function() {
         for (; s70 !== 8;) {
           switch (s70) {
             case 3:
-              var U4I = "1SIYb";
-              U4I += "Zr";
-              U4I += "N";
-              U4I += "JC";
-              U4I += "p9";
+              var U4I = "1SIYbZrNJCp9";
               r.exports = {
                 checkBuffering(f, l, m, d, g, h) {
                   var V37 = a000;
@@ -78687,10 +77556,7 @@ a000.n9I = function() {
                         t70 = 0 < v ? 43 : 42;
                         break;
                       case 25:
-                        var K4I = "out";
-                        K4I += "of";
-                        K4I += "r";
-                        K4I += "ange";
+                        var K4I = "outofrange";
                         return {
                           complete: !0,
                           reason: K4I
@@ -78742,11 +77608,7 @@ a000.n9I = function() {
                         t70 = l > q * h.W5 ? 21 : 35;
                         break;
                       case 9:
-                        var o4I = "ma";
-                        o4I += "x";
-                        o4I += "s";
-                        o4I += "iz";
-                        o4I += "e";
+                        var o4I = "maxsize";
                         return {
                           complete: !0,
                           reason: o4I
@@ -78776,10 +77638,7 @@ a000.n9I = function() {
                         t70 = 3;
                         break;
                       case 21:
-                        var r4I = "hi";
-                        r4I += "g";
-                        r4I += "ht";
-                        r4I += "p";
+                        var r4I = "hightp";
                         return {
                           complete: !0,
                           reason: r4I
@@ -78802,9 +77661,7 @@ a000.n9I = function() {
                         t70 = 17;
                         break;
                       case 40:
-                        var P4I = "nor";
-                        P4I += "ebu";
-                        P4I += "ff";
+                        var P4I = "norebuff";
                         return {
                           complete: !0,
                           reason: P4I
@@ -78830,7 +77687,6 @@ a000.n9I = function() {
                         case 2:
                           x = d.Y.a6(f.Mc + x, void 0, !0);
                           return (t - f.kl) / (t + (x.offset + x.ga) - w);
-                          break;
                       }
                     }
                   }
@@ -78915,7 +77771,6 @@ a000.n9I = function() {
             case 2:
               c.__extends(p, q);
               return p;
-              break;
           }
         }
 
@@ -78932,7 +77787,6 @@ a000.n9I = function() {
                     switch (y70) {
                       case 2:
                         return m.uE(w.config, v, x);
-                        break;
                     }
                   }
                 };
@@ -78961,7 +77815,6 @@ a000.n9I = function() {
                         void 0 !== v && (D = k(w.uRb, v), x = Math.min(x * D, 1));
                         a000.T9I(17);
                         return w.BVa(a000.J9I(F, x, 1), y);
-                        break;
                     }
                   }
                 };
@@ -78969,10 +77822,7 @@ a000.n9I = function() {
                 x70 = 3;
                 break;
               case 3:
-                var c4I = "1S";
-                c4I += "IYbZrNJ";
-                c4I += "C";
-                c4I += "p9";
+                var c4I = "1SIYbZrNJCp9";
                 w.qub = d(u.Nt.threshold || 6E3, 1, 1E5);
                 w.lub = d(u.Nt.gamma || 1, .1, 10);
                 w.filter = u.Nt.filter;
@@ -78983,7 +77833,6 @@ a000.n9I = function() {
                 break;
               case 13:
                 return w;
-                break;
             }
           }
         }
@@ -79007,11 +77856,7 @@ a000.n9I = function() {
           for (; B70 !== 9;) {
             switch (B70) {
               case 2:
-                var O4I = "1S";
-                O4I += "IY";
-                O4I += "bZ";
-                O4I += "rNJCp";
-                O4I += "9";
+                var O4I = "1SIYbZrNJCp9";
                 k = m.call(this, g, h) || this;
                 k.uE = function(n, q) {
                   var C70 = 2;
@@ -79019,10 +77864,8 @@ a000.n9I = function() {
                     switch (C70) {
                       case 2:
                         return l.uE(k.config, n, q);
-                        break;
                       case 4:
                         return l.uE(k.config, n, q);
-                        break;
                     }
                   }
                 };
@@ -79039,13 +77882,11 @@ a000.n9I = function() {
                         break;
                       case 4:
                         return k.BVa(n, p);
-                        break;
                     }
                   }
                 };
                 O4I;
                 return k;
-                break;
             }
           }
         }
@@ -79060,10 +77901,8 @@ a000.n9I = function() {
                   switch (E70) {
                     case 7:
                       return n;
-                      break;
                     case 5:
                       return n;
-                      break;
                     case 2:
                       n = !!g.rs;
                       h.Yxa && (null === (k = g.Ua) || void 0 === k ? void 0 : k.Ha) < h.LU && (n = !0);
@@ -79082,12 +77921,10 @@ a000.n9I = function() {
                       h = h ? k.Yka : k.Bja;
                       Array.isArray(h) && (n = l.OWa(h, g.vm - g.Mc, k.Aja));
                       return n;
-                      break;
                   }
                 }
               };
               return d;
-              break;
           }
         }
       })(f.aK);
@@ -79619,10 +78456,8 @@ a000.n9I = function() {
                       switch (K70) {
                         case 4:
                           return this.eha;
-                          break;
                         case 2:
                           return this.eha;
-                          break;
                       }
                     }
                   },
@@ -79636,7 +78471,6 @@ a000.n9I = function() {
                       switch (L70) {
                         case 2:
                           return this.CPa;
-                          break;
                       }
                     }
                   },
@@ -79679,9 +78513,7 @@ a000.n9I = function() {
                       O70 = 1;
                       break;
                     case 1:
-                      var Y4I = "i";
-                      Y4I += "q";
-                      Y4I += "r";
+                      var Y4I = "iqr";
                       O70 = k === Y4I ? 5 : 9;
                       break;
                     case 5:
@@ -79689,19 +78521,14 @@ a000.n9I = function() {
                       break;
                     case 3:
                       return !1;
-                      break;
                     case 9:
-                      var A4I = "a";
-                      A4I += "v";
-                      A4I += "g";
+                      var A4I = "avg";
                       O70 = k === A4I ? 8 : 3;
                       break;
                     case 8:
                       return n.Ua ? n.Ua.Ha < u.LU : !0;
-                      break;
                     case 4:
                       return !!(n.Ua && q && c.Ea(p) && n.Ua.Ha < u.LU && p > u.zda);
-                      break;
                   }
                 }
               };
@@ -79711,7 +78538,6 @@ a000.n9I = function() {
                   switch (P70) {
                     case 2:
                       return 1 === k ? this.d3.E$ : this.d3.uE;
-                      break;
                   }
                 }
               };
@@ -79831,9 +78657,7 @@ a000.n9I = function() {
                           }
                         }
                       } catch (n) {
-                        var l4I = "Hindsight: Error d";
-                        l4I += "uri";
-                        l4I += "ng clean up: ";
+                        var l4I = "Hindsight: Error during clean up: ";
                         a000.T9I(0);
                         k.Gb.Un(a000.n9I(l4I, n));
                       }
@@ -79892,9 +78716,7 @@ a000.n9I = function() {
                       X70 = 4;
                       break;
                     case 1:
-                      var W4I = "no";
-                      W4I += "n";
-                      W4I += "e";
+                      var W4I = "none";
                       X70 = W4I !== n.NE && !0 !== this.rs && k.state <= n.osa ? 5 : 6;
                       break;
                     case 3:
@@ -79911,9 +78733,7 @@ a000.n9I = function() {
                       X70 = 6;
                       break;
                     case 4:
-                      var y4I = "i";
-                      y4I += "q";
-                      y4I += "r";
+                      var y4I = "iqr";
                       X70 = y4I === n.NE ? 3 : 8;
                       break;
                   }
@@ -79948,14 +78768,8 @@ a000.n9I = function() {
                       Z70 = 6;
                       break;
                     case 2:
-                      var B4I = "start";
-                      B4I += "pl";
-                      B4I += "ay";
-                      var L4I = "lo";
-                      L4I += "g";
-                      L4I += "d";
-                      L4I += "a";
-                      L4I += "ta";
+                      var B4I = "startplay";
+                      var L4I = "logdata";
                       (n = {}, q = this.J, p = this.wb, u = {
                         type: L4I,
                         target: B4I,
@@ -79994,7 +78808,6 @@ a000.n9I = function() {
                           switch (b80) {
                             case 2:
                               return c.Ea(y) ? Number(y).toFixed(2) : -1;
-                              break;
                           }
                         }
                       };
@@ -80012,7 +78825,6 @@ a000.n9I = function() {
                                 n: z
                               });
                               return y;
-                              break;
                           }
                         }
                       }, x);
@@ -80046,10 +78858,7 @@ a000.n9I = function() {
                 for (; d80 !== 6;) {
                   switch (d80) {
                     case 3:
-                      var F4I = "n";
-                      F4I += "o";
-                      F4I += "n";
-                      F4I += "e";
+                      var F4I = "none";
                       p.confidence && (t = p.Ua ? p.Ua.Ha : 0, w = p.Dj ? p.Dj.Ha : 0, v = p.zu ? p.zu.Ha : 0);
                       k.location = {
                         responseTime: w,
@@ -80101,7 +78910,6 @@ a000.n9I = function() {
                   switch (f80) {
                     case 9:
                       return !0;
-                      break;
                     case 1:
                       f80 = this.j3 && k.Du() ? 5 : 4;
                       break;
@@ -80114,11 +78922,9 @@ a000.n9I = function() {
                       break;
                     case 5:
                       return !0;
-                      break;
                     case 8:
                       this.k3 && (this.k3 = !1);
                       return !1;
-                      break;
                     case 2:
                       n = this.J;
                       f80 = 1;
@@ -80135,10 +78941,7 @@ a000.n9I = function() {
                 for (; g80 !== 4;) {
                   switch (g80) {
                     case 2:
-                      var v4I = "t";
-                      v4I += "di";
-                      v4I += "g";
-                      v4I += "est";
+                      var v4I = "tdigest";
                       h80 = this.J.Mpa;
                       g80 = h80 === v4I ? 1 : 3;
                       break;
@@ -80151,7 +78954,6 @@ a000.n9I = function() {
                       break;
                     case 5:
                       return k;
-                      break;
                     case 12:
                       g80 = 0;
                       break;
@@ -80178,7 +78980,6 @@ a000.n9I = function() {
                 }
               };
               return h;
-              break;
           }
         }
 
@@ -80188,10 +78989,7 @@ a000.n9I = function() {
           for (; H70 !== 32;) {
             switch (H70) {
               case 2:
-                var Z4I = "1SI";
-                Z4I += "Y";
-                Z4I += "bZrN";
-                Z4I += "JCp9";
+                var Z4I = "1SIYbZrNJCp9";
                 this.I = n;
                 this.ng = p;
                 this.oc = v;
@@ -80226,8 +79024,7 @@ a000.n9I = function() {
                 H70 = 33;
                 break;
               case 22:
-                var E4I = "L";
-                E4I += "R";
+                var E4I = "LR";
                 H70 = I70 === E4I ? 21 : 35;
                 break;
               case 21:
@@ -80239,11 +79036,7 @@ a000.n9I = function() {
                 H70 = 23;
                 break;
               case 25:
-                var n4I = "ba";
-                n4I += "s";
-                n4I += "e";
-                n4I += "l";
-                n4I += "ine";
+                var n4I = "baseline";
                 I70 = u.FKb;
                 H70 = I70 === n4I ? 24 : 22;
                 break;
@@ -80267,11 +79060,7 @@ a000.n9I = function() {
                     }
                   }
                 } catch (A) {
-                  var J4I = "Hindsight: E";
-                  J4I += "rror wh";
-                  J4I += "en ";
-                  J4I += "cre";
-                  J4I += "ating QoEEvaluator: ";
+                  var J4I = "Hindsight: Error when creating QoEEvaluator: ";
                   a000.z9I(0);
                   k.Gb.Un(a000.J9I(J4I, A));
                 }
@@ -81502,10 +80291,7 @@ a000.n9I = function() {
                         for (; z80 !== 9;) {
                           switch (z80) {
                             case 4:
-                              var z4I = "skip: ";
-                              z4I += "not resu";
-                              z4I += "ming bufferManager, a";
-                              z4I += "udio track switch in progress";
+                              var z4I = "skip: not resuming bufferManager, audio track switch in progress";
                               t.yQ ? t.Ub(z4I) : q.bb.Tg[u].resume();
                               z80 = 3;
                               break;
@@ -81537,11 +80323,7 @@ a000.n9I = function() {
                   for (; y80 !== 5;) {
                     switch (y80) {
                       case 2:
-                        var T4I = "skip: unexpected behaviour - a n";
-                        T4I += "on-pre";
-                        T4I += "sent";
-                        T4I += "ing branch doesn't have a pr";
-                        T4I += "evious branch";
+                        var T4I = "skip: unexpected behaviour - a non-presenting branch doesn't have a previous branch";
                         u !== q.bb.Pa.yi && (u.xg ? n(u.xg, t) : q.I.error(T4I));
                         (u = u.Td(t)) && u.ho();
                         y80 = 5;
@@ -81582,10 +80364,7 @@ a000.n9I = function() {
                       l80 = 12;
                       break;
                     case 52:
-                      var g4I = "seekD";
-                      g4I += "e";
-                      g4I += "lay";
-                      g4I += "ed";
+                      var g4I = "seekDelayed";
                       (this.AC = {
                         Pb: n,
                         lk: k
@@ -81603,37 +80382,18 @@ a000.n9I = function() {
                       l80 = 7;
                       break;
                     case 41:
-                      var G4I = "s";
-                      G4I += "e";
-                      G4I += "e";
-                      G4I += "kFailed";
-                      var m4I = "after";
-                      m4I += " seeking, playerState no longer S";
-                      m4I += "TARTING: ";
+                      var G4I = "seekFailed";
+                      var m4I = "after seeking, playerState no longer STARTING: ";
                       this.I.warn(m4I + this.bb.X.getState());
                       this.bb.emit(G4I);
                       l80 = 50;
                       break;
                     case 4:
-                      var k4I = " playerS";
-                      k4I += "tat";
-                      k4I += "e: ";
-                      var h4I = " m";
-                      h4I += "edia.cu";
-                      h4I += "rre";
-                      h4I += "ntPts: ";
-                      var M4I = " cur";
-                      M4I += "rent";
-                      M4I += " m";
-                      M4I += "ani";
-                      M4I += "fest: ";
-                      var s4I = " manifestI";
-                      s4I += "ndex:";
-                      s4I += " ";
-                      var I4I = "see";
-                      I4I += "k";
-                      I4I += ":";
-                      I4I += " ";
+                      var k4I = " playerState: ";
+                      var h4I = " media.currentPts: ";
+                      var M4I = " current manifest: ";
+                      var s4I = " manifestIndex: ";
+                      var I4I = "seek: ";
                       p = k;
                       u.ri && this.ii.Jm(I4I + k + s4I + n + M4I + this.bb.Ge.P.Pb + h4I + t + k4I + this.bb.X.getState());
                       c.ka(n) && (n = this.bb.Ge.P.Pb);
@@ -81648,14 +80408,9 @@ a000.n9I = function() {
                       l80 = 23;
                       break;
                     case 42:
-                      var q4I = "se";
-                      q4I += "e";
-                      q4I += "k";
-                      var w4I = "ptscha";
-                      w4I += "n";
-                      w4I += "ged";
+                      var q4I = "seek";
+                      var w4I = "ptschanged";
                       return (this.bb.emit(w4I, p), this.bb.emit(q4I), this.VT(n), k = t && this.bb.Cb.By() ? 100 : 0, this.bb.p3(1, k), this.bb.ek(), p);
-                      break;
                     case 16:
                       return;
                       break;
@@ -81675,16 +80430,8 @@ a000.n9I = function() {
                       l80 = k > t ? 22 : 31;
                       break;
                     case 51:
-                      var p17 = "see";
-                      p17 += "k";
-                      p17 += "Fa";
-                      p17 += "i";
-                      p17 += "led";
-                      var R17 = "seek, no manifes";
-                      R17 += "t";
-                      R17 += " at ma";
-                      R17 += "nifestInd";
-                      R17 += "ex:";
+                      var p17 = "seekFailed";
+                      var R17 = "seek, no manifest at manifestIndex:";
                       (this.I.warn(R17, n), this.bb.emit(p17));
                       l80 = 50;
                       break;
@@ -81716,10 +80463,7 @@ a000.n9I = function() {
                       l80 = t.length ? 24 : 52;
                       break;
                     case 35:
-                      var f17 = "s";
-                      f17 += "eek";
-                      f17 += "Dela";
-                      f17 += "yed";
+                      var f17 = "seekDelayed";
                       this.AC = {
                         Pb: u.P.Pb + 1,
                         lk: k
@@ -81728,11 +80472,7 @@ a000.n9I = function() {
                       l80 = 33;
                       break;
                     case 18:
-                      var V17 = "seek";
-                      V17 += "D";
-                      V17 += "e";
-                      V17 += "lay";
-                      V17 += "ed";
+                      var V17 = "seekDelayed";
                       this.AC = {
                         Pb: n,
                         lk: k
@@ -81801,7 +80541,6 @@ a000.n9I = function() {
                       break;
                     case 3:
                       return this.Ms(q, n);
-                      break;
                   }
                 }
               };
@@ -81814,24 +80553,16 @@ a000.n9I = function() {
                       q80 = n ? 5 : 4;
                       break;
                     case 4:
-                      var S17 = "s";
-                      S17 += "e";
-                      S17 += "e";
-                      S17 += "k";
-                      var a17 = "p";
-                      a17 += "tsc";
-                      a17 += "han";
-                      a17 += "ged";
+                      var S17 = "seek";
+                      var a17 = "ptschanged";
                       u ? (this.bb.X.We(f.sa.ij), (k = this.bb.Pa.yi.children[k]) && this.bb.emit(a17, null !== (p = k.zd) && void 0 !== p ? p : k.jqa), this.bb.X.We(f.sa.Eh), this.bb.emit(S17), k && this.VT(k.P.Pb), this.bb.p3(1), this.bb.ek(), this.bb.Cb.By()) : q || (p = this.bb.Pa.$Ib(k), this.Ms(p));
                       return u;
-                      break;
                     case 2:
                       u = this.bb.Pa.Vr(k, n);
                       q80 = 1;
                       break;
                     case 5:
                       return u;
-                      break;
                   }
                 }
               };
@@ -81841,7 +80572,6 @@ a000.n9I = function() {
                   switch (r80) {
                     case 2:
                       return !!this.bb.uh(k).bU;
-                      break;
                   }
                 }
               };
@@ -81862,17 +80592,14 @@ a000.n9I = function() {
                       break;
                     case 5:
                       return !1;
-                      break;
                     case 4:
                       n = this.bb.hu(k, 0, !0);
                       k = this.bb.hu(k, 1, !0);
                       return void 0 !== n && void 0 !== k && n.complete && k.complete;
-                      break;
                   }
                 }
               };
               return h;
-              break;
           }
         }
 
@@ -81881,10 +80608,7 @@ a000.n9I = function() {
           for (; k80 !== 9;) {
             switch (k80) {
               case 2:
-                var C17 = "1S";
-                C17 += "IYb";
-                C17 += "Zr";
-                C17 += "NJCp9";
+                var C17 = "1SIYbZrNJCp9";
                 this.bb = k;
                 this.I = n;
                 this.oc = q;
@@ -81913,10 +80637,7 @@ a000.n9I = function() {
           for (; D80 !== 9;) {
             switch (D80) {
               case 2:
-                var e17 = "1";
-                e17 += "SI";
-                e17 += "Yb";
-                e17 += "ZrNJCp9";
+                var e17 = "1SIYbZrNJCp9";
                 this.Va = d;
                 this.I = g;
                 this.oc = h;
@@ -81940,7 +80661,6 @@ a000.n9I = function() {
                   switch (H80) {
                     case 2:
                       return this.aQa() || this.Va.Cb.Of[d.mediaType].yQ || this.Va.xy.bz ? !1 : !0;
-                      break;
                   }
                 }
               };
@@ -82018,10 +80738,7 @@ a000.n9I = function() {
                       return;
                       break;
                     case 9:
-                      var H17 = "Still in buffering state while ";
-                      H17 += "pipe";
-                      H17 += "line's ";
-                      H17 += "are done";
+                      var H17 = "Still in buffering state while pipeline's are done";
                       this.Va.X.tg() && (this.I.warn(H17), this.Va.Cb.By());
                       g || h.tv || d.P.mf.He || !this.gwb(d) || ((g = this.Va.X.tg()) && this.Va.J.Hla && (this.Va.$ha(), g = !1), d.j6 || this.Va.Pa.MKb(d, g), d.fM(), d.hwb() && (g = Object.keys(d.children), this.Va.J.z5 && 1 === g.length && !d.children[g[0]].active && this.Va.Pa.m3a(d, g[0]), this.Anb(d, h)));
                       M80 = 7;
@@ -82057,9 +80774,7 @@ a000.n9I = function() {
                 for (; F80 !== 6;) {
                   switch (F80) {
                     case 1:
-                      var d17 = "fi";
-                      d17 += "rstD";
-                      d17 += "riveStreaming";
+                      var d17 = "firstDriveStreaming";
                       void 0 === this.Va.wnb && (this.Va.wnb = !0, this.Va.Gb.hm(d17));
                       (d = this.Va.Pa, g = d.Yc.Td(0), h = d.Yc.Td(1), k = !h || h.ci);
                       (!g || g.ci) && k && this.Va.BL && d.Xwb(h ? h.Lc : g.Lc);
@@ -82084,7 +80799,6 @@ a000.n9I = function() {
                   switch (G80) {
                     case 2:
                       return this.Va.sn() || this.Va.X.Q1a() || this.Va.X.P1a() ? !0 : !1;
-                      break;
                   }
                 }
               };
@@ -82105,7 +80819,6 @@ a000.n9I = function() {
                 }
               };
               return m;
-              break;
             case 12:
               m.prototype.$mb = function(d, g) {
                 var X80, h, k, n, q, p, u, t, w, v, x;
@@ -82114,16 +80827,13 @@ a000.n9I = function() {
                   switch (X80) {
                     case 34:
                       return !1;
-                      break;
                     case 8:
                       X80 = p >= k.T8 ? 7 : 6;
                       break;
                     case 25:
                       return !1;
-                      break;
                     case 7:
                       return !1;
-                      break;
                     case 23:
                       X80 = !c.ka(k.cx) && w >= k.cx || d.vM + p >= Math.max(k.GA, this.Va.qc.pB + k.rta * q.P.IPb[n]) ? 22 : 21;
                       break;
@@ -82132,7 +80842,6 @@ a000.n9I = function() {
                       break;
                     case 18:
                       return !1;
-                      break;
                     case 9:
                       p = d.Ta.$ta;
                       X80 = 8;
@@ -82149,14 +80858,8 @@ a000.n9I = function() {
                       X80 = void 0 === w || w < k.EPb ? 27 : 26;
                       break;
                     case 2:
-                      var X17 = "floo";
-                      X17 += "re";
-                      X17 += "d to 0";
-                      var t17 = "negative sche";
-                      t17 += "dul";
-                      t17 += "edBuffe";
-                      t17 += "rLevel";
-                      t17 += ":";
+                      var X17 = "floored to 0";
+                      var t17 = "negative scheduledBufferLevel:";
                       (k = this.Va.J, n = d.mediaType, q = d.C8, p = this.Va.X.Se(), u = this.Va.X.getState(), t = this.Va.Pa.Aw(q, n), w = d.Ic + q.Ee - p);
                       0 > w && (d.Ub(t17, w, X17), w = 0);
                       v = g ? g.Ic : 0;
@@ -82164,10 +80867,8 @@ a000.n9I = function() {
                       break;
                     case 3:
                       return !1;
-                      break;
                     case 33:
                       return 0 < k.Ju && !q && u + (g ? x : 0) > k.Ju || void 0 !== this.DNa && t > this.DNa || 1 === n && h.mf.He && t > k.P8 && (g = this.Va.qc.Rb.get(), g.confidence && g.Ua && g.Ua.Ha * d.vM > k.ksa) ? !1 : !0;
-                      break;
                     case 26:
                       X80 = this.bob(n) >= k.U3a ? 25 : 24;
                       break;
@@ -82179,17 +80880,14 @@ a000.n9I = function() {
                       break;
                     case 22:
                       return !1;
-                      break;
                     case 24:
                       w = this.Va.Pa.X1b();
                       X80 = 23;
                       break;
                     case 12:
                       return !1;
-                      break;
                     case 27:
                       return !1;
-                      break;
                     case 6:
                       h = this.Va.Ge.P;
                       x = this.Va.X.fp(h);
@@ -82220,10 +80918,8 @@ a000.n9I = function() {
                           switch (Z80) {
                             case 4:
                               return g % h.TIb(d);
-                              break;
                             case 2:
                               return g + h.TIb(d);
-                              break;
                           }
                         }
                       }, 0);
@@ -82258,16 +80954,8 @@ a000.n9I = function() {
                               b90 = 7;
                               break;
                             case 8:
-                              var x17 = "in";
-                              x17 += " d";
-                              x17 += "e";
-                              x17 += "sts";
-                              x17 += ":";
-                              var i17 = "inva";
-                              i17 += "lid ";
-                              i17 += "se";
-                              i17 += "gme";
-                              i17 += "nt:";
+                              var x17 = "in dests:";
+                              var i17 = "invalid segment:";
                               d.Ub(i17, q, x17, d.H.Il);
                               b90 = 7;
                               break;
@@ -82275,7 +80963,6 @@ a000.n9I = function() {
                         }
                       });
                       return k;
-                      break;
                   }
                 }
               };
@@ -82322,10 +81009,8 @@ a000.n9I = function() {
                           switch (S80) {
                             case 2:
                               return v.usage - x.usage;
-                              break;
                             case 4:
                               return v.usage / x.usage;
-                              break;
                           }
                         }
                       })) : u.sort(function(v, x) {
@@ -82337,7 +81022,6 @@ a000.n9I = function() {
                               x = Math.min.apply(null, x.ib.Pm);
                               a000.T9I(1);
                               return a000.J9I(v, x);
-                              break;
                           }
                         }
                       });
@@ -82358,7 +81042,6 @@ a000.n9I = function() {
                               a000.T9I(18);
                               var E31 = a000.n9I(18, 13, 3, 7);
                               return [v[0] + x.weight, v[E31] + x.u4a];
-                              break;
                           }
                         }
                       }, [0, 0]);
@@ -82394,10 +81077,8 @@ a000.n9I = function() {
                           switch (P80) {
                             case 4:
                               return x.weight / v.weight;
-                              break;
                             case 2:
                               return x.weight - v.weight;
-                              break;
                           }
                         }
                       }), u.length = 2);
@@ -82427,10 +81108,7 @@ a000.n9I = function() {
                       N80 = 27;
                       break;
                     case 19:
-                      var D17 = "No subbranch candidates t";
-                      D17 += "o d";
-                      D17 += "riv";
-                      D17 += "e";
+                      var D17 = "No subbranch candidates to drive";
                       this.I.warn(D17);
                       N80 = 18;
                       break;
@@ -82461,14 +81139,8 @@ a000.n9I = function() {
                       U80 = 4;
                       break;
                     case 3:
-                      var Q17 = "Sti";
-                      Q17 += "ll";
-                      Q17 += " in buffering ";
-                      Q17 += "stat";
-                      Q17 += "e while pipeline does not have vacancy";
-                      var b17 = "drive";
-                      b17 += "Pipeline, d";
-                      b17 += "elaying audio until video actualStartPts determined";
+                      var Q17 = "Still in buffering state while pipeline does not have vacancy";
+                      var b17 = "drivePipeline, delaying audio until video actualStartPts determined";
                       t = this.Va.Ge;
                       c.ka(t.vI) || (k.yE && 0 === n && c.ka(this.Va.Cb.Of[1].Jo) ? g.Ub(b17) : (c.ka(g.Tn) && (g.Tn = g.je ? g.je.index : g.$ma(g.Ic)), g.Kf && g.Tn > g.Kf.index ? d.P.mf.He && c.ka(t.Ka) && c.ka(d.Lc) || (g.ci || this.Va.SPa(g), d = this.Va.Ge.P.Pb, d < this.Va.xN() - 1 && this.Va.A3(d + 1)) : this.r2(g) && (k.zDb && !this.Va.X.tg() && 0 >= g.hI ? g.$2b(k.jQb) : this.$mb(g, h) ? (g.RNb = l.default.time.fa(), h = this.Va.Cb.Xoa(g), k = h.Pf, c.ka(k) || (k = g.track.ae[k], this.Zmb(g, k) || ((n = k.L6()) ? (g.LNb = k.bitrate, g.kPb(k, n, this.Va.X.tg(), q.Lf, h.Qu), this.k3b(k, u, p), d.me && ++d.me.hB) : k.SE()))) : this.Va.X.tg() && (g.wn(Q17), this.Va.Cb.By()))));
                       U80 = 8;
@@ -82500,7 +81172,6 @@ a000.n9I = function() {
                     case 2:
                       h = this.Va.Cb.gx[d.mediaType];
                       return this.Va.tPa && g.Pc && h.lra && g.Pc !== h.lra && (0 < d.Ta.kE || 0 < d.Ta.Ys) ? !0 : !1;
-                      break;
                   }
                 }
               };
@@ -82529,23 +81200,15 @@ a000.n9I = function() {
                 for (; f90 !== 5;) {
                   switch (f90) {
                     case 2:
-                      var u17 = "p";
-                      u17 += "l";
-                      u17 += "a";
-                      u17 += "y";
-                      var j17 = "play c";
-                      j17 += "alled";
-                      j17 += " after pipelines a";
-                      j17 += "lready shutdown";
+                      var u17 = "play";
+                      var j17 = "play called after pipelines already shutdown";
                       g = this;
                       this.sn() ? this.I.warn(j17) : (this.bc.X.We(f.sa.Kc), this.bc.crb(), this.bc.Cb.Of.forEach(function(h) {
                         var g90 = 2;
                         for (; g90 !== 1;) {
                           switch (g90) {
                             case 2:
-                              var N17 = "play: not resuming bufferManager, audio tr";
-                              N17 += "ack switch in progr";
-                              N17 += "ess";
+                              var N17 = "play: not resuming bufferManager, audio track switch in progress";
                               g.oc(h.mediaType) && (h.yQ ? h.Ub(N17) : (g.bc.Tg[h.mediaType].resume(), g.bc.jw[h.mediaType].resume()));
                               g90 = 1;
                               break;
@@ -82603,9 +81266,7 @@ a000.n9I = function() {
                       h90 = 1;
                       break;
                     case 7:
-                      var K17 = "s";
-                      K17 += "to";
-                      K17 += "p";
+                      var K17 = "stop";
                       this.bc.emit(K17);
                       h90 = 6;
                       break;
@@ -82648,18 +81309,9 @@ a000.n9I = function() {
                 for (; m90 !== 6;) {
                   switch (m90) {
                     case 2:
-                      var P17 = "endp";
-                      P17 += "l";
-                      P17 += "ay";
-                      var r17 = "logd";
-                      r17 += "a";
-                      r17 += "t";
-                      r17 += "a";
-                      var o17 = "c";
-                      o17 += "l";
-                      o17 += "o";
-                      o17 += "s";
-                      o17 += "e";
+                      var P17 = "endplay";
+                      var r17 = "logdata";
+                      var o17 = "close";
                       g = this.bc.J;
                       this.qPa = !0;
                       this.stop();
@@ -82693,12 +81345,9 @@ a000.n9I = function() {
                       break;
                     case 6:
                       for (var w in u) {
-                        var O17 = "n";
-                        O17 += "e";
-                        var c17 = "n";
-                        c17 += "e";
-                        var U17 = "n";
-                        U17 += "e";
+                        var O17 = "ne";
+                        var c17 = "ne";
+                        var U17 = "ne";
                         u.hasOwnProperty(w) && (n[U17 + w] = Number(u[w]).toFixed(6), p[c17 + w] = 1 * n[O17 + w]);
                       }
                       n90 = 14;
@@ -82719,30 +81368,12 @@ a000.n9I = function() {
                       n90 = k ? 5 : 19;
                       break;
                     case 20:
-                      var L17 = "e";
-                      L17 += "n";
-                      L17 += "dpla";
-                      L17 += "y";
-                      var y17 = "l";
-                      y17 += "ogda";
-                      y17 += "ta";
-                      var W17 = "th";
-                      W17 += "roughput";
-                      W17 += "-sw";
-                      var l17 = "thr";
-                      l17 += "o";
-                      l17 += "u";
-                      l17 += "gh";
-                      l17 += "put-sw";
-                      var A17 = "t";
-                      A17 += "hrough";
-                      A17 += "pu";
-                      A17 += "t-";
-                      A17 += "sw";
-                      var Y17 = "throug";
-                      Y17 += "hpu";
-                      Y17 += "t-";
-                      Y17 += "sw";
+                      var L17 = "endplay";
+                      var y17 = "logdata";
+                      var W17 = "throughput-sw";
+                      var l17 = "throughput-sw";
+                      var A17 = "throughput-sw";
+                      var Y17 = "throughput-sw";
                       h.xV && (q && q[Y17] && q[A17].Ha && this.bc.pv.lsb({
                         avtp: q[l17].Ha,
                         variance: q[W17].gj
@@ -82767,9 +81398,7 @@ a000.n9I = function() {
                           }
                         }
                       } catch (v) {
-                        var B17 = "Hindsight: Error evaluating QoE ";
-                        B17 += "at s";
-                        B17 += "topping: ";
+                        var B17 = "Hindsight: Error evaluating QoE at stopping: ";
                         a000.z9I(0);
                         this.bc.Gb.Un(a000.n9I(B17, v));
                       }
@@ -82779,13 +81408,8 @@ a000.n9I = function() {
                       n90 = u ? 6 : 14;
                       break;
                     case 10:
-                      var v17 = "endp";
-                      v17 += "l";
-                      v17 += "a";
-                      v17 += "y";
-                      var F17 = "lo";
-                      F17 += "g";
-                      F17 += "data";
+                      var v17 = "endplay";
+                      var F17 = "logdata";
                       Object.keys(n).length && (n = {
                         type: F17,
                         target: v17,
@@ -82815,15 +81439,12 @@ a000.n9I = function() {
                   switch (q90) {
                     case 4:
                       return this.qPa && this.bc.Pa.sk;
-                      break;
                     case 2:
                       return this.qPa || this.bc.Pa.sk;
-                      break;
                   }
                 }
               };
               return d;
-              break;
           }
         }
 
@@ -82832,10 +81453,7 @@ a000.n9I = function() {
           for (; e90 !== 8;) {
             switch (e90) {
               case 3:
-                var Z17 = "1SIYbZr";
-                Z17 += "NJ";
-                Z17 += "Cp";
-                Z17 += "9";
+                var Z17 = "1SIYbZrNJCp9";
                 this.qPa = this.eia = !1;
                 Z17;
                 e90 = 8;
@@ -82871,11 +81489,7 @@ a000.n9I = function() {
           for (; s90 !== 4;) {
             switch (s90) {
               case 2:
-                var E17 = "1S";
-                E17 += "IYb";
-                E17 += "Zr";
-                E17 += "NJCp";
-                E17 += "9";
+                var E17 = "1SIYbZrNJCp9";
                 this.gb = k;
                 this.I = n;
                 E17;
@@ -82893,9 +81507,7 @@ a000.n9I = function() {
                 for (; V90 !== 3;) {
                   switch (V90) {
                     case 2:
-                      var n17 = "buffer";
-                      n17 += "i";
-                      n17 += "ng";
+                      var n17 = "buffering";
                       (k = this.gb.J, n = m.default.time.fa(), q = this.gb.Pa.Yc, p = this.gb.Zm ? 1 : 0, u = q.jb(p));
                       q = q.Mh(p);
                       k = Math.min(Math.max(Math.round(100 * (u.YD ? (n - this.gb.hga) / k.WA : u.progress ? u.progress : q / k.xj)), this.lha), 99);
@@ -82920,9 +81532,7 @@ a000.n9I = function() {
                       W90 = 5;
                       break;
                     case 5:
-                      var J17 = "buff";
-                      J17 += "eringComplet";
-                      J17 += "e";
+                      var J17 = "bufferingComplete";
                       (p = this.gb.Zm ? this.gb.Cb.sB[l.Ob] : this.gb.Cb.sB[l.Xb], u = p.yU);
                       k = {
                         type: J17,
@@ -82969,10 +81579,7 @@ a000.n9I = function() {
                       X90 = 1;
                       break;
                     case 8:
-                      var z17 = "u";
-                      z17 += "pdat";
-                      z17 += "eBuf";
-                      z17 += "ferLevel";
+                      var z17 = "updateBufferLevel";
                       (t = this.gb.Pa, w = t.KG(n, 0));
                       n = t.KG(n, 1);
                       q = {
@@ -83009,36 +81616,17 @@ a000.n9I = function() {
                       Y90 = 5;
                       break;
                     case 4:
-                      var G17 = ", osAllocat";
-                      G17 += "orD";
-                      G17 += "e";
-                      G17 += "lt";
-                      G17 += "a: ";
-                      var m17 = ",";
-                      m17 += " j";
-                      m17 += "sHea";
-                      m17 += "pD";
-                      m17 += "elta: ";
-                      var g17 = ", ";
-                      g17 += "f";
-                      g17 += "astMal";
-                      g17 += "locDelta: ";
-                      var T17 = "memor";
-                      T17 += "yUsa";
-                      T17 += "g";
-                      T17 += "e at time: ";
+                      var G17 = ", osAllocatorDelta: ";
+                      var m17 = ", jsHeapDelta: ";
+                      var g17 = ", fastMallocDelta: ";
+                      var T17 = "memoryUsage at time: ";
                       (n = k.eXa - this.DL.eXa, q = k.f0a - this.DL.f0a, p = k.Z5a - this.DL.Z5a);
                       (4194304 < n || 4194304 < p) && this.I.warn(T17 + m.default.time.fa() + g17 + n + m17 + q + G17 + p);
                       Y90 = 9;
                       break;
                     case 9:
-                      var s17 = ", syste";
-                      s17 += "mDe";
-                      s17 += "lt";
-                      s17 += "a: ";
-                      var I17 = "memory";
-                      I17 += "Usage at time:";
-                      I17 += " ";
+                      var s17 = ", systemDelta: ";
+                      var I17 = "memoryUsage at time: ";
                       c.Ea(k.VZ) && c.Ea(this.DL.VZ) && (n = k.VZ - this.DL.VZ, 4194304 < n && this.I.warn(I17 + m.default.time.fa(), s17 + n));
                       Y90 = 8;
                       break;
@@ -83062,9 +81650,7 @@ a000.n9I = function() {
                       Z90 = 1;
                       break;
                     case 1:
-                      var M17 = "s";
-                      M17 += "tream";
-                      M17 += "ingstat";
+                      var M17 = "streamingstat";
                       k = {
                         type: M17,
                         time: m.default.time.fa(),
@@ -83085,11 +81671,7 @@ a000.n9I = function() {
                 for (; Q90 !== 5;) {
                   switch (Q90) {
                     case 2:
-                      var h17 = "i";
-                      h17 += "nitialA";
-                      h17 += "udioTra";
-                      h17 += "c";
-                      h17 += "k";
+                      var h17 = "initialAudioTrack";
                       k = {
                         type: h17,
                         trackId: n,
@@ -83110,11 +81692,7 @@ a000.n9I = function() {
                       R90 = 3;
                       break;
                     case 2:
-                      var k17 = "aud";
-                      k17 += "i";
-                      k17 += "oTrackSwitchS";
-                      k17 += "tart";
-                      k17 += "ed";
+                      var k17 = "audioTrackSwitchStarted";
                       k = k.Hu;
                       n = n.Hu;
                       n = {
@@ -83143,9 +81721,7 @@ a000.n9I = function() {
                         for (; T90 !== 5;) {
                           switch (T90) {
                             case 2:
-                              var w17 = "audioTrackS";
-                              w17 += "witchComp";
-                              w17 += "lete";
+                              var w17 = "audioTrackSwitchComplete";
                               p = {
                                 type: w17,
                                 trackId: k,
@@ -83170,9 +81746,7 @@ a000.n9I = function() {
                 for (; G90 !== 5;) {
                   switch (G90) {
                     case 2:
-                      var q17 = "segmentComp";
-                      q17 += "le";
-                      q17 += "te";
+                      var q17 = "segmentComplete";
                       k = {
                         type: q17,
                         mediaType: k,
@@ -83190,10 +81764,7 @@ a000.n9I = function() {
                 for (; H90 !== 5;) {
                   switch (H90) {
                     case 2:
-                      var R77 = "last";
-                      R77 += "Se";
-                      R77 += "gmentPt";
-                      R77 += "s";
+                      var R77 = "lastSegmentPts";
                       n = {
                         type: R77,
                         segmentId: k.id,
@@ -83210,11 +81781,7 @@ a000.n9I = function() {
                 for (; I90 !== 5;) {
                   switch (I90) {
                     case 2:
-                      var p77 = "man";
-                      p77 += "if";
-                      p77 += "es";
-                      p77 += "tRa";
-                      p77 += "nge";
+                      var p77 = "manifestRange";
                       k = {
                         type: p77,
                         index: k,
@@ -83234,11 +81801,7 @@ a000.n9I = function() {
                 for (; J90 !== 5;) {
                   switch (J90) {
                     case 2:
-                      var f77 = "ma";
-                      f77 += "xBitra";
-                      f77 += "t";
-                      f77 += "e";
-                      f77 += "s";
+                      var f77 = "maxBitrates";
                       k = {
                         type: f77,
                         audio: k[0],
@@ -83259,11 +81822,7 @@ a000.n9I = function() {
                 for (; a01 !== 4;) {
                   switch (a01) {
                     case 1:
-                      var V77 = "as";
-                      V77 += "er";
-                      V77 += "epo";
-                      V77 += "r";
-                      V77 += "t";
+                      var V77 = "asereport";
                       k = {
                         type: V77
                       };
@@ -83282,11 +81841,7 @@ a000.n9I = function() {
                 for (; b01 !== 5;) {
                   switch (b01) {
                     case 2:
-                      var a77 = "aser";
-                      a77 += "e";
-                      a77 += "portenab";
-                      a77 += "l";
-                      a77 += "ed";
+                      var a77 = "asereportenabled";
                       k = {
                         type: a77
                       };
@@ -83303,30 +81858,15 @@ a000.n9I = function() {
                 for (; c01 !== 6;) {
                   switch (c01) {
                     case 1:
-                      var S77 = "hin";
-                      S77 += "dsigh";
-                      S77 += "t";
-                      S77 += "re";
-                      S77 += "port";
+                      var S77 = "hindsightreport";
                       (n = {
                         type: S77
                       }, q = this.gb.J.u7);
                       for (I in q) {
-                        var d77 = "hv";
-                        d77 += "mafd";
-                        d77 += "p";
-                        var H77 = "hvm";
-                        H77 += "a";
-                        H77 += "f";
-                        H77 += "g";
-                        H77 += "r";
-                        var e77 = "hvm";
-                        e77 += "aft";
-                        e77 += "b";
-                        var C77 = "h";
-                        C77 += "tw";
-                        C77 += "b";
-                        C77 += "r";
+                        var d77 = "hvmafdp";
+                        var H77 = "hvmafgr";
+                        var e77 = "hvmaftb";
+                        var C77 = "htwbr";
                         p = q[I];
                         u = 0;
                         t = 0;
@@ -83391,22 +81931,10 @@ a000.n9I = function() {
                         if ((q = k[O], void 0 !== q.eab))
                           for (p in q.eab) {
                             if ((z = q.eab[p], void 0 !== z.Raa)) {
-                              var x77 = " ";
-                              x77 += "a";
-                              x77 += "n";
-                              x77 += "d";
-                              x77 += " ";
-                              var i77 = "expect sol.strmsel.leng";
-                              i77 += "th === sol";
-                              i77 += ".fragsel.length b";
-                              i77 += "ut got ";
-                              var X77 = "expect report.fragmentsPreb";
-                              X77 += "uffered";
-                              X77 += " !== undefined";
-                              var t77 = "expect re";
-                              t77 += "port.fragmentsPrebuffered !== und";
-                              t77 += "efin";
-                              t77 += "ed";
+                              var x77 = " and ";
+                              var i77 = "expect sol.strmsel.length === sol.fragsel.length but got ";
+                              var X77 = "expect report.fragmentsPrebuffered !== undefined";
+                              var t77 = "expect report.fragmentsPrebuffered !== undefined";
                               I = void 0 !== q.RXa;
                               I || (console.error(t77), g.assert(I, X77));
                               I = [];
@@ -83478,11 +82006,7 @@ a000.n9I = function() {
                 for (; d01 !== 5;) {
                   switch (d01) {
                     case 2:
-                      var D77 = "en";
-                      D77 += "dOf";
-                      D77 += "S";
-                      D77 += "tre";
-                      D77 += "am";
+                      var D77 = "endOfStream";
                       k = {
                         type: D77,
                         mediaType: k
@@ -83501,11 +82025,8 @@ a000.n9I = function() {
                 for (; i01 !== 5;) {
                   switch (i01) {
                     case 2:
-                      var Q77 = ",";
-                      Q77 += " ";
-                      var b77 = "man";
-                      b77 += "a";
-                      b77 += "gerdebugevent";
+                      var Q77 = ", ";
+                      var b77 = "managerdebugevent";
                       k = {
                         type: b77,
                         message: "@" + m.default.time.fa() + Q77 + k
@@ -83517,7 +82038,6 @@ a000.n9I = function() {
                 }
               };
               return h;
-              break;
             case 18:
               h.prototype.ypb = function(k, n) {
                 var K90, q;
@@ -83525,13 +82045,8 @@ a000.n9I = function() {
                 for (; K90 !== 3;) {
                   switch (K90) {
                     case 2:
-                      var N77 = "notifyManifestSel";
-                      N77 += "e";
-                      N77 += "cted: ";
-                      var j77 = "ma";
-                      j77 += "nife";
-                      j77 += "stSel";
-                      j77 += "ected";
+                      var N77 = "notifyManifestSelected: ";
+                      var j77 = "manifestSelected";
                       q = this.gb.J;
                       k = {
                         type: j77,
@@ -83552,10 +82067,7 @@ a000.n9I = function() {
                 for (; L90 !== 4;) {
                   switch (L90) {
                     case 2:
-                      var u77 = "manifes";
-                      u77 += "tPr";
-                      u77 += "esenti";
-                      u77 += "ng";
+                      var u77 = "manifestPresenting";
                       k = {
                         type: u77,
                         index: k.Pb,
@@ -83577,9 +82089,7 @@ a000.n9I = function() {
                 for (; M90 !== 3;) {
                   switch (M90) {
                     case 2:
-                      var K77 = "stre";
-                      K77 += "amPres";
-                      K77 += "enting";
+                      var K77 = "streamPresenting";
                       u = k.mediaType;
                       f.bn.Aq(u);
                       k = {
@@ -83602,11 +82112,7 @@ a000.n9I = function() {
                 for (; N90 !== 5;) {
                   switch (N90) {
                     case 2:
-                      var o77 = "vid";
-                      o77 += "e";
-                      o77 += "o";
-                      o77 += "L";
-                      o77 += "ooped";
+                      var o77 = "videoLooped";
                       k = {
                         type: o77,
                         offset: k
@@ -83622,11 +82128,7 @@ a000.n9I = function() {
                 for (; O90 !== 4;) {
                   switch (O90) {
                     case 2:
-                      var r77 = "u";
-                      r77 += "p";
-                      r77 += "dateSt";
-                      r77 += "reami";
-                      r77 += "ngPts";
+                      var r77 = "updateStreamingPts";
                       n = {
                         type: r77,
                         mediaType: k,
@@ -83647,11 +82149,7 @@ a000.n9I = function() {
                 for (; P90 !== 5;) {
                   switch (P90) {
                     case 2:
-                      var P77 = "firstRe";
-                      P77 += "ques";
-                      P77 += "tAppe";
-                      P77 += "nde";
-                      P77 += "d";
+                      var P77 = "firstRequestAppended";
                       k = {
                         type: P77,
                         manifestIndex: k.Ta.ib.P.Pb,
@@ -83673,11 +82171,7 @@ a000.n9I = function() {
                 for (; u90 !== 5;) {
                   switch (u90) {
                     case 2:
-                      var U77 = "op";
-                      U77 += "en";
-                      U77 += "Comp";
-                      U77 += "let";
-                      U77 += "e";
+                      var U77 = "openComplete";
                       k = {
                         type: U77
                       };
@@ -83692,11 +82186,7 @@ a000.n9I = function() {
                 for (; v90 !== 1;) {
                   switch (v90) {
                     case 2:
-                      var c77 = "p";
-                      c77 += "tsS";
-                      c77 += "tar";
-                      c77 += "t";
-                      c77 += "s";
+                      var c77 = "ptsStarts";
                       this.gb.J.cCb || (k = {
                         type: c77,
                         manifestIndex: k,
@@ -83715,10 +82205,7 @@ a000.n9I = function() {
                 for (; w90 !== 5;) {
                   switch (w90) {
                     case 2:
-                      var O77 = "header";
-                      O77 += "Ca";
-                      O77 += "cheH";
-                      O77 += "it";
+                      var O77 = "headerCacheHit";
                       k = {
                         type: O77,
                         movieId: k,
@@ -83736,11 +82223,7 @@ a000.n9I = function() {
                 for (; x90 !== 3;) {
                   switch (x90) {
                     case 2:
-                      var Y77 = "he";
-                      Y77 += "ade";
-                      Y77 += "rC";
-                      Y77 += "a";
-                      Y77 += "cheDataHit";
+                      var Y77 = "headerCacheDataHit";
                       t = this.gb.xOa;
                       this.gb.xOa = void 0;
                       k = {
@@ -83772,10 +82255,7 @@ a000.n9I = function() {
                       y90 = 5;
                       break;
                     case 2:
-                      var A77 = "max";
-                      A77 += "Pos";
-                      A77 += "i";
-                      A77 += "tion";
+                      var A77 = "maxPosition";
                       k = {
                         type: A77,
                         index: k,
@@ -83793,12 +82273,8 @@ a000.n9I = function() {
                 for (; z90 !== 3;) {
                   switch (z90) {
                     case 2:
-                      var W77 = "notif";
-                      W77 += "yStreamingE";
-                      W77 += "rror: ";
-                      var l77 = "err";
-                      l77 += "o";
-                      l77 += "r";
+                      var W77 = "notifyStreamingError: ";
+                      var l77 = "error";
                       void 0 === w && (w = !1);
                       k = {
                         type: l77,
@@ -83822,11 +82298,7 @@ a000.n9I = function() {
                 for (; A90 !== 5;) {
                   switch (A90) {
                     case 2:
-                      var y77 = "segm";
-                      y77 += "en";
-                      y77 += "tSta";
-                      y77 += "rt";
-                      y77 += "ing";
+                      var y77 = "segmentStarting";
                       n = {
                         type: y77,
                         segmentId: k.id,
@@ -83848,11 +82320,7 @@ a000.n9I = function() {
                 for (; B90 !== 5;) {
                   switch (B90) {
                     case 2:
-                      var L77 = "se";
-                      L77 += "g";
-                      L77 += "ment";
-                      L77 += "Aborte";
-                      L77 += "d";
+                      var L77 = "segmentAborted";
                       n = {
                         type: L77,
                         segmentId: k.id
@@ -83873,7 +82341,6 @@ a000.n9I = function() {
                   switch (C90) {
                     case 13:
                       return q;
-                      break;
                     case 7:
                       q.durationOfTransition = p;
                       q.atTransition = n.Rbb;
@@ -83881,30 +82348,12 @@ a000.n9I = function() {
                       C90 = 13;
                       break;
                     case 2:
-                      var n77 = "seamle";
-                      n77 += "s";
-                      n77 += "s";
-                      var E77 = "r";
-                      E77 += "e";
-                      E77 += "s";
-                      E77 += "e";
-                      E77 += "t";
-                      var Z77 = "s";
-                      Z77 += "k";
-                      Z77 += "i";
-                      Z77 += "p";
-                      var v77 = "l";
-                      v77 += "o";
-                      v77 += "n";
-                      v77 += "g";
-                      var F77 = "l";
-                      F77 += "o";
-                      F77 += "n";
-                      F77 += "g";
-                      var B77 = "s";
-                      B77 += "eaml";
-                      B77 += "es";
-                      B77 += "s";
+                      var n77 = "seamless";
+                      var E77 = "reset";
+                      var Z77 = "skip";
+                      var v77 = "long";
+                      var F77 = "long";
+                      var B77 = "seamless";
                       (q = {
                         segment: k,
                         srcsegment: n.Jaa,
@@ -83951,11 +82400,7 @@ a000.n9I = function() {
                 for (; E90 !== 4;) {
                   switch (E90) {
                     case 2:
-                      var J77 = "s";
-                      J77 += "egm";
-                      J77 += "en";
-                      J77 += "tPres";
-                      J77 += "enting";
+                      var J77 = "segmentPresenting";
                       q = q ? this.cob(k.id, q) : void 0;
                       k = {
                         type: J77,
@@ -83976,10 +82421,7 @@ a000.n9I = function() {
                 for (; F90 !== 5;) {
                   switch (F90) {
                     case 2:
-                      var z77 = "se";
-                      z77 += "gment";
-                      z77 += "Appende";
-                      z77 += "d";
+                      var z77 = "segmentAppended";
                       n = {
                         type: z77,
                         segmentId: k.id,
@@ -84000,11 +82442,7 @@ a000.n9I = function() {
                 for (; U90 !== 4;) {
                   switch (U90) {
                     case 2:
-                      var T77 = "b";
-                      T77 += "uff";
-                      T77 += "er";
-                      T77 += "ingStart";
-                      T77 += "ed";
+                      var T77 = "bufferingStarted";
                       n = {
                         type: T77,
                         time: m.default.time.fa(),
@@ -84025,11 +82463,7 @@ a000.n9I = function() {
                 for (; t90 !== 5;) {
                   switch (t90) {
                     case 2:
-                      var g77 = "star";
-                      g77 += "t";
-                      g77 += "Ev";
-                      g77 += "e";
-                      g77 += "nt";
+                      var g77 = "startEvent";
                       k = {
                         type: g77,
                         event: k,
@@ -84049,16 +82483,8 @@ a000.n9I = function() {
                 for (; e01 !== 1;) {
                   switch (e01) {
                     case 2:
-                      var G77 = "a";
-                      G77 += "se";
-                      G77 += "ex";
-                      G77 += "cepti";
-                      G77 += "on";
-                      var m77 = "asee";
-                      m77 += "xcep";
-                      m77 += "ti";
-                      m77 += "o";
-                      m77 += "n";
+                      var G77 = "aseexception";
+                      var m77 = "aseexception";
                       this.gb.emit(m77, {
                         type: G77,
                         msg: k
@@ -84073,14 +82499,8 @@ a000.n9I = function() {
                 for (; f01 !== 5;) {
                   switch (f01) {
                     case 2:
-                      var s77 = "ma";
-                      s77 += "xvideobitratechange";
-                      s77 += "d";
-                      var I77 = "maxvid";
-                      I77 += "eobit";
-                      I77 += "rate";
-                      I77 += "ch";
-                      I77 += "anged";
+                      var s77 = "maxvideobitratechanged";
+                      var I77 = "maxvideobitratechanged";
                       k = {
                         type: I77,
                         time: m.default.time.fa(),
@@ -84104,9 +82524,7 @@ a000.n9I = function() {
                       g01 = !this.lrb && this.gb.J.q5a ? 1 : 3;
                       break;
                     case 1:
-                      var M77 = "stre";
-                      M77 += "ame";
-                      M77 += "rend";
+                      var M77 = "streamerend";
                       this.lrb = !0;
                       k = {
                         type: M77,
@@ -84123,11 +82541,7 @@ a000.n9I = function() {
                 for (; h01 !== 5;) {
                   switch (h01) {
                     case 2:
-                      var h77 = "st";
-                      h77 += "re";
-                      h77 += "am";
-                      h77 += "Selection";
-                      h77 += "AugmentData";
+                      var h77 = "streamSelectionAugmentData";
                       k = {
                         type: h77,
                         augmentData: k,
@@ -84203,10 +82617,7 @@ a000.n9I = function() {
                 k01 = 5;
                 break;
               case 17:
-                var q77 = "1SI";
-                q77 += "Y";
-                q77 += "bZr";
-                q77 += "NJCp9";
+                var q77 = "1SIYbZrNJCp9";
                 A.ak = void 0;
                 A.lia && (A.Do.iV || (B = (q.default.options || ({})).tO || 0, A.Do.set ? A.Do.set({
                   iV: B
@@ -84219,10 +82630,7 @@ a000.n9I = function() {
                         l01 = 7;
                         break;
                       case 2:
-                        var k77 = "Media ";
-                        k77 += "cache in";
-                        k77 += "iti";
-                        k77 += "alized";
+                        var k77 = "Media cache initialized";
                         t(k77);
                         l01 = 1;
                         break;
@@ -84237,9 +82645,7 @@ a000.n9I = function() {
                         m01 = 0;
                         break;
                       case 2:
-                        var w77 = "Media cache di";
-                        w77 += "d not initiali";
-                        w77 += "ze";
+                        var w77 = "Media cache did not initialize";
                         v(w77, F);
                         m01 = 1;
                         break;
@@ -84252,7 +82658,6 @@ a000.n9I = function() {
                 break;
               case 26:
                 return A;
-                break;
               case 13:
                 A.TOa = B.i5;
                 A.nw = [];
@@ -84286,9 +82691,7 @@ a000.n9I = function() {
                 for (; D01 !== 5;) {
                   switch (D01) {
                     case 2:
-                      var R87 = "_on";
-                      R87 += "Er";
-                      R87 += "ror: ";
+                      var R87 = "_onError: ";
                       w(R87, A.toString());
                       this.o2(A);
                       D01 = 5;
@@ -84331,28 +82734,11 @@ a000.n9I = function() {
                 for (; G01 !== 8;) {
                   switch (G01) {
                     case 5:
-                      var S87 = "manag";
-                      S87 += "erde";
-                      S87 += "bugev";
-                      S87 += "en";
-                      S87 += "t";
-                      var a87 = ", ";
-                      a87 += "remaini";
-                      a87 += "n";
-                      a87 += "g:";
-                      a87 += " ";
-                      var V87 = ",";
-                      V87 += " ";
-                      V87 += "p";
-                      V87 += "ts: ";
-                      var f87 = ", ";
-                      f87 += "s";
-                      f87 += "t";
-                      f87 += "reamId:";
-                      f87 += " ";
-                      var p87 = ", ";
-                      p87 += "headerCache dataComplete: movie";
-                      p87 += "Id: ";
+                      var S87 = "managerdebugevent";
+                      var a87 = ", remaining: ";
+                      var V87 = ", pts: ";
+                      var f87 = ", streamId: ";
+                      var p87 = ", headerCache dataComplete: movieId: ";
                       G01 = (this.Do.ri && (E = "@" + q.default.time.fa() + p87 + E + f87 + A.Sa + V87 + A.$ + a87 + (D.VU - 1), this.emit(S87, {
                         message: E
                       })), A.Yh && 0 === A.responseType && this.ak && !this.bG) ? 4 : 9;
@@ -84399,7 +82785,6 @@ a000.n9I = function() {
                     case 3:
                       B.Jf = this;
                       return B;
-                      break;
                     case 2:
                       E = A.stream.mediaType;
                       2 > this.nw.length && this.ONa();
@@ -84416,11 +82801,7 @@ a000.n9I = function() {
                 for (; Q01 !== 9;) {
                   switch (Q01) {
                     case 4:
-                      var C87 = "save";
-                      C87 += "t";
-                      C87 += "od";
-                      C87 += "is";
-                      C87 += "k";
+                      var C87 = "savetodisk";
                       B = this.kg[A.K] || A.Im;
                       B && 0 === B.d0a && 0 === B.VU && (this.Xqb(B, A.xf), B.Yh && this.ak && (B.ic.Kcc || (this.bG ? this.ak.CYb(B) : this.ak.DP(C87, {
                         C9a: B.ic.Ws
@@ -84459,11 +82840,9 @@ a000.n9I = function() {
                             case 2:
                               Q37.z9I(19);
                               return Q37.J9I(F, G);
-                              break;
                             case 4:
                               Q37.T9I(20);
                               return Q37.J9I(G, F);
-                              break;
                           }
                         }
                       };
@@ -84477,11 +82856,9 @@ a000.n9I = function() {
                             case 4:
                               u37.T9I(20);
                               return u37.n9I(C, D);
-                              break;
                             case 2:
                               u37.T9I(19);
                               return u37.J9I(D, C);
-                              break;
                           }
                         }
                       };
@@ -84573,11 +82950,7 @@ a000.n9I = function() {
                       U01 = 28;
                       break;
                     case 19:
-                      var e87 = "no proper fragment found to re";
-                      e87 += "ques";
-                      e87 += "t data ";
-                      e87 += "at pt";
-                      e87 += "s";
+                      var e87 = "no proper fragment found to request data at pts";
                       v(e87, B);
                       U01 = 53;
                       break;
@@ -84612,9 +82985,7 @@ a000.n9I = function() {
                       U01 = 34;
                       break;
                     case 42:
-                      var H87 = "un";
-                      H87 += "d";
-                      H87 += "efined";
+                      var H87 = "undefined";
                       f.ka(C.Jo) && (C.Jo = O.$);
                       O.Yh && (O.responseType = 0);
                       A.Yh && this.ak && A.uX && A.uX[D] && H87 !== typeof O.$ && A.uX[D][O.$] || (Q = this.hnb(O, A.hf), Q.Yh && (Q.Im = A.Im), Q.NO(), ++C.VU, B.push(Q));
@@ -84637,26 +83008,11 @@ a000.n9I = function() {
                       U01 = 4;
                       break;
                     case 26:
-                      var x87 = "managerd";
-                      x87 += "ebu";
-                      x87 += "g";
-                      x87 += "event";
-                      var i87 = ", s";
-                      i87 += "t";
-                      i87 += "artPts: ";
-                      var X87 = ", p";
-                      X87 += "t";
-                      X87 += "s:";
-                      X87 += " ";
-                      var t87 = ", stream";
-                      t87 += "Id";
-                      t87 += ":";
-                      t87 += " ";
-                      var d87 = ", he";
-                      d87 += "ader";
-                      d87 += "Cache req";
-                      d87 += "u";
-                      d87 += "estData: movieId: ";
+                      var x87 = "managerdebugevent";
+                      var i87 = ", startPts: ";
+                      var X87 = ", pts: ";
+                      var t87 = ", streamId: ";
+                      var d87 = ", headerCache requestData: movieId: ";
                       G.ri && (B = "@" + q.default.time.fa() + d87 + E + t87 + D + X87 + B + i87 + O.$, this.emit(x87, {
                         message: B
                       }));
@@ -84672,7 +83028,6 @@ a000.n9I = function() {
               break;
             case 40:
               return z;
-              break;
             case 2:
               c.__extends(z, y);
               Object.defineProperties(z.prototype, {
@@ -84683,7 +83038,6 @@ a000.n9I = function() {
                       switch (n01) {
                         case 2:
                           return this.kg;
-                          break;
                       }
                     }
                   },
@@ -84764,12 +83118,8 @@ a000.n9I = function() {
                       r01 = 5;
                       break;
                     case 5:
-                      var b87 = "manager";
-                      b87 += "debuge";
-                      b87 += "vent";
-                      var D87 = ", he";
-                      D87 += "aderCach";
-                      D87 += "e flush: ";
+                      var b87 = "managerdebugevent";
+                      var D87 = ", headerCache flush: ";
                       this.kg = Object.create(null);
                       this.VF = 0;
                       this.Go = [];
@@ -84790,10 +83140,8 @@ a000.n9I = function() {
                   switch (s01) {
                     case 2:
                       return this.Go;
-                      break;
                     case 4:
                       return this.Go;
-                      break;
                   }
                 }
               };
@@ -84806,7 +83154,6 @@ a000.n9I = function() {
                       break;
                     case 5:
                       return B;
-                      break;
                     case 2:
                       t01 = (A = this.kg[A]) ? 1 : 4;
                       break;
@@ -84826,7 +83173,6 @@ a000.n9I = function() {
                           switch (v01) {
                             case 2:
                               return E.D7a(F);
-                              break;
                           }
                         }
                       });
@@ -84840,7 +83186,6 @@ a000.n9I = function() {
                   switch (w01) {
                     case 2:
                       return this.D7a(this.kg[A]);
-                      break;
                   }
                 }
               };
@@ -84855,15 +83200,8 @@ a000.n9I = function() {
                         F = this.kg[D];
                         if (F.data) {
                           for (var G in F.data) {
-                            var j87 = "in e";
-                            j87 += "nt";
-                            j87 += "r";
-                            j87 += "y:";
-                            var Q87 = "missing heade";
-                            Q87 += "rEntry fo";
-                            Q87 += "r";
-                            Q87 += " strea";
-                            Q87 += "mId:";
+                            var j87 = "in entry:";
+                            var Q87 = "missing headerEntry for streamId:";
                             F.headers[G] || v(Q87, G, j87, F);
                             B(F, G);
                             F.data[G].forEach(A);
@@ -84940,7 +83278,6 @@ a000.n9I = function() {
                           switch (J01) {
                             case 2:
                               return A.Fb();
-                              break;
                           }
                         }
                       }), u.Lg());
@@ -85014,7 +83351,6 @@ a000.n9I = function() {
                       B.Yh = A.Yh;
                       B.Jf = this;
                       return B;
-                      break;
                   }
                 }
               };
@@ -85127,10 +83463,7 @@ a000.n9I = function() {
                 for (; a11 !== 1;) {
                   switch (a11) {
                     case 2:
-                      var N87 = "disc";
-                      N87 += "ardedB";
-                      N87 += "yte";
-                      N87 += "s";
+                      var N87 = "discardedBytes";
                       0 !== A && (A = {
                         type: N87,
                         bytes: A
@@ -85145,11 +83478,7 @@ a000.n9I = function() {
                 for (; b11 !== 1;) {
                   switch (b11) {
                     case 2:
-                      var u87 = "f";
-                      u87 += "lushe";
-                      u87 += "dByt";
-                      u87 += "e";
-                      u87 += "s";
+                      var u87 = "flushedBytes";
                       0 !== A && (A = {
                         type: u87,
                         bytes: A
@@ -85164,11 +83493,7 @@ a000.n9I = function() {
                 for (; c11 !== 5;) {
                   switch (c11) {
                     case 2:
-                      var K87 = "ca";
-                      K87 += "cheE";
-                      K87 += "v";
-                      K87 += "ic";
-                      K87 += "t";
+                      var K87 = "cacheEvict";
                       A = {
                         type: K87,
                         movieId: A
@@ -85223,10 +83548,7 @@ a000.n9I = function() {
                 for (; e11 !== 4;) {
                   switch (e11) {
                     case 2:
-                      var o87 = "pr";
-                      o87 += "ebuf";
-                      o87 += "f";
-                      o87 += "stats";
+                      var o87 = "prebuffstats";
                       A.ic.aVb = B;
                       A = {
                         type: o87,
@@ -85248,10 +83570,7 @@ a000.n9I = function() {
                 for (; f11 !== 5;) {
                   switch (f11) {
                     case 2:
-                      var r87 = "Media";
-                      r87 += " cac";
-                      r87 += "he is";
-                      r87 += " not enabled";
+                      var r87 = "Media cache is not enabled";
                       E = this;
                       return this.ak ? this.ak.BOb(A, B).then(function(D) {
                         var g11 = 2;
@@ -85259,7 +83578,6 @@ a000.n9I = function() {
                           switch (g11) {
                             case 1:
                               return (E.kg[A] = D.Im, ++E.VF, E.mga(), E.Go.push(D.Im), E.Go.sort(E.A7a), E.tNa(A, D), E.cache[A]);
-                              break;
                             case 2:
                               g11 = D && D.Im ? 1 : 5;
                               break;
@@ -85288,13 +83606,8 @@ a000.n9I = function() {
                       h11 = 1;
                       break;
                     case 9:
-                      var P87 = "Media cac";
-                      P87 += "h";
-                      P87 += "e is not e";
-                      P87 += "n";
-                      P87 += "abled";
+                      var P87 = "Media cache is not enabled";
                       return Promise.reject(P87);
-                      break;
                     case 3:
                       return D.then(function(G) {
                         var i11 = 2;
@@ -85308,7 +83621,6 @@ a000.n9I = function() {
                                     case 2:
                                       C && (F || (E.kg[A] = G, ++E.VF, E.mga(), E.Go.push(G), E.Go.sort(E.A7a)), E.tNa(A, C));
                                       return E.kg[A];
-                                      break;
                                   }
                                 }
                               }) : Promise.resolve(void 0);
@@ -85399,7 +83711,6 @@ a000.n9I = function() {
                   switch (o11) {
                     case 2:
                       return B.priority - A.priority;
-                      break;
                   }
                 }
               };
@@ -85439,7 +83750,6 @@ a000.n9I = function() {
                       break;
                     case 12:
                       return B;
-                      break;
                   }
                 }
               };
@@ -85449,10 +83759,8 @@ a000.n9I = function() {
                   switch (q11) {
                     case 2:
                       return !!A.cd;
-                      break;
                     case 4:
                       return - +A.cd;
-                      break;
                   }
                 }
               };
@@ -85483,15 +83791,8 @@ a000.n9I = function() {
           for (; s11 !== 12;) {
             switch (s11) {
               case 3:
-                var c87 = "1";
-                c87 += "S";
-                c87 += "IYbZr";
-                c87 += "NJCp9";
-                var U87 = "Medi";
-                U87 += "a ca";
-                U87 += "che has ";
-                U87 += "not been initiaiz";
-                U87 += "ed";
+                var c87 = "1SIYbZrNJCp9";
+                var U87 = "Media cache has not been initiaized";
                 this.Pob = q.d4a ? q.d4a : !1;
                 this.J = q;
                 this.Fo = p;
@@ -85502,13 +83803,8 @@ a000.n9I = function() {
                 s11 = 12;
                 break;
               case 2:
-                var Y87 = "me";
-                Y87 += "dia|asej";
-                Y87 += "s";
-                var O87 = "M";
-                O87 += "EDIA";
-                O87 += "C";
-                O87 += "ACHE";
+                var Y87 = "media|asejs";
+                var O87 = "MEDIACACHE";
                 this.I = new p.Console(O87, Y87);
                 this.lia = (q.Zya || q.$ya) && 0 < (q.iV || (p.options || ({})).tO || 0);
                 this.Enb = q.sDb ? q.sDb : !1;
@@ -85528,10 +83824,7 @@ a000.n9I = function() {
                 for (; E21 !== 5;) {
                   switch (E21) {
                     case 2:
-                      var A87 = "Media cache is ";
-                      A87 += "not e";
-                      A87 += "na";
-                      A87 += "bled";
+                      var A87 = "Media cache is not enabled";
                       p = this;
                       return this.Ct ? this.Ct.then(function() {
                         var F21 = 2;
@@ -85611,13 +83904,8 @@ a000.n9I = function() {
                 for (; L21 !== 4;) {
                   switch (L21) {
                     case 2:
-                      var y87 = "me";
-                      y87 += "diaca";
-                      y87 += "che-er";
-                      y87 += "ror";
-                      var l87 = "med";
-                      l87 += "i";
-                      l87 += "acache";
+                      var y87 = "mediacache-error";
+                      var l87 = "mediacache";
                       p = new f.di();
                       p.on(this.Co, l87, function(u) {
                         var M21 = 2;
@@ -85633,18 +83921,13 @@ a000.n9I = function() {
                                   switch (N21) {
                                     case 2:
                                       return t.key;
-                                      break;
                                   }
                                 }
                               });
                               M21 = 5;
                               break;
                             case 5:
-                              var W87 = "m";
-                              W87 += "edi";
-                              W87 += "a";
-                              W87 += "cac";
-                              W87 += "he";
+                              var W87 = "mediacache";
                               q.emit(W87, u);
                               M21 = 4;
                               break;
@@ -85660,14 +83943,8 @@ a000.n9I = function() {
                         for (; O21 !== 5;) {
                           switch (O21) {
                             case 2:
-                              var B87 = "me";
-                              B87 += "diac";
-                              B87 += "ache";
-                              var L87 = "e";
-                              L87 += "r";
-                              L87 += "r";
-                              L87 += "o";
-                              L87 += "r";
+                              var B87 = "mediacache";
+                              var L87 = "error";
                               u.type = L87;
                               q.emit(B87, u);
                               O21 = 5;
@@ -85681,7 +83958,6 @@ a000.n9I = function() {
                 }
               };
               return n;
-              break;
             case 2:
               n.prototype.Fb = function(q, p) {
                 var t11, u;
@@ -85690,16 +83966,10 @@ a000.n9I = function() {
                   switch (t11) {
                     case 5:
                       return this.Ct;
-                      break;
                     case 7:
                       return this.Ct;
-                      break;
                     case 2:
-                      var v87 = "Media ca";
-                      v87 += "ch";
-                      v87 += "e ";
-                      v87 += "is di";
-                      v87 += "sabled";
+                      var v87 = "Media cache is disabled";
                       u = this;
                       this.lia ? this.Ct = new Promise(function(t, w) {
                         var u11 = 2;
@@ -85712,7 +83982,6 @@ a000.n9I = function() {
                                   switch (v11) {
                                     case 2:
                                       return l.UN(u.Fo, u.J, v);
-                                      break;
                                   }
                                 }
                               })(function(v) {
@@ -85721,11 +83990,7 @@ a000.n9I = function() {
                                 for (; w11 !== 4;) {
                                   switch (w11) {
                                     case 2:
-                                      var F87 = "Media";
-                                      F87 += " cac";
-                                      F87 += "he d";
-                                      F87 += "id not ";
-                                      F87 += "initialize";
+                                      var F87 = "Media cache did not initialize";
                                       u.Co = v;
                                       x = v.Pn;
                                       (v = v.RH) ? w(v): x ? (u.i_b(q), t()) : w(Error(F87));
@@ -85774,15 +84039,8 @@ a000.n9I = function() {
                                                 for (; B11 !== 14;) {
                                                   switch (B11) {
                                                     case 2:
-                                                      var E87 = " ";
-                                                      E87 += "fa";
-                                                      E87 += "i";
-                                                      E87 += "led";
-                                                      var Z87 = "R";
-                                                      Z87 += "eading mov";
-                                                      Z87 += "ie e";
-                                                      Z87 += "n";
-                                                      Z87 += "try ";
+                                                      var E87 = " failed";
+                                                      var Z87 = "Reading movie entry ";
                                                       y && p.I.warn(Z87 + x + E87, y);
                                                       B11 = 1;
                                                       break;
@@ -85838,10 +84096,7 @@ a000.n9I = function() {
                                               A11 = !v || 0 >= v.length ? 1 : 5;
                                               break;
                                             case 1:
-                                              var n87 = "medi";
-                                              n87 += "ac";
-                                              n87 += "achelook";
-                                              n87 += "up";
+                                              var n87 = "mediacachelookup";
                                               (w(), p.DP(n87, {
                                                 I8: p.Fo.time.fa() - t,
                                                 Z4: !1
@@ -85878,10 +84133,8 @@ a000.n9I = function() {
                       break;
                     case 5:
                       return Promise.reject("Media cache is not enabled");
-                      break;
                     case 14:
                       return Promise.reject("");
-                      break;
                     case 4:
                       w = this.Fo.time.fa();
                       return this.Ct.then(function() {
@@ -85919,10 +84172,8 @@ a000.n9I = function() {
                                                     case 4:
                                                       y[A] ? y[A].push(z) : y[A] = [z];
                                                       return y;
-                                                      break;
                                                     case 5:
                                                       return y;
-                                                      break;
                                                   }
                                                 }
                                               }, {});
@@ -85939,16 +84190,9 @@ a000.n9I = function() {
                                                       break;
                                                     case 1:
                                                       return v();
-                                                      break;
                                                     case 5:
-                                                      var m87 = "medi";
-                                                      m87 += "aca";
-                                                      m87 += "chelookup";
-                                                      var g87 = "No content da";
-                                                      g87 += "ta ";
-                                                      g87 += "fou";
-                                                      g87 += "nd for";
-                                                      g87 += " ";
+                                                      var m87 = "mediacachelookup";
+                                                      var g87 = "No content data found for ";
                                                       (z = t.Fo.time.fa() - w, A = !1);
                                                       m.ka(y) || m.ka(y.data) || !m.Ph(y.data) ? t.I.trace(g87 + q, u) : A = !0;
                                                       t.DP(m87, {
@@ -86009,7 +84253,6 @@ a000.n9I = function() {
                           switch (L11) {
                             case 2:
                               return u.xob(q);
-                              break;
                           }
                         }
                       }).then(function(w) {
@@ -86017,10 +84260,7 @@ a000.n9I = function() {
                         for (; M11 !== 5;) {
                           switch (M11) {
                             case 4:
-                              var G87 = "mediac";
-                              G87 += "a";
-                              G87 += "cheloo";
-                              G87 += "kup";
+                              var G87 = "mediacachelookup";
                               u.DP(G87, {
                                 I8: u.Fo.time.fa() - t,
                                 Z4: !1
@@ -86029,7 +84269,6 @@ a000.n9I = function() {
                               break;
                             case 1:
                               return u.wqb(q.toString(), p, t);
-                              break;
                             case 2:
                               M11 = w ? 1 : 4;
                               break;
@@ -86081,7 +84320,6 @@ a000.n9I = function() {
                             switch (O11) {
                               case 2:
                                 return z.data;
-                                break;
                             }
                           }
                         })),
@@ -86371,11 +84609,7 @@ a000.n9I = function() {
                         var c21 = 2;
                         for (; c21 !== 1;) {
                           if (c21 === 2) {
-                            var M87 = "save";
-                            M87 += "tod";
-                            M87 += "i";
-                            M87 += "s";
-                            M87 += "k";
+                            var M87 = "savetodisk";
                             Q || w.DP(M87, {C9a: w.Fo.time.fa() - v});
                             c21 = 1;
                           }
@@ -86392,7 +84626,6 @@ a000.n9I = function() {
                   switch (d21) {
                     case 2:
                       return !(m.ka(q) || m.Jb(q) || m.ka(q.ic) || m.Jb(q.ic) || m.ka(q.K) || m.Jb(q.K) || m.ka(q.priority) || m.Jb(q.priority));
-                      break;
                   }
                 }
               };
@@ -86402,25 +84635,14 @@ a000.n9I = function() {
                 for (; e21 !== 9;) {
                   switch (e21) {
                     case 3:
-                      var h87 = "m";
-                      h87 += "ed";
-                      h87 += "iacach";
-                      h87 += "e";
+                      var h87 = "mediacache";
                       this.Enb && this.emit(h87, u);
                       e21 = 9;
                       break;
                     case 2:
-                      var q87 = "medi";
-                      q87 += "acachelook";
-                      q87 += "up";
-                      var w87 = "sa";
-                      w87 += "vetodis";
-                      w87 += "k";
-                      var k87 = "m";
-                      k87 += "ediacach";
-                      k87 += "e";
-                      k87 += "sta";
-                      k87 += "ts";
+                      var q87 = "mediacachelookup";
+                      var w87 = "savetodisk";
+                      var k87 = "mediacachestats";
                       u = {
                         type: k87,
                         operation: q
@@ -86446,10 +84668,8 @@ a000.n9I = function() {
                         switch (g21) {
                           case 2:
                             return u.Fzb(q[w]);
-                            break;
                           case 4:
                             return u.Fzb(q[w]);
-                            break;
                         }
                       }
                     }));
@@ -86464,12 +84684,10 @@ a000.n9I = function() {
                                 switch (i21) {
                                   case 2:
                                     return v.cd === x.cd ? 0 : v.cd ? -1 : 1;
-                                    break;
                                 }
                               }
                             });
                             return h.zoa(u.J, u.I, u.cf, w, p);
-                            break;
                         }
                       }
                     })
@@ -86508,20 +84726,13 @@ a000.n9I = function() {
                                               m21 = 6;
                                               break;
                                             case 9:
-                                              var R97 = "Header ";
-                                              R97 += "fragments was an";
-                                              R97 += " a";
-                                              R97 += "rray b";
-                                              R97 += "uffer, is invalid type ";
+                                              var R97 = "Header fragments was an array buffer, is invalid type ";
                                               B = R97 + y.Sa;
                                               m21 = 8;
                                               break;
                                             case 10:
-                                              var p97 = "Missing or invalid m";
-                                              p97 += "edia data par";
-                                              p97 += "ts for stream ";
+                                              var p97 = "Missing or invalid media data parts for stream ";
                                               return (B = p97 + y.Sa, x(B));
-                                              break;
                                             case 5:
                                               Object.keys(A).map(function(E) {
                                                 var n21, D, o21, F;
@@ -86565,11 +84776,8 @@ a000.n9I = function() {
                                               m21 = h.Bqa(y) ? 10 : 12;
                                               break;
                                             case 13:
-                                              var f97 = "Missing or ";
-                                              f97 += "invalid hea";
-                                              f97 += "der data parts for stream ";
+                                              var f97 = "Missing or invalid header data parts for stream ";
                                               return (B = f97 + y.Sa, x(B));
-                                              break;
                                             case 14:
                                               m21 = h.Cqa(y) ? 13 : 12;
                                               break;
@@ -86582,14 +84790,12 @@ a000.n9I = function() {
                                               break;
                                             case 1:
                                               return x(z);
-                                              break;
                                             case 12:
                                               v(y);
                                               m21 = 19;
                                               break;
                                             case 8:
                                               return x(B);
-                                              break;
                                             case 2:
                                               m21 = z || void 0 === A ? 1 : 5;
                                               break;
@@ -86669,12 +84875,8 @@ a000.n9I = function() {
                                               s21 = 7;
                                               break;
                                             case 6:
-                                              var V97 = "Mi";
-                                              V97 += "ssing or invalid header data parts ";
-                                              V97 += "for str";
-                                              V97 += "eam ";
+                                              var V97 = "Missing or invalid header data parts for stream ";
                                               return (I = V97 + Q.Sa, v(I));
-                                              break;
                                             case 13:
                                               H = C.next();
                                               s21 = 1;
@@ -86684,11 +84886,7 @@ a000.n9I = function() {
                                               s21 = 4;
                                               break;
                                             case 3:
-                                              var a97 = "Heade";
-                                              a97 += "r fragments";
-                                              a97 += " was an array buffer";
-                                              a97 += ", is ";
-                                              a97 += "invalid type ";
+                                              var a97 = "Header fragments was an array buffer, is invalid type ";
                                               I = a97 + O.streamId;
                                               s21 = 9;
                                               break;
@@ -86700,7 +84898,6 @@ a000.n9I = function() {
                                               break;
                                             case 9:
                                               return v(I);
-                                              break;
                                             case 1:
                                               s21 = !H.done ? 5 : 12;
                                               break;
@@ -86783,11 +84980,8 @@ a000.n9I = function() {
                                                       x21 = 8;
                                                       break;
                                                     case 3:
-                                                      var S97 = "Missing ";
-                                                      S97 += "or invalid media data parts f";
-                                                      S97 += "or stream ";
+                                                      var S97 = "Missing or invalid media data parts for stream ";
                                                       return (I = S97 + ca.Sa, v(I));
-                                                      break;
                                                     case 8:
                                                       S = P.next();
                                                       x21 = 1;
@@ -86886,11 +85080,7 @@ a000.n9I = function() {
                                       r21 = 17;
                                       break;
                                     case 15:
-                                      var C97 = "m";
-                                      C97 += "ediacac";
-                                      C97 += "hel";
-                                      C97 += "o";
-                                      C97 += "okup";
+                                      var C97 = "mediacachelookup";
                                       t.DP(C97, {
                                         I8: t.Fo.time.fa() - u,
                                         Z4: !0
@@ -88473,7 +86663,6 @@ a000.n9I = function() {
                       switch (R21) {
                         case 2:
                           return this.Na.Rb;
-                          break;
                       }
                     }
                   },
@@ -88487,10 +86676,8 @@ a000.n9I = function() {
                       switch (S21) {
                         case 2:
                           return this.Na.Sn;
-                          break;
                         case 4:
                           return this.Na.Sn;
-                          break;
                       }
                     }
                   },
@@ -88504,7 +86691,6 @@ a000.n9I = function() {
                       switch (T21) {
                         case 2:
                           return this.Na.Rh;
-                          break;
                       }
                     }
                   },
@@ -88535,8 +86721,7 @@ a000.n9I = function() {
               P21 = 9;
               break;
             case 11:
-              var X97 = "s";
-              X97 += "0";
+              var X97 = "s0";
               u.prototype.uXb = function(t) {
                 var i31, w, v;
                 i31 = 2;
@@ -88576,27 +86761,16 @@ a000.n9I = function() {
                       j31 = 9;
                       break;
                     case 1:
-                      var d97 = "Attempt to destruc";
-                      d97 += "t ShimManager with ";
-                      d97 += "latest ses";
-                      d97 += "sion s";
-                      d97 += "till defined";
-                      var H97 = "Attempted to destruct ShimManager with se";
-                      H97 += "ssion confi";
-                      H97 += "g activ";
-                      H97 += "e";
-                      var e97 = "Attempted to de";
-                      e97 += "struct ShimManager with play";
-                      e97 += "ers present in ASE";
+                      var d97 = "Attempt to destruct ShimManager with latest session still defined";
+                      var H97 = "Attempted to destruct ShimManager with session config active";
+                      var e97 = "Attempted to destruct ShimManager with players present in ASE";
                       h.assert(0 === this.Na.d7a.length, e97);
                       h.assert(0 === Object.keys(this.nB).length, H97);
                       h.assert(void 0 === this.A8, d97);
                       j31 = 3;
                       break;
                     case 2:
-                      var t97 = "Attemp";
-                      t97 += "ted to destruct ShimManager with playgraphs p";
-                      t97 += "resent in ASE";
+                      var t97 = "Attempted to destruct ShimManager with playgraphs present in ASE";
                       h.assert(0 === this.Na.qE.length, t97);
                       j31 = 1;
                       break;
@@ -88614,7 +86788,6 @@ a000.n9I = function() {
                     case 2:
                       a000.T9I(5);
                       return a000.n9I(t, w, "-");
-                      break;
                   }
                 }
               };
@@ -88655,17 +86828,9 @@ a000.n9I = function() {
                         for (; f31 !== 9;) {
                           switch (f31) {
                             case 2:
-                              var D97 = "Cur";
-                              D97 += "rently";
-                              D97 += " parallel graph can only be media type [audio]";
-                              var x97 = "a";
-                              x97 += "u";
-                              x97 += "dio";
-                              var i97 = "C";
-                              i97 += "urrently onl";
-                              i97 += "y one parallel gr";
-                              i97 += "aph is suppo";
-                              i97 += "rted";
+                              var D97 = "Currently parallel graph can only be media type [audio]";
+                              var x97 = "audio";
+                              var i97 = "Currently only one parallel graph is supported";
                               a000.T9I(21);
                               h.assert(a000.J9I(0, K), i97);
                               K = C[H];
@@ -88691,28 +86856,11 @@ a000.n9I = function() {
                       e31 = 9;
                       break;
                     case 2:
-                      var u97 = "v";
-                      u97 += "i";
-                      u97 += "d";
-                      u97 += "e";
-                      u97 += "o";
-                      var N97 = "a";
-                      N97 += "u";
-                      N97 += "di";
-                      N97 += "o";
-                      var j97 = "a";
-                      j97 += "ud";
-                      j97 += "i";
-                      j97 += "o";
-                      var Q97 = "vi";
-                      Q97 += "d";
-                      Q97 += "e";
-                      Q97 += "o";
-                      var b97 = "Generat";
-                      b97 += "ed playgrap";
-                      b97 += "h from choicem";
-                      b97 += "ap";
-                      b97 += ".";
+                      var u97 = "video";
+                      var N97 = "audio";
+                      var j97 = "audio";
+                      var Q97 = "video";
+                      var b97 = "Generated playgraph from choicemap.";
                       (B = this, E = w.choiceMap);
                       E ? (t = f.qz(E, {
                         config: x
@@ -88731,7 +86879,6 @@ a000.n9I = function() {
                       break;
                     case 8:
                       return G;
-                      break;
                   }
                 }
               };
@@ -88752,7 +86899,6 @@ a000.n9I = function() {
                   switch (h31) {
                     case 2:
                       return this.nB[this.g7(w, t)];
-                      break;
                   }
                 }
               };
@@ -88760,7 +86906,6 @@ a000.n9I = function() {
               break;
             case 18:
               return u;
-              break;
             case 8:
               u.prototype.createSession = function(t, w, v, x, y, z, A, B, E, D) {
                 var W21, G, F;
@@ -88768,10 +86913,7 @@ a000.n9I = function() {
                 for (; W21 !== 19;) {
                   switch (W21) {
                     case 14:
-                      var K97 = "end";
-                      K97 += "Pts";
-                      K97 += " is not sup";
-                      K97 += "ported";
+                      var K97 = "endPts is not supported";
                       G = [this.nW(F, G.pa, v, E)];
                       D[1] && G.push(this.nW(F, D[1].pa, v, E));
                       h.assert(void 0 === x.Ka, K97);
@@ -88788,7 +86930,6 @@ a000.n9I = function() {
                             switch (X21) {
                               case 2:
                                 return C.T === F && (y.ca === C.ca || !C.ca || !y.ca);
-                                break;
                             }
                           }
                         },
@@ -88815,11 +86956,8 @@ a000.n9I = function() {
                     case 10:
                       B.Qr || B.sI || this.YC();
                       return this.A8;
-                      break;
                     case 2:
-                      var o97 = "creating";
-                      o97 += " s";
-                      o97 += "ession";
+                      var o97 = "creating session";
                       this.console.trace(o97);
                       this.Na.Rb.reset();
                       F = Number(t.movieId);
@@ -88834,10 +86972,7 @@ a000.n9I = function() {
                 for (; Y21 !== 1;) {
                   switch (Y21) {
                     case 2:
-                      var r97 = "invalid start posit";
-                      r97 += "ion r";
-                      r97 += "elative to playg";
-                      r97 += "raph";
+                      var r97 = "invalid start position relative to playgraph";
                       return w.V[w.Nd].Aa === x ? (t = n.yM(w, t, g.R.Oa(v)), h.assert(t, r97), t) : {
                         ha: w.Nd,
                         offset: g.R.cb
@@ -88872,7 +87007,6 @@ a000.n9I = function() {
                                             switch (d31) {
                                               case 2:
                                                 return E.T === t && (v.ca === E.ca || !E.ca || !v.ca);
-                                                break;
                                             }
                                           }
                                         },
@@ -88888,15 +87022,10 @@ a000.n9I = function() {
                                       }, [4, this.Na.Mx(this.nB[y])]);
                                       break;
                                     case 1:
-                                      var P97 = "Ca";
-                                      P97 += "n not update";
-                                      P97 += " viewable. Viewab";
-                                      P97 += "le not found ";
+                                      var P97 = "Can not update viewable. Viewable not found ";
                                       return (x = this.Mn.bind(this, v.ca), y = this.g7(t, v.ca), z = x(t), h.assert(void 0 !== z, P97 + y), [4, z.et]);
-                                      break;
                                     case 4:
                                       return (B.Hc(), [2]);
-                                      break;
                                     case 8:
                                       b31 = c31 === 2 ? 4 : 3;
                                       break;
@@ -88943,23 +87072,13 @@ a000.n9I = function() {
                 Q21 = 9;
                 break;
               case 6:
-                var O97 = "1";
-                O97 += "SI";
-                O97 += "YbZ";
-                O97 += "rNJC";
-                O97 += "p9";
-                var c97 = "DE";
-                c97 += "BUG";
-                c97 += ":";
-                var U97 = "nf-ase sh";
-                U97 += "im ver";
-                U97 += "sion";
-                U97 += ":";
+                var O97 = "1SIYbZrNJCp9";
+                var c97 = "DEBUG:";
+                var U97 = "nf-ase shim version:";
                 y.console.trace(U97, t, c97, !1);
                 y.Na = d.AH();
                 O97;
                 return y;
-                break;
             }
           }
         }
@@ -93928,15 +92047,8 @@ a000.n9I = function() {
           for (; m31 !== 14;) {
             switch (m31) {
               case 2:
-                var A97 = "medi";
-                A97 += "a";
-                A97 += "|";
-                A97 += "ase";
-                A97 += "js";
-                var Y97 = "AS";
-                Y97 += "EJS_REQUEST";
-                Y97 += "_PA";
-                Y97 += "CER";
+                var A97 = "media|asejs";
+                var Y97 = "ASEJS_REQUEST_PACER";
                 n = this;
                 this.m8 = h;
                 this.config = k;
@@ -93945,13 +92057,8 @@ a000.n9I = function() {
                 m31 = 9;
                 break;
               case 9:
-                var W97 = "Re";
-                W97 += "qu";
-                W97 += "es";
-                W97 += "tPacer";
-                var l97 = "1SIYbZ";
-                l97 += "rNJC";
-                l97 += "p9";
+                var W97 = "RequestPacer";
+                var l97 = "1SIYbZrNJCp9";
                 this.swa = !1;
                 l97;
                 this.Iq = new m.Tv({
@@ -93981,24 +92088,12 @@ a000.n9I = function() {
         for (; l31 !== 13;) {
           switch (l31) {
             case 3:
-              var E97 = "T";
-              E97 += "I";
-              var Z97 = "remo";
-              Z97 += "veReque";
-              Z97 += "s";
-              Z97 += "t";
-              var v97 = "Y";
-              v97 += "y";
-              var F97 = "a";
-              F97 += "ddR";
-              F97 += "eq";
-              F97 += "u";
-              F97 += "est";
-              var B97 = "V";
-              B97 += "k";
-              var L97 = "checkRequestOppo";
-              L97 += "r";
-              L97 += "tunity";
+              var E97 = "TI";
+              var Z97 = "removeRequest";
+              var v97 = "Yy";
+              var F97 = "addRequest";
+              var B97 = "Vk";
+              var L97 = "checkRequestOpportunity";
               g.prototype.cTa = function(h) {
                 var t31, k, n, q;
                 t31 = 2;
@@ -94009,11 +92104,7 @@ a000.n9I = function() {
                       t31 = 1;
                       break;
                     case 3:
-                      var y97 = "requestOp";
-                      y97 += "p";
-                      y97 += "ortunityR";
-                      y97 += "unn";
-                      y97 += "erComplete";
+                      var y97 = "requestOpportunityRunnerComplete";
                       this.Iq.ZT(y97, {
                         requestsIssued: q,
                         scheduledMs: h,
@@ -94055,18 +92146,13 @@ a000.n9I = function() {
               l31 = 6;
               break;
             case 6:
-              var J97 = "c";
-              J97 += "T";
-              J97 += "a";
-              var n97 = "checkRequ";
-              n97 += "e";
-              n97 += "stOpportunityRunner";
+              var J97 = "cTa";
+              var n97 = "checkRequestOpportunityRunner";
               c.__decorate([m.Sb({
                 methodName: n97,
                 Yk: !0
               })], g.prototype, J97, null);
               return g;
-              break;
             case 2:
               Object.defineProperties(g.prototype, {
                 XRb: {
@@ -94076,7 +92162,6 @@ a000.n9I = function() {
                       switch (o31) {
                         case 2:
                           return this.eG;
-                          break;
                       }
                     }
                   },
@@ -94131,11 +92216,7 @@ a000.n9I = function() {
                 for (; r31 !== 4;) {
                   switch (r31) {
                     case 2:
-                      var z97 = "More than maxAll";
-                      z97 += "owedOutstandi";
-                      z97 += "ngReq";
-                      z97 += "ues";
-                      z97 += "ts are outstanding";
+                      var z97 = "More than maxAllowedOutstandingRequests are outstanding";
                       this.Iq.rw({
                         mediaType: h.mediaType,
                         contentStartPts: h.gd,
@@ -94153,14 +92234,8 @@ a000.n9I = function() {
                 for (; s31 !== 3;) {
                   switch (s31) {
                     case 2:
-                      var g97 = "r";
-                      g97 += "emo";
-                      g97 += "veReq";
-                      g97 += "uest";
-                      var T97 = "Rece";
-                      T97 += "iv";
-                      T97 += "ed remove ";
-                      T97 += "request when there are no requests outstanding";
+                      var g97 = "removeRequest";
+                      var T97 = "Received remove request when there are no requests outstanding";
                       this.Iq.rw({
                         mediaType: h.mediaType,
                         contentStartPts: h.gd,
@@ -109285,160 +107360,21 @@ a000.n9I = function() {
       a = f = r.__decorate([(0, l.S)(), r.__param(0, l.l(d.xK)), r.__param(1, l.l(h.hy)), r.__param(2, l.l(g.WFa)), r.__param(3, l.l(m.ad))], a);
       b.Jza = a;
     }, function(r, b, a) {
-      var f, l, m, d, g, h, k, n, q, p, u;
-
-      function c(t, w, v, x, y, z, A) {
-        this.config = t;
-        this.json = w;
-        this.Oc = v;
-        this.NOb = x;
-        this.wX = z;
-        this.Ela = A;
-        this.d8 = this.Pn = !1;
-        this.listeners = [];
-        l.ip(this, "json");
-        this.wa = y.lb("LogBatcher");
-      }
-      _esm(b)
-      b.VFa = void 0;
-      r = a(1);
-      f = a(0);
-      l = a(58);
-      m = a(39);
-      d = a(487);
-      g = a(48);
-      h = a(7);
-      k = a(50);
-      n = a(488);
-      q = a(3);
-      p = a(98);
-      a(192);
-      u = a(278);
-      c.prototype.Fb = function() {
-        this.Pn = !0;
-      };
-      c.prototype.Gc = function(t) {
-        var w = this;
-        this.w_b(t) || (!1, 0 < t.size.Hl(this.config.GPb) ? this.wa.error("Logblob is too large, dropping from the queue", {
-          logblobType: t.type,
-          logblobSize: t.size.toString()
-        }) : (this.listeners.forEach(function(v) {
-          return v.sQb(t);
-        }), !1, this.wX.Fia(t), this.Oc.Vl(function() {
-          w.gFb();
-        })));
-      };
-      c.prototype.flush = function(t) {
-        var w = this;
-        t = void 0 === t ? !1 : t;
-        return this.d8 ? (this.wa.trace("LogBatcher is in error state, ignoring flush"), Promise.reject()) : new Promise(function(v, x) {
-          w.wa.trace("Flushing", h.hR);
-          w.Ts();
-          w.Oc.Vl(function() {
-            w.Gwa(t).then(function() {
-              v();
-            }).catch(function(y) {
-              x(y);
-            });
-          });
-        });
-      };
-      c.prototype.addListener = function(t) {
-        this.listeners.push(t);
-      };
-      c.prototype.removeListener = function(t) {
-        t = this.listeners.indexOf(t);
-        0 <= t && this.listeners.splice(t, 1);
-      };
-      c.prototype.Gwa = function(t) {
-        var w, v;
-        w = this;
-        t = void 0 === t ? !1 : t;
-        if (!this.Pn) return (this.wa.trace("LogBatcher is not initialized"), Promise.resolve());
-        if (this.d8) return (this.wa.trace("LogBatcher is in error state, ignoring sendLogMessages"), Promise.resolve());
-        v = this.wX.rGb();
-        if (0 === v.length && !t) return (this.wa.trace("No logblobs to send"), Promise.resolve());
-        !1;
-        this.Ts();
-        this.listeners.forEach(function() {});
-        t = Promise.resolve();
-        for (var x = {}, y = aa(v), z = y.next(); !z.done;
-          (x = {
-            Qba: x.Qba
-          }, z = y.next())) {
-          x.Qba = z.value;
-          t = t.then((function(A) {
-            return function() {
-              return w.$Yb(A.Qba);
-            };
-          })(x));
-        }
-        return t.then(function() {
-          return w.lH();
-        }).catch(function(A) {
-          v.filter(function(B) {
-            return !B.qA;
-          }).forEach(function(B) {
-            return B.fu();
-          });
-          w.lH();
-          throw Error("Send failure. " + A);
-        });
-      };
-      c.prototype.$Yb = function(t) {
-        var w = this;
-        this.wa.trace("Sending batch: " + t.size, h.hR);
-        return Promise.resolve(this.wX.lXb(t)).then(function() {
-          return w.NOb.send(t.iI);
-        }).then(function() {
-          return t.aQ();
-        }).catch(function(v) {
-          w.wa.warn("Failed to send batch of logblobs.", v, h.hR);
-          t.fu();
-          w.m_b(v) && w.wX.Xrb(t);
-          w.x_b(v) && (w.d8 = !0);
-          throw v;
-        });
-      };
-      c.prototype.m_b = function(t) {
-        return t.Ld === q.b1.pIa ? !1 : this.config.Cia;
-      };
-      c.prototype.x_b = function(t) {
-        return t.Bc === q.M.PDa || t.Bc === q.M.FR || t.Bc === q.M.JR ? !0 : !1;
-      };
-      c.prototype.gFb = function() {
-        var t = this;
-        0 < this.wX.size.Hl(this.config.N3a) ? this.Gwa().catch(function(w) {
-          return t.wa.warn("Failed to send log messages on size threshold. " + w);
-        }) : this.lH();
-      };
-      c.prototype.Ts = function() {
-        this.q8 && (!1, this.q8.cancel(), this.q8 = void 0);
-      };
-      c.prototype.lH = function() {
-        this.q8 || (!1, this.q8 = this.Oc.Gk(this.config.aZb, this.MO.bind(this)));
-      };
-      c.prototype.MO = function() {
-        var t = this;
-        this.d8 = !1;
-        this.Ts();
-        this.Gwa().catch(function(w) {
-          return t.wa.warn("Failed to send log messages on timer. " + w);
-        });
-      };
-      c.prototype.stringify = function(t) {
-        var w = "";
-        try {
-          w = this.json.stringify(t.data, void 0, "  ");
-        } catch (v) {}
-        return w;
-      };
-      c.prototype.w_b = function(t) {
-        return 0 <= this.config.N$a.indexOf(t.type) ? !0 : t.type === u.dd.debug ? 0 <= this.config.M$a.indexOf(t.data.debugCategory) : !1;
-      };
-      a = c;
-      a = r.__decorate([(0, f.S)(), r.__param(0, f.l(k.Mda)), r.__param(1, f.l(m.mF)), r.__param(2, f.l(g.Wj)), r.__param(3, f.l(d.jGa)), r.__param(4, f.l(h.ub)), r.__param(5, f.l(n.pHa)), r.__param(6, f.l(p.B0))], a);
-      b.VFa = a;
+      function c() {}
+      c.prototype.Fb = function() {}
+      c.prototype.Gc = function(t) {}
+      c.prototype.flush = function(t) {}
+      c.prototype.Gwa = function(t) {}
+      c.prototype.$Yb = function(t) {}
+      c.prototype.m_b = function(t) {}
+      c.prototype.x_b = function(t) {}
+      c.prototype.gFb = function() {}
+      c.prototype.Ts = function() {}
+      c.prototype.lH = function() {}
+      c.prototype.MO = function() {}
+      c.prototype.stringify = function(t) {}
+      c.prototype.w_b = function(t) {}
+      b.VFa = c
     }, function(r, b, a) {
       var l, m, d, g, h, k, n;
 
@@ -110162,14 +108098,7 @@ a000.n9I = function() {
             w.ho = void 0;
           }
         };
-        this.Sq = function() {
-          w.VA || (w.VA = !0, w.ob.JE(!1), w.hqa(), w.config().M7 && (w.oA = nb.setTimeout(function() {
-            w.bg.flush(!1).catch(function() {
-              return w.log.warn("failed to flush log batcher on initialLogFlushTimeout");
-            });
-            w.oA = void 0;
-          }, w.config().M7)));
-        };
+        this.Sq = function() {}
         this.qg = function() {
           w.oA && (nb.clearTimeout(w.oA), w.oA = void 0);
           if (w.config().w5 || w.config().dM)(w.hma && (nb.clearInterval(w.hma), w.hma = void 0), w.ob.CVa());
@@ -111757,8 +109686,7 @@ a000.n9I = function() {
       };
       a.prototype.cYa = function(c, f) {
         f = f || "";
-        c = '<li><a href="#">' + this.vD(c) + "Array[" + f.length + "]</a>";
-        c += "<ul>";
+        c = '<li><a href="#">' + this.vD(c) + "Array[" + f.length + "]</a><ul>";
         for (var l = 0; l < f.length; ++l) {
           c += this.getValue(l.toString(), f[l]);
         }
@@ -111770,8 +109698,7 @@ a000.n9I = function() {
         l = this;
         if (f instanceof CryptoKey) return this.PGb(c, f);
         m = "";
-        m += '<li><a href="#">' + ("~~NONAME~~" !== c ? this.vD(c) : "") + "Object</a>";
-        m += "<ul>";
+        m += '<li><a href="#">' + ("~~NONAME~~" !== c ? this.vD(c) : "") + "Object</a><ul>";
         Object.entries(f).forEach(function(d) {
           var g = aa(d);
           d = g.next().value;
@@ -114777,11 +112704,6 @@ a000.n9I = function() {
           enumerable: !0,
           get() {
             return Object.assign({
-              logblob: {
-                service: "logblob",
-                isPlayApiDirect: !0,
-                version: "1"
-              },
               manifest: {
                 service: "manifest",
                 isPlayApiDirect: !0,
@@ -114795,11 +112717,6 @@ a000.n9I = function() {
               license: {
                 service: "pbo_licenses",
                 version: "^1.0.0"
-              },
-              events: {
-                service: "event",
-                isPlayApiDirect: !0,
-                version: "1"
               },
               bind: {
                 service: this.dtb.fSa,
