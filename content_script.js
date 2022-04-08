@@ -11,7 +11,7 @@ urls = [
 ]
 
 // very messy workaround for accessing chrome storage outside of background / content scripts
-chrome.storage.sync.get(['useallSub', 'useddplus', 'useAVC', 'useDV', 'useFHD', 'useHA', 'useAVCH', 'usedef', 'useCAVC', 'usehevc', 'setMaxBitrate'], function(items) {
+chrome.storage.sync.get(['useallSub', 'useddplus', 'useAVC', 'useDV', 'useFHD', 'useHA', 'useAVCH', 'usevp9', 'useav1', 'useCAVC', 'usehevc', 'setMaxBitrate'], function(items) {
     var useallSub = items.useallSub;
 	var useddplus = items.useddplus;
 	var useAVC = items.useAVC;
@@ -19,7 +19,8 @@ chrome.storage.sync.get(['useallSub', 'useddplus', 'useAVC', 'useDV', 'useFHD', 
 	var useFHD = items.useFHD;
 	var useHA = items.useHA;
 	var useAVCH = items.useAVCH;
-	var usedef = items.usedef;
+	var usevp9 = items.usevp9;
+	var useav1 = items.useav1;
 	var useCAVC = items.useCAVC;
 	var usehevc = items.usehevc;
     var setMaxBitrate = items.setMaxBitrate;
@@ -32,7 +33,8 @@ chrome.storage.sync.get(['useallSub', 'useddplus', 'useAVC', 'useDV', 'useFHD', 
 					+ 'var useFHD = ' + useFHD + ';' + '\n' 
 					+ 'var useHA = ' + useHA + ';' + '\n' 
 					+ 'var useAVCH = ' + useAVCH + ';' + '\n' 
-					+ 'var usedef = ' + usedef + ';' + '\n' 
+					+ 'var usevp9 = ' + usevp9 + ';' + '\n' 
+					+ 'var useav1 = ' + useav1 + ';' + '\n' 
 					+ 'var useCAVC = ' + useCAVC + ';' + '\n' 
 					+ 'var usehevc = ' + usehevc + ';' + '\n' 
 	                + 'var setMaxBitrate = ' + setMaxBitrate + ';';
