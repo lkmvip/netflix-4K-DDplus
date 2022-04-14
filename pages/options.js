@@ -33,12 +33,11 @@ function save_options() {
 		var r = confirm("Options saved. \r\nRefresh the player page now?");
 
 		if (r == true) {
-			chrome.tabs.getSelected(null, function(tab) {
-				var code = 'window.location.reload();';
-				chrome.tabs.executeScript(tab.id, {code: code});
+			chrome.tabs.query({active: true, currentWindow: true}, function () {
+				chrome.tabs.reload();
 			});
-			window.open("about:blank","_self").close()
 		}
+		window.open("about:blank","_self").close()
     });
     
 }

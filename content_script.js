@@ -1,67 +1,48 @@
 // From EME Logger extension
-/*
-script_urls = [
-    'https://cdn.rawgit.com/ricmoo/aes-js/master/index.js',
-    'https://cdn.rawgit.com/Caligatio/jsSHA/master/dist/sha.js'
-]
-*/
+
 urls = [
-    //'msl_client.js',
     'netflix_max_bitrate.js'
 ]
 
-// very messy workaround for accessing chrome storage outside of background / content scripts
-chrome.storage.sync.get(['useallSub', 'useddplus', 'useAVC', 'useDV', 'useFHD', 'useHA', 'useAVCH', 'usevp9', 'useav1', 'useCAVC', 'usehevc', 'setMaxBitrate'], function(items) {
-    var useallSub = items.useallSub;
-	var useddplus = items.useddplus;
-	var useAVC = items.useAVC;
-	var useDV = items.useDV;
-	var useFHD = items.useFHD;
-	var useHA = items.useHA;
-	var useAVCH = items.useAVCH;
-	var usevp9 = items.usevp9;
-	var useav1 = items.useav1;
-	var useCAVC = items.useCAVC;
-	var usehevc = items.usehevc;
-    var setMaxBitrate = items.setMaxBitrate;
-    var mainScript = document.createElement('script');
-    mainScript.type = 'application/javascript';
-    mainScript.text = 'var useallSub = ' + useallSub + ';' + '\n' 
-	                + 'var useddplus = ' + useddplus + ';' + '\n' 
-					+ 'var useAVC = ' + useAVC + ';' + '\n' 
-					+ 'var useDV = ' + useDV + ';' + '\n' 
-					+ 'var useFHD = ' + useFHD + ';' + '\n' 
-					+ 'var useHA = ' + useHA + ';' + '\n' 
-					+ 'var useAVCH = ' + useAVCH + ';' + '\n' 
-					+ 'var usevp9 = ' + usevp9 + ';' + '\n' 
-					+ 'var useav1 = ' + useav1 + ';' + '\n' 
-					+ 'var useCAVC = ' + useCAVC + ';' + '\n' 
-					+ 'var usehevc = ' + usehevc + ';' + '\n' 
-	                + 'var setMaxBitrate = ' + setMaxBitrate + ';';
+// promisify chrome storage API for easier chaining
+function chromeStorageGet(opts) {
+    return new Promise(resolve => {
+        chrome.storage.sync.get(opts, resolve);
+    });
+} 
+
+function addSettingsToHtml(settings) {
+    const mainScript = document.createElement('script');
+    mainScript.type = 'application/json';
+    mainScript.text = JSON.stringify(settings);
+    mainScript.id = "netflix-4k-5.1ddplus-settings";
     document.documentElement.appendChild(mainScript);
-});
-/*
-for (var i = 0; i < script_urls.length; i++) {
-    var script = document.createElement('script');
-    script.src = script_urls[i];
-    document.documentElement.appendChild(script);
+
+    console.log("Loaded settings");
 }
-*/
-for (var i = 0; i < urls.length; i++) {
-    var mainScriptUrl = chrome.runtime.getURL(urls[i]);
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', mainScriptUrl, true);
-
-    xhr.onload = function(e) {
-        var xhr = e.target;
-        var mainScript = document.createElement('script');
+chromeStorageGet({
+    setMaxBitrate: false,
+    useallSub: false,
+    useddplus: false,
+    useAVC: false,
+    useDV: false,
+    useFHD: false,
+    useHA: false,
+    useAVCH: false,
+    usevp9: false,
+    useav1: false,
+    useCAVC: false,
+    usehevc: false,
+}).then(items => {
+    addSettingsToHtml(items);
+}).then(() => {
+    for (let i = 0; i < urls.length; i++) {
+        const mainScriptUrl = chrome.runtime.getURL(urls[i]);
+    
+        const mainScript = document.createElement('script');
         mainScript.type = 'application/javascript';
-        if (xhr.status == 200) {
-            mainScript.text = xhr.responseText;
-            document.documentElement.appendChild(mainScript);
-        }
-    };
-
-  xhr.send();
-}
+        mainScript.src = mainScriptUrl;
+        document.documentElement.appendChild(mainScript);
+    }
+});
