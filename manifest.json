@@ -24,7 +24,7 @@
 		],
 		"all_frames": true,
 		"js": ["content_script.js"],
-		"css": ["Netflix.css"],
+		//"css": ["Netflix.css"],
 		"run_at": "document_start"
 	}],
 	"web_accessible_resources": [{
