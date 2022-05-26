@@ -2,13 +2,13 @@
 	{
 		"id": 1,
 		"priority": 1,
-		"action": { "type": "redirect", "redirect": { "extensionPath": "/cadmium-playercore-6.0034.519.911.js" } },
+		"action": { "type": "redirect", "redirect": { "extensionPath": "/cadmium-playercore.js" } },
 		"condition": { "urlFilter": "*://www.assets.nflxext.com/*/ffe/player/html/*" }
 	},
 	{
 		"id": 2,
 		"priority": 1,
-		"action": { "type": "redirect", "redirect": { "extensionPath": "/cadmium-playercore-6.0034.519.911.js" } },
+		"action": { "type": "redirect", "redirect": { "extensionPath": "/cadmium-playercore.js" } },
 		"condition": { "urlFilter": "*://assets.nflxext.com/*/ffe/player/html/*" }
 	}
 ]

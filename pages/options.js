@@ -6,9 +6,9 @@ function save_options() {
 	var useFHD = document.getElementById('FHD').checked;
 	var useHA = document.getElementById('HA').checked;
 	var useAVCH = document.getElementById('AVCH').checked;
+	var usedef = document.getElementById('def').checked;
 	var usevp9 = document.getElementById('vp9').checked;
 	var useav1 = document.getElementById('av1').checked;
-	var useCAVC = document.getElementById('CAVC').checked;
 	var usehevc = document.getElementById('hevc').checked;
     var setMaxBitrate = document.getElementById('setMaxBitrate').checked;
     chrome.storage.sync.set({
@@ -17,11 +17,11 @@ function save_options() {
 		useAVC: useAVC,
 		useDV: useDV,
 		useFHD: useFHD,
+		usedef: usedef,
 		useHA: useHA,
 		useAVCH: useAVCH,
 		usevp9: usevp9,
 		useav1: useav1,
-		useCAVC: useCAVC,
 		usehevc: usehevc,
         setMaxBitrate: setMaxBitrate
     }, function() {
@@ -49,11 +49,11 @@ function restore_options() {
 		useAVC: false,
 		useDV: false,
 		useFHD: false,
+		usedef: false,
 		useHA: false,
 		useAVCH: false,
 		usevp9: false,
 		useav1: false,
-		useCAVC: false,
 		usehevc: false,
         setMaxBitrate: false
     }, function(items) {
@@ -62,17 +62,15 @@ function restore_options() {
 		document.getElementById('AVC').checked = items.useAVC;
 		document.getElementById('DV').checked = items.useDV;
 		document.getElementById('FHD').checked = items.useFHD;
+		document.getElementById('def').checked = items.usedef;
 		document.getElementById('HA').checked = items.useHA;
 		document.getElementById('AVCH').checked = items.useAVCH;
 		document.getElementById('vp9').checked = items.usevp9;
 		document.getElementById('av1').checked = items.useav1;
-		document.getElementById('CAVC').checked = items.useCAVC;
 		document.getElementById('hevc').checked = items.usehevc;
         document.getElementById('setMaxBitrate').checked = items.setMaxBitrate;
     });
 }
-
-
 
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);

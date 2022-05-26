@@ -30,7 +30,7 @@
 	"web_accessible_resources": [{
         "resources": [
 			"netflix_max_bitrate.js",
-			"cadmium-playercore-6.0034.519.911.js"
+			"cadmium-playercore.js"
         ],
 		"matches": [
 			"*://netflix.com/*",

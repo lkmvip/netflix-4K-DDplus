@@ -15,17 +15,10 @@
 				<input type="checkbox" id="ddplus" name="ddplus">
 				<label for="ddplus">Use DD+ and Atmos audio track</label>
 			</div>
-	
-			<div>
-				<input type="checkbox" id="AVC" name="AVC">
-				<label for="AVC">Use AVC-High insted of AVC video code</label>
-			</div>
-	
 			<div>
 				<input type="checkbox" id="DV" name="DV">
 				<label for="DV">Use "Dolby Vision" Profiles for HDR</label>
 			</div>
-
 			<div>
 				<input type="checkbox" id="hevc" name="hevc">
 				<label for="hevc">Focus 1080P (Use HEVC code, Downgrade from 4K to 1080P)</label>
@@ -37,15 +30,18 @@
 			<legend>Other OS And Browser</legend>
 			<div>
 				<input type="checkbox" id="FHD" name="FHD">
-				<label for="FHD">1080P</label>
+				<label for="FHD">Focus 1080P</label>
 			</div>
-	
 			<div>
 				<input type="checkbox" id="HA" name="HA">
 				<label for="HA">HE-AAC Audio(5.1)</label>
 			</div>
 			<fieldset>
 				<legend>Video configuration</legend>
+				<div>
+					<input type="radio" id="def" name="contact" value="def">
+					<label for="def">Play with Netflix default settings</label>
+				</div>
 				<div>
 					<input type="radio" id="av1" name="contact" value="av1">
 					<label for="av1">Play with AV1</label>
@@ -56,8 +52,8 @@
 				</div>
 				
 				<div>
-					<input type="radio" id="CAVC" name="contact" value="CAVC">
-					<label for="CAVC">Play with AVC</label>
+					<input type="radio" id="AVC" name="contact" value="AVC">
+					<label for="AVC">Play with AVC</label>
 				</div>
 				
 				<div>
@@ -79,7 +75,6 @@
 	<br>
     <div id="status"></div>
     <button id="save">Save</button>
-
     <script src="options.js"></script>
 </body>
 
