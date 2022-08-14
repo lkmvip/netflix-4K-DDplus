@@ -26,13 +26,13 @@ chromeStorageGet({
     useallSub: false,
     useddplus: false,
     useAVC: false,
-    useDV: false,
     useFHD: false,
     useHA: false,
     useAVCH: false,
     usevp9: false,
     useav1: false,
     useCAVC: false,
+    closeimsc: false,
     usehevc: false,
 }).then(items => {
     addSettingsToHtml(items);

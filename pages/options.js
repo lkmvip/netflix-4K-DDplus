@@ -2,7 +2,6 @@ function save_options() {
 	var useallSub = document.getElementById('allSub').checked;
 	var useddplus = document.getElementById('ddplus').checked;
 	var useAVC = document.getElementById('AVC').checked;
-	var useDV = document.getElementById('DV').checked;
 	var useFHD = document.getElementById('FHD').checked;
 	var useHA = document.getElementById('HA').checked;
 	var useAVCH = document.getElementById('AVCH').checked;
@@ -10,12 +9,12 @@ function save_options() {
 	var usevp9 = document.getElementById('vp9').checked;
 	var useav1 = document.getElementById('av1').checked;
 	var usehevc = document.getElementById('hevc').checked;
+    var closeimsc = document.getElementById('closeimsc').checked;
     var setMaxBitrate = document.getElementById('setMaxBitrate').checked;
     chrome.storage.sync.set({
         useallSub: useallSub,
 		useddplus: useddplus,
 		useAVC: useAVC,
-		useDV: useDV,
 		useFHD: useFHD,
 		usedef: usedef,
 		useHA: useHA,
@@ -23,6 +22,7 @@ function save_options() {
 		usevp9: usevp9,
 		useav1: useav1,
 		usehevc: usehevc,
+		closeimsc: closeimsc,
         setMaxBitrate: setMaxBitrate
     }, function() {
         //var status = document.getElementById('status');
@@ -47,7 +47,6 @@ function restore_options() {
         useallSub: false,
 		useddplus: false,
 		useAVC: false,
-		useDV: false,
 		useFHD: false,
 		usedef: false,
 		useHA: false,
@@ -55,12 +54,12 @@ function restore_options() {
 		usevp9: false,
 		useav1: false,
 		usehevc: false,
+		closeimsc: false,
         setMaxBitrate: false
     }, function(items) {
         document.getElementById('allSub').checked = items.useallSub;
 		document.getElementById('ddplus').checked = items.useddplus;
 		document.getElementById('AVC').checked = items.useAVC;
-		document.getElementById('DV').checked = items.useDV;
 		document.getElementById('FHD').checked = items.useFHD;
 		document.getElementById('def').checked = items.usedef;
 		document.getElementById('HA').checked = items.useHA;
@@ -68,6 +67,7 @@ function restore_options() {
 		document.getElementById('vp9').checked = items.usevp9;
 		document.getElementById('av1').checked = items.useav1;
 		document.getElementById('hevc').checked = items.usehevc;
+		document.getElementById('closeimsc').checked = items.closeimsc;
         document.getElementById('setMaxBitrate').checked = items.setMaxBitrate;
     });
 }
