@@ -9,6 +9,7 @@ function save_options() {
 	var usevp9 = document.getElementById('vp9').checked;
 	var useav1 = document.getElementById('av1').checked;
 	var usehevc = document.getElementById('hevc').checked;
+	var usef4k = document.getElementById('f4k').checked;
     var closeimsc = document.getElementById('closeimsc').checked;
     var setMaxBitrate = document.getElementById('setMaxBitrate').checked;
     chrome.storage.sync.set({
@@ -22,6 +23,7 @@ function save_options() {
 		usevp9: usevp9,
 		useav1: useav1,
 		usehevc: usehevc,
+		usef4k: usef4k,
 		closeimsc: closeimsc,
         setMaxBitrate: setMaxBitrate
     }, function() {
@@ -54,6 +56,7 @@ function restore_options() {
 		usevp9: false,
 		useav1: false,
 		usehevc: false,
+		usef4k: false,
 		closeimsc: false,
         setMaxBitrate: false
     }, function(items) {
@@ -67,6 +70,7 @@ function restore_options() {
 		document.getElementById('vp9').checked = items.usevp9;
 		document.getElementById('av1').checked = items.useav1;
 		document.getElementById('hevc').checked = items.usehevc;
+		document.getElementById('f4k').checked = items.usef4k;
 		document.getElementById('closeimsc').checked = items.closeimsc;
         document.getElementById('setMaxBitrate').checked = items.setMaxBitrate;
     });
