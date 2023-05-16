@@ -1,3 +1,15 @@
+const f12kInput = document.getElementById("f12k");
+const f4kInput = document.getElementById("f4k");
+
+f12kInput.addEventListener("click", () => {
+  if (f12kInput.checked) {
+    f4kInput.checked = true;
+    f4kInput.disabled = true;
+  } else {
+    f4kInput.disabled = false;
+  }
+});
+
 function save_options() {
 	var useallSub = document.getElementById('allSub').checked;
 	var useddplus = document.getElementById('ddplus').checked;
@@ -10,6 +22,7 @@ function save_options() {
 	var useav1 = document.getElementById('av1').checked;
 	var usehevc = document.getElementById('hevc').checked;
 	var usef4k = document.getElementById('f4k').checked;
+	var usef12k = document.getElementById('f12k').checked;
     var closeimsc = document.getElementById('closeimsc').checked;
     var setMaxBitrate = document.getElementById('setMaxBitrate').checked;
     chrome.storage.sync.set({
@@ -24,6 +37,7 @@ function save_options() {
 		useav1: useav1,
 		usehevc: usehevc,
 		usef4k: usef4k,
+		usef12k: usef12k,
 		closeimsc: closeimsc,
         setMaxBitrate: setMaxBitrate
     }, function() {
@@ -57,6 +71,7 @@ function restore_options() {
 		useav1: false,
 		usehevc: false,
 		usef4k: false,
+		usef12k: false,
 		closeimsc: false,
         setMaxBitrate: false
     }, function(items) {
@@ -71,8 +86,18 @@ function restore_options() {
 		document.getElementById('av1').checked = items.useav1;
 		document.getElementById('hevc').checked = items.usehevc;
 		document.getElementById('f4k').checked = items.usef4k;
+		document.getElementById('f12k').checked = items.usef12k;
 		document.getElementById('closeimsc').checked = items.closeimsc;
         document.getElementById('setMaxBitrate').checked = items.setMaxBitrate;
+
+		const f12kCheckbox = document.getElementById("f12k");
+		const f4kCheckbox = document.getElementById("f4k");
+
+		if (f12kCheckbox.checked) {
+    		f4kCheckbox.checked = true;
+			f4kCheckbox.disabled = true;
+		}
+
     });
 }
 

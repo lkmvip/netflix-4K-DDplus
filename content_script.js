@@ -33,6 +33,7 @@ chromeStorageGet({
     useav1: false,
     useCAVC: false,
     usef4k: false,
+    usef12k: false,
     closeimsc: false,
     usehevc: false,
 }).then(items => {
