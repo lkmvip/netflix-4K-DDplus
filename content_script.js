@@ -31,6 +31,7 @@ chromeStorageGet({
     useAVCH: false,
     usevp9: false,
     useav1: false,
+    useprk: false,
     useCAVC: false,
     usef4k: false,
     usef12k: false,

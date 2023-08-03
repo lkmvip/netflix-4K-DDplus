@@ -20,6 +20,7 @@ function save_options() {
 	var usedef = document.getElementById('def').checked;
 	var usevp9 = document.getElementById('vp9').checked;
 	var useav1 = document.getElementById('av1').checked;
+	var useprk = document.getElementById('prk').checked;
 	var usehevc = document.getElementById('hevc').checked;
 	var usef4k = document.getElementById('f4k').checked;
 	var usef12k = document.getElementById('f12k').checked;
@@ -35,6 +36,7 @@ function save_options() {
 		useAVCH: useAVCH,
 		usevp9: usevp9,
 		useav1: useav1,
+		useprk: useprk,
 		usehevc: usehevc,
 		usef4k: usef4k,
 		usef12k: usef12k,
@@ -69,6 +71,7 @@ function restore_options() {
 		useAVCH: false,
 		usevp9: false,
 		useav1: false,
+		useprk: false,
 		usehevc: false,
 		usef4k: false,
 		usef12k: false,
@@ -84,6 +87,7 @@ function restore_options() {
 		document.getElementById('AVCH').checked = items.useAVCH;
 		document.getElementById('vp9').checked = items.usevp9;
 		document.getElementById('av1').checked = items.useav1;
+		document.getElementById('prk').checked = items.useprk;
 		document.getElementById('hevc').checked = items.usehevc;
 		document.getElementById('f4k').checked = items.usef4k;
 		document.getElementById('f12k').checked = items.usef12k;
