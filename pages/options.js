@@ -1,107 +1,67 @@
-const f12kInput = document.getElementById("f12k");
-const f4kInput = document.getElementById("f4k");
+const checkboxIds = ['useallSub', 'useddplus', 'useAVC', 'useFHD', 'usedef', 'useHA', 'useAVCH', 'usevp9', 'useav1', 'useprk', 'usehevc', 'usef4k', 'usef12k', 'closeimsc', 'useimscn', 'setMaxBitrate'];
 
-f12kInput.addEventListener("click", () => {
-  if (f12kInput.checked) {
-    f4kInput.checked = true;
-    f4kInput.disabled = true;
-  } else {
-    f4kInput.disabled = false;
-  }
-});
+function getCheckbox(id) {
+    return document.getElementById(id);
+}
+
+function getCheckboxState(id) {
+    return getCheckbox(id).checked;
+}
+
+function updateCheckboxState(checkbox, targetCheckbox, disable) {
+    targetCheckbox.disabled = checkbox.checked ? disable : !disable;
+}
+
+function updateCheckboxState2(checkbox, targetCheckbox, disable) {
+    targetCheckbox.checked = checkbox.checked;
+    targetCheckbox.disabled = checkbox.checked ? disable : !disable;
+}
+
+function updateRelatedCheckboxes(checkboxId) {
+    if (checkboxId === 'usef12k') {
+        const usef4kCheckbox = getCheckbox('usef4k');
+        if (getCheckbox('usef12k').checked) {
+            updateCheckboxState2(getCheckbox('usef12k'), usef4kCheckbox, true);
+        } else {
+            usef4kCheckbox.disabled = false;
+        }
+    } else if (checkboxId === 'closeimsc') {
+        updateCheckboxState(getCheckbox('closeimsc'), getCheckbox('useimscn'), true);
+    }
+    // more
+}
 
 function save_options() {
-	var useallSub = document.getElementById('allSub').checked;
-	var useddplus = document.getElementById('ddplus').checked;
-	var useAVC = document.getElementById('AVC').checked;
-	var useFHD = document.getElementById('FHD').checked;
-	var useHA = document.getElementById('HA').checked;
-	var useAVCH = document.getElementById('AVCH').checked;
-	var usedef = document.getElementById('def').checked;
-	var usevp9 = document.getElementById('vp9').checked;
-	var useav1 = document.getElementById('av1').checked;
-	var useprk = document.getElementById('prk').checked;
-	var usehevc = document.getElementById('hevc').checked;
-	var usef4k = document.getElementById('f4k').checked;
-	var usef12k = document.getElementById('f12k').checked;
-    var closeimsc = document.getElementById('closeimsc').checked;
-    var setMaxBitrate = document.getElementById('setMaxBitrate').checked;
-    chrome.storage.sync.set({
-        useallSub: useallSub,
-		useddplus: useddplus,
-		useAVC: useAVC,
-		useFHD: useFHD,
-		usedef: usedef,
-		useHA: useHA,
-		useAVCH: useAVCH,
-		usevp9: usevp9,
-		useav1: useav1,
-		useprk: useprk,
-		usehevc: usehevc,
-		usef4k: usef4k,
-		usef12k: usef12k,
-		closeimsc: closeimsc,
-        setMaxBitrate: setMaxBitrate
-    }, function() {
-        //var status = document.getElementById('status');
-        //status.textContent = 'Options saved.';
-        /*setTimeout(function() {
-            status.textContent = '';
-        }, 750);*/
-		var r = confirm("Options saved. \r\nRefresh the player page now?");
-
-		if (r == true) {
-			chrome.tabs.query({active: true, currentWindow: true}, function () {
-				chrome.tabs.reload();
-			});
-		}
-		window.open("about:blank","_self").close()
+    const options = {};
+    checkboxIds.forEach(id => {
+        options[id] = getCheckboxState(id);
     });
-    
+
+    chrome.storage.sync.set(options, () => {
+        const shouldReload = confirm("Options saved. \r\nRefresh the player page now?");
+        if (shouldReload) {
+            chrome.tabs.query({ active: true, currentWindow: true }, () => {
+                chrome.tabs.reload();
+            });
+        }
+
+        window.open("about:blank", "_self").close();
+    });
 }
 
 function restore_options() {
-    chrome.storage.sync.get({
-        useallSub: false,
-		useddplus: false,
-		useAVC: false,
-		useFHD: false,
-		usedef: false,
-		useHA: false,
-		useAVCH: false,
-		usevp9: false,
-		useav1: false,
-		useprk: false,
-		usehevc: false,
-		usef4k: false,
-		usef12k: false,
-		closeimsc: false,
-        setMaxBitrate: false
-    }, function(items) {
-        document.getElementById('allSub').checked = items.useallSub;
-		document.getElementById('ddplus').checked = items.useddplus;
-		document.getElementById('AVC').checked = items.useAVC;
-		document.getElementById('FHD').checked = items.useFHD;
-		document.getElementById('def').checked = items.usedef;
-		document.getElementById('HA').checked = items.useHA;
-		document.getElementById('AVCH').checked = items.useAVCH;
-		document.getElementById('vp9').checked = items.usevp9;
-		document.getElementById('av1').checked = items.useav1;
-		document.getElementById('prk').checked = items.useprk;
-		document.getElementById('hevc').checked = items.usehevc;
-		document.getElementById('f4k').checked = items.usef4k;
-		document.getElementById('f12k').checked = items.usef12k;
-		document.getElementById('closeimsc').checked = items.closeimsc;
-        document.getElementById('setMaxBitrate').checked = items.setMaxBitrate;
+    chrome.storage.sync.get(Object.fromEntries(checkboxIds.map(id => [id, false])), items => {
+        checkboxIds.forEach(id => {
+            const checkbox = getCheckbox(id);
+            checkbox.checked = items[id];
 
-		const f12kCheckbox = document.getElementById("f12k");
-		const f4kCheckbox = document.getElementById("f4k");
+            checkbox.addEventListener('change', () => {
+                updateRelatedCheckboxes(id);
+            });
+        });
 
-		if (f12kCheckbox.checked) {
-    		f4kCheckbox.checked = true;
-			f4kCheckbox.disabled = true;
-		}
-
+        updateRelatedCheckboxes('usef12k');
+        updateRelatedCheckboxes('closeimsc');
     });
 }
 

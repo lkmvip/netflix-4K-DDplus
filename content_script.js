@@ -32,10 +32,11 @@ chromeStorageGet({
     usevp9: false,
     useav1: false,
     useprk: false,
-    useCAVC: false,
+    usedef: false,
     usef4k: false,
     usef12k: false,
     closeimsc: false,
+    useimscn: false,
     usehevc: false,
 }).then(items => {
     addSettingsToHtml(items);

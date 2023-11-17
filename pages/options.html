@@ -12,20 +12,20 @@
 		<fieldset>
 			<legend>Win10+Edge(Full Install) Only</legend>
 			<div>
-				<input type="checkbox" id="ddplus" name="ddplus">
-				<label for="ddplus">Use DD+ and Atmos audio track</label>
+				<input type="checkbox" id="useddplus" name="useddplus">
+				<label for="useddplus">Use DD+ and Atmos audio track</label>
 			</div>
 			<div>
-				<input type="checkbox" id="f4k" name="f4k">
-				<label for="f4k">Fix playback 4K (If you don't know, please don't choose this)</label>
+				<input type="checkbox" id="usef4k" name="usef4k">
+				<label for="usef4k">Fix playback 4K (If you don't know, please don't choose this)</label>
 			</div>
 			<div>
-				<input type="checkbox" id="f12k" name="f12k">
-				<label for="f12k">Focus 12k video bitrate (Only 4K, need 'Fix playback 4K')</label>
+				<input type="checkbox" id="usef12k" name="usef12k">
+				<label for="usef12k">Focus 12k video bitrate (Only 4K, need 'Fix playback 4K')</label>
 			</div>
 			<div>
-				<input type="checkbox" id="hevc" name="hevc">
-				<label for="hevc">Focus 1080P (Use HEVC code, Downgrade from 4K to 1080P)</label>
+				<input type="checkbox" id="usehevc" name="usehevc">
+				<label for="usehevc">Focus 1080P (Use HEVC code, Downgrade from 4K to 1080P)</label>
 			</div>
 		</fieldset>
 	</form>
@@ -33,51 +33,58 @@
 		<fieldset>
 			<legend>Other OS And Browser</legend>
 			<div>
-				<input type="checkbox" id="FHD" name="FHD">
-				<label for="FHD">Focus 1080P</label>
+				<input type="checkbox" id="useFHD" name="useFHD">
+				<label for="useFHD">Focus 1080P</label>
 			</div>
 			<div>
-				<input type="checkbox" id="HA" name="HA">
-				<label for="HA">HE-AAC Audio(5.1)</label>
+				<input type="checkbox" id="useHA" name="useHA">
+				<label for="useHA">HE-AAC Audio(5.1)</label>
 			</div>
 			<fieldset>
 				<legend>Video configuration</legend>
 				<div>
-					<input type="radio" id="def" name="contact" value="def">
-					<label for="def">Play with Netflix default settings</label>
+					<input type="radio" id="usedef" name="contact" value="usedef">
+					<label for="usedef">Play with Netflix default settings</label>
 				</div>
 				<div>
-					<input type="radio" id="av1" name="contact" value="av1">
-					<label for="av1">Play with AV1</label>
+					<input type="radio" id="useav1" name="contact" value="useav1">
+					<label for="useav1">Play with AV1</label>
 				</div>
 				<div>
-					<input type="radio" id="vp9" name="contact" value="vp9">
-					<label for="vp9">Play with VP9</label>
+					<input type="radio" id="usevp9" name="contact" value="usevp9">
+					<label for="usevp9">Play with VP9</label>
 				</div>
-				
 				<div>
-					<input type="radio" id="AVC" name="contact" value="AVC">
-					<label for="AVC">Play with AVC</label>
+					<input type="radio" id="useAVC" name="contact" value="useAVC">
+					<label for="useAVC">Play with AVC</label>
 				</div>
-				
 				<div>
-					<input type="radio" id="AVCH" name="contact" value="AVCH">
-					<label for="AVCH">Play with AVC-High</label>
+					<input type="radio" id="useAVCH" name="contact" value="useAVCH">
+					<label for="useAVCH">Play with AVC-High</label>
 				</div>
 			</fieldset>
 		</fieldset>
-	</form>	
+	</form>
+	<form>
+		<fieldset>
+			<legend>Subtitles</legend>
+				<div>
+					<input type="checkbox" id="closeimsc" name="closeimsc">
+					<label for="closeimsc">Turn Off imsc Subtitles</label>
+				</div>
+				<div>
+					<input type="checkbox" id="useimscn" name="useimscn">
+					<label for="useimscn">Do not use bold fonts</label>
+				</div>
+		</fieldset>
+	</form>
 	<div>		
-		<input type="checkbox" id="prk" name="prk">
-		<label for="prk">Use prk config for AVC</label>
+		<input type="checkbox" id="useprk" name="useprk">
+		<label for="useprk">Use prk config for AVC</label>
 	</div>	
 	<div>		
-		<input type="checkbox" id="allSub" name="allSub">
-		<label for="allSub">Show all audio-tracks and subs</label>
-	</div>
-	<div>
-		<input type="checkbox" id="closeimsc" name="closeimsc">
-		<label for="closeimsc">Turn Off imsc Subtitles</label>
+		<input type="checkbox" id="useallSub" name="useallSub">
+		<label for="useallSub">Show all audio-tracks and subs</label>
 	</div>
 	<div>
 		<input type="checkbox" id="setMaxBitrate" name="setMaxBitrate">
