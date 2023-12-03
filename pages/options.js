@@ -1,4 +1,4 @@
-const checkboxIds = ['useallSub', 'useddplus', 'useAVC', 'useFHD', 'usedef', 'useHA', 'useAVCH', 'usevp9', 'useav1', 'useprk', 'usehevc', 'usef4k', 'usef12k', 'closeimsc', 'useimscn', 'setMaxBitrate'];
+const checkboxIds = ['useallSub', 'useddplus', 'useAVC', 'useFHD', 'usedef', 'useHA', 'useAVCH', 'usevp9', 'useav1', 'useprk', 'usehevc', 'usef4k', 'usef12k', 'closeimsc', 'useimscn', 'imdef', 'usesl', 'useb', 'setMaxBitrate'];
 
 function getCheckbox(id) {
     return document.getElementById(id);
@@ -26,7 +26,10 @@ function updateRelatedCheckboxes(checkboxId) {
             usef4kCheckbox.disabled = false;
         }
     } else if (checkboxId === 'closeimsc') {
+        const closeimscCheckbox = getCheckbox('closeimsc');
         updateCheckboxState(getCheckbox('closeimsc'), getCheckbox('useimscn'), true);
+        const imageSubFieldset = document.getElementById('imageSubFieldset');
+        imageSubFieldset.disabled = !closeimscCheckbox.checked;
     }
     // more
 }

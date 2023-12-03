@@ -17,7 +17,7 @@
 			</div>
 			<div>
 				<input type="checkbox" id="usef4k" name="usef4k">
-				<label for="usef4k">Fix playback 4K (If you don't know, please don't choose this)</label>
+				<label for="usef4k">Fix playback 4K (<span style="color: red;">If you don't know, please don't choose this</span>)</label>
 			</div>
 			<div>
 				<input type="checkbox" id="usef12k" name="usef12k">
@@ -38,7 +38,7 @@
 			</div>
 			<div>
 				<input type="checkbox" id="useHA" name="useHA">
-				<label for="useHA">HE-AAC Audio(5.1)</label>
+				<label for="useHA">HE-AAC Audio (5.1)</label>
 			</div>
 			<fieldset>
 				<legend>Video configuration</legend>
@@ -72,6 +72,21 @@
 					<input type="checkbox" id="closeimsc" name="closeimsc">
 					<label for="closeimsc">Turn Off imsc Subtitles</label>
 				</div>
+					<fieldset id="imageSubFieldset">
+						<legend>ImageSub configuration</legend>
+						<div>
+							<input type="radio" id="imdef" name="contact" value="imdef">
+							<label for="imdef">do not change (<span style="color: red;">If you don't know, please choose this</span>)</label>
+						</div>
+						<div>
+							<input type="radio" id="usesl" name="contact" value="usesl">
+							<label for="usesl">Slightly larger</label>
+						</div>
+						<div>
+							<input type="radio" id="useb" name="contact" value="useb">
+							<label for="useb">Big</label>
+						</div>
+					</fieldset>
 				<div>
 					<input type="checkbox" id="useimscn" name="useimscn">
 					<label for="useimscn">Do not use bold fonts</label>
