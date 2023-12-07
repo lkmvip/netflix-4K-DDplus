@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"priority": 1,
-		"action": { "type": "redirect", "redirect": { "extensionPath": "/cadmium-playercore-6.0043.054.911.js" } },
+		"action": { "type": "redirect", "redirect": { "extensionPath": "/cadmium-playercore.js" } },
 		"condition": { "urlFilter": "*://*.nflxext.com/*/ffe/player/html/*" }
 	}
 ]
