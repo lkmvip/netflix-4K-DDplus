@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Netflix_Extension",
 	"description": "Watch Netflix more comfortably on your computer.",
-	"version": "1.1",
+	"version": "1.2",
 	"author": "org by truedread ，modify by https://github.com/lkmvip/netflix-4K-DDplus",
 	"action": {
 		"default_title": "Netflix Options",
@@ -36,7 +36,7 @@
 			"*://netflix.com/*",
 			"*://www.netflix.com/*"
 		]
-	}], 
+	}],
 	"declarative_net_request" : {
 		"rule_resources" : [{
 			"id": "1",

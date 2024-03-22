@@ -25,7 +25,7 @@ let fn = function () {
 	}
 
 	window.dispatchEvent(new KeyboardEvent('keydown', {
-		keyCode: 83,
+		key: 66, // Key code for 'B' key
 		ctrlKey: true,
 		altKey: true,
 		shiftKey: true,
@@ -54,7 +54,7 @@ let fn = function () {
 };
 
 let run = function () {
-	fn() || setTimeout(run, 100)	
+	fn() || setTimeout(run, 100)
 };
 
 const WATCH_REGEXP = /netflix.com\/watch\/.*/;
@@ -72,7 +72,7 @@ if(window.globalOptions.setMaxBitrate ) {
 	console.log("netflix_max_bitrate.js enabled");
 	//setInterval(test, 500);
 	setInterval(function () {
-		
+
 		let newLocation = window.location.toString();
 
 		if (newLocation !== oldLocation) {
