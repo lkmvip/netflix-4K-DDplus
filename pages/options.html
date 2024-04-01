@@ -10,18 +10,18 @@
 <body>
 	<form>
 		<fieldset>
-			<legend>Win10+Edge(Full Install) Only</legend>
+			<legend>Win10~11 + Edge(Full Install) Only</legend>
 			<div>
 				<input type="checkbox" id="useddplus" name="useddplus">
 				<label for="useddplus">Use DD+ and Atmos audio track</label>
 			</div>
 			<div>
-				<input type="checkbox" id="usef4k" name="usef4k">
-				<label for="usef4k">Fix playback 4K (<span style="color: red;">If you don't know, please don't choose this</span>)</label>
+				<input type="checkbox" id="usef4k" name="usef4k" style="display: none;">
+				<label for="usef4k" style="display: none;">Fix playback 4K (<span style="color: red;">If you don't know, please don't choose this</span>)</label>
 			</div>
 			<div>
 				<input type="checkbox" id="usef12k" name="usef12k">
-				<label for="usef12k">Focus 12k video bitrate (Only 4K, need 'Fix playback 4K')</label>
+				<label for="usef12k">Don't use 'prk' config for HEVC (SDR Only)</label>
 			</div>
 			<div>
 				<input type="checkbox" id="usehevc" name="usehevc">
@@ -31,10 +31,10 @@
 	</form>
 	<form>
 		<fieldset>
-			<legend>Other OS And Browser</legend>
+			<legend>Other Win OS Or Browser</legend>
 			<div>
-				<input type="checkbox" id="useFHD" name="useFHD">
-				<label for="useFHD">Focus 1080P</label>
+				<input type="checkbox" id="useFHD" name="useFHD" style="display: none;">
+				<label for="useFHD" style="display: none;">Focus 1080P</label>
 			</div>
 			<div>
 				<input type="checkbox" id="useHA" name="useHA">
@@ -95,7 +95,7 @@
 	</form>
 	<div>		
 		<input type="checkbox" id="useprk" name="useprk">
-		<label for="useprk">Use prk config for AVC</label>
+		<label for="useprk">Use 'prk' config for AVC</label>
 	</div>	
 	<div>		
 		<input type="checkbox" id="useallSub" name="useallSub">

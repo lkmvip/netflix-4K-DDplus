@@ -17,7 +17,8 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
   
 **In different hardware/software, your experience is different**  
     
-4K and 1080P will be the defaults from now on and I will not change them again  
+4K or 1080p will be the defaults from now on and I will not change them again  
+Linux cannot use this extension because Netflix does not provide configuration for Linux browsers, You can change the OS or try to use other extensions.  
 Read more: https://help.netflix.com/node/30081  
   
   
