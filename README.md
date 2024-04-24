@@ -5,9 +5,11 @@ Microsoft Store:
 https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaoggcn
 
 **This extension provides the following functions**  
-1, all languages (audio and sub,if any)      
+1, All languages (audio and sub,if any)      
 2, Automatically select best bitrate available   
-3, Use the old style for some subtitles:   
+3, Sse prk config for avc   
+4, Adjust the subtitle font for the new version   
+   Use the old style for some subtitles:   
 　　ro zh-Hans zh-Hant ko vi ar he hi th en es   
     
     
@@ -24,13 +26,12 @@ Read more: https://help.netflix.com/node/30081
   
 **In Win11 and edge browser(Non-portable)**  
 1, DDplus, Atmos(if any) Audio      
-2, Lock the bitrate of 4K video to 12000   
-3, Use HEVC code, Downgrade from 4K to 1080P   
+2, Allows not using prk config for 4K (Lock to 12000k, SDR only)   
     
     
   
 **Other OS And Browser(Includes portable edge)**  
-1, HE-AAC Audio (lower than DDplus)   
+1, HE-AAC Audio 5.1 (lower than DDplus)   
 2, AV1, VP9, AVC, and AVChigh, can be selected   
   
   
