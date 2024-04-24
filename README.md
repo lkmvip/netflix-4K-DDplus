@@ -9,8 +9,8 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
 2, Automatically select best bitrate available   
 3, Sse prk config for avc   
 4, Adjust the subtitle font for the new version   
-   Use the old style for some subtitles:   
-　　ro zh-Hans zh-Hant ko vi ar he hi th en es   
+　　Use the old style for some subtitles:   
+　　　ro zh-Hans zh-Hant ko vi ar he hi th en es   
     
     
     
