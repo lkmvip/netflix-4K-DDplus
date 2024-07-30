@@ -4,5 +4,11 @@
 		"priority": 1,
 		"action": { "type": "redirect", "redirect": { "extensionPath": "/cadmium-playercore.js" } },
 		"condition": { "urlFilter": "*://*.nflxext.com/*/ffe/player/html/*" }
+	},
+	{
+		"id": 2,
+		"priority": 1,
+		"action": { "type": "redirect", "redirect": { "extensionPath": "/cadmium-playercore.js" } },
+		"condition": { "urlFilter": "*://*.nflxext.com/player/html/ffe/*" }
 	}
 ]

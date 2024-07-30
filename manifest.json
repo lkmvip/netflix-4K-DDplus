@@ -19,6 +19,8 @@
 		"matches": [
 			"*://assets.nflxext.com/*/ffe/player/html/*",
 			"*://www.assets.nflxext.com/*/ffe/player/html/*",
+			"*://assets.nflxext.com/player/html/ffe/*",
+			"*://www.assets.nflxext.com/player/html/ffe/*",
 			"*://netflix.com/*",
 			"*://www.netflix.com/*"
 		],
