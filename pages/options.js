@@ -36,8 +36,16 @@ function updateRelatedCheckboxes(checkboxId) {
 
 function save_options() {
     const options = {};
-    checkboxIds.forEach(id => {
-        options[id] = getCheckboxState(id);
+    //checkboxIds.forEach(id => {
+   //     options[id] = getCheckboxState(id);
+   // });
+
+    checkboxIds.forEach((id) => {
+        try {
+            options[id] = getCheckboxState(id);
+        } catch (error) {
+            console.error(`Error getting state for checkbox with ID: ${id}`, error);
+        }
     });
 
     chrome.storage.sync.set(options, () => {
