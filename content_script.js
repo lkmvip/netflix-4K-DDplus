@@ -1,7 +1,7 @@
 // From EME Logger extension
 
 urls = [
-    'netflix_max_bitrate.js',
+    //'netflix_max_bitrate.js',
     'netflix_auto_skip.js'
 ];
 
