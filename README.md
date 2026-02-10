@@ -7,6 +7,7 @@ https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaogg
 **This extension provides the following functions**  
 1, All languages (audio and sub,if any)      
 2, Automatically select best bitrate available   
+   ![image](img/max.png)   
 3, Automatically Skip intro and more   
 4, Skip Household Verification   
 5, Use prk config for avc   
