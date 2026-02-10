@@ -25383,7 +25383,7 @@ l6FlH[302295] = 859;
                                 }
                                 if (!window.globalOptions.usedef) {
                                     if (window.globalOptions.useav1) {
-                                        J = J.filter(item => !JSON.stringify(item).includes("h264") || JSON.stringify(item).includes("-live"));
+                                        J = J.filter(item => !JSON.stringify(item).includes("h264"));
                                         J.push("av1-main-L20-dash-cbcs-prk");
                                         J.push("av1-main-L21-dash-cbcs-prk");
                                         J.push("av1-main-L30-dash-cbcs-prk");
@@ -25395,7 +25395,7 @@ l6FlH[302295] = 859;
                                         // not work 6.0049.089.911
                                     }
                                     if (window.globalOptions.useAVCH) {
-                                        J = J.filter(item => !JSON.stringify(item).includes("h264mp") || JSON.stringify(item).includes("-live"));
+                                        J = J.filter(item => !JSON.stringify(item).includes("h264mp"));
                                         J = J.filter(item => !JSON.stringify(item).includes("av1-main"));
                                         J.push("playready-h264hpl22-dash");
                                         J.push("playready-h264hpl30-dash");
@@ -25403,8 +25403,11 @@ l6FlH[302295] = 859;
                                         J.push("playready-h264hpl40-dash");
                                     }
                                     if (window.globalOptions.useAVC) {
-                                        J = J.filter(item => !JSON.stringify(item).includes("h264hp") || JSON.stringify(item).includes("-live"));
+                                        J = J.filter(item => !JSON.stringify(item).includes("h264hp"));
                                         J = J.filter(item => !JSON.stringify(item).includes("av1-main"));
+                                        J.push("playready-h264mpl30-dash");
+                                        J.push("playready-h264mpl31-dash");
+                                        J.push("playready-h264mpl40-dash");
                                     }
                                 }
                             }
