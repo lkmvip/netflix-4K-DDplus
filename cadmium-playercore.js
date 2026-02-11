@@ -135863,7 +135863,7 @@ l6FlH[302295] = 859;
                                 });
                                 !k && m.disallowed && m.disallowed.some(function (r) {
                                     if (r.stream.bitrate === f)
-                                        return (l = r.disallowedBy, g.w2(d.VO.client, p ? p[0].max : m.max, p ? p[0].min : m.min), !0);
+                                        return (l = r.disallowedBy, !window.globalOptions.setMaxBitrate && g.w2(d.VO.client, p ? p[0].max : m.max, p ? p[0].min : m.min), !0);
 
                                 });
                             }
