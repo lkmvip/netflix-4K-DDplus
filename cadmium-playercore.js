@@ -21692,20 +21692,6 @@ l6FlH[302295] = 859;
                             h.lower = e[k - 1];
                             h.x$c = e[k + 1];
                         });
-                        if (window.globalOptions.setMaxBitrate) {
-                            e = e.length ? [e[e.length - 1]] : e;
-                            if (!e.length)
-                                return e;
-                            var s = e[0];
-                            if (s) {
-                                if (s.type === "video") {
-                                    tag = "VIDEO";
-                                } else {
-                                    tag = "AUDIO";
-                                }
-                            }
-                            console.log("[forceHighest]", tag, "bitrate=", s && s.bitrate);
-                        }
                         return e;
                     };
                     d.prototype.qqc = function (c) {
