@@ -1,84 +1,81 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Netflix Options</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" type="text/css" href="options.css"/>
-</head>
-
-<body>
-	<form>
-		<fieldset>
-			<legend>Win11 + Edge Or Chrome (Full Install) Only</legend>
-			<div>
-				<input type="checkbox" id="useddplus" name="useddplus">
-				<label for="useddplus">Use DD+ and Atmos audio track (Chrome Not Work)</label>
-			</div>
-			<div>
-				<input type="checkbox" id="usef4k" name="usef4k" style="display: none;">
-				<label for="usef4k" style="display: none;">Fix playback 4K (<span style="color: red;">If you don't know, please don't choose this</span>)</label>
-			</div>
-			<div>
-				<input type="checkbox" id="usef12k" name="usef12k">
-				<label for="usef12k">Don't use 'prk' for HEVC (SDR Only)</label>
-			</div>
-			<div>
-				<input type="checkbox" id="usehevc" name="usehevc" style="display: none;">
-				<label for="usehevc" style="display: none;">Focus 1080P (Use HEVC code, Downgrade from 4K to 1080P)</label>
-			</div>
-		</fieldset>
-	</form>
-	<form>
-		<fieldset>
-			<legend>Other Win OS Or Browser (e.g. Portable)</legend>
-			<div>
-				<input type="checkbox" id="useFHD" name="useFHD" style="display: none;">
-				<label for="useFHD" style="display: none;">Focus 1080P</label>
-			</div>
-			<div>
-				<input type="checkbox" id="useHA" name="useHA">
-				<label for="useHA">HE-AAC Audio 5.1 (if now ,will use XHE-AAC 2.0)</label>
-			</div>
+	<head>
+		<title>Netflix Options</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="options.css" />
+	</head>
+	<body>
+		<form>
 			<fieldset>
-				<legend>Video configuration</legend>
+				<legend>Win11 + Edge Or Chrome (Full Install) Only</legend>
 				<div>
-					<input type="radio" id="usedef" name="contact" value="usedef">
-					<label for="usedef">Play with Netflix default settings</label>
-				</div>
-				<div>
-					<input type="radio" id="useav1" name="contact" value="useav1">
-					<label for="useav1">Play with AV1</label>
+					<input type="checkbox" id="useddplus" name="useddplus">
+					<label for="useddplus">Use DD+ and Atmos audio track (Chrome Not Work)</label>
 				</div>
 				<div>
-					<input type="radio" id="usevp9" name="contact" value="usevp9" style="display: none;">
-					<label for="usevp9" style="display: none;">Play with VP9</label>
+					<input type="checkbox" id="usef4k" name="usef4k" style="display: none;">
+					<label for="usef4k" style="display: none;">Fix playback 4K (<span style="color: red;">If you don't know, please don't choose this</span>)</label>
 				</div>
-				<div style="display: flex">
-					<div>
-						<input type="radio" id="useAVC" name="contact" value="useAVC">
-						<label for="useAVC">Play with AVC</label>
-					</div>
-					<div  style="margin-left: 10px;">
-						<input type="checkbox" id="useprk" name="useprk">
-						<label for="useprk">Use 'prk'</label>
-					</div>
+				<div>
+					<input type="checkbox" id="usef12k" name="usef12k">
+					<label for="usef12k">Don't use 'prk' for HEVC (SDR Only)</label>
 				</div>
-					<input type="radio" id="useAVCH" name="contact" value="useAVCH">
-					<label for="useAVCH">Play with AVC-High</label>
+				<div>
+					<input type="checkbox" id="usehevc" name="usehevc" style="display: none;">
+					<label for="usehevc" style="display: none;">Focus 1080P (Use HEVC code, Downgrade from 4K to 1080P)</label>
 				</div>
 			</fieldset>
-		</fieldset>
-	</form>
-	<form>
-		<fieldset>
-			<legend>Subtitles</legend>
+		</form>
+		<form>
+			<fieldset>
+				<legend>Other Win OS Or Browser (e.g. Portable)</legend>
+				<div>
+					<input type="checkbox" id="useFHD" name="useFHD" style="display: none;">
+					<label for="useFHD" style="display: none;">Focus 1080P</label>
+				</div>
+				<div>
+					<input type="checkbox" id="useHA" name="useHA">
+					<label for="useHA">HE-AAC Audio 5.1 (if now ,will use XHE-AAC 2.0)</label>
+				</div>
+				<fieldset>
+					<legend>Video configuration</legend>
+					<div>
+						<input type="radio" id="usedef" name="contact" value="usedef">
+						<label for="usedef">Play with Netflix default settings</label>
+					</div>
+					<div>
+						<input type="radio" id="useav1" name="contact" value="useav1">
+						<label for="useav1">Play with AV1</label>
+					</div>
+					<div>
+						<input type="radio" id="usevp9" name="contact" value="usevp9" style="display: none;">
+						<label for="usevp9" style="display: none;">Play with VP9</label>
+					</div>
+					<div style="display: flex">
+						<div>
+							<input type="radio" id="useAVC" name="contact" value="useAVC">
+							<label for="useAVC">Play with AVC</label>
+						</div>
+						<div style="margin-left: 10px;">
+							<input type="checkbox" id="useprk" name="useprk">
+							<label for="useprk">Use 'prk'</label>
+						</div>
+					</div>
+					<input type="radio" id="useAVCH" name="contact" value="useAVCH">
+					<label for="useAVCH">Play with AVC-High</label>
+					</div>
+				</fieldset>
+			</fieldset>
+		</form>
+		<form>
+			<fieldset>
+				<legend>Subtitles</legend>
 				<div>
 					<input type="checkbox" id="closeimsc" name="closeimsc">
 					<label for="closeimsc">Turn Off imsc Subtitles</label>
 				</div>
-					<!--
-					<fieldset id="imageSubFieldset">
+				<!-- <fieldset id="imageSubFieldset">
 						<legend>ImageSub configuration</legend>
 						<div>
 							<input type="radio" id="imdef" name="contact" value="imdef">
@@ -98,31 +95,30 @@
 					<input type="checkbox" id="useimscn" name="useimscn">
 					<label for="useimscn">Do not use bold fonts</label>
 				</div>
-		</fieldset>
-	</form>
-	<div>
-
-	</div>
-	<div>
-		<input type="checkbox" id="fkhouse" name="fkhouse">
-		<label for="fkhouse">close Household</label>
-	</div>
-	<div>
-		<input type="checkbox" id="useallSub" name="useallSub">
-		<label for="useallSub">Show all audio-tracks and subs</label>
-	</div>
-	<div>
-		<input type="checkbox" id="AutoSkip" name="AutoSkip">
-		<label for="AutoSkip">Automatically skip all</label>
-	</div>
-	<div>
-		<input type="checkbox" id="setMaxBitrate" name="setMaxBitrate">
-		<label for="setMaxBitrate">Automatically select best bitrate available</label>
-	</div>
-	<br>
-    <div id="status"></div>
-    <button id="save">Save</button>
-    <script src="options.js"></script>
-</body>
+			</fieldset>
+		</form>
+		<div></div>
+		<div>
+			<input type="checkbox" id="fkhouse" name="fkhouse">
+			<label for="fkhouse">close Household</label>
+		</div>
+		<div>
+			<input type="checkbox" id="useallSub" name="useallSub">
+			<label for="useallSub">Show all audio-tracks and subs</label>
+		</div>
+		<div>
+			<input type="checkbox" id="AutoSkip" name="AutoSkip">
+			<label for="AutoSkip">Automatically skip all</label>
+		</div>
+		<div>
+			<input type="checkbox" id="setMaxBitrate" name="setMaxBitrate">
+			<label for="setMaxBitrate">Automatically select best bitrate available</label>
+		</div>
+		<br>
+		<div id="status"></div>
+		<button id="save">Save</button>
+		<a id="jumpLink" href="https://github.com/lkmvip/netflix-4K-DDplus" target="_blank" rel="noopener noreferrer" style="margin-left: 28px; color: white;">My Github</a>
+		<script src="options.js"></script>
+	</body>
 
 </html>
