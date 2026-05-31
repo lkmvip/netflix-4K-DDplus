@@ -29,14 +29,14 @@ function addSettingsToHtml(settings) {
 }
 
 async function loadScripts() {
-    for (let i = 0; i < urls.length; i++) {
-        const mainScriptUrl = await chrome.runtime.getURL(urls[i]);
-
+    await Promise.all(urls.map(async (url) => {
+        const mainScriptUrl = await chrome.runtime.getURL(url);
         const mainScript = document.createElement('script');
         mainScript.type = 'application/javascript';
         mainScript.src = mainScriptUrl;
+        mainScript.async = false;
         document.documentElement.appendChild(mainScript);
-    }
+    }));
 }
 
 chromeStorageGet({
