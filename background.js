@@ -10,7 +10,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 
 chrome.tabs.onActivated.addListener(activeInfo => {
   chrome.tabs.get(activeInfo.tabId, tab => {
-    if (tab.url.includes("netflix.com")) {
+    if (tab.url && tab.url.includes("netflix.com")) {
       chrome.action.enable(tab.id);
     } else {
       chrome.action.disable(tab.id);
@@ -30,7 +30,7 @@ async function registerCS() {
     matches: MATCHES,
     runAt: "document_start",
     world: "MAIN",
-    allFrames: true,
+    allFrames: false,
     persistAcrossSessions: true
   }]);
   console.log("[Extension] Content script registered");
